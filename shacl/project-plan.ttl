@@ -148,6 +148,20 @@ regen:ProjectPlanShape
       sh:group regen:ProjectPlanRolesGroup ;
       ]
     ]
+    [
+      sh:property [
+        sh:path regen:projectOriginator ;
+        sh:name "Project Originator" ;
+        sh:description "The individual or organization that helps initiate the project." ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:xone (
+          sh:node regen:IndividualShape
+          sh:node regen:OrganizationShape
+        ) ;
+        sh:group regen:ProjectPageRolesGroup ;
+      ]
+    ]
   );
 
   sh:property [

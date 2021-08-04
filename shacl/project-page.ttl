@@ -97,6 +97,20 @@ regen:ProjectPageShape
         sh:group regen:ProjectPageRolesGroup ;
       ]
     ]
+    [
+      sh:property [
+        sh:path regen:projectOriginator ;
+        sh:name "Project Originator" ;
+        sh:description "The individual or organization that helps initiate the project." ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:xone (
+          sh:node regen:IndividualShape
+          sh:node regen:OrganizationShape
+        ) ;
+        sh:group regen:ProjectPageRolesGroup ;
+      ]
+    ]
   ) ;
   # The following property isn't actually used for validation but could be used for
   # form generation later on.
