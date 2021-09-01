@@ -1,0 +1,76 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix regen: <http://regen.network/> .
+
+# regen:CreditVintageShape defines generic metadata that goes
+# into the credit_vintage.metadata column in the Postgres database.
+# 
+# Note that credit_vintage.metadata could also store other kind of data
+# specific to its corresponding credit_class.
+
+regen:CreditVintageShape
+  a rdfs:Class, sh:NodeShape ;
+  sh:targetClass regen:CreditVintage ;
+  rdfs:subClassOf rdfs:Resource ;
+  sh:property [
+    sh:path regen:bufferDistribution ;
+    sh:node regen:BufferDistributionShape ;
+  ] ;
+  sh:property [
+    sh:path regen:additionalCertifications ;
+    sh:node dash:ListShape ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:datatype xsd:string ;
+    ] ;
+  ] ;
+  sh:property [
+    sh:path regen:serialNumber ;
+    sh:datatype xsd:string ;
+  ] ;
+  sh:property [
+    sh:path regen:initialIssuanceTotalGrossAmount ;
+    sh:minExclusive 0;
+  ] ;
+.
+
+# regen:CreditVintageInitialDistributionShape defines a credit vintage initial distribution that is stored
+# into the credit_vintage.initial_distribution column in the Postgres database.
+
+regen:CreditVintageInitialDistributionShape
+  a rdfs:Class, sh:NodeShape ;
+  sh:targetClass regen:CreditVintage ;
+  rdfs:subClassOf rdfs:Resource ;
+  sh:property [
+    sh:path regen:projectDeveloperDistribution ;
+    sh:minInclusive 0;
+    sh:maxInclusive 1;
+  ] ;
+  sh:property [
+    sh:path regen:landStewardDistribution ;
+    sh:minInclusive 0;
+    sh:maxInclusive 1;
+  ] ;
+  sh:property [
+    sh:path regen:landOwnerDistribution ;
+    sh:minInclusive 0;
+    sh:maxInclusive 1;
+  ] ;
+.
+
+regen:BufferDistributionShape
+  a rdfs:Class, sh:NodeShape ;
+  sh:property [
+    sh:path regen:bufferPool ;
+    sh:minInclusive 0;
+    sh:maxInclusive 1;
+  ] ;
+  sh:property [
+    sh:path regen:permanenceReversalBuffer ;
+    sh:minInclusive 0;
+    sh:maxInclusive 1;
+  ] ;
+.

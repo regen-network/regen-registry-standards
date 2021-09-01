@@ -1,0 +1,31 @@
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix regen: <http://regen.network/> .
+
+# regen:ProjectShape defines generic metadata that goes
+# into the project.metadata column in the Postgres database.
+# 
+# Note that project.metadata can also store other kind of data
+# than is defined as part of other SHACL shapes (e.g. regen:ProjectPageShape).
+
+regen:ProjectShape
+  a rdfs:Class, sh:NodeShape ;
+  sh:targetClass regen:Project ;
+  rdfs:subClassOf rdfs:Resource ;
+  sh:property [
+    sh:path regen:additionalCertifications ;
+    sh:node dash:ListShape ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:node regen:StandardShape ;
+    ] ;
+  ] ;
+  sh:property [
+    sh:path regen:externalProjectUrl ;
+    sh:datatype schema:URL ;
+  ] ;
+.
