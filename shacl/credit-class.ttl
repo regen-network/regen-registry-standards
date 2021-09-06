@@ -32,6 +32,44 @@ regen:CreditClassVersionShape
     sh:maxCount 1 ;
     sh:minCount 1 ;
   ] ;
+
+  # The following properties are based on https://app.mural.co/t/exploros/m/exploros/1626198876689/ecd285bfe106442917d13fb94421b33de7f5d981?sender=marie6396
+  # which is still WIP so subject to change.
+  sh:property [
+    sh:path regen:ecosystemType ;
+    sh:datatype xsd:string ;
+  ] ;
+  sh:property [
+    sh:path regen:projectType ;
+    sh:datatype xsd:string ;
+  ] ;
+  sh:property [
+    sh:path regen:indicator ;
+    sh:nodeKind sh:IRI ;
+    sh:class regen:Indicator ;
+  ] ;
+  sh:property [
+    sh:path regen:unit ;
+    sh:datatype xsd:string ;
+  ] ;
+  sh:property [
+    sh:path regen:methods ;
+    sh:node dash:ListShape ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:class regen:Methodology ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  ] ;
+  sh:property [
+    sh:path regen:coBenefits ;
+    sh:node dash:ListShape ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:nodeKind sh:IRI ;
+      sh:class regen:Indicator ;
+    ] ;
+  ] ;
 .
 
 regen:StandardShape
