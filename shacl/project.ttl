@@ -17,12 +17,8 @@ regen:ProjectShape
   sh:targetClass regen:Project ;
   rdfs:subClassOf rdfs:Resource ;
   sh:property [
-    sh:path regen:additionalCertifications ;
-    sh:node dash:ListShape ;
-    sh:property [
-      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
-      sh:node regen:StandardShape ;
-    ] ;
+    sh:path regen:additionalCertification ;
+    sh:node regen:StandardShape ;
   ] ;
   sh:property [
     sh:path regen:externalProjectUrl ;

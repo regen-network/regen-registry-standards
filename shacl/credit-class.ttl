@@ -66,8 +66,8 @@ regen:CreditClassVersionShape
     sh:node dash:ListShape ;
     sh:property [
       sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
-      sh:nodeKind sh:IRI ;
       sh:class regen:Indicator ;
+      sh:nodeKind sh:IRI ;
     ] ;
   ] ;
 .
