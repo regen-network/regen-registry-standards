@@ -10,7 +10,7 @@
 
 regen:CreditClassVersionShape
   a rdfs:Class, sh:NodeShape ;
-  sh:targetClass regen:CreditClassVersion ;
+  sh:targetClass regen:CreditClass ;
   rdfs:subClassOf rdfs:Resource ;
   sh:property [
     sh:path schema:url ;
