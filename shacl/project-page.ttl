@@ -52,7 +52,7 @@ regen:ProjectPageShape
     sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:group regen:ProjectPageLocationGroup ;
-    sh:node geojson:Feature ;
+    sh:class geojson:Feature ;
   ] ;
   sh:or (
     [
@@ -287,7 +287,7 @@ regen:OrganizationShape
     sh:description "This address is used for issuing credits. If you choose to show this entity on the project page, only city, state/province, and country will be displayed." ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
-    sh:node geojson:Feature ;
+    sh:class geojson:Feature ;
   ] ;
   sh:property [
     sh:path regen:responsiblePerson ;
