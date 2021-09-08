@@ -52,7 +52,7 @@ regen:ProjectPageShape
     sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:group regen:ProjectPageLocationGroup ;
-    sh:node geojson:Feature ;
+    sh:class geojson:Feature ;
   ] ;
   sh:or (
     [
