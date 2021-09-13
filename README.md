@@ -4,7 +4,7 @@ This repository contains:
 - Source schema for Regen Network ontology (TODO)
 - [SHACL](https://www.w3.org/TR/shacl/) schemas for:
   - Registry projects and dMRV form validation
-  - Methodology, credit class and credit vintage metadata validation (TODO)
+  - Methodology, credit class, project, credit vintage and retirement metadata validation
 
 ## SHACL Graphs
 
