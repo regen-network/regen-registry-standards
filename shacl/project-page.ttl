@@ -62,10 +62,7 @@ regen:ProjectPageShape
         sh:description "The individual or organization that owns this land." ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
-        sh:xone (
-          sh:node regen:IndividualShape
-          sh:node regen:OrganizationShape
-        ) ;
+        sh:node regen:RoleShape;
         sh:group regen:ProjectPageRolesGroup ;
       ]
     ]
@@ -76,10 +73,7 @@ regen:ProjectPageShape
         sh:description "The individual or organization that is performing the work on the ground. This can be a farmer, rancher, conservationist, forester, fisherman, etc." ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
-        sh:xone (
-          sh:node regen:IndividualShape
-          sh:node regen:OrganizationShape
-        ) ;
+        sh:node regen:RoleShape;
         sh:group regen:ProjectPageRolesGroup ;
       ]
     ]
@@ -90,10 +84,7 @@ regen:ProjectPageShape
         sh:description "The individual or organization that is in charge of managing the project and is the main point of contact with Regen Registry." ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
-        sh:xone (
-          sh:node regen:IndividualShape
-          sh:node regen:OrganizationShape
-        ) ;
+        sh:node regen:RoleShape;
         sh:group regen:ProjectPageRolesGroup ;
       ]
     ]
@@ -104,10 +95,7 @@ regen:ProjectPageShape
         sh:description "The individual or organization that helps initiate the project." ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
-        sh:xone (
-          sh:node regen:IndividualShape
-          sh:node regen:OrganizationShape
-        ) ;
+        sh:node regen:RoleShape;
         sh:group regen:ProjectPageRolesGroup ;
       ]
     ]
@@ -129,10 +117,7 @@ regen:ProjectPageShape
         sh:path regen:landOwner ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
-        sh:xone (
-          sh:node regen:IndividualDisplayShape
-          sh:node regen:OrganizationDisplayShape
-        ) ;
+        sh:node regen:RoleDisplayShape ;
         sh:group regen:ProjectPageEntityDisplayGroup ;
       ]
     ]
@@ -142,10 +127,7 @@ regen:ProjectPageShape
         sh:description "recommended to increase salability" ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
-        sh:xone (
-          sh:node regen:IndividualDisplayShape
-          sh:node regen:OrganizationDisplayShape
-        ) ;
+        sh:node regen:RoleDisplayShape ;
         sh:group regen:ProjectPageEntityDisplayGroup ;
       ]
     ]
@@ -155,10 +137,7 @@ regen:ProjectPageShape
         sh:description "recommended to increase salability" ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
-        sh:xone (
-          sh:node regen:IndividualDisplayShape
-          sh:node regen:OrganizationDisplayShape
-        ) ;
+        sh:node regen:RoleDisplayShape ;
         sh:group regen:ProjectPageEntityDisplayGroup ;
       ]
     ]
@@ -270,8 +249,23 @@ regen:ProjectSizeShape
   ] ;
 .
 
+regen:RoleShape
+  a sh:NodeShape ;
+  sh:xone (
+    regen:IndividualShape
+    regen:OrganizationShape
+  ) .
+
+regen:RoleDisplayShape
+  a sh:NodeShape ;
+  sh:xone (
+    regen:IndividualDisplayShape
+    regen:OrganizationDisplayShape
+  ) .
+
 regen:OrganizationShape
   a sh:NodeShape ;
+  sh:targetClass regen:Organization ;
   rdfs:label "Add Organization" ;
   sh:property [
     sh:path schema:legalName ;
@@ -280,6 +274,8 @@ regen:OrganizationShape
     sh:description "This is the name of the farm, ranch, cooperative, non-profit, or other organization." ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:group regen:ProjectPageRolesGroup;
   ] ;
   sh:property [
     sh:path schema:location ;
@@ -288,6 +284,7 @@ regen:OrganizationShape
     sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:class geojson:Feature ;
+    sh:group regen:ProjectPageRolesGroup;
   ] ;
   sh:property [
     sh:path regen:responsiblePerson ;
@@ -296,6 +293,8 @@ regen:OrganizationShape
     sh:description "This is the person who will be signing the project plan, and whose name will appear on credit issuance certificates if credits are issued to this organization." ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:group regen:ProjectPageRolesGroup;
   ] ;
   sh:property regen:EmailShape ;
   sh:property regen:PhoneNumberShape ;
@@ -312,6 +311,8 @@ regen:IndividualShape
     sh:name "Full name" ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:group regen:ProjectPageRolesGroup;
   ] ;
   sh:property regen:EmailShape ;
   sh:property regen:PhoneNumberShape ;
@@ -327,6 +328,7 @@ regen:OrganizationDisplayShape
     sh:datatype xsd:string ;
     sh:name "Organization display name" ;
     sh:description "This is the display name on your project page, if you choose to make this entity publically viewable." ;
+    sh:group regen:ProjectPageEntityDisplayGroup ;
   ] ;
   sh:property [
     sh:path schema:logo ;
@@ -334,6 +336,7 @@ regen:OrganizationDisplayShape
     sh:name "Organization logo" ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
+    sh:group regen:ProjectPageEntityDisplayGroup ;
   ] ;
   sh:property [
     sh:path schema:description ;
@@ -342,6 +345,7 @@ regen:OrganizationDisplayShape
     sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:maxLength 160 ;
+    sh:group regen:ProjectPageEntityDisplayGroup ;
   ] ;
 .
 
@@ -355,6 +359,7 @@ regen:IndividualDisplayShape
     sh:name "Bio photo" ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
+    sh:group regen:ProjectPageEntityDisplayGroup ;
   ] ;
   sh:property [
     sh:path schema:description ;
@@ -364,6 +369,7 @@ regen:IndividualDisplayShape
     sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:maxLength 160 ;
+    sh:group regen:ProjectPageEntityDisplayGroup ;
   ] ;
 .
 
@@ -374,6 +380,7 @@ regen:EmailShape
   sh:datatype xsd:string ;
   sh:minCount 1 ;
   sh:maxCount 1 ;
+  sh:group regen:ProjectPageRolesGroup;
 .
 
 regen:PhoneNumberShape
@@ -381,6 +388,7 @@ regen:PhoneNumberShape
   sh:path schema:telephone ;
   sh:datatype xsd:string ;
   sh:name "Phone number" ;
+  sh:group regen:ProjectPageRolesGroup;
 .
 
 regen:SharePermissionShape
@@ -389,6 +397,7 @@ regen:SharePermissionShape
   sh:description "I have this individual’s permission to share their information with Regen Registry" ;
   sh:datatype xsd:boolean ;
   sh:hasValue true ;
+  sh:group regen:ProjectPageRolesGroup;
 .
 
 regen:EntityDisplayShape-showOnProjectPage
@@ -396,6 +405,7 @@ regen:EntityDisplayShape-showOnProjectPage
   sh:path regen:showOnProjectPage ;
   sh:datatype xsd:boolean ;
   sh:hasValue true ;
+  sh:group regen:ProjectPageEntityDisplayGroup ;
 .
 
 regen:ProjectQuoteShape
