@@ -100,17 +100,38 @@ regen:ProjectPageShape
       ]
     ]
   ) ;
-  # The following property isn't actually used for validation but could be used for
-  # form generation later on.
-  # Indeed, we have a separate form in the UI for choosing which entities to display
-  # on the project page, but we're actually storing this info as part of regen:landOwner,
-  # regen:landSteward and regen:projectDeveloper along with the "Roles" info.
+  # We should show at least one of the project stakeholders on the project page.
   sh:property [
     sh:name "Choose the entities to show on the project page:" ;
     sh:description "Showing more entities increases the salability of the project. You must show at least one entity on the project page. These entities can only be edited in the previous step." ;
     sh:group regen:ProjectPageEntityDisplayGroup ;
+    sh:or (
+      [
+        sh:property [
+          sh:path ( regen:landOwner regen:showOnProjectPage ) ;
+          sh:hasValue true;
+        ]
+      ]
+      [
+        sh:property [
+          sh:path ( regen:landSteward regen:showOnProjectPage ) ;
+          sh:hasValue true;
+        ]
+      ]
+      [
+        sh:property [
+          sh:path ( regen:projectDeveloper regen:showOnProjectPage ) ;
+          sh:hasValue true;
+        ]
+      ]
+      [
+        sh:property [
+          sh:path ( regen:projectOriginator regen:showOnProjectPage ) ;
+          sh:hasValue true;
+        ]
+      ]
+    ) ;
   ] ;
-  # We should show at least one of the project stakeholders on the project page.
   sh:or (
     [
       sh:property [
@@ -198,6 +219,7 @@ regen:ProjectPageShape
       sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
       sh:datatype schema:URL ;
       sh:minCount 4 ;
+      sh:group regen:ProjectPageMediaGroup ;
     ] ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
@@ -263,6 +285,7 @@ regen:RoleDisplayShape
     regen:OrganizationDisplayShape
   ) .
 
+
 regen:OrganizationShape
   a sh:NodeShape ;
   sh:targetClass regen:Organization ;
@@ -321,7 +344,7 @@ regen:IndividualShape
 
 regen:OrganizationDisplayShape
   a sh:NodeShape ;
-  sh:targetClass regen:Organization ;
+  sh:targetClass regen:OrganizationDisplay ;
   sh:property regen:EntityDisplayShape-showOnProjectPage ;
   sh:property [
     sh:path schema:name ;
@@ -344,6 +367,7 @@ regen:OrganizationDisplayShape
     sh:name "Short organization description" ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
+    sh:minLength 1 ;
     sh:maxLength 160 ;
     sh:group regen:ProjectPageEntityDisplayGroup ;
   ] ;
@@ -351,7 +375,7 @@ regen:OrganizationDisplayShape
 
 regen:IndividualDisplayShape
   a sh:NodeShape ;
-  sh:targetClass regen:Individual ;
+  sh:targetClass regen:IndividualDisplay ;
   sh:property regen:EntityDisplayShape-showOnProjectPage ;
   sh:property [
     sh:path schema:image ;
@@ -368,6 +392,7 @@ regen:IndividualDisplayShape
     sh:description "Describe any relevant background and experience." ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
+    sh:minLength 1 ;
     sh:maxLength 160 ;
     sh:group regen:ProjectPageEntityDisplayGroup ;
   ] ;
@@ -405,6 +430,14 @@ regen:EntityDisplayShape-showOnProjectPage
   sh:path regen:showOnProjectPage ;
   sh:datatype xsd:boolean ;
   sh:hasValue true ;
+  sh:group regen:ProjectPageEntityDisplayGroup ;
+.
+
+regen:EntityDisplayShape-hideOnProjectPage
+  a sh:PropertyShape ;
+  sh:path regen:showOnProjectPage ;
+  sh:datatype xsd:boolean ;
+  sh:hasValue false ;
   sh:group regen:ProjectPageEntityDisplayGroup ;
 .
 
