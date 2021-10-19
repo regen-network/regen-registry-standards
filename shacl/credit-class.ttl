@@ -33,7 +33,7 @@ regen:CreditClassVersionShape
     sh:minCount 1 ;
   ] ;
   sh:property [
-    sh:path regen:sdgs ;
+    sh:path regen:SDGs ;
     sh:node dash:ListShape ;
     sh:property [
       sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
