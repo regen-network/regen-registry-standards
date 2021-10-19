@@ -37,7 +37,8 @@ regen:CreditClassVersionShape
     sh:node dash:ListShape ;
     sh:property [
       sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
-      sh:datatype xsd:string ;
+      sh:nodeKind sh:IRI ;
+      sh:class regen:SDG ;
     ] ;
   ] ;
 
