@@ -10,7 +10,8 @@
 # into the project.metadata column in the Postgres database.
 # 
 # Note that project.metadata can also store other kind of data
-# than is defined as part of other SHACL shapes (e.g. regen:ProjectPageShape).
+# than is defined as part of other SHACL shapes (e.g. regen:ProjectPageShape
+# used for validating self-service project page forms).
 
 regen:ProjectShape
   a rdfs:Class, sh:NodeShape ;
@@ -23,5 +24,49 @@ regen:ProjectShape
   sh:property [
     sh:path regen:externalProjectUrl ;
     sh:datatype schema:URL ;
+  ] ;
+  sh:property [
+    sh:path schema:creditText ;
+    sh:datatype xsd:string ;
+  ] ;
+  sh:property [
+    sh:path regen:glanceText ;
+    sh:node dash:ListShape ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:datatype xsd:string ;
+    ] ;
+  ] ;
+  sh:property [
+    sh:path regen:landManagementActions ;
+    sh:node dash:ListShape ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:node regen:LandManagementActionShape ;
+    ] ;
+  ] ;
+.
+
+regen:LandManagementActionShape
+  a rdfs:Class, sh:NodeShape ;
+  sh:property [
+    sh:path schema:image ;
+    sh:datatype schema:URL ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path schema:name ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+  ] ;
+  sh:property [
+    sh:path schema:description ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
   ] ;
 .
