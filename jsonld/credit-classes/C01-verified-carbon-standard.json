@@ -1,0 +1,58 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "http://regen.network/",
+    "qudt": "http://qudt.org/schema/qudt",
+    "unit": "http://qudt.org/2.1/vocab/unit",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "regen:CreditBatch",
+  "regen:vcsRetirementSerialNumber": "",
+  "regen:vintageYear": {
+    "@type": "xsd:gYear",
+    "@value": ""
+  },
+  "regen:batchMonitoringReport": {
+    "@type": "schema:URL",
+    "@value": ""
+  },
+  "regen:batchVerificationReport": {
+    "@type": "schema:URL",
+    "@value": ""
+  },
+    
+  "regen:project": {
+    "@type": "regen:Project",
+    "regen:vcsProjectId": 0, 
+    "regen:vcsProjectPage": {
+      "@type": "schema:URL",
+      "@value": ""
+    },
+    "regen:projectProponent": {
+      "@type": "regen:Organization",
+      "schema:name": ""
+    },
+    "regen:vcsProjectType": "",
+    "regen:projectActivity": "",
+    "regen:vcsMethodology": "",
+    "regen:size": {
+      "qudt:unit": {
+        "@type": "qudt:Unit",
+        "@value": "unit:HA"
+      },
+      "qudt:numericValue": {
+        "@type": "xsd:double",
+        "@value": 0
+      }
+    },
+    "regen:projectStartDate": {
+      "@type": "xsd:date",
+      "@value": "0000-00-00"
+    },
+    "regen:projectEndDate": {
+      "@type": "xsd:date",
+      "@value": "0000-00-00"
+    },
+    "regen:offsetGenerationMethod": ""
+  }
+}
