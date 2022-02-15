@@ -17,12 +17,6 @@ regen:CreditClassVersionShape
     sh:datatype schema:URL ;
   ] ;
   sh:property [
-    sh:path regen:standard ;
-    sh:maxCount 1 ;
-    sh:minCount 1 ;
-    sh:node regen:StandardShape ;
-  ] ;
-  sh:property [
     sh:path regen:offsetGenerationMethod ;
     sh:datatype xsd:string ;
   ] ;
@@ -78,29 +72,5 @@ regen:CreditClassVersionShape
       sh:class regen:Indicator ;
       sh:nodeKind sh:IRI ;
     ] ;
-  ] ;
-.
-
-regen:StandardShape
-  a rdfs:Class, sh:NodeShape ;
-  sh:property [
-    sh:path schema:name ;
-    sh:datatype xsd:string ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-  ] ;
-  sh:property [
-    sh:path schema:version ;
-    sh:datatype xsd:string ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-  ] ;
-  sh:property [
-    sh:path regen:documentId ;
-    sh:datatype xsd:string ;
-  ] ;
-  sh:property [
-    sh:path schema:url ;
-    sh:datatype schema:URL ;
   ] ;
 .
