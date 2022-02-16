@@ -18,7 +18,6 @@ regen:ProjectShape
   sh:targetClass regen:Project ;
   rdfs:subClassOf rdfs:Resource ;
   sh:property [
-    # pending confirmation from Sam, projectType or projectActivity?
     sh:path regen:projectActivity ; 
     sh:node regen:NameURLShape ;
   ] ;
