@@ -10,7 +10,7 @@
   "regen:vcsRetirementSerialNumber": "",
   "regen:vintageYear": {
     "@type": "xsd:gYear",
-    "@value": ""
+    "@value": "2022"
   },
   "regen:batchMonitoringReport": {
     "@type": "schema:URL",
