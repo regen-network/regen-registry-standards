@@ -20,10 +20,12 @@
     "@type": "schema:URL",
     "@value": ""
   },
-    
   "regen:project": {
     "@type": "regen:Project",
-    "regen:vcsProjectId": 0, 
+    "regen:vcsProjectId": {
+      "@type": "xsd:unsignedInt",
+      "@value": 0
+    }, 
     "regen:vcsProjectPage": {
       "@type": "schema:URL",
       "@value": ""
@@ -59,11 +61,11 @@
     },
     "regen:projectStartDate": {
       "@type": "xsd:date",
-      "@value": "0000-00-00"
+      "@value": "2022-01-01"
     },
     "regen:projectEndDate": {
       "@type": "xsd:date",
-      "@value": "0000-00-00"
+      "@value": "2023-01-01"
     },
     "regen:offsetGenerationMethod": ""
   }
