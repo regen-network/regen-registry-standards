@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "http://regen.network/",
+    "qudt": "http://qudt.org/schema/qudt",
+    "unit": "http://qudt.org/2.1/vocab/unit",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "regen:Project",
+    "regen:vcsProjectId": {
+      "@type": "xsd:unsignedInt",
+      "@value": 0
+    }, 
+    "regen:vcsProjectPage": {
+      "@type": "schema:URL",
+      "@value": ""
+    },
+    "regen:projectProponent": {
+      "@type": "regen:Organization",
+      "schema:name": ""
+    },
+    "regen:vcsProjectType": "",
+    "regen:projectActivity": {
+      "schema:name": "",
+      "schema:url": {
+        "@type": "schema:URL",
+        "@value": ""
+      }
+    },
+    "regen:vcsMethodology": {
+      "schema:name": "",
+      "schema:url": {
+        "@type": "schema:URL",
+        "@value": ""
+      }
+    },
+    "regen:size": {
+      "qudt:unit": {
+        "@type": "qudt:Unit",
+        "@value": "unit:HA"
+      },
+      "qudt:numericValue": {
+        "@type": "xsd:double",
+        "@value": 0
+      }
+    },
+    "regen:projectStartDate": {
+      "@type": "xsd:date",
+      "@value": "2022-01-01"
+    },
+    "regen:projectEndDate": {
+      "@type": "xsd:date",
+      "@value": "2023-01-01"
+    },
+    "regen:offsetGenerationMethod": ""
+}
