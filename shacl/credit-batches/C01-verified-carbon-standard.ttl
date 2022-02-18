@@ -54,11 +54,11 @@ regen:ProjectShape a sh:NodeShape ;
   ] ;
   sh:property [
     sh:path regen:projectActivity ;
-    sh:node regen:ProjectActivity ;
+    sh:node regen:NameUrl ;
   ] ;
   sh:property [
     sh:path regen:vcsMethodology ;
-    sh:node regen:VcsMethodology ;
+    sh:node regen:NameUrl ;
   ] ;
   sh:property [
     sh:path regen:size ;
@@ -86,22 +86,13 @@ regen:OrganizationShape a sh:NodeShape ;
   ] ;
 .
 
-regen:ProjectActivityShape a sh:NodeShape ;
-  sh:targetClass regen:ProjectActivity ;
+regen:NameUrlShape a sh:NodeShape ;
+  sh:targetClass regen:NameUrl;
   sh:property [
     sh:path schema:name ;
-    sh:datatype xsd:string ;
-  ] ;
-  sh:property [
-    sh:path schema:url ;
-    sh:datatype schema:URL ;
-  ] ;
-.
-
-regen:VcsMethodologyShape a sh:NodeShape ;
-  sh:targetClass regen:VcsMethodology ;
-  sh:property [
-    sh:path schema:name ;
+    sh:mincount 1 ;
+    sh:maxcount 1 ;
+    sh:minLength 1 ;
     sh:datatype xsd:string ;
   ] ;
   sh:property [
