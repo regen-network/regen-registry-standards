@@ -7,50 +7,50 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
   "@type": "regen:Project",
-    "regen:vcsProjectId": {
-      "@type": "xsd:unsignedInt",
-      "@value": 0
-    }, 
-    "regen:vcsProjectPage": {
+  "regen:vcsProjectId": {
+    "@type": "xsd:unsignedInt",
+    "@value": 0
+  }, 
+  "regen:vcsProjectPage": {
+    "@type": "schema:URL",
+    "@value": ""
+  },
+  "regen:projectProponent": {
+    "@type": "regen:Organization",
+    "schema:name": "BarOrg"
+  },
+  "regen:vcsProjectType": "Reforestation",
+  "regen:projectActivity": {
+    "schema:name": "Activity1",
+    "schema:url": {
       "@type": "schema:URL",
       "@value": ""
+    }
+  },
+  "regen:vcsMethodology": {
+    "schema:name": "",
+    "schema:url": {
+      "@type": "schema:URL",
+      "@value": ""
+    }
+  },
+  "regen:size": {
+    "qudt:unit": {
+      "@type": "qudt:Unit",
+      "@value": "unit:HA"
     },
-    "regen:projectProponent": {
-      "@type": "regen:Organization",
-      "schema:name": ""
-    },
-    "regen:vcsProjectType": "",
-    "regen:projectActivity": {
-      "schema:name": "",
-      "schema:url": {
-        "@type": "schema:URL",
-        "@value": ""
-      }
-    },
-    "regen:vcsMethodology": {
-      "schema:name": "",
-      "schema:url": {
-        "@type": "schema:URL",
-        "@value": ""
-      }
-    },
-    "regen:size": {
-      "qudt:unit": {
-        "@type": "qudt:Unit",
-        "@value": "unit:HA"
-      },
-      "qudt:numericValue": {
-        "@type": "xsd:double",
-        "@value": 0
-      }
-    },
-    "regen:projectStartDate": {
-      "@type": "xsd:date",
-      "@value": "2022-01-01"
-    },
-    "regen:projectEndDate": {
-      "@type": "xsd:date",
-      "@value": "2023-01-01"
-    },
-    "regen:offsetGenerationMethod": ""
+    "qudt:numericValue": {
+      "@type": "xsd:double",
+      "@value": 0
+    }
+  },
+  "regen:projectStartDate": {
+    "@type": "xsd:date",
+    "@value": "2022-01-01"
+  },
+  "regen:projectEndDate": {
+    "@type": "xsd:date",
+    "@value": "2023-01-01"
+  },
+  "regen:offsetGenerationMethod": "OffsetMethod"
 }

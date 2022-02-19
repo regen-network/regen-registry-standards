@@ -7,7 +7,7 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
   "@type": "regen:CreditBatch",
-  "regen:vcsRetirementSerialNumber": "",
+  "regen:vcsRetirementSerialNumber": "abcdefg",
   "regen:vintageYear": {
     "@type": "xsd:gYear",
     "@value": "2022"
@@ -32,31 +32,34 @@
     },
     "regen:projectProponent": {
       "@type": "regen:Organization",
-      "schema:name": ""
+      "schema:name": "FooOrg"
     },
-    "regen:vcsProjectType": "",
+    "regen:vcsProjectType": "Reforestation!",
     "regen:projectActivity": {
-      "schema:name": "",
+      "@type": "regen:NameUrl",
+      "schema:name": "FooName",
       "schema:url": {
         "@type": "schema:URL",
         "@value": ""
       }
     },
     "regen:vcsMethodology": {
-      "schema:name": "",
+      "@type": "regen:NameUrl",
+      "schema:name": "Foo Method",
       "schema:url": {
         "@type": "schema:URL",
-        "@value": ""
+        "@value": "test"
       }
     },
     "regen:size": {
+      "@type": "regen:Size",
       "qudt:unit": {
         "@type": "qudt:Unit",
         "@value": "unit:HA"
       },
       "qudt:numericValue": {
         "@type": "xsd:double",
-        "@value": 0
+        "@value": "foo"
       }
     },
     "regen:projectStartDate": {
@@ -67,6 +70,6 @@
       "@type": "xsd:date",
       "@value": "2023-01-01"
     },
-    "regen:offsetGenerationMethod": ""
+    "regen:offsetGenerationMethod": "Method #1"
   }
 }

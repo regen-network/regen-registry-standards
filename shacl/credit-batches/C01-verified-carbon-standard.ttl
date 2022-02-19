@@ -10,27 +10,34 @@ regen:CreditBatchShape a sh:NodeShape ;
   sh:targetClass regen:CreditBatch ;
   sh:property [
     sh:path regen:vcsRetirementSerialNumber ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
     sh:datatype xsd:string ;
-    sh:mincount 1 ;
   ] ;
   sh:property [
     sh:path regen:vintageYear ;
     sh:datatype xsd:gYear ;
-    sh:mincount 1 ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
   ] ;
   sh:property [
     sh:path regen:batchMonitoringReport ;
     sh:datatype schema:URL ;
-    sh:mincount 1 ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
   ] ;
   sh:property [
     sh:path regen:batchVerificationReport ;
     sh:datatype schema:URL ;
-    sh:mincount 1 ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
   ] ;
   sh:property [
     sh:path regen:project ;
     sh:node regen:Project ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
   ] ;
 .
 
@@ -39,17 +46,26 @@ regen:ProjectShape a sh:NodeShape ;
   sh:property [
     sh:path regen:vcsProjectId ;
     sh:datatype xsd:unsignedInt ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
   ] ;
   sh:property [
     sh:path regen:vcsProjectPage ;
     sh:datatype schema:URL ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
   ] ;
   sh:property [
     sh:path regen:projectProponent ;
     sh:node regen:Organization ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
   ] ;
   sh:property [
     sh:path regen:vcsProjectType ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
     sh:datatype xsd:string ;
   ] ;
   sh:property [
@@ -63,17 +79,26 @@ regen:ProjectShape a sh:NodeShape ;
   sh:property [
     sh:path regen:size ;
     sh:node regen:Size ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
   ] ;
   sh:property [
     sh:path regen:projectStartDate ;
     sh:datatype xsd:date ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
   ] ;
   sh:property [
     sh:path regen:projectEndDate ;
     sh:datatype xsd:date ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
   ] ;
   sh:property [
     sh:path regen:offsetGenerationMethod ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
     sh:datatype xsd:string ;
   ] ;
 .
@@ -82,6 +107,9 @@ regen:OrganizationShape a sh:NodeShape ;
   sh:targetClass regen:Organization ;
   sh:property [
     sh:path schema:name ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
     sh:datatype xsd:string ;
   ] ;
 .
@@ -90,13 +118,15 @@ regen:NameUrlShape a sh:NodeShape ;
   sh:targetClass regen:NameUrl;
   sh:property [
     sh:path schema:name ;
-    sh:mincount 1 ;
-    sh:maxcount 1 ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
     sh:minLength 1 ;
     sh:datatype xsd:string ;
   ] ;
   sh:property [
     sh:path schema:url ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
     sh:datatype schema:URL ;
   ] ;
 .
@@ -109,6 +139,9 @@ regen:SizeShape a sh:NodeShape ;
   ] ;
   sh:property [
     sh:path qudt:numericValue ;
+    # TODO: This is not validating as expected (I think..)
+    # See "qudt:numericValue" in
+    # jsonld/credit-batches/C01-verified-carbon-standard.json
     sh:datatype xsd:double ;
   ] ;
 .
