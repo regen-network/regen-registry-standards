@@ -17,11 +17,11 @@
   },
   "regen:projectProponent": {
     "@type": "regen:Organization",
-    "schema:name": "BarOrg"
+    "schema:name": ""
   },
-  "regen:vcsProjectType": "Reforestation",
+  "regen:vcsProjectType": "",
   "regen:projectActivity": {
-    "schema:name": "Activity1",
+    "schema:name": "",
     "schema:url": {
       "@type": "schema:URL",
       "@value": ""
@@ -46,11 +46,11 @@
   },
   "regen:projectStartDate": {
     "@type": "xsd:date",
-    "@value": "2022-01-01"
+    "@value": ""
   },
   "regen:projectEndDate": {
     "@type": "xsd:date",
-    "@value": "2023-01-01"
+    "@value": ""
   },
-  "regen:offsetGenerationMethod": "OffsetMethod"
+  "regen:offsetGenerationMethod": ""
 }

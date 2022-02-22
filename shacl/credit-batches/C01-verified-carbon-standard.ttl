@@ -4,7 +4,7 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix regen: <http://regen.network/> .
-@prefix qudt: <http://qudt.org/1.1/schema/qudt#> .
+@prefix qudt: <http://qudt.org/schema/qudt> .
 
 regen:CreditBatchShape a sh:NodeShape ;
   sh:targetClass regen:CreditBatch ;
@@ -35,7 +35,7 @@ regen:CreditBatchShape a sh:NodeShape ;
   ] ;
   sh:property [
     sh:path regen:project ;
-    sh:node regen:Project ;
+    sh:node regen:ProjectShape ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
   ] ;
@@ -57,7 +57,7 @@ regen:ProjectShape a sh:NodeShape ;
   ] ;
   sh:property [
     sh:path regen:projectProponent ;
-    sh:node regen:Organization ;
+    sh:node regen:OrganizationShape ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
   ] ;
@@ -70,15 +70,15 @@ regen:ProjectShape a sh:NodeShape ;
   ] ;
   sh:property [
     sh:path regen:projectActivity ;
-    sh:node regen:NameUrl ;
+    sh:node regen:NameUrlShape ;
   ] ;
   sh:property [
     sh:path regen:vcsMethodology ;
-    sh:node regen:NameUrl ;
+    sh:node regen:NameUrlShape ;
   ] ;
   sh:property [
     sh:path regen:size ;
-    sh:node regen:Size ;
+    sh:node regen:SizeShape ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
   ] ;
@@ -139,9 +139,7 @@ regen:SizeShape a sh:NodeShape ;
   ] ;
   sh:property [
     sh:path qudt:numericValue ;
-    # TODO: This is not validating as expected (I think..)
-    # See "qudt:numericValue" in
-    # jsonld/credit-batches/C01-verified-carbon-standard.json
+    sh:minExclusive 0 ;
     sh:datatype xsd:double ;
   ] ;
 .
