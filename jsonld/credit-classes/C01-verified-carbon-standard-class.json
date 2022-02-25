@@ -1,0 +1,50 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "http://regen.network/",
+    "qudt": "http://qudt.org/schema/qudt",
+    "unit": "http://qudt.org/2.1/vocab/unit",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "regen:CreditClass",
+  "regen:description": [
+      "This credit class provides a vehicle for nature based Verified Carbon Units (VCUs) to enter the blockchain space via issuance on Regen Ledger. It can be used by project developers, credit brokers, and other stakeholders interested in digitizing carbon credits issued by the VCS program to make them available in the emerging world of decentralized finance."
+  ],
+  "regen:sourceRegistry": {
+    "@type": "regen:Organization",
+    "schema:name": "Verra"
+  },
+  "regen:sectoralScope": {
+    "@type": "schema:ItemList",
+    "itemListElement": [
+      "Agriculture Forestry and Other Land Use (AFOLU)",
+      "Livestock and Manure Management"
+    ]
+  },
+  "regen:offsetGenerationMethod": {
+    "@type": "schema:ItemList",
+    "itemListElement": [
+      "Reduction",
+      "Removal"
+    ]
+  },
+  "regen:approvedMethodologies": [
+    {
+      "@type": "regen:vcsMethodology",
+      "schema:name": "name",
+      "schema:URL": {
+        "@type": "schema:URL",
+        "value": "google.com"
+      }
+    },
+    {
+      "@type": "regen:vcsMethodology",
+      "schema:name": "name",
+      "schema:URL": {
+        "@type": "schema:URL",
+        "value": "google.com"
+      }
+    }
+  ],
+  "regen:verificationMethod": "third-party verified"
+}

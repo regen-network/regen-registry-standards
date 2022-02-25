@@ -10,7 +10,7 @@
   "regen:vcsProjectId": {
     "@type": "xsd:unsignedInt",
     "@value": 0
-  }, 
+  },
   "regen:vcsProjectPage": {
     "@type": "schema:URL",
     "@value": ""
@@ -20,13 +20,8 @@
     "schema:name": ""
   },
   "regen:vcsProjectType": "",
-  "regen:projectActivity": {
-    "schema:name": "",
-    "schema:url": {
-      "@type": "schema:URL",
-      "@value": ""
-    }
-  },
+  "regen:projectActivity": "",
+  "regen:offsetGenerationMethod": "",
   "regen:vcsMethodology": {
     "schema:name": "",
     "schema:url": {
@@ -34,7 +29,7 @@
       "@value": ""
     }
   },
-  "regen:size": {
+  "regen:projectSize": {
     "qudt:unit": {
       "@type": "qudt:Unit",
       "@value": "unit:HA"
@@ -51,6 +46,5 @@
   "regen:projectEndDate": {
     "@type": "xsd:date",
     "@value": ""
-  },
-  "regen:offsetGenerationMethod": ""
+  }
 }
