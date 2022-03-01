@@ -19,7 +19,7 @@
   },
   "regen:approvedMethodologies": [
     {
-      "@type": "regen:vcsMethodology",
+      "@type": "regen:Methodology",
       "schema:name": "",
       "schema:URL": {
         "@type": "schema:URL",
@@ -27,7 +27,7 @@
       }
     },
     {
-      "@type": "regen:vcsMethodology",
+      "@type": "regen:Methodology",
       "schema:name": "",
       "schema:URL": {
         "@type": "schema:URL",
