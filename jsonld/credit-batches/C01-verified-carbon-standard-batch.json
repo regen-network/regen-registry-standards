@@ -1,6 +1,7 @@
-{  "@context": {
+{
+  "@context": {
     "schema": "http://schema.org/",
-    "regen": "http://regen.network/",
+    "regen": "http://regen.network/"
   },
   "@type": "regen:CreditBatch",
   "regen:vcsRetirementSerialNumber": "",
