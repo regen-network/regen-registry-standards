@@ -4,7 +4,7 @@
     "regen": "http://regen.network/"
   },
   "@type": "regen:CreditClass",
-  "regen:description": "",
+  "schema:description": "",
   "regen:sourceRegistry": {
     "@type": "regen:Organization",
     "schema:name": ""
