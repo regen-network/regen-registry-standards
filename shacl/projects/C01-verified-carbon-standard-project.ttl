@@ -40,7 +40,7 @@ regen:ProjectShape a sh:NodeShape ;
     sh:node regen:NameUrlShape ;
   ] ;
   sh:property [
-    sh:path regen:size ;
+    sh:path regen:projectSize ;
     sh:node regen:SizeShape ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
