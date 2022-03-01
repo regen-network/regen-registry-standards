@@ -1,10 +1,7 @@
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix regen: <http://regen.network/> .
-@prefix qudt: <http://qudt.org/schema/qudt> .
 
 regen:CreditBatchShape a sh:NodeShape ;
   sh:targetClass regen:CreditBatch ;
@@ -32,114 +29,5 @@ regen:CreditBatchShape a sh:NodeShape ;
     sh:datatype schema:URL ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
-  ] ;
-  sh:property [
-    sh:path regen:project ;
-    sh:node regen:ProjectShape ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-  ] ;
-.
-
-regen:ProjectShape a sh:NodeShape ;
-  sh:targetClass regen:Project ;
-  sh:property [
-    sh:path regen:vcsProjectId ;
-    sh:datatype xsd:unsignedInt ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-  ] ;
-  sh:property [
-    sh:path regen:vcsProjectPage ;
-    sh:datatype schema:URL ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-  ] ;
-  sh:property [
-    sh:path regen:projectProponent ;
-    sh:node regen:OrganizationShape ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-  ] ;
-  sh:property [
-    sh:path regen:vcsProjectType ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:minLength 1 ;
-    sh:datatype xsd:string ;
-  ] ;
-  sh:property [
-    sh:path regen:projectActivity ;
-    sh:node regen:NameUrlShape ;
-  ] ;
-  sh:property [
-    sh:path regen:vcsMethodology ;
-    sh:node regen:NameUrlShape ;
-  ] ;
-  sh:property [
-    sh:path regen:size ;
-    sh:node regen:SizeShape ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-  ] ;
-  sh:property [
-    sh:path regen:projectStartDate ;
-    sh:datatype xsd:date ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-  ] ;
-  sh:property [
-    sh:path regen:projectEndDate ;
-    sh:datatype xsd:date ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-  ] ;
-  sh:property [
-    sh:path regen:offsetGenerationMethod ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:minLength 1 ;
-    sh:datatype xsd:string ;
-  ] ;
-.
-
-regen:OrganizationShape a sh:NodeShape ;
-  sh:targetClass regen:Organization ;
-  sh:property [
-    sh:path schema:name ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:minLength 1 ;
-    sh:datatype xsd:string ;
-  ] ;
-.
-
-regen:NameUrlShape a sh:NodeShape ;
-  sh:targetClass regen:NameUrl;
-  sh:property [
-    sh:path schema:name ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:minLength 1 ;
-    sh:datatype xsd:string ;
-  ] ;
-  sh:property [
-    sh:path schema:url ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:datatype schema:URL ;
-  ] ;
-.
-
-regen:SizeShape a sh:NodeShape ;
-  sh:targetClass regen:Size ;
-  sh:property [
-    sh:path qudt:unit ;
-    sh:datatype qudt:Unit ;
-  ] ;
-  sh:property [
-    sh:path qudt:numericValue ;
-    sh:minExclusive 0 ;
-    sh:datatype xsd:double ;
   ] ;
 .
