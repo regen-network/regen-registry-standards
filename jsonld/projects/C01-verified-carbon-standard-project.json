@@ -20,7 +20,13 @@
     "schema:name": ""
   },
   "regen:vcsProjectType": "",
-  "regen:projectActivity": "",
+  "regen:projectActivity": {
+   "schema:name": "",
+    "schema:url": {
+      "@type": "schema:URL",
+      "@value": ""
+    }
+  },
   "regen:offsetGenerationMethod": "",
   "regen:vcsMethodology": {
     "schema:name": "",
