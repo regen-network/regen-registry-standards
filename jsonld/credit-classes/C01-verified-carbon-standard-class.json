@@ -11,11 +11,11 @@
   },
   "regen:sectoralScope": {
     "@type": "schema:ItemList",
-    "itemListElement": []
+    "schema:itemListElement": []
   },
   "regen:offsetGenerationMethod": {
     "@type": "schema:ItemList",
-    "itemListElement": []
+    "schema:itemListElement": []
   },
   "regen:approvedMethodologies": [
     {
