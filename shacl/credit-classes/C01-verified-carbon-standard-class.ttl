@@ -5,41 +5,41 @@
 
 regen:CreditClassShape a sh:NodeShape ;
   sh:targetClass regen:CreditClass ;
-	sh:property [
+  sh:property [
     sh:path schema:description ;
-		sh:minCount 1 ;
-		sh:maxCount 1 ;
-	] ;
-	sh:property [
-		sh:path regen:sourceRegistry ;
-		sh:minCount 1 ;
-		sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:sourceRegistry ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
     sh:node regen:OrganizationShape ;
-	] ;
-	sh:property [
-		sh:path regen:sectoralScope ;
-		sh:minCount 1 ;
-		sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:sectoralScope ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
     sh:node regen:ItemListShape ;
-	] ;
-	sh:property [
-		sh:path regen:offsetGenerationMethod ;
-		sh:minCount 1 ;
-		sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:offsetGenerationMethod ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
     sh:node regen:ItemListShape ;
-	] ;
-	sh:property [
+  ] ;
+  sh:property [
     sh:path regen:verificationMethod ;
-		sh:minCount 1 ;
-		sh:maxCount 1 ;
-		sh:minLength 1 ;
-		sh:datatype xsd:string ;
-	] ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:datatype xsd:string ;
+  ] ;
 .
 
 regen:ItemListShape a sh:NodeShape ;
-	sh:property [
+  sh:property [
     sh:path schema:itemListElement ;
     sh:datatype schema:ItemList ;
-	] ;
+  ] ;
 .
