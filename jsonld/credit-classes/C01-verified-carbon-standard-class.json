@@ -20,10 +20,12 @@
       "@value": ""
     }
   ],
-  "regen:offsetGenerationMethod": {
-    "@type": "schema:ItemList",
-    "schema:itemListElement": []
-  },
+  "regen:offsetGenerationMethod": [
+    {
+      "@type": "xsd:string",
+      "@value": ""
+    }
+  ],
   "regen:approvedMethodologies": {
     "@type": "schema:ItemList",
     "@value": [
