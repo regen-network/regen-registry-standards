@@ -8,8 +8,11 @@
   "@type": "regen:CreditClass",
   "schema:description": "",
   "regen:sourceRegistry": {
-    "@type": "regen:Organization",
-    "schema:name": ""
+    "schema:name": "",
+    "schema:url": {
+      "@type": "schema:URL",
+      "value": ""
+    }
   },
   "regen:sectoralScope": [
     {

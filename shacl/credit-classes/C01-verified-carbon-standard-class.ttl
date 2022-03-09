@@ -14,9 +14,7 @@ regen:CreditClassShape a sh:NodeShape ;
   ] ;
   sh:property [
     sh:path regen:sourceRegistry ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:node regen:OrganizationShape ;
+    sh:node regen:NameUrlShape ;
   ] ;
   sh:property [
     sh:path regen:sectoralScope ;
