@@ -2,7 +2,8 @@
   "@context": {
     "schema": "http://schema.org/",
     "regen": "http://regen.network/",
-    "xsd": "http://www.w3.org/2001/XMLSchema#"
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dash": "http://datashapes.org/dash#"
   },
   "@type": "regen:CreditClass",
   "schema:description": "",
@@ -10,10 +11,12 @@
     "@type": "regen:Organization",
     "schema:name": ""
   },
-  "regen:sectoralScope": {
-    "@type": "schema:ItemList",
-    "schema:itemListElement": []
-  },
+  "regen:sectoralScope": [
+    {
+      "@type": "xsd:string",
+      "value": ""
+    }
+  ],
   "regen:offsetGenerationMethod": {
     "@type": "schema:ItemList",
     "schema:itemListElement": []
