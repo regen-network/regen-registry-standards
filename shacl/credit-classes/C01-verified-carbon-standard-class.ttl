@@ -40,10 +40,3 @@ regen:CreditClassShape a sh:NodeShape ;
     sh:datatype xsd:string ;
   ] ;
 .
-
-regen:ItemListShape a sh:NodeShape ;
-  sh:property [
-    sh:path schema:itemListElement ;
-    sh:datatype schema:ItemList ;
-  ] ;
-.
