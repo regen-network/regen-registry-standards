@@ -16,4 +16,8 @@ regen:MethodologyVersionShape
     sh:path schema:url ;
     sh:datatype schema:URL ;
   ] ;
+  sh:property [
+    sh:path schema:name ;
+    sh:datatype xsd:string ;
+  ] ;
 .

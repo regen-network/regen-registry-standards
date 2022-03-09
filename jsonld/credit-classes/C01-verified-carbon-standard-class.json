@@ -27,12 +27,12 @@
     }
   ],
   "regen:approvedMethodologies": {
-    "@type": "schema:ItemList",
-    "@value": [
+    "@type": "schema:BreadcrumbList",
+    "schema:itemListElement": [
       {
         "@type": "regen:Methodology",
         "schema:name": "",
-        "schema:URL": {
+        "schema:url": {
           "@type": "schema:URL",
           "@value": ""
         }
@@ -40,12 +40,16 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "",
-        "schema:URL": {
+        "schema:url": {
           "@type": "schema:URL",
           "@value": ""
         }
       }
-    ]
+    ],
+    "schema:url": {
+      "@type": "schema:URL",
+      "@value": "http://bar.com"
+    } 
   },
   "regen:verificationMethod": ""
 }
