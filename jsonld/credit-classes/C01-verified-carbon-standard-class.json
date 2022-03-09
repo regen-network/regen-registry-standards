@@ -11,13 +11,13 @@
     "schema:name": "",
     "schema:url": {
       "@type": "schema:URL",
-      "value": ""
+      "@value": ""
     }
   },
   "regen:sectoralScope": [
     {
       "@type": "xsd:string",
-      "value": ""
+      "@value": ""
     }
   ],
   "regen:offsetGenerationMethod": {
@@ -26,13 +26,13 @@
   },
   "regen:approvedMethodologies": {
     "@type": "schema:ItemList",
-    "value": [
+    "@value": [
       {
         "@type": "regen:Methodology",
         "schema:name": "",
         "schema:URL": {
           "@type": "schema:URL",
-          "value": ""
+          "@value": ""
         }
       },
       {
@@ -40,7 +40,7 @@
         "schema:name": "",
         "schema:URL": {
           "@type": "schema:URL",
-          "value": ""
+          "@value": ""
         }
       }
     ]
