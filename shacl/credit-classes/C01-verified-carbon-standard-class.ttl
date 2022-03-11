@@ -38,9 +38,16 @@ regen:CreditClassShape a sh:NodeShape ;
   ] ;
   sh:property [
     sh:path regen:approvedMethodologies ;
-    sh:node dash:BreadcrumbList ; 
+    sh:class schema:BreadcrumbList ;
     sh:property [
       sh:path schema:itemListElement ;
+      sh:minCount 1 ;
+      sh:property [
+        sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+        sh:node regen:MethodologyVersionShape ;
+        sh:class regen:Methodology ;
+        sh:minCount 1 ;
+      ] ;
     ] ;
     sh:property [
       sh:path schema:url ;
