@@ -3,7 +3,8 @@
     "schema": "http://schema.org/",
     "regen": "http://regen.network/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "dash": "http://datashapes.org/dash#"
+    "dash": "http://datashapes.org/dash#",
+    "schema:itemListElement": { "@container": "@list" }
   },
   "@type": "regen:CreditClass",
   "schema:description": "",
@@ -28,29 +29,27 @@
   ],
   "regen:approvedMethodologies": {
     "@type": "schema:BreadcrumbList",
-    "schema:itemListElement": {
-      "@list": [
-        {
-          "@type": "regen:Methodology",
-          "schema:name": "",
-          "schema:url": {
-            "@type": "schema:URL",
-            "@value": ""
-          }
-        },
-        {
-          "@type": "regen:Methodology",
-          "schema:name": "",
-          "schema:url": {
-            "@type": "schema:URL",
-            "@value": ""
-          }
+    "schema:itemListElement": [
+      {
+        "@type": "regen:Methodology",
+        "schema:name": "",
+        "schema:url": {
+          "@type": "schema:URL",
+          "@value": ""
         }
-      ],
-      "schema:url": {
-        "@type": "schema:URL",
-        "@value": ""
+      },
+      {
+        "@type": "regen:Methodology",
+        "schema:name": "",
+        "schema:url": {
+          "@type": "schema:URL",
+          "@value": ""
+        }
       }
+    ],
+    "schema:url": {
+      "@type": "schema:URL",
+      "@value": ""
     }
   },
   "regen:verificationMethod": ""
