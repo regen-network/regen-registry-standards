@@ -10,11 +10,17 @@
     "@value": ""
   },
   "regen:batchMonitoringReport": {
-    "@type": "schema:URL",
-    "@value": ""
+    "schema:name": "",
+    "schema:url": {
+      "@type": "schema:URL",
+      "@value": ""
+    }
   },
   "regen:batchVerificationReport": {
-    "@type": "schema:URL",
-    "@value": ""
+    "schema:name": "",
+    "schema:url": {
+      "@type": "schema:URL",
+      "@value": ""
+    }
   }
 }

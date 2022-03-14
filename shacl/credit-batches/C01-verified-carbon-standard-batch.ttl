@@ -20,14 +20,10 @@ regen:CreditBatchShape a sh:NodeShape ;
   ] ;
   sh:property [
     sh:path regen:batchMonitoringReport ;
-    sh:datatype schema:URL ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
+    sh:node regen:NameUrlShape ;
   ] ;
   sh:property [
     sh:path regen:batchVerificationReport ;
-    sh:datatype schema:URL ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
+    sh:node regen:NameUrlShape ;
   ] ;
 .
