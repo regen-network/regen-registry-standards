@@ -18,16 +18,10 @@
     }
   },
   "regen:sectoralScope": [
-    {
-      "@type": "xsd:string",
-      "@value": ""
-    }
+    ""
   ],
   "regen:offsetGenerationMethod": [
-    {
-      "@type": "xsd:string",
-      "@value": ""
-    }
+    ""
   ],
   "regen:approvedMethodologies": {
     "@type": "schema:BreadcrumbList",
