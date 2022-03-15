@@ -19,5 +19,6 @@ regen:MethodologyVersionShape
   sh:property [
     sh:path schema:name ;
     sh:datatype xsd:string ;
+    sh:minLength 1 ;
   ] ;
 .

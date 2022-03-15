@@ -11,6 +11,7 @@ regen:CreditClassShape a sh:NodeShape ;
     sh:path schema:description ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
+    sh:minLength 1 ;
   ] ;
   sh:property [
     sh:path regen:sourceRegistry ;
@@ -22,6 +23,7 @@ regen:CreditClassShape a sh:NodeShape ;
     sh:property [
       sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
       sh:datatype xsd:string ;
+      sh:minLength 1 ;
     ] ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
@@ -32,6 +34,7 @@ regen:CreditClassShape a sh:NodeShape ;
     sh:property [
       sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
       sh:datatype xsd:string ;
+      sh:minLength 1 ;
     ] ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
