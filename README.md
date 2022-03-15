@@ -12,4 +12,4 @@ The `shacl` folder contains SHACL schemas for validating data (for example, proj
 
 ## JSON-LD Examples
 
-The `jsonld` folder contains examples of JSON-LD data that can be directly copied/pasted and filled in (filling in empty strings and replacing `0` with appropriate numbers). TODO: Corresponding SHACL graphs can be found in the `shacl` folder.
+The `jsonld` folder contains examples of JSON-LD data that can be directly copied/pasted and filled in (filling in empty strings and replacing `0` with appropriate numbers). Corresponding SHACL graphs can be found in the `shacl` folder.
