@@ -4,7 +4,9 @@
     "regen": "http://regen.network/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "dash": "http://datashapes.org/dash#",
-    "schema:itemListElement": { "@container": "@list" }
+    "schema:itemListElement": { "@container": "@list" },
+    "regen:sectoralScope": { "@container": "@list" },
+    "regen:offsetGenerationMethod": { "@container": "@list" }
   },
   "@type": "regen:CreditClass",
   "schema:description": "",
