@@ -75,6 +75,13 @@ regen:OrganizationShape a sh:NodeShape ;
     sh:minLength 1 ;
     sh:datatype xsd:string ;
   ] ;
+  sh:property [
+    sh:path schema:description ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:datatype xsd:string ;
+  ] ;
 .
 
 regen:NameUrlShape a sh:NodeShape ;

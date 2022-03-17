@@ -17,7 +17,8 @@
   },
   "regen:projectDeveloper": {
     "@type": "regen:Organization",
-    "schema:name": ""
+    "schema:name": "",
+    "schema:description": ""
   },
   "regen:vcsProjectType": "",
   "regen:projectActivity": {
