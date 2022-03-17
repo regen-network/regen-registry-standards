@@ -19,7 +19,7 @@ regen:ProjectShape a sh:NodeShape ;
     sh:maxCount 1 ;
   ] ;
   sh:property [
-    sh:path regen:projectProponent ;
+    sh:path regen:projectDeveloper ;
     sh:node regen:OrganizationShape ;
     sh:minCount 1 ;
     sh:maxCount 1 ;

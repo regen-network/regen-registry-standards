@@ -15,7 +15,7 @@
     "@type": "schema:URL",
     "@value": ""
   },
-  "regen:projectProponent": {
+  "regen:projectDeveloper": {
     "@type": "regen:Organization",
     "schema:name": ""
   },
