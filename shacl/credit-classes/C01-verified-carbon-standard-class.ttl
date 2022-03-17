@@ -12,6 +12,7 @@ regen:CreditClassShape a sh:NodeShape ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:minLength 1 ;
+    sh:datatype xsd:string ;
   ] ;
   sh:property [
     sh:path regen:sourceRegistry ;
