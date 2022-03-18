@@ -7,6 +7,13 @@
 regen:ProjectShape a sh:NodeShape ;
   sh:targetClass regen:Project ;
   sh:property [
+    sh:path schema:name ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:datatype xsd:string ;
+  ] ;
+  sh:property [
     sh:path regen:vcsProjectId ;
     sh:datatype xsd:unsignedInt ;
     sh:minCount 1 ;
