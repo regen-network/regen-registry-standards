@@ -27,7 +27,7 @@ regen:ProjectShape a sh:NodeShape ;
   ] ;
   sh:property [
     sh:path regen:projectDeveloper ;
-    sh:node regen:OrganizationShape ;
+    sh:node regen:OrganizationDisplay ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
   ] ;
@@ -66,24 +66,6 @@ regen:ProjectShape a sh:NodeShape ;
   ] ;
   sh:property [
     sh:path regen:offsetGenerationMethod ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:minLength 1 ;
-    sh:datatype xsd:string ;
-  ] ;
-.
-
-regen:OrganizationShape a sh:NodeShape ;
-  sh:targetClass regen:Organization ;
-  sh:property [
-    sh:path schema:name ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:minLength 1 ;
-    sh:datatype xsd:string ;
-  ] ;
-  sh:property [
-    sh:path schema:description ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:minLength 1 ;

@@ -17,9 +17,10 @@
     "@value": ""
   },
   "regen:projectDeveloper": {
-    "@type": "regen:Organization",
+    "@type": "regen:OrganizationDisplay",
     "schema:name": "",
-    "schema:description": ""
+    "schema:description": "",
+    "regen:showOnProjectPage": true
   },
   "regen:vcsProjectType": "",
   "regen:projectActivity": {
