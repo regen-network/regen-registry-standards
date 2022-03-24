@@ -37,6 +37,14 @@
         "schema:url": {
           "@type": "schema:URL",
           "@value": ""
+        },
+        "schema:identifier": {
+          "@type": "schema:Text",
+          "@value": ""
+        },
+        "schema:version": {
+          "@type": "schema:Text",
+          "@value": ""
         }
       },
       {
@@ -44,6 +52,14 @@
         "schema:name": "",
         "schema:url": {
           "@type": "schema:URL",
+          "@value": ""
+        },
+        "schema:identifier": {
+          "@type": "schema:Text",
+          "@value": ""
+        },
+        "schema:version": {
+          "@type": "schema:Text",
           "@value": ""
         }
       }
