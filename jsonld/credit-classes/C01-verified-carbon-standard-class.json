@@ -10,6 +10,11 @@
   },
   "@type": "regen:CreditClass",
   "schema:description": "",
+  "schema:name": "",
+  "schema:url": {
+    "@type": "schema:URL",
+    "@value": ""
+  },
   "regen:sourceRegistry": {
     "schema:name": "",
     "schema:url": {
