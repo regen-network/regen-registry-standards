@@ -84,6 +84,7 @@ regen:ProjectShape a sh:NodeShape ;
   sh:property [
     sh:path regen:additionalCertification ;
     sh:node regen:NameOptionalUrlShape ;
+    sh:maxCount 1 ;
   ] ;
 .
 
