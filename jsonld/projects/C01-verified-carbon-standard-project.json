@@ -56,5 +56,12 @@
   "regen:projectEndDate": {
     "@type": "xsd:date",
     "@value": ""
+  },
+  "regen:additionalCertification": {
+    "schema:name": "",
+    "schema:url": {
+      "@type": "schema:URL",
+      "@value": ""
+    }
   }
 }

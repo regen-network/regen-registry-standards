@@ -81,6 +81,10 @@ regen:ProjectShape a sh:NodeShape ;
     sh:maxLength 500 ;
     sh:datatype xsd:string ;
   ] ;
+  sh:property [
+    sh:path regen:additionalCertification ;
+    sh:node regen:NameOptionalUrlShape ;
+  ] ;
 .
 
 regen:NameUrlShape a sh:NodeShape ;
@@ -95,6 +99,22 @@ regen:NameUrlShape a sh:NodeShape ;
   sh:property [
     sh:path schema:url ;
     sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:datatype schema:URL ;
+  ] ;
+.
+
+regen:NameOptionalUrlShape a sh:NodeShape ;
+  sh:targetClass regen:NameOptionalUrl;
+  sh:property [
+    sh:path schema:name ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:datatype xsd:string ;
+  ] ;
+  sh:property [
+    sh:path schema:url ;
     sh:maxCount 1 ;
     sh:datatype schema:URL ;
   ] ;
