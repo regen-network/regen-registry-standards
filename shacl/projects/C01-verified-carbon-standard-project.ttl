@@ -4,8 +4,6 @@
 @prefix regen: <http://regen.network/> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix dash: <http://datashapes.org/dash#> .
 
 regen:ProjectShape a sh:NodeShape ;
   sh:targetClass regen:Project ;
