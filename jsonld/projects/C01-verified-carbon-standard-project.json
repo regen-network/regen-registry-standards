@@ -74,16 +74,11 @@
   },
   "schema:location": {
     "@type": "geojson:Feature",
-    "geojson:id": "",
-    "geojson:bbox": [
-      0.1,
-      0.2,
-      0.3,
-      0.4
-    ],
     "geojson:geometry": {
       "@type": "geojson:Point",
       "geojson:coordinates": [0.1, 0.2]
-    }
+    },
+    "geojson:properties": {},
+    "geojson:id": ""
   }
 }
