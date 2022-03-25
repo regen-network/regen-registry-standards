@@ -7,7 +7,7 @@
 @prefix regen: <http://regen.network/> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix qudt_unit: <http://qudt.org/1.1/vocab/unit#> .
-@prefix qudt: <http://qudt.org/schema/qudt> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
 
 # Node and Property Shapes
 
