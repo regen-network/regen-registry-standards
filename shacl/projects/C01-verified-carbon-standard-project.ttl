@@ -94,42 +94,6 @@ regen:ProjectShape a sh:NodeShape ;
     sh:path schema:location ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
-    sh:property [
-      sh:path geojson:id ;
-      sh:datatype xsd:string ;
-      sh:minCount 1 ;
-      sh:maxCount 1 ;
-    ] ;
-    sh:property [
-      sh:path geojson:bbox ;
-      sh:node dash:ListShape ;
-      sh:minCount 1 ;
-      sh:maxCount 1 ;
-      sh:property [
-        sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
-        sh:datatype xsd:double ;
-        sh:minCount 4 ;
-        sh:maxCount 4 ;
-      ] ;
-    ] ;
-    sh:property [
-      sh:path geojson:geometry ;
-      sh:class geojson:Point ;  
-      sh:minCount 1 ;
-      sh:maxCount 1 ;
-      sh:property [
-        sh:path geojson:coordinates ;
-        sh:node dash:ListShape ;
-        sh:minCount 1 ;
-        sh:maxCount 1 ;
-        sh:property [
-          sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
-          sh:datatype xsd:double ;
-          sh:minCount 2 ;
-          sh:maxCount 2 ;
-        ] ;
-      ] ;
-    ] ;
   ] ;
 .
 
