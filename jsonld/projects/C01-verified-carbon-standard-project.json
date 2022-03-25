@@ -4,7 +4,15 @@
     "regen": "http://regen.network/",
     "qudt": "http://qudt.org/schema/qudt/",
     "unit": "http://qudt.org/vocab/unit/",
-    "xsd": "http://www.w3.org/2001/XMLSchema#"
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dash": "http://datashapes.org/dash#",
+    "geojson": "https://purl.org/geojson/vocab#",
+    "geojson:bbox": {
+      "@container": "@list"
+    },
+    "geojson:coordinates": {
+      "@container": "@list"
+    }
   },
   "@type": "regen:Project",
   "schema:name": "",
@@ -62,6 +70,20 @@
     "schema:url": {
       "@type": "schema:URL",
       "@value": ""
+    }
+  },
+  "schema:location": {
+    "@type": "geojson:Feature",
+    "geojson:id": "",
+    "geojson:bbox": [
+      0.1,
+      0.2,
+      0.3,
+      0.4
+    ],
+    "geojson:geometry": {
+      "@type": "geojson:Point",
+      "geojson:coordinates": [0.1, 0.2]
     }
   }
 }
