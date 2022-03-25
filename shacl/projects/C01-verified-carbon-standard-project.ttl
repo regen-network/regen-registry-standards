@@ -3,6 +3,9 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix regen: <http://regen.network/> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dash: <http://datashapes.org/dash#> .
 
 regen:ProjectShape a sh:NodeShape ;
   sh:targetClass regen:Project ;
@@ -85,6 +88,48 @@ regen:ProjectShape a sh:NodeShape ;
     sh:path regen:additionalCertification ;
     sh:node regen:NameOptionalUrlShape ;
     sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:class geojson:Feature ;
+    sh:path schema:location ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:property [
+      sh:path geojson:id ;
+      sh:datatype xsd:string ;
+      sh:minCount 1 ;
+      sh:maxCount 1 ;
+    ] ;
+    sh:property [
+      sh:path geojson:bbox ;
+      sh:node dash:ListShape ;
+      sh:minCount 1 ;
+      sh:maxCount 1 ;
+      sh:property [
+        sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+        sh:datatype xsd:double ;
+        sh:minCount 4 ;
+        sh:maxCount 4 ;
+      ] ;
+    ] ;
+    sh:property [
+      sh:path geojson:geometry ;
+      sh:class geojson:Point ;  
+      sh:minCount 1 ;
+      sh:maxCount 1 ;
+      sh:property [
+        sh:path geojson:coordinates ;
+        sh:node dash:ListShape ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:property [
+          sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+          sh:datatype xsd:double ;
+          sh:minCount 2 ;
+          sh:maxCount 2 ;
+        ] ;
+      ] ;
+    ] ;
   ] ;
 .
 
