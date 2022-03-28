@@ -4,14 +4,7 @@
     "regen": "http://regen.network/",
     "qudt": "http://qudt.org/schema/qudt/",
     "unit": "http://qudt.org/vocab/unit/",
-    "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "geojson": "https://purl.org/geojson/vocab#",
-    "geojson:bbox": {
-      "@container": "@list"
-    },
-    "geojson:coordinates": {
-      "@container": "@list"
-    }
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
   "@type": "regen:Project",
   "schema:name": "",
@@ -72,12 +65,15 @@
     }
   },
   "schema:location": {
-    "@type": "geojson:Feature",
-    "geojson:geometry": {
-      "@type": "geojson:Point",
-      "geojson:coordinates": [0.1, 0.2]
-    },
-    "geojson:properties": {},
-    "geojson:id": ""
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    }
   }
 }
