@@ -1,0 +1,81 @@
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix regen: <http://regen.network/> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+regen:CreditClassShape a sh:NodeShape ;
+  sh:targetClass regen:CreditClass ;
+  sh:property [
+    sh:path schema:description ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:datatype xsd:string ;
+  ] ;
+  sh:property [
+    sh:path schema:name ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:datatype xsd:string ;
+  ] ;
+  sh:property [
+    sh:path schema:url ;
+    sh:datatype schema:URL ;
+  ] ;
+  sh:property [
+    sh:path regen:sourceRegistry ;
+    sh:node regen:NameUrlShape ;
+  ] ;
+  sh:property [
+    sh:path regen:sectoralScope ;
+    sh:node dash:ListShape ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:datatype xsd:string ;
+      sh:minLength 1 ;
+    ] ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:offsetGenerationMethod ;
+    sh:node dash:ListShape ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:datatype xsd:string ;
+      sh:minLength 1 ;
+    ] ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:approvedMethodologies ;
+    sh:class schema:BreadcrumbList ;
+    sh:property [
+      sh:path schema:itemListElement ;
+      sh:minCount 1 ;
+      sh:property [
+        sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+        sh:node regen:MethodologyVersionShape ;
+        sh:class regen:Methodology ;
+        sh:minCount 1 ;
+      ] ;
+    ] ;
+    sh:property [
+      sh:path schema:url ;
+      sh:datatype schema:URL ;
+    ] ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:verificationMethod ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:datatype xsd:string ;
+  ] ;
+.
