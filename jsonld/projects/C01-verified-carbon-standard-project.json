@@ -17,13 +17,13 @@
     "@value": ""
   },
   "regen:projectDescription": "",
-  "regen:projectDeveloper": {
+  "regen:projectProponent": {
     "@type": "regen:OrganizationDisplay",
     "schema:name": "",
     "schema:description": "",
     "regen:showOnProjectPage": true
   },
-  "regen:sectoralScope": "",
+  "regen:projectType": "",
   "regen:projectActivity": {
    "schema:name": "",
     "schema:url": {
@@ -57,22 +57,6 @@
     "@type": "xsd:date",
     "@value": ""
   },
-  "regen:additionalCertifications": [
-    {
-      "schema:name": "",
-      "schema:url": {
-        "@type": "schema:URL",
-        "@value": ""
-      }
-    },
-    {
-      "schema:name": "",
-      "schema:url": {
-        "@type": "schema:URL",
-        "@value": ""
-      }
-    }
-  ],
   "schema:location": {
     "@context": {
       "type": "@type",

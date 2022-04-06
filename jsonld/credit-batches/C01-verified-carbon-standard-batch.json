@@ -5,22 +5,20 @@
   },
   "@type": "regen:CreditBatch",
   "regen:vcsRetirementSerialNumber": "",
-  "regen:vintageYear": {
-    "@type": "xsd:gYear",
-    "@value": ""
-  },
-  "regen:batchMonitoringReport": {
-    "schema:name": "",
-    "schema:url": {
-      "@type": "schema:URL",
-      "@value": ""
+  "regen:additionalCertifications": [
+    {
+      "schema:name": "",
+      "schema:url": {
+        "@type": "schema:URL",
+        "@value": ""
+      }
+    },
+    {
+      "schema:name": "",
+      "schema:url": {
+        "@type": "schema:URL",
+        "@value": ""
+      }
     }
-  },
-  "regen:batchVerificationReport": {
-    "schema:name": "",
-    "schema:url": {
-      "@type": "schema:URL",
-      "@value": ""
-    }
-  }
+  ]
 }
