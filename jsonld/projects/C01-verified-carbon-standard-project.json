@@ -16,13 +16,14 @@
     "@type": "schema:URL",
     "@value": ""
   },
+  "schema:description": "",
   "regen:projectDeveloper": {
     "@type": "regen:OrganizationDisplay",
     "schema:name": "",
     "schema:description": "",
     "regen:showOnProjectPage": true
   },
-  "regen:vcsProjectType": "",
+  "regen:projectType": "",
   "regen:projectActivity": {
    "schema:name": "",
     "schema:url": {
@@ -31,7 +32,6 @@
     }
   },
   "regen:offsetGenerationMethod": "",
-  "regen:landStory": "",
   "regen:vcsMethodology": {
     "schema:name": "",
     "schema:url": {
@@ -56,13 +56,6 @@
   "regen:projectEndDate": {
     "@type": "xsd:date",
     "@value": ""
-  },
-  "regen:additionalCertification": {
-    "schema:name": "",
-    "schema:url": {
-      "@type": "schema:URL",
-      "@value": ""
-    }
   },
   "schema:location": {
     "@context": {
