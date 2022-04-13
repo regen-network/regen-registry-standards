@@ -1,0 +1,80 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "http://regen.network/",
+    "qudt": "http://qudt.org/schema/qudt/",
+    "unit": "http://qudt.org/vocab/unit/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "regen:Project",
+  "schema:name": "The Mai Ndombe REDD+ Project",
+  "regen:vcsProjectId": {
+    "@type": "xsd:unsignedInt",
+    "@value": 934
+  },
+  "regen:vcsProjectPage": {
+    "@type": "schema:URL",
+    "@value": "https://registry.verra.org/app/projectDetail/VCS/934"
+  },
+  "schema:description": "The Mai Ndombe REDD+ Project protects over 300,000 hectares of critical bonobo and forest elephant habitat within the world’s second-largest intact rainforest and some of the most important wetlands on the planet, the Congo Basin. This project reduces the principal drivers of forest and biodiversity loss and is charting a new pathway for community prosperity through comprehensive investments into the surrounding local communities.",
+  "regen:projectDeveloper": {
+    "@type": "regen:OrganizationDisplay",
+    "schema:name": "Wildlife Works Carbon LLC",
+    "schema:description": "Wildlife Works is the world's leading REDD+ program development and management company.",
+    "regen:showOnProjectPage": true
+  },
+  "regen:projectType": "Agriculture Forestry and Other Land Use",
+  "regen:projectActivity": {
+   "schema:name": "REDD",
+    "schema:url": {
+      "@type": "schema:URL",
+      "@value": "https://redd.unfccc.int/"
+    }
+  },
+  "regen:offsetGenerationMethod": "Emission Reduction",
+  "regen:vcsMethodology": {
+    "schema:name": "Methodology for Avoided Ecosystem Conversion",
+    "schema:url": {
+      "@type": "schema:URL",
+      "@value": "https://verra.org/methodology/vm0009-methodology-for-avoided-ecosystem-conversion-v3-0/"
+    }
+  },
+  "regen:projectSize": {
+    "qudt:unit": {
+      "@type": "qudt:Unit",
+      "@value": "unit:HA"
+    },
+    "qudt:numericValue": {
+      "@type": "xsd:double",
+      "@value": 299640
+    }
+  },
+  "regen:projectStartDate": {
+    "@type": "xsd:date",
+    "@value": "2011-03-04"
+  },
+  "regen:projectEndDate": {
+    "@type": "xsd:date",
+    "@value": "2041-03-13"
+  },
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        18.044855,
+        -1.958494
+      ]
+    }
+  }
+}

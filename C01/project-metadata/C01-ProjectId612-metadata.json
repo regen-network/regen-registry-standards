@@ -1,0 +1,80 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "http://regen.network/",
+    "qudt": "http://qudt.org/schema/qudt/",
+    "unit": "http://qudt.org/vocab/unit/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "regen:Project",
+  "schema:name": "The Kasigau Corridor REDD Project - Phase II The Community Ranches",
+  "regen:vcsProjectId": {
+    "@type": "xsd:unsignedInt",
+    "@value": 612
+  },
+  "regen:vcsProjectPage": {
+    "@type": "schema:URL",
+    "@value": "https://registry.verra.org/app/projectDetail/VCS/612"
+  },
+  "schema:description": "For years, the land between Tsavo East and Tsavo West National parks in Kenya served both as home to a slowly failing cattle ranch and as the main migration corridor for local wildlife moving between the two National Parks. When we first encountered Rukinga, the community and the wildlife were at odds. Rukinga was a bruised, balding land, barren of wildlife. Cattle had grazed the fields into dust, poachers slipped on and off the ranch with ease, and trees were being clear cut along the area’s critical rainwater basin.",
+  "regen:projectDeveloper": {
+    "@type": "regen:OrganizationDisplay",
+    "schema:name": "Wildlife Works Carbon LLC",
+    "schema:description": "Wildlife Works is the world's leading REDD+ program development and management company.",
+    "regen:showOnProjectPage": true
+  },
+  "regen:projectType": "Agriculture Forestry and Other Land Use",
+  "regen:projectActivity": {
+   "schema:name": "REDD",
+    "schema:url": {
+      "@type": "schema:URL",
+      "@value": "https://redd.unfccc.int/"
+    }
+  },
+  "regen:offsetGenerationMethod": "Emission Reduction",
+  "regen:vcsMethodology": {
+    "schema:name": "Methodology for Avoided Ecosystem Conversion",
+    "schema:url": {
+      "@type": "schema:URL",
+      "@value": "https://verra.org/methodology/vm0009-methodology-for-avoided-ecosystem-conversion-v3-0/"
+    }
+  },
+  "regen:projectSize": {
+    "qudt:unit": {
+      "@type": "qudt:Unit",
+      "@value": "unit:HA"
+    },
+    "qudt:numericValue": {
+      "@type": "xsd:double",
+      "@value": 169741
+    }
+  },
+  "regen:projectStartDate": {
+    "@type": "xsd:date",
+    "@value": "2010-01-01"
+  },
+  "regen:projectEndDate": {
+    "@type": "xsd:date",
+    "@value": "2039-12-31"
+  },
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        38.802647,
+        -3.910022
+      ]
+    }
+  }
+}
