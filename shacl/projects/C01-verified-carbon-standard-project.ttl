@@ -27,13 +27,20 @@ regen:ProjectShape a sh:NodeShape ;
     sh:maxCount 1 ;
   ] ;
   sh:property [
+    sh:path schema:description ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:datatype xsd:string ;
+  ] ;
+  sh:property [
     sh:path regen:projectDeveloper ;
     sh:node regen:OrganizationDisplay ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
   ] ;
   sh:property [
-    sh:path regen:vcsProjectType ;
+    sh:path regen:projectType ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:minLength 1 ;
@@ -71,21 +78,6 @@ regen:ProjectShape a sh:NodeShape ;
     sh:maxCount 1 ;
     sh:minLength 1 ;
     sh:datatype xsd:string ;
-  ] ;
-  sh:property [
-    sh:path regen:landStory ;
-    sh:name "Story of the land" ;
-    sh:description "Describe the story of this property." ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:minLength 1 ;
-    sh:maxLength 500 ;
-    sh:datatype xsd:string ;
-  ] ;
-  sh:property [
-    sh:path regen:additionalCertification ;
-    sh:node regen:NameOptionalUrlShape ;
-    sh:maxCount 1 ;
   ] ;
   sh:property [
     sh:class geojson:Feature ;

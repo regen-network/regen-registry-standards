@@ -2,6 +2,8 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix regen: <http://regen.network/> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
 regen:CreditBatchShape a sh:NodeShape ;
   sh:targetClass regen:CreditBatch ;
@@ -13,17 +15,14 @@ regen:CreditBatchShape a sh:NodeShape ;
     sh:datatype xsd:string ;
   ] ;
   sh:property [
-    sh:path regen:vintageYear ;
-    sh:datatype xsd:gYear ;
+    sh:path regen:additionalCertifications ;
+    sh:node dash:ListShape ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:node regen:NameOptionalUrlShape ;
+      sh:minCount 1 ;
+    ] ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
-  ] ;
-  sh:property [
-    sh:path regen:batchMonitoringReport ;
-    sh:node regen:NameUrlShape ;
-  ] ;
-  sh:property [
-    sh:path regen:batchVerificationReport ;
-    sh:node regen:NameUrlShape ;
   ] ;
 .
