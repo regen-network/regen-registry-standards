@@ -69,6 +69,7 @@
       }
     },
     "type": "Feature",
+    "place_name": "Mai Ndombe, Democratic Republic of the Congo, Africa",
     "geometry": {
       "type": "Point",
       "coordinates": [
@@ -76,5 +77,35 @@
         -1.958494
       ]
     }
-  }
+  },
+  "regen:previewPhoto": {
+    "@type": "schema:URL",
+    "@value": "https://regen-registry.s3.amazonaws.com/projects/mai-ndombe/preview-photo.jpg"
+  },
+  "regen:galleryPhotos": {
+    "@list": [
+        {
+            "@type": "schema:URL",
+            "@value": "https://regen-registry.s3.amazonaws.com/projects/mai-ndombe/image-1.png"
+        },
+        {
+            "@type": "schema:URL",
+            "@value": "https://regen-registry.s3.amazonaws.com/projects/mai-ndombe/image-2.jpg"
+        },
+        {
+            "@type": "schema:URL",
+            "@value": "https://regen-registry.s3.amazonaws.com/projects/mai-ndombe/image-3.jpg"
+        },
+        {
+            "@type": "schema:URL",
+            "@value": "https://regen-registry.s3.amazonaws.com/projects/mai-ndombe/image-4.png"
+        }
+    ]
+  },
+  "regen:videoURL": {
+    "@type": "schema:URL",
+    "@value": "https://www.youtube.com/embed/_4wHY99fm-w"
+  },
+  "schema:creditText": "Photography of Mai Ndombe by Filip Agoo"
 }
+

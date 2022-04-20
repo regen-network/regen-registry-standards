@@ -20,7 +20,7 @@
   "regen:projectDeveloper": {
     "@type": "regen:OrganizationDisplay",
     "schema:name": "Wildlife Works Carbon LLC",
-    "schema:description": "Wildlife Works is the world's leading REDD+ program development and management company.",
+    "schema:description": "Wildlife Works is the world''s leading REDD+ program development and management company.",
     "regen:showOnProjectPage": true
   },
   "regen:projectType": "Agriculture Forestry and Other Land Use",
@@ -69,6 +69,7 @@
       }
     },
     "type": "Feature",
+    "place_name": "Taita–Taveta, Kenya",
     "geometry": {
       "type": "Point",
       "coordinates": [
@@ -76,5 +77,36 @@
         -3.910022
       ]
     }
-  }
+  },
+  "regen:previewPhoto": {
+    "@type": "schema:URL",
+    "@value": "https://regen-registry.s3.amazonaws.com/projects/kasigau/kasigau.png"
+  },
+  "regen:galleryPhotos": {
+    "@list": [
+        {
+            "@type": "schema:URL",
+            "@value": "https://regen-registry.s3.amazonaws.com/projects/kasigau/image1.png"
+        },
+        {
+            "@type": "schema:URL",
+            "@value": "https://regen-registry.s3.amazonaws.com/projects/kasigau/image2.png"
+        },
+        {
+            "@type": "schema:URL",
+            "@value": "https://regen-registry.s3.amazonaws.com/projects/kasigau/image3.png"
+        },
+        {
+            "@type": "schema:URL",
+            "@value": "https://regen-registry.s3.amazonaws.com/projects/kasigau/image4.png"
+        }
+    ]
+  },
+  "regen:landStewardStory": "In 1998, the local community supported our plan to establish the Rukinga Wildlife Sanctuary that covers 80,000 acres of forest. We established a community works project so local residents had an alternative income stream in place of poaching and clear cutting​. We brought on locally hired rangers and trained them to be wilderness guardians. We convinced the owners of the cattle to remove the cattle from the land to reduce conflict over resources.",
+  "regen:landStewardStoryTitle": "The project area is home to a fantastic diversity of over 50 species of large mammals including elephants, zebras, lions, cheetahs and leopards.",
+  "regen:videoURL": {
+    "@type": "schema:URL",
+    "@value": "https://player.vimeo.com/video/238682641"
+  },
+  "regen:creditText": "Photography of Kasigau by Filip Agoo"
 }
