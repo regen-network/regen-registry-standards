@@ -228,7 +228,7 @@ regen:ProjectPageDescriptionGroup
 
 regen:ProjectPageMediaGroup
 	a sh:PropertyGroup ;
-	rdfs:label "Photos" ;
+	rdfs:label "Media" ;
 	sh:order "5"^^xsd:decimal .
 
 regen:ProjectPageMetadataGroup
