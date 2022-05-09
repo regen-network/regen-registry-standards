@@ -42,9 +42,6 @@ regen:ProjectShape a sh:NodeShape ;
   ] ;
   sh:property [
     sh:path schema:description ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:minLength 1 ;
     sh:maxLength 600 ;
     sh:datatype xsd:string ;
     sh:group regen:ProjectPageDescriptionGroup ;
@@ -52,8 +49,7 @@ regen:ProjectShape a sh:NodeShape ;
   sh:property [
     sh:path regen:previewPhoto ;
     sh:datatype schema:URL ;
-    sh:name "Preview photo" ;
-    sh:group regen:ProjectPagePhotosGroup ;
+    sh:group regen:ProjectPageMediaGroup ;
   ] ;
   sh:property [
     sh:path regen:galleryPhotos ;
@@ -61,9 +57,14 @@ regen:ProjectShape a sh:NodeShape ;
     sh:property [
       sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
       sh:datatype schema:URL ;
-      sh:group regen:ProjectPagePhotosGroup ;
+      sh:group regen:ProjectPageMediaGroup ;
     ] ;
-    sh:group regen:ProjectPagePhotosGroup ;
+    sh:group regen:ProjectPageMediaGroup ;
+  ] ;
+  sh:property [
+    sh:path regen:videoURL ;
+    sh:datatype schema:URL ;
+    sh:group regen:ProjectPageMediaGroup ;
   ] ;
   sh:property [
     sh:path regen:offsetGenerationMethod ;
@@ -166,10 +167,11 @@ regen:SizeShape a sh:NodeShape ;
 
 regen:RoleShape
   a sh:NodeShape ;
-  sh:targetClass regen:Individual ;
-  sh:targetClass regen:IndividualDisplay ;
-  sh:targetClass regen:Organization ;
-  sh:targetClass regen:OrganizationDisplay ;
+  sh:targetClass
+    regen:Individual ,
+    regen:IndividualDisplay ,
+    regen:Organization ,
+    regen:OrganizationDisplay ;
   sh:property [
     sh:path regen:showOnProjectPage ;
     sh:datatype xsd:boolean ;
@@ -192,10 +194,12 @@ regen:RoleShape
   sh:property [
     sh:path schema:description ;
     sh:datatype xsd:string ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:minLength 1 ;
     sh:maxLength 160 ;
+    sh:group regen:ProjectPageRolesGroup ;
+  ] ;
+  sh:property [
+    sh:path regen:address ;
+    sh:datatype xsd:string ;
     sh:group regen:ProjectPageRolesGroup ;
   ] ;
 .
@@ -222,7 +226,7 @@ regen:ProjectPageDescriptionGroup
 	rdfs:label "Description" ;
 	sh:order "4"^^xsd:decimal .
 
-regen:ProjectPagePhotosGroup
+regen:ProjectPageMediaGroup
 	a sh:PropertyGroup ;
 	rdfs:label "Photos" ;
 	sh:order "5"^^xsd:decimal .
