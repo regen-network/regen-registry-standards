@@ -37,7 +37,7 @@ regen:ProjectPageShape
     sh:group regen:ProjectPageBasicInfoGroup ;
   ] ;
   sh:property [
-    sh:path regen:size ;
+    sh:path regen:projectSize ;
     sh:name "Size in hectares or acres" ;
     rdfs:label "size" ;
     sh:maxCount 1 ;

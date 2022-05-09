@@ -21,7 +21,7 @@ regen:ProjectShape a sh:NodeShape ;
   ] ;
   sh:property [
     sh:path regen:projectSize ;
-    sh:node regen:SizeShape ;
+    sh:node regen:ProjectSizeShape ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:group regen:ProjectPageBasicInfoGroup ;
@@ -146,7 +146,7 @@ regen:NameUrlShape a sh:NodeShape ;
   ] ;
 .
 
-regen:SizeShape a sh:NodeShape ;
+regen:ProjectSizeShape a sh:NodeShape ;
   sh:property [
     sh:path qudt:unit ;
     sh:datatype qudt:Unit ;
