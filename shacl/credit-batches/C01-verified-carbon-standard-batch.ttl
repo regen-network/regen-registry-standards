@@ -5,7 +5,7 @@
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-regen:CreditBatchShape a sh:NodeShape ;
+regen:C01-CreditBatchShape a sh:NodeShape ;
   sh:targetClass regen:CreditBatch ;
   sh:property [
     sh:path regen:vcsRetirementSerialNumber ;

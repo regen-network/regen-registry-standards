@@ -5,7 +5,7 @@
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-regen:CreditClassShape a sh:NodeShape ;
+regen:C01-CreditClassShape a sh:NodeShape ;
   sh:targetClass regen:CreditClass ;
   sh:property [
     sh:path schema:description ;
