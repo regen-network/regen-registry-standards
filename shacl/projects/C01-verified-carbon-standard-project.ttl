@@ -85,7 +85,7 @@ regen:C01-ProjectShape a sh:NodeShape ;
   ] ;
   sh:property [
     sh:path regen:vcsProjectId ;
-    sh:datatype xsd:unsignedInt ;
+    sh:datatype xsd:integer ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:group regen:ProjectPageMetadataGroup ;
