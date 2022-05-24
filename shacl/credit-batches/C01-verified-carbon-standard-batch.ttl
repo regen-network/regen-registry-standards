@@ -5,8 +5,10 @@
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-regen:CreditBatchShape a sh:NodeShape ;
-  sh:targetClass regen:CreditBatch ;
+regen:regen:C01-CreditBatch rdfs:subClassOf regen:CreditBatch .
+
+regen:C01-CreditBatchShape a sh:NodeShape ;
+  sh:targetClass regen:C01-CreditBatch ;
   sh:property [
     sh:path regen:vcsRetirementSerialNumber ;
     sh:minCount 1 ;
@@ -20,9 +22,22 @@ regen:CreditBatchShape a sh:NodeShape ;
     sh:property [
       sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
       sh:node regen:NameOptionalUrlShape ;
-      sh:minCount 1 ;
     ] ;
+    sh:maxCount 1 ;
+  ] ;
+.
+
+regen:NameOptionalUrlShape a sh:NodeShape ;
+  sh:property [
+    sh:path schema:name ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:datatype xsd:string ;
+  ] ;
+  sh:property [
+    sh:path schema:url ;
+    sh:maxCount 1 ;
+    sh:datatype schema:URL ;
   ] ;
 .

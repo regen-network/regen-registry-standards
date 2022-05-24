@@ -4,7 +4,7 @@
     "regen": "http://regen.network/",
     "regen:additionalCertifications": { "@container": "@list" }
   },
-  "@type": "regen:CreditBatch",
+  "@type": "regen:C01-CreditBatch",
   "regen:vcsRetirementSerialNumber": "",
   "regen:additionalCertifications": [
     {

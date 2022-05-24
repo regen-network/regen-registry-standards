@@ -37,7 +37,7 @@ regen:ProjectPageShape
     sh:group regen:ProjectPageBasicInfoGroup ;
   ] ;
   sh:property [
-    sh:path regen:size ;
+    sh:path regen:projectSize ;
     sh:name "Size in hectares or acres" ;
     rdfs:label "size" ;
     sh:maxCount 1 ;
@@ -273,8 +273,8 @@ regen:ProjectSizeShape
   ] ;
   sh:property [
     sh:path qudt:unit ;
-    sh:datatype qudt:unit ;
-    sh:in ( "http://qudt.org/1.1/vocab/unit#HA"^^qudt:unit "http://qudt.org/1.1/vocab/unit#AC"^^qudt:unit ) ;
+    sh:datatype qudt:Unit ;
+    sh:in ( "unit:HA"^^qudt:Unit "unit:AC"^^qudt:Unit ) ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:group regen:ProjectPageBasicInfoGroup ;

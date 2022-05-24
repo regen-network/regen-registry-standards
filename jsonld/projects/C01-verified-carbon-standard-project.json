@@ -6,12 +6,9 @@
     "unit": "http://qudt.org/vocab/unit/",
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
-  "@type": "regen:Project",
+  "@type": "regen:C01-Project",
   "schema:name": "",
-  "regen:vcsProjectId": {
-    "@type": "xsd:unsignedInt",
-    "@value": 0
-  },
+  "regen:vcsProjectId": 0,
   "regen:vcsProjectPage": {
     "@type": "schema:URL",
     "@value": ""
@@ -21,6 +18,7 @@
     "@type": "regen:OrganizationDisplay",
     "schema:name": "",
     "schema:description": "",
+    "regen:address": "",
     "regen:showOnProjectPage": true
   },
   "regen:projectType": "",
