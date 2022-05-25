@@ -6,7 +6,7 @@
     "unit": "http://qudt.org/vocab/unit/",
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
-  "@type": "regen:Project",
+  "@type": "regen:C01-Project",
   "schema:name": "The Kasigau Corridor REDD Project - Phase II The Community Ranches",
   "regen:vcsProjectId": {
     "@type": "xsd:unsignedInt",
