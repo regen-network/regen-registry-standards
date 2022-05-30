@@ -38,7 +38,6 @@ regen:C01-ProjectShape a sh:NodeShape ;
   sh:property [
     sh:path regen:projectDeveloper ;
     sh:node regen:RoleShape ;
-    sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:group regen:ProjectPageRolesGroup ;
   ] ;
