@@ -63,6 +63,11 @@ regen:C01-ProjectShape a sh:NodeShape ;
     sh:group regen:ProjectPageMediaGroup ;
   ] ;
   sh:property [
+    sh:path schema:creditText ;
+    sh:datatype xsd:string ;
+    sh:group regen:ProjectPageMediaGroup ;
+  ] ;
+  sh:property [
     sh:path regen:videoURL ;
     sh:datatype schema:URL ;
     sh:group regen:ProjectPageMediaGroup ;
