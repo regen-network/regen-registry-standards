@@ -8,10 +8,7 @@
   },
   "@type": "regen:C01-Project",
   "schema:name": "The Mai Ndombe REDD+ Project",
-  "regen:vcsProjectId": {
-    "@type": "xsd:unsignedInt",
-    "@value": 934
-  },
+  "regen:vcsProjectId": 934,
   "regen:vcsProjectPage": {
     "@type": "schema:URL",
     "@value": "https://registry.verra.org/app/projectDetail/VCS/934"
