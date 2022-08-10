@@ -17,6 +17,12 @@ regen:C01-CreditBatchShape a sh:NodeShape ;
     sh:datatype xsd:string ;
   ] ;
   sh:property [
+    sh:path regen:vcsProjectId ;
+    sh:datatype xsd:integer ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
     sh:path regen:additionalCertifications ;
     sh:node dash:ListShape ;
     sh:property [
