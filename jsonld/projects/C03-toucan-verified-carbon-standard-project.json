@@ -5,19 +5,19 @@
     "qudt": "https://qudt.org/schema/qudt/",
     "unit": "https://qudt.org/vocab/unit/",
     "xsd": "https://www.w3.org/2001/XMLSchema#",
-		"regen:vcsMethodology": { "@container": "@list" }
+      "regen:vcsMethodology": { "@container": "@list" }
   },
   "@type": "regen:C03-Project",
   "regen:toucanProjectTokenID": "",
   "regen:vcsProjectId": "",
   "regen:programStandard": "VCS",
   "regen:vcsMethodology": [
-		{
-			"regen:methodologyID": {
-		      "@type": "schema:Text",
-		      "@value": ""
-			}
-		}
+    {
+      "regen:methodologyID": {
+        "@type": "schema:Text",
+        "@value": ""
+      }
+    }
   ],
   "regen:projectType": "",
   "regen:offsetGenerationMethod": "",
