@@ -1,0 +1,96 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "http://regen.network/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema:itemListElement": {
+      "@container": "@list"
+    },
+    "regen:offsetGenerationMethod": {
+      "@container": "@list"
+    },
+    "regen:projectActivities": {
+      "@container": "@list"
+    },
+    "regen:ecosystemType": { 
+      "@container": "@list" 
+    }
+  },
+  "@type": "regen:CreditClass",
+  "schema:name": "Urban Forst Carbon Credit Class",
+  "schema:description": "City Forest Credits is the national standard for greenhouse gas emission reduction and removal for tree projects in cities and towns. Developed by leading scientists, industry, and urban forest professionals, the Standard and Protocols define the set of rules and requirements that tree preservation projects must follow in order to earn third-party verified carbon credits. CFC has a 40-year and a 100-year Tree Preservation Protocol, modeled after avoided conversion or avoided emissions protocols in forestry. The 40-year Protocol was designed for the voluntary market and the 100-year Protocol for the compliance market in the state of California.",
+  "regen:sourceRegistry": {
+    "schema:name": "City Forest Credits",
+    "schema:url": {
+      "@type": "schema:URL",
+      "@value": "https://www.cityforestcredits.org/"
+    }
+  },
+  "regen:carbonOffsetStandard": {
+    "schema:name": "City Forest Credit Standard",
+    "schema:url": {
+      "@type": "schema:URL",
+      "@value": "https://www.cityforestcredits.org/wp-content/uploads/2022/03/City-Forest-Credits-Standard-V2.pdf"
+    }
+  },
+  "regen:offsetGenerationMethod":
+  [
+    {
+      "@type": "xsd:string",
+      "@value": "Avoided Emissions"
+    }
+  ],
+  "regen:projectActivities": [
+    {
+      "@type": "xsd:string",
+      "@value": "Tree Preservation"
+    }
+  ],
+  "regen:approvedMethodologies":
+  {
+    "@type": "schema:BreadcrumbList",
+    "schema:itemListElement":
+    [
+      {
+        "@type": "regen:Methodology",
+        "schema:name": "Preservation Protocol — 40 years",
+        "schema:identifier": {
+          "@type": "schema:Text",
+          "@value": ""
+        },
+        "schema:url": {
+          "@type": "schema:URL",
+          "@value": "https://www.cityforestcredits.org/wp-content/uploads/2022/07/City-Forest-Preservation-Protocol-40-Years-V11.40.pdf"
+        },
+        "schema:version": {
+          "@type": "schema:Text",
+          "@value": "11.40"
+        }
+      },
+      {
+        "@type": "regen:Methodology",
+        "schema:name": "Preservation Protocol — 100 years",
+        "schema:identifier": {
+          "@type": "schema:Text",
+          "@value": ""
+        },
+        "schema:url": {
+          "@type": "schema:URL",
+          "@value": "https://www.cityforestcredits.org/wp-content/uploads/2022/07/City-Forest-Preservation-Protocol-100-Years-V11.100.pdf"
+        },
+        "schema:version": {
+          "@type": "schema:Text",
+          "@value": "11.100"
+        }
+      }
+    ],
+    "schema:url": {
+      "@type": "schema:URL",
+      "@value": "https://www.cityforestcredits.org/carbon-credits/carbon-protocols/"
+    }
+  },
+  "regen:ecosystemType": [
+    "Urban Forest"
+  ],
+  "regen:verificationMethod": "Third-party verified"
+}
