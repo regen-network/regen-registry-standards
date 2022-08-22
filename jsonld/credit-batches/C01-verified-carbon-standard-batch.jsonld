@@ -6,6 +6,7 @@
   },
   "@type": "regen:C01-CreditBatch",
   "regen:vcsRetirementSerialNumber": "",
+  "regen:vcsProjectId": "",
   "regen:additionalCertifications": [
     {
       "schema:name": "",
