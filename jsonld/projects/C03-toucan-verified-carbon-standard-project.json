@@ -2,15 +2,12 @@
   "@context": {
     "schema": "https://schema.org/",
     "regen": "https://regen.network/",
-    "qudt": "https://qudt.org/schema/qudt/",
-    "unit": "https://qudt.org/vocab/unit/",
-    "xsd": "https://www.w3.org/2001/XMLSchema#",
-      "regen:vcsMethodology": { "@container": "@list" }
+    "regen:vcsMethodology": { "@container": "@list" }
   },
   "@type": "regen:C03-Project",
   "regen:toucanProjectTokenID": "",
+  "regen:projectName": "",
   "regen:vcsProjectId": "",
-  "regen:programStandard": "VCS",
   "regen:vcsMethodology": [
     {
       "regen:methodologyID": {
@@ -19,7 +16,5 @@
       }
     }
   ],
-  "regen:projectType": "",
-  "regen:offsetGenerationMethod": "",
-  "regen:emissionType": ""
+  "regen:offsetGenerationMethod": ""
 }

@@ -2,6 +2,15 @@
   "@context": {
     "schema": "https://schema.org/",
     "regen": "https://regen.network/",
-  },
-  "@type": "regen:C03-Batch"
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "regen:additionalCertifications": { "@container": "@list" },
+    "regen:coBenefits": { "@container": "@list" }
+},
+  "@type": "regen:C03-Batch",
+  "regen:toucanVintageTokenId": "",
+  "regen:additionalCertifications": [
+    {
+      "schema:name": ""
+    }
+  ]
 }
