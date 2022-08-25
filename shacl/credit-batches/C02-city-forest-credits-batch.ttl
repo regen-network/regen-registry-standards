@@ -6,43 +6,36 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-regen:C01-CreditBatchShape a sh:NodeShape ;
-  sh:targetClass regen:C01-CreditBatch ;
+regen:C02-CreditBatchShape a sh:NodeShape ;
+  sh:targetClass regen:C02-CreditBatch ;
   sh:property [
-    sh:path regen:vcsRetirementSerialNumber ;
+    sh:path regen:cfcCreditSerialNumbers ;
+    sh:minCount 1 ;
+    sh:node dash:ListShape ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:datatype xsd:string ;
+    ] ;
+  ] ;
+  sh:property [
+    sh:path regen:cfcVintageYear ;
+    sh:datatype xsd:gYear ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
-    sh:minLength 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:cfcProjectId ;
     sh:datatype xsd:string ;
-  ] ;
-  sh:property [
-    sh:path regen:vcsProjectId ;
-    sh:datatype xsd:integer ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
   ] ;
   sh:property [
-    sh:path regen:additionalCertifications ;
+    sh:path regen:verificationReports ;
     sh:node dash:ListShape ;
     sh:property [
       sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
       sh:node regen:NameOptionalUrlShape ;
     ] ;
     sh:maxCount 1 ;
-  ] ;
-.
-
-regen:NameOptionalUrlShape a sh:NodeShape ;
-  sh:property [
-    sh:path schema:name ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:minLength 1 ;
-    sh:datatype xsd:string ;
-  ] ;
-  sh:property [
-    sh:path schema:url ;
-    sh:maxCount 1 ;
-    sh:datatype schema:URL ;
   ] ;
 .

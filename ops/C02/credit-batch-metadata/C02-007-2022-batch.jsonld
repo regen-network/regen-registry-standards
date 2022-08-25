@@ -1,10 +1,17 @@
 {
   "@context": {
     "schema": "http://schema.org/",
-    "regen": "http://regen.network/"
+    "regen": "http://regen.network/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "regen:cfcVintageYear": {"@type": "xsd:gYear"}
   },
   "@type": "regen:C02-CreditBatch",
-  "regen:creditSerialNumbers": ["68978 - 75474"],
-  "regen:verificationReport": "https://www.cityforestcredits.org/wp-content/uploads/2021/07/Sandy-Cross-Forest-Verification-Report-Final.pdf",
-  "regen:vintageYear": "2022"
+  "regen:cfcCreditSerialNumbers": ["68978 - 75474"],
+  "regen:cfcVintageYear": 2022,
+  "regen:cfcProjectId": "",
+  "regen:verificationReport": "",
+  "regen:verificationReports": [{
+    "@type": "schema:URL",
+    "@value": "https://www.cityforestcredits.org/wp-content/uploads/2021/07/Sandy-Cross-Forest-Verification-Report-Final.pdf"
+  }]
 }

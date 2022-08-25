@@ -17,6 +17,10 @@
   "regen:projectDeveloper": {
     "@type": "regen:OrganizationDisplay",
     "schema:name": "Wildlife Works Carbon LLC",
+    "schema:logo": {
+      "@type": "schema:URL",
+      "@value": ""
+    },
     "schema:description": "Wildlife Works is the world''s leading REDD+ program development and management company.",
     "regen:showOnProjectPage": true
   },

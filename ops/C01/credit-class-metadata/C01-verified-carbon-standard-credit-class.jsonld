@@ -13,7 +13,7 @@
       "@container": "@list"
     }
   },
-  "@type": "regen:CreditClass",
+  "@type": "regen:C01-CreditClass",
   "schema:name": "Verified Carbon Standard",
   "schema:description": "This credit class provides a vehicle for nature based Verified Carbon Units (VCUs) to enter the blockchain space via issuance on Regen Ledger. It can be used by project developers, credit brokers, and other stakeholders interested in digitizing carbon credits issued by the VCS program to make them available in the emerging world of decentralized finance.",
   "schema:url": {

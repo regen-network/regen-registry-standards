@@ -1,10 +1,16 @@
 {
   "@context": {
     "schema": "http://schema.org/",
-    "regen": "http://regen.network/"
+    "regen": "http://regen.network/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "regen:cfcVintageYear": {"@type": "xsd:gYear"}
   },
   "@type": "regen:C02-CreditBatch",
-  "regen:creditSerialNumbers": ["43432 - 47570"],
-  "regen:verificationReport": "https://www.cityforestcredits.org/wp-content/uploads/2020/10/Bainbridge-Forest-Verification-Report.pdf",
-  "regen:vintageYear": "2021"
+  "regen:cfcCreditSerialNumbers": ["43432 - 47570"],
+  "regen:cfcVintageYear": 2021,
+  "regen:cfcProjectId": "",
+  "regen:verificationReports": [{
+    "@type": "schema:URL",
+    "@value": "https://www.cityforestcredits.org/wp-content/uploads/2020/10/Bainbridge-Forest-Verification-Report.pdf"
+  }]
 }

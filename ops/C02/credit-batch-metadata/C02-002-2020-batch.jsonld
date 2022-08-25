@@ -1,10 +1,16 @@
 {
   "@context": {
     "schema": "http://schema.org/",
-    "regen": "http://regen.network/"
+    "regen": "http://regen.network/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "regen:cfcVintageYear": {"@type": "xsd:gYear"}
   },
   "@type": "regen:C02-CreditBatch",
-  "regen:creditSerialNumbers": ["20465 - 21964"],
-  "regen:verificationReport": "https://www.cityforestcredits.org/wp-content/uploads/2019/10/Evergreen-Verification-Report.pdf",
-  "regen:vintageYear": "2020"
+  "regen:cfcCreditSerialNumbers": ["20465 - 21964"],
+  "regen:cfcVintageYear": 2020,
+  "regen:cfcProjectId": "",
+  "regen:verificationReports": [{
+    "@type": "schema:URL",
+    "@value": "https://www.cityforestcredits.org/wp-content/uploads/2019/10/Evergreen-Verification-Report.pdf"
+  }]
 }

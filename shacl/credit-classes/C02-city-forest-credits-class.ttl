@@ -5,8 +5,8 @@
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-regen:C01-CreditClassShape a sh:NodeShape ;
-  sh:targetClass regen:C01-CreditClass ;
+regen:C02-CreditClassShape a sh:NodeShape ;
+  sh:targetClass regen:C02-CreditClass ;
   sh:property [
     sh:path schema:description ;
     sh:minCount 1 ;
@@ -77,5 +77,22 @@ regen:C01-CreditClassShape a sh:NodeShape ;
     sh:maxCount 1 ;
     sh:minLength 1 ;
     sh:datatype xsd:string ;
+  ] ;
+  sh:property [
+    sh:path regen:projectActivities ;
+    sh:node dash:ListShape ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:datatype xsd:string ;
+      sh:minLength 1 ;
+    ] ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:carbonOffsetStandard ;
+    sh:node regen:NameUrlShape ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
   ] ;
 .
