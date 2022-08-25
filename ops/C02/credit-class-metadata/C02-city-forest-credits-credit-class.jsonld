@@ -6,14 +6,17 @@
     "schema:itemListElement": {
       "@container": "@list"
     },
+    "regen:sectoralScope": {
+      "@container": "@list"
+    },
     "regen:offsetGenerationMethod": {
       "@container": "@list"
     },
     "regen:projectActivities": {
       "@container": "@list"
     },
-    "regen:ecosystemType": { 
-      "@container": "@list" 
+    "regen:ecosystemType": {
+      "@container": "@list"
     }
   },
   "@type": "regen:CreditClass",
@@ -33,8 +36,7 @@
       "@value": "https://www.cityforestcredits.org/wp-content/uploads/2022/03/City-Forest-Credits-Standard-V2.pdf"
     }
   },
-  "regen:offsetGenerationMethod":
-  [
+  "regen:offsetGenerationMethod": [
     {
       "@type": "xsd:string",
       "@value": "Avoided Emissions"
@@ -43,14 +45,12 @@
   "regen:projectActivities": [
     {
       "@type": "xsd:string",
-      "@value": "Tree Preservation"
+      "@value": "Tree Preservation in Cities & Towns"
     }
   ],
-  "regen:approvedMethodologies":
-  {
+  "regen:approvedMethodologies": {
     "@type": "schema:BreadcrumbList",
-    "schema:itemListElement":
-    [
+    "schema:itemListElement": [
       {
         "@type": "regen:Methodology",
         "schema:name": "Preservation Protocol — 40 years",
@@ -92,5 +92,11 @@
   "regen:ecosystemType": [
     "Urban Forest"
   ],
-  "regen:verificationMethod": "Third-party verified"
+  "regen:verificationMethod": "Third-party verified",
+  "regen:sectoralScope": [
+    {
+      "@type": "xsd:string",
+      "@value": "Agriculture Forestry and Other Land Use (AFOLU)"
+    }
+  ]
 }

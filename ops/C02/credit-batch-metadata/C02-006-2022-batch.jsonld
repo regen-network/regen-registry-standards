@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "http://regen.network/"
+  },
+  "@type": "regen:C02-CreditBatch",
+  "regen:creditSerialNumbers": ["7545 - 9444", "12256 - 12429"],
+  "regen:verificationReport": "https://www.cityforestcredits.org/wp-content/uploads/2020/02/Buena-Vista-Heights-Project-Verification-Report.pdf",
+  "regen:vintageYear": "2022"
+}

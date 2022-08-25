@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "http://regen.network/"
+  },
+  "@type": "regen:C02-CreditBatch",
+  "regen:creditSerialNumbers": ["20465 - 21964"],
+  "regen:verificationReport": "https://www.cityforestcredits.org/wp-content/uploads/2019/10/Evergreen-Verification-Report.pdf",
+  "regen:vintageYear": "2020"
+}

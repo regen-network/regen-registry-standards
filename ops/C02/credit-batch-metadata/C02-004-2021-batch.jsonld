@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "http://regen.network/"
+  },
+  "@type": "regen:C02-CreditBatch",
+  "regen:creditSerialNumbers": ["43432 - 47570"],
+  "regen:verificationReport": "https://www.cityforestcredits.org/wp-content/uploads/2020/10/Bainbridge-Forest-Verification-Report.pdf",
+  "regen:vintageYear": "2021"
+}

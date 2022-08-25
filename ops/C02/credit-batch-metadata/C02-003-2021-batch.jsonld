@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "http://regen.network/"
+  },
+  "@type": "regen:C02-CreditBatch",
+  "regen:creditSerialNumbers": ["32524 - 41238"],
+  "regen:verificationReport": "https://www.notion.so/regennetwork/St-Elmo-Preservation-Project-9498fc21d024404190f3f0b24a3351b0",
+  "regen:vintageYear": "2021"
+}
