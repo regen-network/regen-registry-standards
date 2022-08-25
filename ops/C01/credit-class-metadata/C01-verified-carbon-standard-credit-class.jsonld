@@ -1,41 +1,33 @@
 {
-  "@context":
-  {
+  "@context": {
     "schema": "http://schema.org/",
     "regen": "http://regen.network/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "schema:itemListElement":
-    {
+    "schema:itemListElement": {
       "@container": "@list"
     },
-    "regen:sectoralScope":
-    {
+    "regen:sectoralScope": {
       "@container": "@list"
     },
-    "regen:offsetGenerationMethod":
-    {
+    "regen:offsetGenerationMethod": {
       "@container": "@list"
     }
   },
   "@type": "regen:CreditClass",
   "schema:name": "Verified Carbon Standard",
   "schema:description": "This credit class provides a vehicle for nature based Verified Carbon Units (VCUs) to enter the blockchain space via issuance on Regen Ledger. It can be used by project developers, credit brokers, and other stakeholders interested in digitizing carbon credits issued by the VCS program to make them available in the emerging world of decentralized finance.",
-  "schema:url":
-  {
+  "schema:url": {
     "@type": "schema:URL",
     "@value": "https://library.regen.network/v/regen-registry-credit-classes/credits-from-other-registries/verified-carbon-standard-credit-class"
   },
-  "regen:sourceRegistry":
-  {
+  "regen:sourceRegistry": {
     "schema:name": "Verra",
-    "schema:url":
-    {
+    "schema:url": {
       "@type": "schema:URL",
       "@value": "https://verra.org/"
     }
   },
-  "regen:sectoralScope":
-  [
+  "regen:sectoralScope": [
     {
       "@type": "xsd:string",
       "@value": "Agriculture Forestry and Other Land Use (AFOLU)"
@@ -45,8 +37,7 @@
       "@value": "Livestock and Manure Management"
     }
   ],
-  "regen:offsetGenerationMethod":
-  [
+  "regen:offsetGenerationMethod": [
     {
       "@type": "xsd:string",
       "@value": "Emission Reductions"
@@ -56,11 +47,9 @@
       "@value": "Carbon Removals"
     }
   ],
-  "regen:approvedMethodologies":
-  {
+  "regen:approvedMethodologies": {
     "@type": "schema:BreadcrumbList",
-    "schema:itemListElement":
-    [
+    "schema:itemListElement": [
       {
         "@type": "regen:Methodology",
         "schema:name": "Afforestation and reforestation of degraded land",
@@ -814,8 +803,7 @@
         }
       }
     ],
-    "schema:url":
-    {
+    "schema:url": {
       "@type": "schema:URL",
       "@value": "https://library.regen.network/v/regen-registry-credit-classes/credits-from-other-registries/verified-carbon-standard-credit-class/approved-methodologies"
     }

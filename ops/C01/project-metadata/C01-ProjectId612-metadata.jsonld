@@ -29,6 +29,15 @@
     }
   },
   "regen:offsetGenerationMethod": "Emission Reduction",
+  "regen:renderSpecification": [{
+    "key": "regen:offsetGenerationMethod",
+    "label": "Offset Generation Method",
+    "index": 0
+  }, {
+    "key": "regen:projectActivity",
+    "label": "Project Activity",
+    "index": 1
+  }],
   "regen:vcsMethodology": {
     "schema:name": "Methodology for Avoided Ecosystem Conversion",
     "schema:url": {
