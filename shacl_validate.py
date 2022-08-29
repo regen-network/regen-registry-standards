@@ -62,7 +62,7 @@ def credit_batch_validations(fp):
 def build_schema_file(fp):
     files = " ".join(
         check_output(
-            f'find ~+/shacl -name "*.ttl"',
+            'find shacl -name "*.ttl"',
             encoding="utf-8",
             shell=True,
         ).split()
