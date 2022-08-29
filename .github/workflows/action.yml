@@ -1,5 +1,4 @@
 name: 'SHACL Validation CI Check'
-description: 'Run the shacl_validate.py script'
 on: [push]
 jobs:
   build:
