@@ -1,0 +1,12 @@
+name: 'SHACL Validation CI Check'
+description: 'Run the shacl_validate.py script'
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the Docker image
+      run: docker build -t standards .
+    - name: Run the SHACL script
+      run: docker run standards:latest 
