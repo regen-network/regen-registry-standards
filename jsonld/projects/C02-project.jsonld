@@ -1,0 +1,72 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "http://regen.network/",
+    "qudt": "http://qudt.org/schema/qudt/",
+    "unit": "http://qudt.org/vocab/unit/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "regen:C02-Project",
+  "schema:name": "",
+  "regen:cfcProjectId": "",
+  "regen:cfcProjectPage": {
+    "@type": "schema:URL",
+    "@value": ""
+  },
+  "regen:projectDesignDocument": {
+    "@type": "schema:URL",
+    "@value": ""
+  },
+  "regen:jurisdiction": "",
+  "schema:description": "",
+  "regen:projectOperator": {
+    "schema:name": "Allegheny Land Trust"
+    "schema:url": {
+      "@type": "schema:URL",
+      "@value": ""
+    }
+  },
+  "regen:projectType": "",
+  "regen:projectActivity": "",
+  "regen:offsetGenerationMethod": "",
+  "regen:projectSize": {
+    "qudt:unit": {
+      "@type": "qudt:Unit",
+      "@value": ""
+    },
+    "qudt:numericValue": {
+      "@type": "xsd:double",
+      "@value": 0.0 
+    }
+  },
+  "regen:projectStartDate": {
+    "@type": "xsd:date",
+    "@value": ""
+  },
+  "regen:projectEndDate": {
+    "@type": "xsd:date",
+    "@value": ""
+  },
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "type": "Feature",
+    "place_name": "",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "regen:offsetProtocol": "" 
+}

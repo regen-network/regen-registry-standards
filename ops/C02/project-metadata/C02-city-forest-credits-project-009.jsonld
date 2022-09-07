@@ -13,7 +13,10 @@
     "@type": "schema:URL",
     "@value": "https://www.cityforestcredits.org/carbon-credits/carbon-registry/pittsburgh-forest-carbon-offsets/"
   },
-  "regen:projectDesignDocument": "https://www.cityforestcredits.org/wp-content/uploads/2020/02/Buena-Vista-Heights-Project-Design-Document-1.pdf",
+  "regen:projectDesignDocument": {
+    "@type": "schema:URL",
+    "@value": "https://www.cityforestcredits.org/wp-content/uploads/2020/02/Buena-Vista-Heights-Project-Design-Document-1.pdf"
+  },
   "regen:jurisdiction": "US-PA 15037",
   "schema:description": "Outside Pittsburgh, Allegheny Land Trust protected 124 acres of woodlands from rapid encroaching residential development in southeastern Allegheny County. The 40 year old maple, cherry and oak-hickory forest provides habitat for deer, turkey, and many species of birds. Hikers, birders, and mountain bikers will be able to explore the area, and possibly catch a glimpse of a majestic 200 year old oak tree.\n\nProtection of this forest also contributes to maintaining clean drinking water for Pittsburgh region’s residents. Located within the lower Youghiogheny River Watershed, the property is five miles upstream from the confluence with the Monongahela River.\n\nRevenue generated from the sale of carbon credits will be put towards acquisition costs, land stewardship, and future expansion of this and other conservation lands.",
   "regen:projectOperator": {
