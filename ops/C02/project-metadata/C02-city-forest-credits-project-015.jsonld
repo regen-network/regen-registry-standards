@@ -13,7 +13,10 @@
     "@type": "schema:URL",
     "@value": "https://www.cityforestcredits.org/carbon-credits/carbon-registry/issaquah-forest-carbon-offsets/"
   },
-  "regen:projectDesignDocument": "https://www.cityforestcredits.org/wp-content/uploads/2021/10/Harvey_Manning_Park_Project_Design_Document_20211213_Final.pdf",
+  "regen:projectDesignDocument": {
+    "@type": "schema:URL",
+    "@value": "https://www.cityforestcredits.org/wp-content/uploads/2021/10/Harvey_Manning_Park_Project_Design_Document_20211213_Final.pdf"
+  },
   "regen:jurisdiction": "US-WA",
   "schema:description": "The goal of the City of Issaquah’s Harvey Manning Park Expansion project is to protect Issaquah’s forested hillsides, connect residents to nature, and to preserve contiguous forest on Cougar Mountain. The 15.14-acre project site is part of a 33 acre property in the forested “Issaquah Alps” comprised of Tiger, Squak, and Cougar Mountains, that rise above Lake Sammamish, and connect to other public lands. The site is uniquely positioned in Issaquah city limits, the region’s urban growth boundary and the Mountains to Sound Greenway National Heritage Area corridor.\n\nThe City has worked with community members, King County, and the Trust for Public Land for several years to protect this site. Carbon crediting will allow protection of the 100+ year old forest, comprised of mature mixed conifer and deciduous trees including Douglas Fir and Big Leaf Maples. Preservation of this native forest will store carbon, provide stormwater benefits, and contributes to the City’s 51% tree canopy coverage. The forest structure provides diverse habitat and pollinator plants that provide food and shelter for wildlife. The site also includes riparian and wetland habitat that supports wildlife corridors on Cougar Mountain and protects cool freshwater streams that feed Tibbetts Creek, a salmon-bearing waterway and tributary to Lake Sammamish.",
   "regen:projectOperator": {
