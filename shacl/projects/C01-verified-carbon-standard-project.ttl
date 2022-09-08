@@ -13,54 +13,26 @@ regen:C01-Project rdfs:subClassOf regen:Project .
 
 regen:C01-ProjectShape a sh:NodeShape ;
   sh:targetClass regen:C01-Project ;
+  sh:node regen:ProjectBaseFieldsShape ;
   sh:property [
-    sh:path schema:name ;
+    sh:path regen:vcsProjectId ;
+    sh:datatype xsd:integer ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
-    sh:minLength 1 ;
-    sh:datatype xsd:string ;
-    sh:group regen:ProjectPageBasicInfoGroup ;
+    sh:group regen:ProjectPageMetadataGroup ;
   ] ;
   sh:property [
-    sh:path regen:projectSize ;
-    sh:node regen:ProjectSizeShape ;
+    sh:path regen:vcsProjectPage ;
+    sh:datatype schema:URL ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
-    sh:group regen:ProjectPageBasicInfoGroup ;
-  ] ;
-  sh:property [
-    sh:class geojson:Feature ;
-    sh:path schema:location ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:group regen:ProjectPageLocationGroup ;
+    sh:group regen:ProjectPageMetadataGroup ;
   ] ;
   sh:property [
     sh:path regen:projectDeveloper ;
     sh:node regen:ProjectRoleShape ;
     sh:maxCount 1 ;
     sh:group regen:ProjectPageRolesGroup ;
-  ] ;
-  sh:property [
-    sh:path schema:description ;
-    sh:maxLength 600 ;
-    sh:datatype xsd:string ;
-    sh:group regen:ProjectPageDescriptionGroup ;
-  ] ;
-  sh:property [
-    sh:path regen:previewPhoto ;
-    sh:datatype schema:URL ;
-    sh:group regen:ProjectPageMediaGroup ;
-  ] ;
-  sh:property [
-    sh:path regen:galleryPhotos ;
-    sh:node dash:ListShape ;
-    sh:property [
-      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
-      sh:datatype schema:URL ;
-      sh:group regen:ProjectPageMediaGroup ;
-    ] ;
-    sh:group regen:ProjectPageMediaGroup ;
   ] ;
   sh:property [
     sh:path schema:creditText ;
@@ -78,49 +50,6 @@ regen:C01-ProjectShape a sh:NodeShape ;
     sh:maxCount 1 ;
     sh:minLength 1 ;
     sh:datatype xsd:string ;
-    sh:group regen:ProjectPageMetadataGroup ;
-  ] ;
-  sh:property [
-    sh:path regen:projectActivity ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:node regen:NameUrlShape ;
-    sh:group regen:ProjectPageMetadataGroup ;
-  ] ;
-  sh:property [
-    sh:path regen:vcsProjectId ;
-    sh:datatype xsd:integer ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:group regen:ProjectPageMetadataGroup ;
-  ] ;
-  sh:property [
-    sh:path regen:vcsProjectPage ;
-    sh:datatype schema:URL ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:group regen:ProjectPageMetadataGroup ;
-  ] ;
-  sh:property [
-    sh:path regen:projectType ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:minLength 1 ;
-    sh:datatype xsd:string ;
-    sh:group regen:ProjectPageMetadataGroup ;
-  ] ;
-  sh:property [
-    sh:path regen:projectStartDate ;
-    sh:datatype xsd:date ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:group regen:ProjectPageMetadataGroup ;
-  ] ;
-  sh:property [
-    sh:path regen:projectEndDate ;
-    sh:datatype xsd:date ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
     sh:group regen:ProjectPageMetadataGroup ;
   ] ;
   sh:property [
@@ -197,51 +126,10 @@ regen:ProjectRoleShape
     sh:datatype schema:URL ;
     sh:group regen:ProjectPageRolesGroup ;
   ] ;
-  sh:node regen:DescriptionShape ;
+  sh:node regen:DescriptionFieldShape ;
   sh:property [
     sh:path regen:address ;
     sh:datatype xsd:string ;
     sh:group regen:ProjectPageRolesGroup ;
   ] ;
 .
-
-regen:DescriptionShape a sh:NodeShape ;
-  sh:property [
-    sh:path schema:description ;
-    sh:maxLength 1400 ;
-    sh:datatype xsd:string ;
-    sh:group regen:ProjectPageDescriptionGroup ;
-  ] ;
-.
-
-# Groups
-
-regen:ProjectPageBasicInfoGroup
-	a sh:PropertyGroup ;
-	rdfs:label "Basic Info" ;
-	sh:order "1"^^xsd:decimal .
-
-regen:ProjectPageLocationGroup
-	a sh:PropertyGroup ;
-	rdfs:label "Location" ;
-	sh:order "2"^^xsd:decimal .
-
-regen:ProjectPageRolesGroup
-	a sh:PropertyGroup ;
-	rdfs:label "Roles" ;
-	sh:order "3"^^xsd:decimal .
-
-regen:ProjectPageDescriptionGroup
-	a sh:PropertyGroup ;
-	rdfs:label "Description" ;
-	sh:order "4"^^xsd:decimal .
-
-regen:ProjectPageMediaGroup
-	a sh:PropertyGroup ;
-	rdfs:label "Media" ;
-	sh:order "5"^^xsd:decimal .
-
-regen:ProjectPageMetadataGroup
-	a sh:PropertyGroup ;
-	rdfs:label "Metadata" ;
-	sh:order "6"^^xsd:decimal .

@@ -17,6 +17,13 @@
     "schema:url": {
       "@type": "schema:URL"
     },
+    "regen:previewPhoto": {
+      "@type": "schema:URL"
+    },
+    "regen:galleryPhotos": {
+      "@container": "@list",
+      "@type": "schema:URL"
+    },
     "qudt:unit": {
       "@type": "qudt:Unit"
     },
@@ -42,7 +49,9 @@
     "schema:url": "https://redd.unfccc.int://alleghenylandtrust.org/"
   },
   "regen:projectType": "Agriculture Forestry and Other Land Use",
-  "regen:projectActivity": "Tree Preservation",
+  "regen:projectActivity": {
+    "schema:name": "Tree Preservation"
+  },
   "regen:offsetGenerationMethod": "Avoided Emissions",
   "regen:projectSize": {
     "qudt:unit": "unit:HA",
@@ -71,5 +80,9 @@
       ]
     }
   },
+  "regen:previewPhoto": "https://regen-registry.s3.amazonaws.com/projects/C02/buena-vista-01.jpg",
+  "regen:galleryPhotos": [
+    "https://regen-registry.s3.amazonaws.com/projects/C02/buena-vista-02.jpg"
+  ],
   "regen:offsetProtocol": "Preservation Protocol - 40 years"
 }
