@@ -197,16 +197,20 @@ regen:ProjectRoleShape
     sh:datatype schema:URL ;
     sh:group regen:ProjectPageRolesGroup ;
   ] ;
-  sh:property [
-    sh:path schema:description ;
-    sh:datatype xsd:string ;
-    sh:maxLength 160 ;
-    sh:group regen:ProjectPageRolesGroup ;
-  ] ;
+  sh:node regen:DescriptionShape ;
   sh:property [
     sh:path regen:address ;
     sh:datatype xsd:string ;
     sh:group regen:ProjectPageRolesGroup ;
+  ] ;
+.
+
+regen:DescriptionShape a sh:NodeShape ;
+  sh:property [
+    sh:path schema:description ;
+    sh:maxLength 1400 ;
+    sh:datatype xsd:string ;
+    sh:group regen:ProjectPageDescriptionGroup ;
   ] ;
 .
 

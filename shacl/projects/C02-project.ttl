@@ -19,12 +19,7 @@ regen:C02-ProjectShape a sh:NodeShape ;
     sh:datatype xsd:string ;
     sh:group regen:ProjectPageBasicInfoGroup ;
   ] ;
-  sh:property [
-    sh:path schema:description ;
-    sh:maxLength 600 ;
-    sh:datatype xsd:string ;
-    sh:group regen:ProjectPageDescriptionGroup ;
-  ] ;
+  sh:node regen:DescriptionShape ;
   sh:node regen:cfcProjectIdShape ;
   sh:property [
     sh:path regen:cfcProjectPage ;
