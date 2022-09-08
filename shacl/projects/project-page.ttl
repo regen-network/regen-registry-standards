@@ -368,7 +368,6 @@ regen:OrganizationDisplayShape
     sh:path schema:logo ;
     sh:datatype schema:URL ;
     sh:name "Organization logo" ;
-    sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:group regen:ProjectPageEntityDisplayGroup ;
   ] ;
