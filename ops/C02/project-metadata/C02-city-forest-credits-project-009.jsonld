@@ -4,49 +4,36 @@
     "regen": "http://regen.network/",
     "qudt": "http://qudt.org/schema/qudt/",
     "unit": "http://qudt.org/vocab/unit/",
-    "xsd": "http://www.w3.org/2001/XMLSchema#"
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "regen:jurisdiction": {"@type": "schema:Text"},
+    "regen:cfcProjectPage": {"@type": "schema:URL"},
+    "regen:projectDesignDocument": {"@type": "schema:URL"},
+    "schema:url": {"@type": "schema:URL"},
+    "qudt:unit": {"@type": "qudt:Unit"},
+    "qudt:numericValue": {"@type": "xsd:double"},
+    "regen:projectStartDate": {"@type": "xsd:date"},
+    "regen:projectEndDate": {"@type": "xsd:date"}
   },
   "@type": "regen:C02-Project",
   "schema:name": "Buena Vista Heights Conservation Area",
-  "regen:cfcProjectId": "009",
-  "regen:cfcProjectPage": {
-    "@type": "schema:URL",
-    "@value": "https://www.cityforestcredits.org/carbon-credits/carbon-registry/pittsburgh-forest-carbon-offsets/"
-  },
-  "regen:projectDesignDocument": {
-    "@type": "schema:URL",
-    "@value": "https://www.cityforestcredits.org/wp-content/uploads/2020/02/Buena-Vista-Heights-Project-Design-Document-1.pdf"
-  },
+  "regen:cfcProjectId": 9,
+  "regen:cfcProjectPage": "https://www.cityforestcredits.org/carbon-credits/carbon-registry/pittsburgh-forest-carbon-offsets/",
+  "regen:projectDesignDocument": "https://www.cityforestcredits.org/wp-content/uploads/2020/02/Buena-Vista-Heights-Project-Design-Document-1.pdf",
   "regen:jurisdiction": "US-PA 15037",
   "schema:description": "Outside Pittsburgh, Allegheny Land Trust protected 124 acres of woodlands from rapid encroaching residential development in southeastern Allegheny County. The 40 year old maple, cherry and oak-hickory forest provides habitat for deer, turkey, and many species of birds. Hikers, birders, and mountain bikers will be able to explore the area, and possibly catch a glimpse of a majestic 200 year old oak tree.\n\nProtection of this forest also contributes to maintaining clean drinking water for Pittsburgh region’s residents. Located within the lower Youghiogheny River Watershed, the property is five miles upstream from the confluence with the Monongahela River.\n\nRevenue generated from the sale of carbon credits will be put towards acquisition costs, land stewardship, and future expansion of this and other conservation lands.",
   "regen:projectOperator": {
-    "schema:name": "Allegheny Land Trust"
-    "schema:url": {
-      "@type": "schema:URL",
-      "@value": "https://redd.unfccc.int://alleghenylandtrust.org/"
-    }
+    "schema:name": "Allegheny Land Trust",
+    "schema:url": "https://redd.unfccc.int://alleghenylandtrust.org/"
   },
   "regen:projectType": "Agriculture Forestry and Other Land Use",
   "regen:projectActivity": "Tree Preservation",
   "regen:offsetGenerationMethod": "Avoided Emissions",
   "regen:projectSize": {
-    "qudt:unit": {
-      "@type": "qudt:Unit",
-      "@value": "unit:HA"
-    },
-    "qudt:numericValue": {
-      "@type": "xsd:double",
-      "@value": 50.14 
-    }
+    "qudt:unit": "unit:HA",
+    "qudt:numericValue": 50.14
   },
-  "regen:projectStartDate": {
-    "@type": "xsd:date",
-    "@value": "2020-06-30"
-  },
-  "regen:projectEndDate": {
-    "@type": "xsd:date",
-    "@value": "2060-06-30"
-  },
+  "regen:projectStartDate": "2020-06-30",
+  "regen:projectEndDate": "2060-06-30",
   "schema:location": {
     "@context": {
       "type": "@type",

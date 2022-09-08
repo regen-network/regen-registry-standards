@@ -1,0 +1,101 @@
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix regen: <http://regen.network/> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+regen:C02-ProjectShape a sh:NodeShape ;
+  sh:targetClass regen:C02-Project ;
+  sh:property [
+    sh:path schema:name ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:datatype xsd:string ;
+    sh:group regen:ProjectPageBasicInfoGroup ;
+  ] ;
+  sh:property [
+    sh:path schema:description ;
+    sh:maxLength 600 ;
+    sh:datatype xsd:string ;
+    sh:group regen:ProjectPageDescriptionGroup ;
+  ] ;
+  sh:node regen:cfcProjectIdShape ;
+  sh:property [
+    sh:path regen:cfcProjectPage ;
+    sh:datatype schema:URL ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:group regen:ProjectPageMetadataGroup ;
+  ] ;
+  sh:property [
+    sh:path regen:projectOperator ;
+    sh:node regen:NameUrlShape ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:group regen:ProjectPageRolesGroup ;
+  ] ;
+  sh:property [
+    sh:path regen:projectActivity ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:group regen:ProjectPageMetadataGroup ;
+  ] ;
+  sh:property [
+    sh:path regen:projectSize ;
+    sh:node regen:ProjectSizeShape ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:group regen:ProjectPageBasicInfoGroup ;
+  ] ;
+  sh:property [
+    sh:path regen:projectStartDate ;
+    sh:datatype xsd:date ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:group regen:ProjectPageMetadataGroup ;
+  ] ;
+  sh:property [
+    sh:path regen:projectEndDate ;
+    sh:datatype xsd:date ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:group regen:ProjectPageMetadataGroup ;
+  ] ;
+  sh:property [
+    sh:class geojson:Feature ;
+    sh:path schema:location ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:group regen:ProjectPageLocationGroup ;
+  ] ;
+  sh:property [
+    sh:path regen:projectDesignDocument ;
+    sh:datatype schema:URL ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:jurisdiction ;
+    sh:datatype schema:Text ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:projectType ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:offsetProtocol ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+.

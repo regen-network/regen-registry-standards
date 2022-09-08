@@ -4,49 +4,36 @@
     "regen": "http://regen.network/",
     "qudt": "http://qudt.org/schema/qudt/",
     "unit": "http://qudt.org/vocab/unit/",
-    "xsd": "http://www.w3.org/2001/XMLSchema#"
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "regen:jurisdiction": {"@type": "schema:Text"},
+    "regen:cfcProjectPage": {"@type": "schema:URL"},
+    "regen:projectDesignDocument": {"@type": "schema:URL"},
+    "schema:url": {"@type": "schema:URL"},
+    "qudt:unit": {"@type": "qudt:Unit"},
+    "qudt:numericValue": {"@type": "xsd:double"},
+    "regen:projectStartDate": {"@type": "xsd:date"},
+    "regen:projectEndDate": {"@type": "xsd:date"}
   },
   "@type": "regen:C02-Project",
   "schema:name": "",
   "regen:cfcProjectId": "",
-  "regen:cfcProjectPage": {
-    "@type": "schema:URL",
-    "@value": ""
-  },
-  "regen:projectDesignDocument": {
-    "@type": "schema:URL",
-    "@value": ""
-  },
+  "regen:cfcProjectPage": "",
+  "regen:projectDesignDocument": "",
   "regen:jurisdiction": "",
   "schema:description": "",
   "regen:projectOperator": {
-    "schema:name": "Allegheny Land Trust"
-    "schema:url": {
-      "@type": "schema:URL",
-      "@value": ""
-    }
+    "schema:name": "Allegheny Land Trust",
+    "schema:url": ""
   },
   "regen:projectType": "",
   "regen:projectActivity": "",
   "regen:offsetGenerationMethod": "",
   "regen:projectSize": {
-    "qudt:unit": {
-      "@type": "qudt:Unit",
-      "@value": ""
-    },
-    "qudt:numericValue": {
-      "@type": "xsd:double",
-      "@value": 0.0 
-    }
+    "qudt:unit": "",
+    "qudt:numericValue": 0.0
   },
-  "regen:projectStartDate": {
-    "@type": "xsd:date",
-    "@value": ""
-  },
-  "regen:projectEndDate": {
-    "@type": "xsd:date",
-    "@value": ""
-  },
+  "regen:projectStartDate": "",
+  "regen:projectEndDate": "",
   "schema:location": {
     "@context": {
       "type": "@type",

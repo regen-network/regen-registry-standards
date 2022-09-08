@@ -35,8 +35,12 @@ def shacl_validate(shapes, data):
     return False
 
 
+def sglob(pathname):
+    return sorted(glob.iglob(pathname))
+
+
 def credit_class_validations(fp):
-    for data in glob.iglob("ops/*/credit-class-metadata/*.jsonld"):
+    for data in sglob("ops/*/credit-class-metadata/*.jsonld"):
         shacl_validate(
             fp.name,
             data,
@@ -44,7 +48,7 @@ def credit_class_validations(fp):
 
 
 def project_validations(fp):
-    for data in glob.iglob("ops/C01/project-metadata/*.jsonld"):
+    for data in sglob("ops/*/project-metadata/*.jsonld"):
         shacl_validate(
             fp.name,
             data,
@@ -52,7 +56,7 @@ def project_validations(fp):
 
 
 def credit_batch_validations(fp):
-    for data in glob.iglob("ops/*/credit-batch-metadata/*.jsonld"):
+    for data in sglob("ops/C02/credit-batch-metadata/*.jsonld"):
         shacl_validate(
             fp.name,
             data,
