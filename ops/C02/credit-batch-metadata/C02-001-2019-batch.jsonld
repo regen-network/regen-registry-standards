@@ -3,16 +3,29 @@
     "schema": "http://schema.org/",
     "regen": "http://regen.network/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "regen:cfcVintageYear": {"@type": "xsd:gYear"},
-    "regen:cfcCreditSerialNumbers": { "@container": "@list" },
-    "regen:verificationReports": { "@container": "@list" },
-    "schema:url": {"@type": "schema:URL" }
+    "regen:cfcVintageYear": {
+      "@type": "xsd:gYear"
+    },
+    "regen:cfcCreditSerialNumbers": {
+      "@container": "@list"
+    },
+    "regen:verificationReports": {
+      "@container": "@list"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
+    }
   },
   "@type": "regen:C02-CreditBatch",
-  "regen:cfcCreditSerialNumbers": ["6477 - 6576", "6677 - 6841"],
+  "regen:cfcCreditSerialNumbers": [
+    "6477 - 6576",
+    "6677 - 6841"
+  ],
   "regen:cfcVintageYear": 2019,
   "regen:cfcProjectId": "TODO",
-  "regen:verificationReports": [{
-    "schema:url": "https://www.cityforestcredits.org/wp-content/uploads/2018/04/King-County-Verification-Report.pdf"
-  }]
+  "regen:verificationReports": [
+    {
+      "schema:url": "https://www.cityforestcredits.org/wp-content/uploads/2018/04/King-County-Verification-Report.pdf"
+    }
+  ]
 }

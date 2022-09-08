@@ -23,7 +23,7 @@
   },
   "regen:projectType": "",
   "regen:projectActivity": {
-   "schema:name": "",
+    "schema:name": "",
     "schema:url": {
       "@type": "schema:URL",
       "@value": ""

@@ -5,14 +5,30 @@
     "qudt": "http://qudt.org/schema/qudt/",
     "unit": "http://qudt.org/vocab/unit/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "regen:jurisdiction": {"@type": "schema:Text"},
-    "regen:cfcProjectPage": {"@type": "schema:URL"},
-    "regen:projectDesignDocument": {"@type": "schema:URL"},
-    "schema:url": {"@type": "schema:URL"},
-    "qudt:unit": {"@type": "qudt:Unit"},
-    "qudt:numericValue": {"@type": "xsd:double"},
-    "regen:projectStartDate": {"@type": "xsd:date"},
-    "regen:projectEndDate": {"@type": "xsd:date"}
+    "regen:jurisdiction": {
+      "@type": "schema:Text"
+    },
+    "regen:cfcProjectPage": {
+      "@type": "schema:URL"
+    },
+    "regen:projectDesignDocument": {
+      "@type": "schema:URL"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
+    },
+    "qudt:unit": {
+      "@type": "qudt:Unit"
+    },
+    "qudt:numericValue": {
+      "@type": "xsd:double"
+    },
+    "regen:projectStartDate": {
+      "@type": "xsd:date"
+    },
+    "regen:projectEndDate": {
+      "@type": "xsd:date"
+    }
   },
   "@type": "regen:C02-Project",
   "schema:name": "Buena Vista Heights Conservation Area",
@@ -55,5 +71,5 @@
       ]
     }
   },
-  "regen:offsetProtocol": "Preservation Protocol - 40 years" 
+  "regen:offsetProtocol": "Preservation Protocol - 40 years"
 }

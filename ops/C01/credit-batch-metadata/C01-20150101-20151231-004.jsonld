@@ -2,7 +2,9 @@
   "@context": {
     "schema": "http://schema.org/",
     "regen": "http://regen.network/",
-    "regen:additionalCertifications": { "@container": "@list" }
+    "regen:additionalCertifications": {
+      "@container": "@list"
+    }
   },
   "@type": "regen:C01-CreditBatch",
   "regen:vcsRetirementSerialNumber": "5531-243019440-243022964-VCU-048-MER-CD-14-934-01012015-31122015-1",
