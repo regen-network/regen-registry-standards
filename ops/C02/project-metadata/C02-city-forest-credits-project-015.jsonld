@@ -81,5 +81,8 @@
     "https://regen-registry.s3.amazonaws.com/projects/C02/harvey-manning-02.jpg",
     "https://regen-registry.s3.amazonaws.com/projects/C02/harvey-manning-03.jpg"
   ],
-  "regen:offsetProtocol": "Preservation Protocol - 40 years"
+  "regen:offsetProtocol": {
+    "schema:name": "Preservation Protocol - 40 years",
+    "schema:url": ""
+  }
 }

@@ -57,7 +57,7 @@ regen:ProjectDesignDocumentPropertyShape sh:path regen:projectDesignDocument ;
 
 regen:OffsetProtocolPropertyShape sh:path regen:offsetProtocol ;
   sh:path regen:offsetProtocol ;
-  sh:datatype xsd:string ;
+  sh:node regen:NameUrlShape ;
   sh:minCount 1 ;
   sh:maxCount 1 ;
 .
