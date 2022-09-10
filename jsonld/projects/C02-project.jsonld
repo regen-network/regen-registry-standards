@@ -5,9 +5,6 @@
     "qudt": "http://qudt.org/schema/qudt/",
     "unit": "http://qudt.org/vocab/unit/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "regen:jurisdiction": {
-      "@type": "schema:Text"
-    },
     "regen:cfcProjectPage": {
       "@type": "schema:URL"
     },
@@ -35,10 +32,9 @@
   "regen:cfcProjectId": "",
   "regen:cfcProjectPage": "",
   "regen:projectDesignDocument": "",
-  "regen:jurisdiction": "",
   "schema:description": "",
   "regen:projectOperator": {
-    "schema:name": "Allegheny Land Trust",
+    "schema:name": "",
     "schema:url": ""
   },
   "regen:projectType": "",
