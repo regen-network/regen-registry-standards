@@ -21,43 +21,43 @@ regen:C02-ProjectShape a sh:NodeShape ;
   sh:property regen:ProjectTypePropertyShape ;
   sh:property regen:PreviewPhotoPropertyShape ;
   sh:property regen:GalleryPhotosPropertyShape ;
-  sh:property regen:cfcProjectIdPropertyShape ;
-  sh:property [
-    sh:path regen:cfcProjectPage ;
-    sh:datatype schema:URL ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:group regen:ProjectPageMetadataGroup ;
-  ] ;
-  sh:property [
-    sh:path regen:projectOperator ;
-    sh:node regen:NameUrlShape ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:group regen:ProjectPageRolesGroup ;
-  ] ;
-  sh:property [
-    sh:path regen:projectDesignDocument ;
-    sh:datatype schema:URL ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-  ] ;
-  sh:property [
-    sh:path regen:jurisdiction ;
-    sh:datatype schema:Text ;
-    sh:maxCount 1 ;
-  ] ;
-  sh:property [
-    sh:path regen:offsetProtocol ;
-    sh:datatype xsd:string ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-  ] ;
+  
+  sh:property regen:CFCProjectIdPropertyShape ;
+  sh:property regen:CFCProjectPagePropertyShape ;
+  sh:property regen:ProjectOperatorPropertyShape ;
+  sh:property regen:ProjectDesignDocumentPropertyShape ;
+  sh:property regen:OffsetProtocolPropertyShape ;
 .
 
-regen:cfcProjectIdPropertyShape sh:path regen:cfcProjectId ;
+regen:CFCProjectIdPropertyShape sh:path regen:cfcProjectId ;
   sh:datatype xsd:integer ;
   sh:minCount 1 ;
   sh:maxCount 1 ;
 .
 
+regen:CFCProjectPagePropertyShape sh:path regen:cfcProjectPage ;
+  sh:datatype schema:URL ;
+  sh:minCount 1 ;
+  sh:maxCount 1 ;
+  sh:group regen:ProjectPageMetadataGroup ;
+.
+
+regen:ProjectOperatorPropertyShape sh:path regen:projectOperator ;
+  sh:node regen:NameUrlShape ;
+  sh:minCount 1 ;
+  sh:maxCount 1 ;
+  sh:group regen:ProjectPageRolesGroup ;
+.
+
+regen:ProjectDesignDocumentPropertyShape sh:path regen:projectDesignDocument ;
+  sh:datatype schema:URL ;
+  sh:minCount 1 ;
+  sh:maxCount 1 ;
+.
+
+regen:OffsetProtocolPropertyShape sh:path regen:offsetProtocol ;
+  sh:path regen:offsetProtocol ;
+  sh:datatype xsd:string ;
+  sh:minCount 1 ;
+  sh:maxCount 1 ;
+.
