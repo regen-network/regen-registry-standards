@@ -13,7 +13,16 @@ regen:C01-Project rdfs:subClassOf regen:Project .
 
 regen:C01-ProjectShape a sh:NodeShape ;
   sh:targetClass regen:C01-Project ;
-  sh:node regen:ProjectBaseFieldsShape ;
+  sh:property regen:NamePropertyShape ;
+  sh:property regen:DescriptionPropertyShape ;
+  sh:property regen:LocationPropertyShape ;
+  sh:property regen:ProjectSizePropertyShape ;
+  sh:property regen:ProjectActivityPropertyShape ;
+  sh:property regen:ProjectStartDatePropertyShape ;
+  sh:property regen:ProjectEndDatePropertyShape ;
+  sh:property regen:ProjectTypePropertyShape ;
+  sh:property regen:PreviewPhotoPropertyShape ;
+  sh:property regen:GalleryPhotosPropertyShape ;
   sh:property [
     sh:path regen:vcsProjectId ;
     sh:datatype xsd:integer ;
@@ -126,7 +135,7 @@ regen:ProjectRoleShape
     sh:datatype schema:URL ;
     sh:group regen:ProjectPageRolesGroup ;
   ] ;
-  sh:node regen:DescriptionFieldShape ;
+  sh:property regen:DescriptionPropertyShape ;
   sh:property [
     sh:path regen:address ;
     sh:datatype xsd:string ;

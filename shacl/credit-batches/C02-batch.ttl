@@ -23,7 +23,6 @@ regen:C02-CreditBatchShape a sh:NodeShape ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
   ] ;
-  sh:node regen:cfcProjectIdShape ;
   sh:property [
     sh:path regen:verificationReports ;
     sh:node dash:ListShape ;
@@ -31,15 +30,6 @@ regen:C02-CreditBatchShape a sh:NodeShape ;
       sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
       sh:node regen:UrlShape ;
     ] ;
-  ] ;
-.
-
-regen:cfcProjectIdShape a sh:NodeShape ;
-  sh:property [
-    sh:path regen:cfcProjectId ;
-    sh:datatype xsd:integer ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
   ] ;
 .
 

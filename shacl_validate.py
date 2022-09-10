@@ -56,7 +56,7 @@ def project_validations(fp):
 
 
 def credit_batch_validations(fp):
-    for data in sglob("ops/C02/credit-batch-metadata/*.jsonld"):
+    for data in sglob("ops/*/credit-batch-metadata/*.jsonld"):
         shacl_validate(
             fp.name,
             data,
