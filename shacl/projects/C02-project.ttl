@@ -31,7 +31,7 @@ regen:C02-ProjectShape a sh:NodeShape ;
 .
 
 regen:CFCProjectIdPropertyShape sh:path regen:cfcProjectId ;
-  sh:datatype xsd:integer ;
+  sh:datatype xsd:string ;
   sh:minCount 1 ;
   sh:maxCount 1 ;
 .
@@ -58,7 +58,7 @@ regen:ProjectDesignDocumentPropertyShape sh:path regen:projectDesignDocument ;
 
 regen:OffsetProtocolPropertyShape sh:path regen:offsetProtocol ;
   sh:path regen:offsetProtocol ;
-  sh:node regen:NameUrlShape ;
+  sh:node regen:NameUrlVersionShape ;
   sh:minCount 1 ;
   sh:maxCount 1 ;
 .

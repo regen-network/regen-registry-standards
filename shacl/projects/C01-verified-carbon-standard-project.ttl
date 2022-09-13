@@ -69,22 +69,41 @@ regen:C01-ProjectShape a sh:NodeShape ;
 
 regen:NameUrlShape a sh:NodeShape ;
   sh:targetClass regen:NameUrl;
-  sh:property [
-    sh:path schema:name ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:minLength 1 ;
-    sh:datatype xsd:string ;
-    sh:group regen:ProjectPageMetadataGroup ;
-  ] ;
-  sh:property [
-    sh:path schema:url ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:minLength 1 ;
-    sh:datatype schema:URL ;
-    sh:group regen:ProjectPageMetadataGroup ;
-  ] ;
+  sh:property regen:RequiredNamePropertyShape ;
+  sh:property regen:RequiredUrlPropertyShape ;
+.
+
+regen:NameUrlVersionShape a sh:NodeShape ;
+  sh:targetClass regen:NameUrl;
+  sh:property regen:RequiredNamePropertyShape ;
+  sh:property regen:RequiredUrlPropertyShape ;
+  sh:property regen:RequiredVersionPropertyShape ;
+.
+
+regen:RequiredNamePropertyShape sh:path schema:name ;
+  sh:minCount 1 ;
+  sh:maxCount 1 ;
+  sh:minLength 1 ;
+  sh:datatype xsd:string ;
+  sh:group regen:ProjectPageMetadataGroup ;
+.
+
+regen:RequiredUrlPropertyShape sh:path schema:url ;
+  sh:path schema:url ;
+  sh:minCount 1 ;
+  sh:maxCount 1 ;
+  sh:minLength 1 ;
+  sh:datatype schema:URL ;
+  sh:group regen:ProjectPageMetadataGroup ;
+.
+
+regen:RequiredVersionPropertyShape sh:path schema:url ;
+  sh:path schema:url ;
+  sh:minCount 1 ;
+  sh:maxCount 1 ;
+  sh:minLength 1 ;
+  sh:datatype schema:Text ;
+  sh:group regen:ProjectPageMetadataGroup ;
 .
 
 regen:ProjectSizeShape a sh:NodeShape ;

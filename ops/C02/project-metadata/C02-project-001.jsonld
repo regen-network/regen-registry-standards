@@ -36,13 +36,13 @@
   },
   "@type": "regen:C02-Project",
   "schema:name": "Buena Vista Heights Conservation Area",
-  "regen:cfcProjectId": 9,
+  "regen:cfcProjectId": "9",
   "regen:cfcProjectPage": "https://www.cityforestcredits.org/carbon-credits/carbon-registry/pittsburgh-forest-carbon-offsets/",
   "regen:projectDesignDocument": "https://www.cityforestcredits.org/wp-content/uploads/2020/02/Buena-Vista-Heights-Project-Design-Document-1.pdf",
   "schema:description": "Outside Pittsburgh, Allegheny Land Trust protected 124 acres of woodlands from rapid encroaching residential development in southeastern Allegheny County. The 40 year old maple, cherry and oak-hickory forest provides habitat for deer, turkey, and many species of birds. Hikers, birders, and mountain bikers will be able to explore the area, and possibly catch a glimpse of a majestic 200 year old oak tree.\n\nProtection of this forest also contributes to maintaining clean drinking water for Pittsburgh region’s residents. Located within the lower Youghiogheny River Watershed, the property is five miles upstream from the confluence with the Monongahela River.\n\nRevenue generated from the sale of carbon credits will be put towards acquisition costs, land stewardship, and future expansion of this and other conservation lands.",
   "regen:projectOperator": {
     "schema:name": "Allegheny Land Trust",
-    "schema:url": "https://redd.unfccc.int://alleghenylandtrust.org/"
+    "schema:url": "https://alleghenylandtrust.org/"
   },
   "regen:projectType": "Agriculture Forestry and Other Land Use",
   "regen:projectActivity": {
@@ -82,6 +82,7 @@
   ],
   "regen:offsetProtocol": {
     "schema:name": "Preservation Protocol - 40 years",
-    "schema:url": ""
+    "schema:url": "https://www.cityforestcredits.org/wp-content/uploads/2022/07/City-Forest-Preservation-Protocol-40-Years-V11.40.pdf",
+    "schema:version": "v11.40"
   }
 }
