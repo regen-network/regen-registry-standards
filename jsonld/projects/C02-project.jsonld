@@ -14,6 +14,13 @@
     "schema:url": {
       "@type": "schema:URL"
     },
+    "regen:previewPhoto": {
+      "@type": "schema:URL"
+    },
+    "regen:galleryPhotos": {
+      "@container": "@list",
+      "@type": "schema:URL"
+    },
     "qudt:unit": {
       "@type": "qudt:Unit"
     },
@@ -37,7 +44,9 @@
     "schema:url": ""
   },
   "regen:projectType": "",
-  "regen:projectActivity": "",
+  "regen:projectActivity": {
+    "schema:name": ""
+  },
   "regen:offsetGenerationMethod": "",
   "regen:projectSize": {
     "qudt:unit": "",
@@ -66,5 +75,9 @@
       ]
     }
   },
+  "regen:previewPhoto": "",
+  "regen:galleryPhotos": [
+    ""
+  ],
   "regen:offsetProtocol": ""
 }
