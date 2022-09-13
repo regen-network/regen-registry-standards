@@ -74,7 +74,7 @@ regen:NameUrlShape a sh:NodeShape ;
 .
 
 regen:NameUrlVersionShape a sh:NodeShape ;
-  sh:targetClass regen:NameUrl;
+  sh:targetClass regen:NameUrlVersionUrl;
   sh:property regen:RequiredNamePropertyShape ;
   sh:property regen:RequiredUrlPropertyShape ;
   sh:property regen:RequiredVersionPropertyShape ;
@@ -96,12 +96,12 @@ regen:RequiredUrlPropertyShape sh:path schema:url ;
   sh:group regen:ProjectPageMetadataGroup ;
 .
 
-regen:RequiredVersionPropertyShape sh:path schema:url ;
+regen:RequiredVersionPropertyShape sh:path schema:version ;
   sh:minCount 1 ;
   sh:maxCount 1 ;
   sh:minLength 1 ;
-  sh:datatype schema:Text ;
   sh:group regen:ProjectPageMetadataGroup ;
+  sh:datatype xsd:string ;
 .
 
 regen:ProjectSizeShape a sh:NodeShape ;
