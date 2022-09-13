@@ -1,0 +1,85 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "http://regen.network/",
+    "qudt": "http://qudt.org/schema/qudt/",
+    "unit": "http://qudt.org/vocab/unit/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "regen:cfcProjectPage": {
+      "@type": "schema:URL"
+    },
+    "regen:projectDesignDocument": {
+      "@type": "schema:URL"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
+    },
+    "regen:previewPhoto": {
+      "@type": "schema:URL"
+    },
+    "regen:galleryPhotos": {
+      "@container": "@list",
+      "@type": "schema:URL"
+    },
+    "qudt:unit": {
+      "@type": "qudt:Unit"
+    },
+    "qudt:numericValue": {
+      "@type": "xsd:double"
+    },
+    "regen:projectStartDate": {
+      "@type": "xsd:date"
+    },
+    "regen:projectEndDate": {
+      "@type": "xsd:date"
+    }
+  },
+  "@type": "regen:C02-Project",
+  "schema:name": "Sandy Cross Forest Preservation Project",
+  "regen:cfcProjectId": "18",
+  "regen:cfcProjectPage": "https://www.cityforestcredits.org/carbon-credits/carbon-registry/mansfield-forest-carbon-offsets/",
+  "regen:projectDesignDocument": "https://www.cityforestcredits.org/wp-content/uploads/2021/07/Sandy-Cross-Project-Design-Document-1.pdf",
+  "schema:description": "The Sandy Cross Forest Preservation Project (“the Project”) is a 132-acre Project Area on a 214-acre property in the Mansfield metro area. Western Reserve Land Conservancy (“the Land Conservancy”) is seeking to preserve the Project, creating substantial conservation and community benefits including carbon sequestration, wildlife habitat, and open space protection.",
+  "regen:projectOperator": {
+    "schema:name": "Western Reserve Land Conservancy",
+    "schema:url": "https://www.wrlandconservancy.org/"
+  },
+  "regen:projectType": "Preservation",
+  "regen:projectActivity": {
+    "schema:name": "Tree Preservation"
+  },
+  "regen:offsetGenerationMethod": "Avoided Emissions",
+  "regen:projectSize": {
+    "qudt:unit": "unit:HA",
+    "qudt:numericValue": 53.4
+  },
+  "regen:projectStartDate": "",
+  "regen:projectEndDate": "",
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "type": "Feature",
+    "place_name": "Lexington, Ohio, United States of America, North America",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        40.680904,
+        -82.589354
+      ]
+    }
+  },
+  "regen:previewPhoto": "https://regen-registry.s3.amazonaws.com/projects/C02/sandy-cross.jpg",
+  "regen:offsetProtocol": {
+    "schema:name": "",
+    "schema:url": "",
+    "schema:version": ""
+  }
+}
