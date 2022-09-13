@@ -22,17 +22,10 @@ regen:C02-ProjectShape a sh:NodeShape ;
   sh:property regen:PreviewPhotoPropertyShape ;
   sh:property regen:GalleryPhotosPropertyShape ;
   
-  sh:property regen:CFCProjectIdPropertyShape ;
   sh:property regen:CFCProjectPagePropertyShape ;
   sh:property regen:ProjectOperatorPropertyShape ;
   sh:property regen:ProjectDesignDocumentPropertyShape ;
   sh:property regen:OffsetProtocolPropertyShape ;
-.
-
-regen:CFCProjectIdPropertyShape sh:path regen:cfcProjectId ;
-  sh:datatype xsd:integer ;
-  sh:minCount 1 ;
-  sh:maxCount 1 ;
 .
 
 regen:CFCProjectPagePropertyShape sh:path regen:cfcProjectPage ;
