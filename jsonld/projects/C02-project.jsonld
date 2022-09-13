@@ -80,5 +80,9 @@
   "regen:galleryPhotos": [
     ""
   ],
-  "regen:offsetProtocol": ""
+  "regen:offsetProtocol": {
+    "schema:name": "",
+    "schema:url": "",
+    "schema:version": ""
+  }
 }
