@@ -89,7 +89,6 @@ regen:RequiredNamePropertyShape sh:path schema:name ;
 .
 
 regen:RequiredUrlPropertyShape sh:path schema:url ;
-  sh:path schema:url ;
   sh:minCount 1 ;
   sh:maxCount 1 ;
   sh:minLength 1 ;
@@ -98,7 +97,6 @@ regen:RequiredUrlPropertyShape sh:path schema:url ;
 .
 
 regen:RequiredVersionPropertyShape sh:path schema:url ;
-  sh:path schema:url ;
   sh:minCount 1 ;
   sh:maxCount 1 ;
   sh:minLength 1 ;
