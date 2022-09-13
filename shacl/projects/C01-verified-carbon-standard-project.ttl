@@ -23,6 +23,8 @@ regen:C01-ProjectShape a sh:NodeShape ;
   sh:property regen:ProjectTypePropertyShape ;
   sh:property regen:PreviewPhotoPropertyShape ;
   sh:property regen:GalleryPhotosPropertyShape ;
+  sh:property regen:VideoURLPropertyShape ;
+
   sh:property [
     sh:path regen:vcsProjectId ;
     sh:datatype xsd:integer ;
@@ -46,11 +48,6 @@ regen:C01-ProjectShape a sh:NodeShape ;
   sh:property [
     sh:path schema:creditText ;
     sh:datatype xsd:string ;
-    sh:group regen:ProjectPageMediaGroup ;
-  ] ;
-  sh:property [
-    sh:path regen:videoURL ;
-    sh:datatype schema:URL ;
     sh:group regen:ProjectPageMediaGroup ;
   ] ;
   sh:property [

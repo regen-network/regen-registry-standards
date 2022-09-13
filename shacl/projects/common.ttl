@@ -79,6 +79,11 @@ regen:GalleryPhotosPropertyShape sh:path regen:galleryPhotos ;
   sh:group regen:ProjectPageMediaGroup ;
 .
 
+regen:VideoURLPropertyShape sh:path regen:videoURL ;
+  sh:datatype schema:URL ;
+  sh:group regen:ProjectPageMediaGroup ;
+.
+
 # Groups
 
 regen:ProjectPageBasicInfoGroup

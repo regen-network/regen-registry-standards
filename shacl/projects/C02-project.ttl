@@ -21,6 +21,7 @@ regen:C02-ProjectShape a sh:NodeShape ;
   sh:property regen:ProjectTypePropertyShape ;
   sh:property regen:PreviewPhotoPropertyShape ;
   sh:property regen:GalleryPhotosPropertyShape ;
+  sh:property regen:VideoURLPropertyShape ;
   
   sh:property regen:CFCProjectPagePropertyShape ;
   sh:property regen:ProjectOperatorPropertyShape ;
