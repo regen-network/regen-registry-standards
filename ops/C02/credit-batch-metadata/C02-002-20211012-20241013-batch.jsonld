@@ -25,5 +25,12 @@
     {
       "schema:url": "https://www.cityforestcredits.org/wp-content/uploads/2021/07/Sandy-Cross-Forest-Verification-Report-Final.pdf"
     }
-  ]
+  ],
+  "regen:projectVerifier": {
+    "schema:name": "Ecofor LLC",
+    "schema:url": {
+      "@type": "schema:URL",
+      "@value": "https://www.ecofor.ca/"
+    }
+  }
 }

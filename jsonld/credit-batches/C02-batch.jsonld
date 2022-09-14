@@ -25,5 +25,12 @@
     {
       "schema:url": ""
     }
-  ]
+  ],
+  "regen:projectVerifier": {
+    "schema:name": "",
+    "schema:url": {
+      "@type": "schema:URL",
+      "@value": ""
+    }
+  }
 }

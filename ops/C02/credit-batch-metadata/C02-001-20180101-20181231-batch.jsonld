@@ -26,5 +26,12 @@
     {
       "schema:url": "https://www.cityforestcredits.org/wp-content/uploads/2018/04/King-County-Verification-Report.pdf"
     }
-  ]
+  ],
+  "regen:projectVerifier": {
+    "schema:name": "Ecofor LLC",
+    "schema:url": {
+      "@type": "schema:URL",
+      "@value": "https://www.ecofor.ca/"
+    }
+  }
 }

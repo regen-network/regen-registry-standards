@@ -31,6 +31,10 @@ regen:C02-CreditBatchShape a sh:NodeShape ;
       sh:node regen:UrlShape ;
     ] ;
   ] ;
+  sh:property [
+    sh:path regen:projectVerifier ;
+    sh:node regen:NameUrlShape ;
+  ] ;
 .
 
 regen:UrlShape a sh:NodeShape ;
