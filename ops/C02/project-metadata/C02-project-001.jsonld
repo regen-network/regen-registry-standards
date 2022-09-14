@@ -35,14 +35,14 @@
     }
   },
   "@type": "regen:C02-Project",
-  "schema:name": "Buena Vista Heights Conservation Area",
-  "regen:cfcProjectId": "9",
-  "regen:cfcProjectPage": "https://www.cityforestcredits.org/carbon-credits/carbon-registry/pittsburgh-forest-carbon-offsets/",
-  "regen:projectDesignDocument": "https://www.cityforestcredits.org/wp-content/uploads/2020/02/Buena-Vista-Heights-Project-Design-Document-1.pdf",
-  "schema:description": "Outside Pittsburgh, Allegheny Land Trust protected 124 acres of woodlands from rapid encroaching residential development in southeastern Allegheny County. The 40 year old maple, cherry and oak-hickory forest provides habitat for deer, turkey, and many species of birds. Hikers, birders, and mountain bikers will be able to explore the area, and possibly catch a glimpse of a majestic 200 year old oak tree.\n\nProtection of this forest also contributes to maintaining clean drinking water for Pittsburgh region’s residents. Located within the lower Youghiogheny River Watershed, the property is five miles upstream from the confluence with the Monongahela River.\n\nRevenue generated from the sale of carbon credits will be put towards acquisition costs, land stewardship, and future expansion of this and other conservation lands.",
+  "schema:name": "King County Urban Forest Carbon Project",
+  "regen:cfcProjectId": "1.2018",
+  "regen:cfcProjectPage": "https://www.cityforestcredits.org/carbon-credits/carbon-registry/king-county-forest-carbon-offsets/",
+  "regen:projectDesignDocument": "https://www.cityforestcredits.org/wp-content/uploads/2018/04/King-County-Project-Design-Document.pdf",
+  "schema:description": "Launched in May 2019, King County’s Forest Carbon Project confronts climate change by offering local companies the opportunity to offset their carbon emissions by keeping forests intact here in the region, making it possible for their employees and their families to explore and enjoy the protected outdoor spaces.\n\nThe Puget Sound region, including the Seattle metro area, is growing rapidly. The Forest Carbon Project is a component of the Land Conservation Initiative, a 30-year vision to protect 65,000 acres of the most important remaining natural lands and urban green spaces for residents of the region.\n\nKing County has identified 1,500 acres of high-value urban forest to be preserved and will be acquiring lands with its city partners throughout the coming years. The first acquisition in 2019 was a 15-acre addition to Soaring Eagle Regional Park near Sammamish, WA.",
   "regen:projectOperator": {
-    "schema:name": "Allegheny Land Trust",
-    "schema:url": "https://alleghenylandtrust.org/"
+    "schema:name": "King County Department of Natural Resources & Parks",
+    "schema:url": "https://www.kingcounty.gov/depts/dnrp.aspx"
   },
   "regen:projectType": "Agriculture Forestry and Other Land Use",
   "regen:projectActivity": {
@@ -51,10 +51,10 @@
   "regen:offsetGenerationMethod": "Avoided Emissions",
   "regen:projectSize": {
     "qudt:unit": "unit:HA",
-    "qudt:numericValue": 50.14
+    "qudt:numericValue": 6.07
   },
-  "regen:projectStartDate": "2020-06-30",
-  "regen:projectEndDate": "2060-06-30",
+  "regen:projectStartDate": "",
+  "regen:projectEndDate": "",
   "schema:location": {
     "@context": {
       "type": "@type",
@@ -67,22 +67,19 @@
       }
     },
     "type": "Feature",
-    "place_name": "Elizabeth Township, Pennsylvania, United States, North America",
+    "place_name": "King County, Washington, USA, North America",
     "geometry": {
       "type": "Point",
       "coordinates": [
-        40.263906,
-        -79.899246
+        47.610332,
+        -121.992165
       ]
     }
   },
-  "regen:previewPhoto": "https://regen-registry.s3.amazonaws.com/projects/C02/buena-vista-01.jpg",
-  "regen:galleryPhotos": [
-    "https://regen-registry.s3.amazonaws.com/projects/C02/buena-vista-02.jpg"
-  ],
+  "regen:previewPhoto": "https://regen-registry.s3.amazonaws.com/projects/C02/kings-county.jpg",
   "regen:offsetProtocol": {
-    "schema:name": "Preservation Protocol - 40 years",
-    "schema:url": "https://www.cityforestcredits.org/wp-content/uploads/2022/07/City-Forest-Preservation-Protocol-40-Years-V11.40.pdf",
-    "schema:version": "v11.40"
+    "schema:name": "Preservation Protocol — 100 years",
+    "schema:url": "https://www.cityforestcredits.org/wp-content/uploads/2022/07/City-Forest-Preservation-Protocol-100-Years-V11.100.pdf",
+    "schema:version": "6.100"
   }
 }
