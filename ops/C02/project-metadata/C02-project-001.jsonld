@@ -53,8 +53,8 @@
     "qudt:unit": "unit:HA",
     "qudt:numericValue": 6.07
   },
-  "regen:projectStartDate": "",
-  "regen:projectEndDate": "",
+  "regen:projectStartDate": "2018-12-14",
+  "regen:projectEndDate": "2118-12-14",
   "schema:location": {
     "@context": {
       "type": "@type",
