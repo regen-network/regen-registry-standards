@@ -1,0 +1,29 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "http://regen.network/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "regen:cfcVintageYear": {
+      "@type": "xsd:gYear"
+    },
+    "regen:cfcCreditSerialNumbers": {
+      "@container": "@list"
+    },
+    "regen:verificationReports": {
+      "@container": "@list"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
+    }
+  },
+  "@type": "regen:C02-CreditBatch",
+  "regen:cfcCreditSerialNumbers": [
+    "32524 - 41238"
+  ],
+  "regen:cfcVintageYear": 2021,
+  "regen:verificationReports": [
+    {
+      "schema:url": "https://www.cityforestcredits.org/wp-content/uploads/2020/10/St-Elmo-Trail-Verification-Report.pdf"
+    }
+  ]
+}

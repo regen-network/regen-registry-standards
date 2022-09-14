@@ -11,11 +11,17 @@
     },
     "regen:offsetGenerationMethod": {
       "@container": "@list"
+    },
+    "regen:projectActivities": {
+      "@container": "@list"
+    },
+    "regen:ecosystemType": {
+      "@container": "@list"
     }
   },
-  "@type": "regen:CreditClass",
-  "schema:description": "",
+  "@type": "regen:C02-CreditClass",
   "schema:name": "",
+  "schema:description": "",
   "schema:url": {
     "@type": "schema:URL",
     "@value": ""
@@ -28,10 +34,16 @@
     }
   },
   "regen:sectoralScope": [
-    ""
+    {
+      "@type": "xsd:string",
+      "@value": ""
+    }
   ],
   "regen:offsetGenerationMethod": [
-    ""
+    {
+      "@type": "xsd:string",
+      "@value": ""
+    }
   ],
   "regen:approvedMethodologies": {
     "@type": "schema:BreadcrumbList",
@@ -39,28 +51,12 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "",
-        "schema:url": {
-          "@type": "schema:URL",
-          "@value": ""
-        },
         "schema:identifier": {
           "@type": "schema:Text",
           "@value": ""
         },
-        "schema:version": {
-          "@type": "schema:Text",
-          "@value": ""
-        }
-      },
-      {
-        "@type": "regen:Methodology",
-        "schema:name": "",
         "schema:url": {
           "@type": "schema:URL",
-          "@value": ""
-        },
-        "schema:identifier": {
-          "@type": "schema:Text",
           "@value": ""
         },
         "schema:version": {
@@ -74,5 +70,17 @@
       "@value": ""
     }
   },
-  "regen:verificationMethod": ""
+  "regen:ecosystemType": [
+    ""
+  ],
+  "regen:verificationMethod": "",
+  "regen:projectActivities": [
+    ""
+  ],
+  "regen:carbonOffsetStandard": {
+    "schema:url": {
+      "@type": "schema:URL",
+      "@value": ""
+    }
+  }
 }

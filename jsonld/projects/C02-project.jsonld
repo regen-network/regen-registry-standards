@@ -1,0 +1,88 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "http://regen.network/",
+    "qudt": "http://qudt.org/schema/qudt/",
+    "unit": "http://qudt.org/vocab/unit/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "regen:cfcProjectPage": {
+      "@type": "schema:URL"
+    },
+    "regen:projectDesignDocument": {
+      "@type": "schema:URL"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
+    },
+    "regen:previewPhoto": {
+      "@type": "schema:URL"
+    },
+    "regen:galleryPhotos": {
+      "@container": "@list",
+      "@type": "schema:URL"
+    },
+    "qudt:unit": {
+      "@type": "qudt:Unit"
+    },
+    "qudt:numericValue": {
+      "@type": "xsd:double"
+    },
+    "regen:projectStartDate": {
+      "@type": "xsd:date"
+    },
+    "regen:projectEndDate": {
+      "@type": "xsd:date"
+    }
+  },
+  "@type": "regen:C02-Project",
+  "schema:name": "",
+  "regen:cfcProjectId": "",
+  "regen:cfcProjectPage": "",
+  "regen:projectDesignDocument": "",
+  "schema:description": "",
+  "regen:projectOperator": {
+    "schema:name": "",
+    "schema:url": ""
+  },
+  "regen:projectType": "",
+  "regen:projectActivity": {
+    "schema:name": ""
+  },
+  "regen:offsetGenerationMethod": "",
+  "regen:projectSize": {
+    "qudt:unit": "",
+    "qudt:numericValue": 0
+  },
+  "regen:projectStartDate": "",
+  "regen:projectEndDate": "",
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "type": "Feature",
+    "place_name": "",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        0,
+        0
+      ]
+    }
+  },
+  "regen:previewPhoto": "",
+  "regen:galleryPhotos": [
+    ""
+  ],
+  "regen:offsetProtocol": {
+    "schema:name": "",
+    "schema:url": "",
+    "schema:version": ""
+  }
+}

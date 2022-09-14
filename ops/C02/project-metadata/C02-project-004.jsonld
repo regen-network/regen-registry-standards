@@ -1,0 +1,93 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "http://regen.network/",
+    "qudt": "http://qudt.org/schema/qudt/",
+    "unit": "http://qudt.org/vocab/unit/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "regen:cfcProjectPage": {
+      "@type": "schema:URL"
+    },
+    "regen:projectDesignDocument": {
+      "@type": "schema:URL"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
+    },
+    "regen:previewPhoto": {
+      "@type": "schema:URL"
+    },
+    "regen:galleryPhotos": {
+      "@container": "@list",
+      "@type": "schema:URL"
+    },
+    "qudt:unit": {
+      "@type": "qudt:Unit"
+    },
+    "qudt:numericValue": {
+      "@type": "xsd:double"
+    },
+    "regen:projectStartDate": {
+      "@type": "xsd:date"
+    },
+    "regen:projectEndDate": {
+      "@type": "xsd:date"
+    },
+    "regen:videoURL": {
+      "@type": "schema:URL"
+    }
+  },
+  "@type": "regen:C02-Project",
+  "schema:name": "Harvey Manning Park Expansion",
+  "regen:cfcProjectId": "15",
+  "regen:cfcProjectPage": "https://www.cityforestcredits.org/carbon-credits/carbon-registry/issaquah-forest-carbon-offsets/",
+  "regen:projectDesignDocument": "https://www.cityforestcredits.org/wp-content/uploads/2021/10/Harvey_Manning_Park_Project_Design_Document_20211213_Final.pdf",
+  "schema:description": "The goal of the City of Issaquah’s Harvey Manning Park Expansion project is to protect Issaquah’s forested hillsides, connect residents to nature, and to preserve contiguous forest on Cougar Mountain. The 15.14-acre project site is part of a 33 acre property in the forested “Issaquah Alps” comprised of Tiger, Squak, and Cougar Mountains, that rise above Lake Sammamish, and connect to other public lands. The site is uniquely positioned in Issaquah city limits, the region’s urban growth boundary and the Mountains to Sound Greenway National Heritage Area corridor.\n\nThe City has worked with community members, King County, and the Trust for Public Land for several years to protect this site. Carbon crediting will allow protection of the 100+ year old forest, comprised of mature mixed conifer and deciduous trees including Douglas Fir and Big Leaf Maples. Preservation of this native forest will store carbon, provide stormwater benefits, and contributes to the City’s 51% tree canopy coverage. The forest structure provides diverse habitat and pollinator plants that provide food and shelter for wildlife. The site also includes riparian and wetland habitat that supports wildlife corridors on Cougar Mountain and protects cool freshwater streams that feed Tibbetts Creek, a salmon-bearing waterway and tributary to Lake Sammamish.",
+  "regen:projectOperator": {
+    "schema:name": "City of Issaquah",
+    "schema:url": "https://www.issaquahwa.gov/"
+  },
+  "regen:projectType": "Agriculture Forestry and Other Land Use",
+  "regen:projectActivity": {
+    "schema:name": "Tree Preservation"
+  },
+  "regen:offsetGenerationMethod": "Avoided Emissions",
+  "regen:projectSize": {
+    "qudt:unit": "unit:HA",
+    "qudt:numericValue": 6.13
+  },
+  "regen:projectStartDate": "2021-12-06",
+  "regen:projectEndDate": "2061-12-06",
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "type": "Feature",
+    "place_name": "Issaquah, Washington",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.540100,
+        -122.095550
+      ]
+    }
+  },
+  "regen:previewPhoto": "https://regen-registry.s3.amazonaws.com/projects/C02/harvey-manning-01.jpg",
+  "regen:galleryPhotos": [
+    "https://regen-registry.s3.amazonaws.com/projects/C02/harvey-manning-02.jpg",
+    "https://regen-registry.s3.amazonaws.com/projects/C02/harvey-manning-03.jpg"
+  ],
+  "regen:offsetProtocol": {
+    "schema:name": "Preservation Protocol - 40 years",
+    "schema:url": "https://www.cityforestcredits.org/wp-content/uploads/2022/07/City-Forest-Preservation-Protocol-40-Years-V11.40.pdf",
+    "schema:version": "v10.40"
+  },
+  "regen:videoURL": "https://www.youtube.com/watch?v=sK_OmGiYZnE"
+}

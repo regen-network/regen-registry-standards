@@ -1,0 +1,117 @@
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix regen: <http://regen.network/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+regen:NamePropertyShape sh:path schema:name ;
+  sh:minCount 1 ;
+  sh:maxCount 1 ;
+  sh:minLength 1 ;
+  sh:datatype xsd:string ;
+  sh:group regen:ProjectPageBasicInfoGroup ;
+.
+
+regen:DescriptionPropertyShape sh:path schema:description ;
+  sh:maxLength 1400 ;
+  sh:datatype xsd:string ;
+  sh:group regen:ProjectPageDescriptionGroup ;
+.
+
+regen:LocationPropertyShape sh:path schema:location ;
+  sh:class geojson:Feature ;
+  sh:minCount 1 ;
+  sh:maxCount 1 ;
+  sh:group regen:ProjectPageLocationGroup ;
+.
+
+regen:ProjectSizePropertyShape sh:path regen:projectSize ;
+  sh:node regen:ProjectSizeShape ;
+  sh:minCount 1 ;
+  sh:maxCount 1 ;
+  sh:group regen:ProjectPageBasicInfoGroup ;
+.
+
+regen:ProjectActivityPropertyShape sh:path regen:projectActivity ;
+  sh:minCount 1 ;
+  sh:maxCount 1 ;
+  sh:node regen:NameOptionalUrlShape ;
+  sh:group regen:ProjectPageMetadataGroup ;
+.
+
+regen:ProjectStartDatePropertyShape sh:path regen:projectStartDate ;
+  sh:datatype xsd:date ;
+  sh:minCount 1 ;
+  sh:maxCount 1 ;
+  sh:group regen:ProjectPageMetadataGroup ;
+.
+
+regen:ProjectEndDatePropertyShape sh:path regen:projectEndDate ;
+  sh:datatype xsd:date ;
+  sh:minCount 1 ;
+  sh:maxCount 1 ;
+  sh:group regen:ProjectPageMetadataGroup ;
+.
+
+regen:ProjectTypePropertyShape sh:path regen:projectType ;
+  sh:minCount 1 ;
+  sh:maxCount 1 ;
+  sh:minLength 1 ;
+  sh:datatype xsd:string ;
+  sh:group regen:ProjectPageMetadataGroup ;
+.
+
+regen:PreviewPhotoPropertyShape sh:path regen:previewPhoto ;
+  sh:datatype schema:URL ;
+  sh:group regen:ProjectPageMediaGroup ;
+.
+
+regen:GalleryPhotosPropertyShape sh:path regen:galleryPhotos ;
+  sh:node dash:ListShape ;
+  sh:property [
+    sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+    sh:datatype schema:URL ;
+    sh:group regen:ProjectPageMediaGroup ;
+  ] ;
+  sh:group regen:ProjectPageMediaGroup ;
+.
+
+regen:VideoURLPropertyShape sh:path regen:videoURL ;
+  sh:datatype schema:URL ;
+  sh:group regen:ProjectPageMediaGroup ;
+.
+
+# Groups
+
+regen:ProjectPageBasicInfoGroup
+	a sh:PropertyGroup ;
+	rdfs:label "Basic Info" ;
+	sh:order "1"^^xsd:decimal .
+
+regen:ProjectPageLocationGroup
+	a sh:PropertyGroup ;
+	rdfs:label "Location" ;
+	sh:order "2"^^xsd:decimal .
+
+regen:ProjectPageRolesGroup
+	a sh:PropertyGroup ;
+	rdfs:label "Roles" ;
+	sh:order "3"^^xsd:decimal .
+
+regen:ProjectPageDescriptionGroup
+	a sh:PropertyGroup ;
+	rdfs:label "Description" ;
+	sh:order "4"^^xsd:decimal .
+
+regen:ProjectPageMediaGroup
+	a sh:PropertyGroup ;
+	rdfs:label "Media" ;
+	sh:order "5"^^xsd:decimal .
+
+regen:ProjectPageMetadataGroup
+	a sh:PropertyGroup ;
+	rdfs:label "Metadata" ;
+	sh:order "6"^^xsd:decimal .
