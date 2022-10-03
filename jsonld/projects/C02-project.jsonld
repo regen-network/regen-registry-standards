@@ -38,7 +38,10 @@
   "schema:name": "",
   "regen:cfcProjectId": "",
   "regen:cfcProjectPage": "",
-  "regen:projectDesignDocument": "",
+  "regen:projectDesignDocument": {
+    "schema:name": "",
+    "schema:url": ""
+  },
   "schema:description": "",
   "regen:projectOperator": {
     "schema:name": "",

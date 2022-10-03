@@ -51,7 +51,7 @@ regen:ProjectOperatorPropertyShape sh:path regen:projectOperator ;
 .
 
 regen:ProjectDesignDocumentPropertyShape sh:path regen:projectDesignDocument ;
-  sh:datatype schema:URL ;
+  sh:node regen:NameUrlShape ;
   sh:minCount 1 ;
   sh:maxCount 1 ;
 .
