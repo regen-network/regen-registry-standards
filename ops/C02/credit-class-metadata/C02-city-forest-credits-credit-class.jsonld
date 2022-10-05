@@ -91,10 +91,10 @@
   ],
   "regen:verificationMethod": "Third-party verified",
   "regen:projectActivities": [
-    "Tree Preservation in Cities & Towns"
+    "Tree Preservation"
   ],
   "regen:carbonOffsetStandard": {
-    "schema:name": "City Forest Credits Standard V2",
+    "schema:name": "City Forest Credits Standard",
     "schema:url": {
       "@type": "schema:URL",
       "@value": "https://www.cityforestcredits.org/wp-content/uploads/2022/03/City-Forest-Credits-Standard-V2.pdf"
