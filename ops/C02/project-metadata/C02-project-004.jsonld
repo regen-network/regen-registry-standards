@@ -81,6 +81,7 @@
   },
   "regen:previewPhoto": "https://regen-registry.s3.amazonaws.com/projects/C02/harvey-manning-01.jpg",
   "regen:galleryPhotos": [
+    "https://regen-registry.s3.amazonaws.com/projects/C02/harvey-manning-01.jpg",
     "https://regen-registry.s3.amazonaws.com/projects/C02/harvey-manning-02.jpg",
     "https://regen-registry.s3.amazonaws.com/projects/C02/harvey-manning-03.jpg"
   ],

@@ -77,6 +77,9 @@
     }
   },
   "regen:previewPhoto": "https://regen-registry.s3.amazonaws.com/projects/C02/sandy-cross.jpg",
+  "regen:galleryPhotos": [
+    "https://regen-registry.s3.amazonaws.com/projects/C02/sandy-cross.jpg"
+  ],
   "regen:offsetProtocol": {
     "schema:name": "Preservation Protocol - 40 years",
     "schema:url": "https://www.cityforestcredits.org/wp-content/uploads/2022/07/City-Forest-Preservation-Protocol-40-Years-V11.40.pdf",

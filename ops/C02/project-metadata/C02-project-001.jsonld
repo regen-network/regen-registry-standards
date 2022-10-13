@@ -77,6 +77,9 @@
     }
   },
   "regen:previewPhoto": "https://regen-registry.s3.amazonaws.com/projects/C02/kings-county.jpg",
+  "regen:galleryPhotos": [
+    "https://regen-registry.s3.amazonaws.com/projects/C02/kings-county.jpg"
+  ],
   "regen:offsetProtocol": {
     "schema:name": "Preservation Protocol — 100 years",
     "schema:url": "https://www.cityforestcredits.org/wp-content/uploads/2022/07/City-Forest-Preservation-Protocol-100-Years-V11.100.pdf",
