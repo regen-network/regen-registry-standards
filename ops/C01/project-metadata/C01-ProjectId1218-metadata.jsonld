@@ -1,0 +1,78 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "http://regen.network/",
+    "qudt": "http://qudt.org/schema/qudt/",
+    "unit": "http://qudt.org/vocab/unit/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "regen:C01-Project",
+  "schema:name": "Evio Kuiñaji Ese´eja Cuana",
+  "regen:vcsProjectId": 1218,
+  "regen:vcsProjectPage": {
+    "@type": "schema:URL",
+    "@value": "https://registry.verra.org/app/projectDetail/VCS/1218"
+  },
+  "schema:description": "Madre de Dios is the Amazon region with the highest levels of biodiversity in the country, that’s why it earned the title of Biodiversity Capital of Peru in 1994. Currently, Madre de Dios faces an abrupt change in land use and accelerated forest degradation.  The purpose of the project is to conserve community forests and their concession, against de rapidly increase of deforestation through the promotion of sustainable economic activities, forest governance and the establishment of conservation agreements.",
+  "regen:projectDeveloper": {
+    "@type": "regen:OrganizationDisplay",
+    "schema:name": "Ese´Eja Infierno Native Community",
+    "schema:description": "Forest owners committed to work to protect and manage the forest under a REDD+ project.",
+    "regen:showOnProjectPage": true
+  },
+  "regen:projectType": "Agriculture Forestry and Other Land Use",
+  "regen:projectActivity": {
+    "schema:name": "REDD",
+    "schema:url": {
+      "@type": "schema:URL",
+      "@value": "https://redd.unfccc.int/"
+    }
+  },
+  "regen:offsetGenerationMethod": "Emission Reduction",
+  "regen:vcsMethodology": {
+    "schema:name": "VM0007 REDD+ Methodology Framework",
+    "schema:url": {
+      "@type": "schema:URL",
+      "@value": "https://verra.org/methodology/vm0007-redd-methodology-framework-redd-mf-v1-6/"
+    }
+  },
+  "regen:projectSize": {
+    "qudt:unit": {
+      "@type": "qudt:Unit",
+      "@value": "unit:HA"
+    },
+    "qudt:numericValue": {
+      "@type": "xsd:double",
+      "@value": 7653
+    }
+  },
+  "regen:projectStartDate": {
+    "@type": "xsd:date",
+    "@value": "2011-07-01"
+  },
+  "regen:projectEndDate": {
+    "@type": "xsd:date",
+    "@value": "2030-06-30"
+  },
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "type": "Feature",
+    "place_name": "Puerto Maldonado, Madre de Dios, Peru",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -69.314155,
+        -12.82265
+      ]
+    }
+  }
+}
