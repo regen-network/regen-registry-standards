@@ -6,8 +6,8 @@
   },
   "@type": "regen:C03-Project",
   "regen:toucanProjectTokenID": "",
-  "regen:projectName": "",
-  "regen:vcsProjectId": "",
+  "schema:name": "",
+  "regen:vcsProjectId": 0,
   "regen:vcsMethodology": [
     {
       "regen:methodologyID": {
