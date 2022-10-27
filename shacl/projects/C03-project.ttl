@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix regen: <http://regen.network/> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+regen:C03-ProjectShape a sh:NodeShape ;
+  sh:targetClass regen:C03-Project ;
+
+  sh:property regen:NamePropertyShape ;
+  sh:property regen:ToucanProjectTokenIDPropertyShape ;
+  sh:property [
+    sh:path regen:vcsProjectId ;
+    sh:datatype xsd:integer ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:toucanURI ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+  ] ;
+
+  sh:property [
+    sh:path regen:approvedMethodologies ;
+    sh:node dash:ListShape ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:node regen:MethodologyVersionShape ;
+    ] ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+
+  sh:property regen:ProjectActivityOptionalPropertyShape ;
+  sh:property regen:ProjectTypeOptionalPropertyShape ;
+  sh:property [
+    sh:path regen:offsetGenerationMethod ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:datatype xsd:string ;
+  ] ;
+  sh:property regen:ProjectOptionalStartDatePropertyShape ;
+  sh:property regen:ProjectOptionalEndDatePropertyShape ;
+.
+
+regen:ToucanProjectTokenIDPropertyShape sh:path regen:toucanProjectTokenId ;
+  sh:datatype xsd:string ;
+  sh:minCount 1 ;
+  sh:maxCount 1 ;
+  sh:minLength 1;
+.

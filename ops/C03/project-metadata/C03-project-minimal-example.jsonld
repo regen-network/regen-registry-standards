@@ -23,24 +23,15 @@
     }
   },
   "@type": "regen:C03-Project",
-  "regen:toucanProjectTokenId": "",
-  "schema:name": "",
-  "regen:vcsProjectId": 0,
-  "regen:toucanURI": "",
+  "regen:toucanProjectTokenId": "123",
+  "schema:name": "VCS-123",
+  "regen:vcsProjectId": 123,
+  "regen:toucanURI": "https://toucan.earth/projects/VCS-123",
   "regen:approvedMethodologies": [
     {
       "@type": "regen:Methodology",
-      "schema:name": "",
-      "schema:identifier": "",
-      "schema:url": "",
-      "schema:version": ""
+      "schema:name": "Preservation Protocol - 40 years",
+      "schema:identifier": "PP40"
     }
-  ],
-  "regen:projectActivity": {
-    "schema:name": ""
-  },
-  "regen:projectType": "",
-  "regen:offsetGenerationMethod": "",
-  "regen:projectStartDate": "",
-  "regen:projectEndDate": ""
+  ]
 }
