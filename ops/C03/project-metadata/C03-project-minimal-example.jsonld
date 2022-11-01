@@ -30,8 +30,8 @@
   "regen:approvedMethodologies": [
     {
       "@type": "regen:Methodology",
-      "schema:name": "Preservation Protocol - 40 years",
-      "schema:identifier": "PP40"
+      "schema:name": "AMS-I.C.",
+      "schema:identifier": "AMS-I.C."
     }
   ]
 }
