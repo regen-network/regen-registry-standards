@@ -23,7 +23,6 @@ regen:C03-ProjectShape a sh:NodeShape ;
   sh:property [
     sh:path regen:toucanURI ;
     sh:datatype xsd:string ;
-    sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:minLength 1 ;
   ] ;
