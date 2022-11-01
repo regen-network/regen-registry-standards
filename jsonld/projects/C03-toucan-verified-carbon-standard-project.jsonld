@@ -6,14 +6,8 @@
     "regen:approvedMethodologies": {
       "@container": "@list"
     },
-    "schema:identifier": {
-      "@type": "schema:Text"
-    },
     "schema:url": {
       "@type": "schema:URL"
-    },
-    "schema:version": {
-      "@type": "schema:Text"
     },
     "regen:projectStartDate": {
       "@type": "xsd:date"
@@ -29,7 +23,6 @@
   "regen:toucanURI": "",
   "regen:approvedMethodologies": [
     {
-      "@type": "regen:Methodology",
       "schema:name": "",
       "schema:identifier": "",
       "schema:url": "",
