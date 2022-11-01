@@ -4,5 +4,5 @@
   },
   "@type": "regen:C03-Batch",
   "regen:toucanVintageTokenId": 0,
-  "regen:toucanURI": "https://toucan.earth/projects/VCS-123"
+  "regen:toucanURI": "http://toucan.earth/projects/VCS-123"
 }

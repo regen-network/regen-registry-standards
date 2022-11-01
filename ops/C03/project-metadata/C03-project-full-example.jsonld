@@ -6,14 +6,8 @@
     "regen:approvedMethodologies": {
       "@container": "@list"
     },
-    "schema:identifier": {
-      "@type": "schema:Text"
-    },
     "schema:url": {
       "@type": "schema:URL"
-    },
-    "schema:version": {
-      "@type": "schema:Text"
     },
     "regen:projectStartDate": {
       "@type": "xsd:date"
@@ -25,11 +19,10 @@
   "@type": "regen:C03-Project",
   "regen:toucanProjectTokenId": 123,
   "schema:name": "VCS-123",
-  "regen:vcsProjectId": 123,
-  "regen:toucanURI": "https://toucan.earth/projects/VCS-123",
+  "regen:vcsProjectId": "VCS-123",
+  "regen:toucanURI": "http://toucan.earth/projects/VCS-123",
   "regen:approvedMethodologies": [
     {
-      "@type": "regen:Methodology",
       "schema:name": "Preservation Protocol - 40 years",
       "schema:identifier": "PP40",
       "schema:url": "https://pp.org/PP40",

@@ -4,19 +4,15 @@
     "regen": "http://regen.network/",
     "regen:approvedMethodologies": {
       "@container": "@list"
-    },
-    "schema:identifier": {
-      "@type": "schema:Text"
     }
   },
   "@type": "regen:C03-Project",
-  "regen:toucanProjectTokenId": "123",
+  "regen:toucanProjectTokenId": 123,
   "schema:name": "VCS-123",
-  "regen:vcsProjectId": 123,
-  "regen:toucanURI": "https://toucan.earth/projects/VCS-123",
+  "regen:vcsProjectId": "VCS-123",
+  "regen:toucanURI": "http://toucan.earth/projects/VCS-123",
   "regen:approvedMethodologies": [
     {
-      "@type": "regen:Methodology",
       "schema:name": "AMS-I.C.",
       "schema:identifier": "AMS-I.C."
     }

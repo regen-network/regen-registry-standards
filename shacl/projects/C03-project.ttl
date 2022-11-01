@@ -16,7 +16,7 @@ regen:C03-ProjectShape a sh:NodeShape ;
   sh:property regen:ToucanProjectTokenIDPropertyShape ;
   sh:property [
     sh:path regen:vcsProjectId ;
-    sh:datatype xsd:integer ;
+    sh:datatype xsd:string ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
   ] ;
@@ -32,7 +32,7 @@ regen:C03-ProjectShape a sh:NodeShape ;
     sh:node dash:ListShape ;
     sh:property [
       sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
-      sh:node regen:MethodologyVersionShape ;
+      sh:node regen:C03MethodologyVersionShape ;
     ] ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
@@ -55,4 +55,30 @@ regen:ToucanProjectTokenIDPropertyShape sh:path regen:toucanProjectTokenId ;
   sh:minCount 1 ;
   sh:maxCount 1 ;
   sh:minLength 1;
+.
+
+regen:C03MethodologyVersionShape a sh:NodeShape ;
+  sh:property [
+    sh:path schema:url ;
+    sh:datatype schema:URL ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path schema:name ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+  ] ;
+  sh:property [ 
+    sh:path schema:identifier ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [ 
+    sh:path schema:version ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+  ] ;
 .
