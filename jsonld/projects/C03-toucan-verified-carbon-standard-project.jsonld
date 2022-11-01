@@ -23,7 +23,7 @@
     }
   },
   "@type": "regen:C03-Project",
-  "regen:toucanProjectTokenId": "",
+  "regen:toucanProjectTokenId": 0,
   "schema:name": "",
   "regen:vcsProjectId": 0,
   "regen:toucanURI": "",
