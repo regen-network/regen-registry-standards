@@ -25,7 +25,7 @@
   "@type": "regen:C03-Project",
   "regen:toucanProjectTokenId": 0,
   "schema:name": "",
-  "regen:vcsProjectId": 0,
+  "regen:vcsProjectId": "",
   "regen:toucanURI": "",
   "regen:approvedMethodologies": [
     {
