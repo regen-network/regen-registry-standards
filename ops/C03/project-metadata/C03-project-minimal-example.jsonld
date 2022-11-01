@@ -2,24 +2,11 @@
   "@context": {
     "schema": "http://schema.org/",
     "regen": "http://regen.network/",
-    "xsd": "http://www.w3.org/2001/XMLSchema#",
     "regen:approvedMethodologies": {
       "@container": "@list"
     },
     "schema:identifier": {
       "@type": "schema:Text"
-    },
-    "schema:url": {
-      "@type": "schema:URL"
-    },
-    "schema:version": {
-      "@type": "schema:Text"
-    },
-    "regen:projectStartDate": {
-      "@type": "xsd:date"
-    },
-    "regen:projectEndDate": {
-      "@type": "xsd:date"
     }
   },
   "@type": "regen:C03-Project",
