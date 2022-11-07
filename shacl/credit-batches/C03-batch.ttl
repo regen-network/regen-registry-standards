@@ -6,17 +6,5 @@ regen:C03-BatchShape a sh:NodeShape ;
   sh:targetClass regen:C03-Batch ;
 
   sh:property regen:ToucanVintageTokenIDPropertyShape ;
-  sh:property [
-    sh:path regen:toucanURI ;
-    sh:datatype xsd:string ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:minLength 1 ;
-  ] ;
-.
-
-regen:ToucanVintageTokenIDPropertyShape sh:path regen:toucanVintageTokenId ;
-  sh:datatype xsd:integer ;
-  sh:minCount 1 ;
-  sh:maxCount 1 ;
+  sh:property regen:ToucanURIPropertyShape ;
 .
