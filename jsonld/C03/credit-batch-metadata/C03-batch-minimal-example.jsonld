@@ -3,6 +3,6 @@
     "regen": "http://regen.network/"
   },
   "@type": "regen:C03-Batch",
-  "regen:toucanVintageTokenId": 0,
+  "regen:toucanVintageTokenId": 123,
   "regen:toucanURI": "http://toucan.earth/projects/VCS-123"
 }
