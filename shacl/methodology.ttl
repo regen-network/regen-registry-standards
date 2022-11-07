@@ -27,7 +27,6 @@ regen:MethodologyVersionShape
   sh:property [ 
     sh:path schema:identifier ;
     sh:datatype schema:Text ;
-    sh:minCount 1 ;
     sh:maxCount 1 ;
   ] ;
   sh:property [ 
