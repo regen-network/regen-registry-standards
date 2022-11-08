@@ -9,12 +9,7 @@ regen:C03-ProjectShape a sh:NodeShape ;
 
   sh:property regen:NamePropertyShape ;
   sh:property regen:ToucanProjectTokenIDPropertyShape ;
-  sh:property [
-    sh:path regen:vcsProjectId ;
-    sh:datatype xsd:string ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-  ] ;
+  sh:property regen:VCSProjectIdPropertyShape ;
   sh:property regen:ToucanURIPropertyShape ;
 
   sh:property [
