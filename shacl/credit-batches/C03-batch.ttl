@@ -2,8 +2,8 @@
 @prefix regen: <http://regen.network/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-regen:C03-BatchShape a sh:NodeShape ;
-  sh:targetClass regen:C03-Batch ;
+regen:C03-CreditBatchShape a sh:NodeShape ;
+  sh:targetClass regen:C03-CreditBatch ;
 
   sh:property regen:ToucanVintageTokenIDPropertyShape ;
   sh:property regen:ToucanURIPropertyShape ;

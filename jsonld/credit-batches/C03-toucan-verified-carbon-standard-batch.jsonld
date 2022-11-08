@@ -2,7 +2,7 @@
   "@context": {
     "regen": "http://regen.network/"
   },
-  "@type": "regen:C03-Batch",
+  "@type": "regen:C03-CreditBatch",
   "regen:toucanVintageTokenId": 0,
   "regen:toucanURI": ""
 }
