@@ -9,7 +9,7 @@
   "@type": "regen:C03-Project",
   "regen:toucanProjectTokenId": 123,
   "schema:name": "VCS-123",
-  "regen:vcsProjectId": "VCS-123",
+  "regen:vcsProjectId": 123,
   "regen:toucanURI": "http://toucan.earth/projects/123",
   "regen:approvedMethodologies": [
     {
