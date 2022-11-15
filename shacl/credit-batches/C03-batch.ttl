@@ -5,6 +5,11 @@
 regen:C03-CreditBatchShape a sh:NodeShape ;
   sh:targetClass regen:C03-CreditBatch ;
 
-  sh:property regen:ToucanVintageTokenIDPropertyShape ;
+  sh:property [
+    sh:path regen:toucanVintageTokenId ;
+    sh:datatype xsd:integer ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
   sh:property regen:ToucanURIPropertyShape ;
 .

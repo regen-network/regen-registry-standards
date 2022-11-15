@@ -8,7 +8,13 @@ regen:C03-ProjectShape a sh:NodeShape ;
   sh:targetClass regen:C03-Project ;
 
   sh:property regen:NamePropertyShape ;
-  sh:property regen:ToucanProjectTokenIDPropertyShape ;
+  sh:property [
+    sh:path regen:toucanProjectTokenId ;
+    sh:datatype xsd:integer ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+  ] ;
   sh:property regen:VCSProjectIdPropertyShape ;
   sh:property regen:ToucanURIPropertyShape ;
 
@@ -33,11 +39,4 @@ regen:C03-ProjectShape a sh:NodeShape ;
   ] ;
   sh:property regen:ProjectOptionalStartDatePropertyShape ;
   sh:property regen:ProjectOptionalEndDatePropertyShape ;
-.
-
-regen:ToucanProjectTokenIDPropertyShape sh:path regen:toucanProjectTokenId ;
-  sh:datatype xsd:integer ;
-  sh:minCount 1 ;
-  sh:maxCount 1 ;
-  sh:minLength 1;
 .
