@@ -40,7 +40,7 @@ def sglob(pathname):
 
 
 def credit_class_validations(fp):
-    for data in sglob("ops/*/credit-class-metadata/*.jsonld"):
+    for data in sglob("*/*/credit-class-metadata/*.jsonld"):
         shacl_validate(
             fp.name,
             data,
@@ -48,7 +48,7 @@ def credit_class_validations(fp):
 
 
 def project_validations(fp):
-    for data in sglob("ops/*/project-metadata/*.jsonld"):
+    for data in sglob("*/*/project-metadata/*.jsonld"):
         shacl_validate(
             fp.name,
             data,
@@ -56,7 +56,7 @@ def project_validations(fp):
 
 
 def credit_batch_validations(fp):
-    for data in sglob("ops/*/credit-batch-metadata/*.jsonld"):
+    for data in sglob("*/*/credit-batch-metadata/*.jsonld"):
         shacl_validate(
             fp.name,
             data,

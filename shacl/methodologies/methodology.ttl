@@ -15,22 +15,23 @@ regen:MethodologyVersionShape
   sh:property [
     sh:path schema:url ;
     sh:datatype schema:URL ;
+    sh:maxCount 1 ;
   ] ;
   sh:property [
     sh:path schema:name ;
     sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
     sh:minLength 1 ;
   ] ;
   sh:property [ 
     sh:path schema:identifier ;
     sh:datatype schema:Text ;
-    sh:minCount 1;
-    sh:maxCount 1;
+    sh:maxCount 1 ;
   ] ;
   sh:property [ 
     sh:path schema:version ;
     sh:datatype schema:Text ;
-    sh:minCount 1;
-    sh:maxCount 1;
+    sh:maxCount 1 ;
   ] ;
 .

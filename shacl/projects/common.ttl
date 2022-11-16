@@ -42,9 +42,21 @@ regen:ProjectActivityPropertyShape sh:path regen:projectActivity ;
   sh:group regen:ProjectPageMetadataGroup ;
 .
 
+regen:ProjectActivityOptionalPropertyShape sh:path regen:projectActivity ;
+  sh:maxCount 1 ;
+  sh:node regen:NameOptionalUrlShape ;
+  sh:group regen:ProjectPageMetadataGroup ;
+.
+
 regen:ProjectStartDatePropertyShape sh:path regen:projectStartDate ;
   sh:datatype xsd:date ;
   sh:minCount 1 ;
+  sh:maxCount 1 ;
+  sh:group regen:ProjectPageMetadataGroup ;
+.
+
+regen:ProjectOptionalStartDatePropertyShape sh:path regen:projectStartDate ;
+  sh:datatype xsd:date ;
   sh:maxCount 1 ;
   sh:group regen:ProjectPageMetadataGroup ;
 .
@@ -56,8 +68,21 @@ regen:ProjectEndDatePropertyShape sh:path regen:projectEndDate ;
   sh:group regen:ProjectPageMetadataGroup ;
 .
 
+regen:ProjectOptionalEndDatePropertyShape sh:path regen:projectEndDate ;
+  sh:datatype xsd:date ;
+  sh:maxCount 1 ;
+  sh:group regen:ProjectPageMetadataGroup ;
+.
+
 regen:ProjectTypePropertyShape sh:path regen:projectType ;
   sh:minCount 1 ;
+  sh:maxCount 1 ;
+  sh:minLength 1 ;
+  sh:datatype xsd:string ;
+  sh:group regen:ProjectPageMetadataGroup ;
+.
+
+regen:ProjectTypeOptionalPropertyShape sh:path regen:projectType ;
   sh:maxCount 1 ;
   sh:minLength 1 ;
   sh:datatype xsd:string ;
@@ -82,6 +107,13 @@ regen:GalleryPhotosPropertyShape sh:path regen:galleryPhotos ;
 regen:VideoURLPropertyShape sh:path regen:videoURL ;
   sh:datatype schema:URL ;
   sh:group regen:ProjectPageMediaGroup ;
+.
+
+regen:VCSProjectIdPropertyShape sh:path regen:vcsProjectId ;
+  sh:datatype xsd:integer ;
+  sh:minCount 1 ;
+  sh:maxCount 1 ;
+  sh:group regen:ProjectPageMetadataGroup ;
 .
 
 # Groups

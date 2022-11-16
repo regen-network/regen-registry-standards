@@ -1,0 +1,10 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix regen: <http://regen.network/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+regen:ToucanURIPropertyShape sh:path regen:toucanURI ;
+  sh:datatype xsd:string ;
+  sh:minCount 1 ;
+  sh:maxCount 1 ;
+  sh:minLength 1 ;
+.
