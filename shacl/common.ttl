@@ -4,4 +4,6 @@
 
 regen:ToucanURIPropertyShape sh:path regen:toucanURI ;
   sh:datatype xsd:string ;
+  sh:maxCount 1 ;
+  sh:minLength 1 ;
 .
