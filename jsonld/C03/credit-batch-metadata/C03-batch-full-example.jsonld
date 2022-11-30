@@ -3,5 +3,6 @@
     "regen": "http://regen.network/"
   },
   "@type": "regen:C03-CreditBatch",
-  "regen:toucanVintageTokenId": 123
+  "regen:toucanVintageTokenId": 123,
+  "regen:toucanURI": "http://toucan.earth/vintages/123"
 }
