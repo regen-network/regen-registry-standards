@@ -116,6 +116,21 @@ if __name__ == "__main__":
         help="Only print the shacl validate cmd template string.",
         action="store_true",
     )
+    parser.add_argument(
+        "--credit-class-only",
+        help="Only validate credit class data",
+        action="store_true",
+    )
+    parser.add_argument(
+        "--project-only",
+        help="Only validate project data",
+        action="store_true",
+    )
+    parser.add_argument(
+        "--credit-batch-only",
+        help="Only validate credit batch data",
+        action="store_true",
+    )
     parser.add_argument("--class-id", help="Only run validations for a particular class id")
     args = parser.parse_args()
 
@@ -130,6 +145,18 @@ if __name__ == "__main__":
 
     with NamedTemporaryFile("w", suffix=".ttl") as fp:
         build_schema_file(fp)
+        
+        if args.credit_class_only:
+            credit_class_validations(fp, class_id=args.class_id)
+            sys.exit(EXIT_CODE)
+        if args.project_only:
+            project_validations(fp, class_id=args.class_id)
+            sys.exit(EXIT_CODE)
+        if args.credit_batch_only:
+            credit_batch_validations(fp, class_id=args.class_id)
+            sys.exit(EXIT_CODE)
+
+        # by default, validate all data
         credit_class_validations(fp, class_id=args.class_id)
         project_validations(fp, class_id=args.class_id)
         credit_batch_validations(fp, class_id=args.class_id)
