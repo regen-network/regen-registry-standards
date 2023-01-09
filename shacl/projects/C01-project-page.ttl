@@ -1,0 +1,38 @@
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix regen: <http://regen.network/> .
+
+regen:C01-ProjectPageShape a sh:NodeShape ;
+  sh:targetClass regen:C01-Project-Page ;
+  sh:property regen:DescriptionPropertyShape ;
+  sh:property regen:PreviewPhotoPropertyShape ;
+  sh:property regen:GalleryPhotosPropertyShape ;
+  sh:property regen:VideoURLPropertyShape ;
+  sh:property regen:VCSProjectIdPropertyShape ;
+  sh:property [
+    sh:path regen:vcsProjectPage ;
+    sh:datatype schema:URL ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:group regen:ProjectPageMetadataGroup ;
+  ] ;
+  sh:property [
+    sh:path regen:projectDeveloper ;
+    sh:node regen:ProjectRoleShape ;
+    sh:maxCount 1 ;
+    sh:group regen:ProjectPageRolesGroup ;
+  ] ;
+  sh:property [
+    sh:path schema:creditText ;
+    sh:datatype xsd:string ;
+    sh:group regen:ProjectPageMediaGroup ;
+  ] ;
+  sh:property [
+    sh:path regen:vcsMethodology ;
+    sh:node regen:NameUrlShape ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:group regen:ProjectPageMetadataGroup ;
+  ] ;
+.

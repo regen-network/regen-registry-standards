@@ -14,25 +14,12 @@ regen:C01-Project rdfs:subClassOf regen:Project .
 regen:C01-ProjectShape a sh:NodeShape ;
   sh:targetClass regen:C01-Project ;
   sh:property regen:NamePropertyShape ;
-  sh:property regen:DescriptionPropertyShape ;
   sh:property regen:LocationPropertyShape ;
   sh:property regen:ProjectSizePropertyShape ;
   sh:property regen:ProjectActivityPropertyShape ;
   sh:property regen:ProjectStartDatePropertyShape ;
   sh:property regen:ProjectEndDatePropertyShape ;
   sh:property regen:ProjectTypePropertyShape ;
-  sh:property regen:PreviewPhotoPropertyShape ;
-  sh:property regen:GalleryPhotosPropertyShape ;
-  sh:property regen:VideoURLPropertyShape ;
-
-  sh:property regen:VCSProjectIdPropertyShape ;
-  sh:property [
-    sh:path regen:vcsProjectPage ;
-    sh:datatype schema:URL ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:group regen:ProjectPageMetadataGroup ;
-  ] ;
   sh:property [
     sh:path regen:projectDeveloper ;
     sh:node regen:ProjectRoleShape ;
@@ -40,23 +27,11 @@ regen:C01-ProjectShape a sh:NodeShape ;
     sh:group regen:ProjectPageRolesGroup ;
   ] ;
   sh:property [
-    sh:path schema:creditText ;
-    sh:datatype xsd:string ;
-    sh:group regen:ProjectPageMediaGroup ;
-  ] ;
-  sh:property [
     sh:path regen:offsetGenerationMethod ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:minLength 1 ;
     sh:datatype xsd:string ;
-    sh:group regen:ProjectPageMetadataGroup ;
-  ] ;
-  sh:property [
-    sh:path regen:vcsMethodology ;
-    sh:node regen:NameUrlShape ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
     sh:group regen:ProjectPageMetadataGroup ;
   ] ;
 .
