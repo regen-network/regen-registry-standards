@@ -1,13 +1,9 @@
 {
   "@context": {
     "schema": "http://schema.org/",
-    "regen": "http://regen.network/",
-    "qudt": "http://qudt.org/schema/qudt/",
-    "unit": "http://qudt.org/vocab/unit/",
-    "xsd": "http://www.w3.org/2001/XMLSchema#"
+    "regen": "http://regen.network/"
   },
-  "@type": "regen:C01-Project",
-  "schema:name": "The Kasigau Corridor REDD Project - Phase II The Community Ranches",
+  "@type": "regen:C01-Project-Page",
   "regen:vcsProjectId": 612,
   "regen:vcsProjectPage": {
     "@type": "schema:URL",
@@ -20,59 +16,11 @@
     "schema:description": "Wildlife Works is the world''s leading REDD+ program development and management company.",
     "regen:showOnProjectPage": true
   },
-  "regen:projectType": "Agriculture Forestry and Other Land Use",
-  "regen:projectActivity": {
-    "schema:name": "REDD",
-    "schema:url": {
-      "@type": "schema:URL",
-      "@value": "https://redd.unfccc.int/"
-    }
-  },
-  "regen:offsetGenerationMethod": "Emission Reduction",
   "regen:vcsMethodology": {
     "schema:name": "Methodology for Avoided Ecosystem Conversion",
     "schema:url": {
       "@type": "schema:URL",
       "@value": "https://verra.org/methodology/vm0009-methodology-for-avoided-ecosystem-conversion-v3-0/"
-    }
-  },
-  "regen:projectSize": {
-    "qudt:unit": {
-      "@type": "qudt:Unit",
-      "@value": "unit:HA"
-    },
-    "qudt:numericValue": {
-      "@type": "xsd:double",
-      "@value": 169741
-    }
-  },
-  "regen:projectStartDate": {
-    "@type": "xsd:date",
-    "@value": "2010-01-01"
-  },
-  "regen:projectEndDate": {
-    "@type": "xsd:date",
-    "@value": "2039-12-31"
-  },
-  "schema:location": {
-    "@context": {
-      "type": "@type",
-      "@vocab": "https://purl.org/geojson/vocab#",
-      "coordinates": {
-        "@container": "@list"
-      },
-      "bbox": {
-        "@container": "@list"
-      }
-    },
-    "type": "Feature",
-    "place_name": "Taita–Taveta, Kenya",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        38.802647,
-        -3.910022
-      ]
     }
   },
   "regen:previewPhoto": {

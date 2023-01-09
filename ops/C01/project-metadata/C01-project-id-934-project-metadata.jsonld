@@ -1,0 +1,59 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "http://regen.network/",
+    "qudt": "http://qudt.org/schema/qudt/",
+    "unit": "http://qudt.org/vocab/unit/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "regen:C01-Project",
+  "schema:name": "The Mai Ndombe REDD+ Project",
+  "regen:projectType": "Agriculture Forestry and Other Land Use",
+  "regen:projectActivity": {
+    "schema:name": "REDD",
+    "schema:url": {
+      "@type": "schema:URL",
+      "@value": "https://redd.unfccc.int/"
+    }
+  },
+  "regen:offsetGenerationMethod": "Emission Reduction",
+  "regen:projectSize": {
+    "qudt:unit": {
+      "@type": "qudt:Unit",
+      "@value": "unit:HA"
+    },
+    "qudt:numericValue": {
+      "@type": "xsd:double",
+      "@value": 299640
+    }
+  },
+  "regen:projectStartDate": {
+    "@type": "xsd:date",
+    "@value": "2011-03-04"
+  },
+  "regen:projectEndDate": {
+    "@type": "xsd:date",
+    "@value": "2041-03-13"
+  },
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "type": "Feature",
+    "place_name": "Mai Ndombe, Democratic Republic of the Congo, Africa",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        18.044855,
+        -1.958494
+      ]
+    }
+  }
+}
