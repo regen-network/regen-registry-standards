@@ -8,12 +8,6 @@
   },
   "@type": "regen:C01-Project",
   "schema:name": "",
-  "regen:vcsProjectId": 0,
-  "regen:vcsProjectPage": {
-    "@type": "schema:URL",
-    "@value": ""
-  },
-  "schema:description": "",
   "regen:projectDeveloper": {
     "@type": "regen:OrganizationDisplay",
     "schema:name": "",
@@ -30,13 +24,6 @@
     }
   },
   "regen:offsetGenerationMethod": "",
-  "regen:vcsMethodology": {
-    "schema:name": "",
-    "schema:url": {
-      "@type": "schema:URL",
-      "@value": ""
-    }
-  },
   "regen:projectSize": {
     "qudt:unit": {
       "@type": "qudt:Unit",
