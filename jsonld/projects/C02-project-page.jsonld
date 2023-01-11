@@ -1,0 +1,26 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "http://regen.network/",
+    "regen:cfcProjectPage": {
+      "@type": "schema:URL"
+    },
+    "regen:previewPhoto": {
+      "@type": "schema:URL"
+    },
+    "regen:galleryPhotos": {
+      "@container": "@list",
+      "@type": "schema:URL"
+    }
+  },
+  "@type": "regen:Project-Page",
+  "regen:creditClassId": "",
+  "regen:cfcProjectId": "",
+  "regen:cfcProjectPage": "",
+  "schema:description": "",
+  "regen:previewPhoto": "",
+  "regen:galleryPhotos": [
+    ""
+  ],
+  "regen:videoURL": ""
+}

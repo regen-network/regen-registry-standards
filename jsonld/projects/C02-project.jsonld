@@ -14,13 +14,6 @@
     "schema:url": {
       "@type": "schema:URL"
     },
-    "regen:previewPhoto": {
-      "@type": "schema:URL"
-    },
-    "regen:galleryPhotos": {
-      "@container": "@list",
-      "@type": "schema:URL"
-    },
     "qudt:unit": {
       "@type": "qudt:Unit"
     },
@@ -76,10 +69,6 @@
       ]
     }
   },
-  "regen:previewPhoto": "",
-  "regen:galleryPhotos": [
-    ""
-  ],
   "regen:offsetProtocol": {
     "schema:name": "",
     "schema:url": "",
