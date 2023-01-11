@@ -26,6 +26,48 @@ regen:ProjectPageShape a sh:NodeShape ;
     sh:maxCount 1 ;
   ] ;
 
+  # this constraint says that landStewardStory and landStewardStoryTitle are coupled.
+  # you cannot have one without the other but it is OK for a project page to not have them.
+  # in other words, if a project page has a landStewardStory it must have a landStewardStoryTitle (and vice-versa).
+  sh:or (
+    # if the value node does not conform to this first condition, the "or" short circuits.
+    # so if neither of these fields are found, this schema is not subject to added constraints.
+    # if one of these fields is present, we proceed to the next condition.
+    [ sh:not [
+        sh:or (
+          [ sh:path regen:landStewardStory ;
+            sh:minCount 1 ;
+            sh:maxCount 1 ; 
+          ]
+          [ sh:path regen:landStewardStoryTitle ;
+            sh:minCount 1 ;
+            sh:maxCount 1 ;
+          ]
+        )
+      ]
+    ]
+    # otherwise make sure that both regen:landStewardStory and regen:landStewardStoryTitle are set properly
+    [
+      sh:and (
+        [ sh:path regen:landStewardStory ;
+          sh:minCount 1 ;
+          sh:maxCount 1 ;
+          sh:minLength 1 ;
+          sh:maxLength 500 ;
+          sh:datatype xsd:string
+        ]
+        [
+          sh:path regen:landStewardStoryTitle ;
+          sh:minCount 1 ;
+          sh:maxCount 1 ;
+          sh:minLength 1 ;
+          sh:maxLength 160 ;
+          sh:datatype xsd:string
+        ]
+      )
+    ] 
+  );
+
   # the following constraint specifies that one of the shapes listed must be satisfied.
   # it means that either VCS/CFC project id and project page must both be present.
   # i.e. it prevents a cfcProjectId being used with vcsProjectPage.
@@ -40,5 +82,5 @@ regen:ProjectPageShape a sh:NodeShape ;
       sh:property regen:CFCProjectIdPropertyShape ;
       sh:property regen:CFCProjectPagePropertyShape
     ]
-  )
+  );
 .
