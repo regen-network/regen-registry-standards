@@ -3,7 +3,8 @@
     "schema": "http://schema.org/",
     "regen": "http://regen.network/"
   },
-  "@type": "regen:C01-Project-Page",
+  "@type": "regen:Project-Page",
+  "regen:creditClassId": "C01",
   "regen:vcsProjectId": 612,
   "regen:vcsProjectPage": {
     "@type": "schema:URL",
