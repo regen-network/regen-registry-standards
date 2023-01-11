@@ -4,19 +4,13 @@
     "regen": "http://regen.network/"
   },
   "@type": "regen:C01-Project-Page",
+  "regen:creditClassId": "",
   "regen:vcsProjectId": 0,
   "regen:vcsProjectPage": {
     "@type": "schema:URL",
     "@value": ""
   },
   "schema:description": "",
-  "regen:projectDeveloper": {
-    "@type": "regen:OrganizationDisplay",
-    "schema:name": "",
-    "schema:description": "",
-    "regen:address": "",
-    "regen:showOnProjectPage": true
-  },
   "regen:vcsMethodology": {
     "schema:name": "",
     "schema:url": {
