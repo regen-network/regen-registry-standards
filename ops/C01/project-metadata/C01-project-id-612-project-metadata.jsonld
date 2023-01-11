@@ -4,17 +4,29 @@
     "regen": "http://regen.network/",
     "qudt": "http://qudt.org/schema/qudt/",
     "unit": "http://qudt.org/vocab/unit/",
-    "xsd": "http://www.w3.org/2001/XMLSchema#"
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema:url": {
+      "@type": "schema:URL"
+    },
+    "qudt:unit": {
+      "@type": "qudt:Unit"
+    },
+    "qudt:numericValue": {
+      "@type": "xsd:double"
+    },
+    "regen:projectStartDate": {
+      "@type": "xsd:date"
+    },
+    "regen:projectEndDate": {
+      "@type": "xsd:date"
+    }
   },
   "@type": "regen:C01-Project",
   "schema:name": "The Kasigau Corridor REDD Project - Phase II The Community Ranches",
   "regen:projectType": "Agriculture Forestry and Other Land Use",
   "regen:projectActivity": {
     "schema:name": "REDD",
-    "schema:url": {
-      "@type": "schema:URL",
-      "@value": "https://redd.unfccc.int/"
-    }
+    "schema:url": "https://redd.unfccc.int/"
   },
   "regen:projectDeveloper": {
     "@type": "regen:OrganizationDisplay",
@@ -24,23 +36,11 @@
   },
   "regen:offsetGenerationMethod": "Emission Reduction",
   "regen:projectSize": {
-    "qudt:unit": {
-      "@type": "qudt:Unit",
-      "@value": "unit:HA"
-    },
-    "qudt:numericValue": {
-      "@type": "xsd:double",
-      "@value": 169741
-    }
+    "qudt:unit": "unit:HA",
+    "qudt:numericValue": 169741
   },
-  "regen:projectStartDate": {
-    "@type": "xsd:date",
-    "@value": "2010-01-01"
-  },
-  "regen:projectEndDate": {
-    "@type": "xsd:date",
-    "@value": "2039-12-31"
-  },
+  "regen:projectStartDate": "2010-01-01",
+  "regen:projectEndDate": "2039-12-31",
   "schema:location": {
     "@context": {
       "type": "@type",
