@@ -11,12 +11,6 @@
     "@value": "https://registry.verra.org/app/projectDetail/VCS/934"
   },
   "schema:description": "The Mai Ndombe REDD+ Project protects over 300,000 hectares of critical bonobo and forest elephant habitat within the world’s second-largest intact rainforest and some of the most important wetlands on the planet, the Congo Basin. This project reduces the principal drivers of forest and biodiversity loss and is charting a new pathway for community prosperity through comprehensive investments into the surrounding local communities.",
-  "regen:projectDeveloper": {
-    "@type": "regen:OrganizationDisplay",
-    "schema:name": "Wildlife Works Carbon LLC",
-    "schema:description": "Wildlife Works is the world's leading REDD+ program development and management company.y",
-    "regen:showOnProjectPage": true
-  },
   "regen:vcsMethodology": {
     "schema:name": "Methodology for Avoided Ecosystem Conversion",
     "schema:url": {

@@ -11,12 +11,6 @@
     "@value": "https://registry.verra.org/app/projectDetail/VCS/612"
   },
   "schema:description": "For years, the land between Tsavo East and Tsavo West National parks in Kenya served both as home to a slowly failing cattle ranch and as the main migration corridor for local wildlife moving between the two National Parks. When we first encountered Rukinga, the community and the wildlife were at odds. Rukinga was a bruised, balding land, barren of wildlife. Cattle had grazed the fields into dust, poachers slipped on and off the ranch with ease, and trees were being clear cut along the area’s critical rainwater basin.",
-  "regen:projectDeveloper": {
-    "@type": "regen:OrganizationDisplay",
-    "schema:name": "Wildlife Works Carbon LLC",
-    "schema:description": "Wildlife Works is the world''s leading REDD+ program development and management company.",
-    "regen:showOnProjectPage": true
-  },
   "regen:vcsMethodology": {
     "schema:name": "Methodology for Avoided Ecosystem Conversion",
     "schema:url": {

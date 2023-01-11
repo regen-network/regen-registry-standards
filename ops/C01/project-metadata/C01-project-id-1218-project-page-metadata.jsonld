@@ -11,12 +11,6 @@
     "@value": "https://registry.verra.org/app/projectDetail/VCS/1218"
   },
   "schema:description": "Madre de Dios is the Amazon region with the highest levels of biodiversity in the country, that’s why it earned the title of Biodiversity Capital of Peru in 1994. Currently, Madre de Dios faces an abrupt change in land use and accelerated forest degradation.  The purpose of the project is to conserve community forests and their concession, against de rapidly increase of deforestation through the promotion of sustainable economic activities, forest governance and the establishment of conservation agreements.",
-  "regen:projectDeveloper": {
-    "@type": "regen:OrganizationDisplay",
-    "schema:name": "Ese´Eja Infierno Native Community",
-    "schema:description": "Forest owners committed to work to protect and manage the forest under a REDD+ project.",
-    "regen:showOnProjectPage": true
-  },
   "regen:vcsMethodology": {
     "schema:name": "VM0007 REDD+ Methodology Framework",
     "schema:url": {
