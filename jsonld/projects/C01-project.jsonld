@@ -4,7 +4,22 @@
     "regen": "http://regen.network/",
     "qudt": "http://qudt.org/schema/qudt/",
     "unit": "http://qudt.org/vocab/unit/",
-    "xsd": "http://www.w3.org/2001/XMLSchema#"
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema:url": {
+      "@type": "schema:URL"
+    },
+    "qudt:unit": {
+      "@type": "qudt:Unit"
+    },
+    "qudt:numericValue": {
+      "@type": "xsd:double"
+    },
+    "regen:projectStartDate": {
+      "@type": "xsd:date"
+    },
+    "regen:projectEndDate": {
+      "@type": "xsd:date"
+    }
   },
   "@type": "regen:C01-Project",
   "schema:name": "",
@@ -18,30 +33,15 @@
   "regen:projectType": "",
   "regen:projectActivity": {
     "schema:name": "",
-    "schema:url": {
-      "@type": "schema:URL",
-      "@value": ""
-    }
+    "schema:url": "" 
   },
   "regen:offsetGenerationMethod": "",
   "regen:projectSize": {
-    "qudt:unit": {
-      "@type": "qudt:Unit",
-      "@value": "unit:HA"
-    },
-    "qudt:numericValue": {
-      "@type": "xsd:double",
-      "@value": 0
-    }
+    "qudt:unit": "unit:HA",
+    "qudt:numericValue": 0
   },
-  "regen:projectStartDate": {
-    "@type": "xsd:date",
-    "@value": ""
-  },
-  "regen:projectEndDate": {
-    "@type": "xsd:date",
-    "@value": ""
-  },
+  "regen:projectStartDate": "",
+  "regen:projectEndDate": "",
   "schema:location": {
     "@context": {
       "type": "@type",
@@ -52,6 +52,7 @@
       "bbox": {
         "@container": "@list"
       }
-    }
+    },
+    "type": "Feature"
   }
 }
