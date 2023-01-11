@@ -11,6 +11,8 @@
 
 regen:C01-Project rdfs:subClassOf regen:Project .
 
+# Anchored
+
 regen:C01-ProjectShape a sh:NodeShape ;
   sh:targetClass regen:C01-Project ;
   sh:property regen:NamePropertyShape ;

@@ -12,35 +12,18 @@
 regen:C02-ProjectShape a sh:NodeShape ;
   sh:targetClass regen:C02-Project ;
   sh:property regen:NamePropertyShape ;
-  sh:property regen:DescriptionPropertyShape ;
   sh:property regen:LocationPropertyShape ;
   sh:property regen:ProjectSizePropertyShape ;
   sh:property regen:ProjectActivityPropertyShape ;
   sh:property regen:ProjectStartDatePropertyShape ;
   sh:property regen:ProjectEndDatePropertyShape ;
   sh:property regen:ProjectTypePropertyShape ;
-  sh:property regen:PreviewPhotoPropertyShape ;
-  sh:property regen:GalleryPhotosPropertyShape ;
-  sh:property regen:VideoURLPropertyShape ;
   
   sh:property regen:CFCProjectIdPropertyShape ;
   sh:property regen:CFCProjectPagePropertyShape ;
   sh:property regen:ProjectOperatorPropertyShape ;
   sh:property regen:ProjectDesignDocumentPropertyShape ;
   sh:property regen:OffsetProtocolPropertyShape ;
-.
-
-regen:CFCProjectIdPropertyShape sh:path regen:cfcProjectId ;
-  sh:datatype xsd:string ;
-  sh:minCount 1 ;
-  sh:maxCount 1 ;
-.
-
-regen:CFCProjectPagePropertyShape sh:path regen:cfcProjectPage ;
-  sh:datatype schema:URL ;
-  sh:minCount 1 ;
-  sh:maxCount 1 ;
-  sh:group regen:ProjectPageMetadataGroup ;
 .
 
 regen:ProjectOperatorPropertyShape sh:path regen:projectOperator ;
