@@ -116,21 +116,9 @@ regen:VCSProjectIdPropertyShape sh:path regen:vcsProjectId ;
   sh:group regen:ProjectPageMetadataGroup ;
 .
 
-regen:VCSProjectIdOptionalPropertyShape sh:path regen:vcsProjectId ;
-  sh:datatype xsd:integer ;
-  sh:maxCount 1 ;
-  sh:group regen:ProjectPageMetadataGroup ;
-.
-
 regen:VCSProjectPagePropertyShape sh:path regen:vcsProjectPage ;
   sh:datatype schema:URL ;
   sh:minCount 1 ;
-  sh:maxCount 1 ;
-  sh:group regen:ProjectPageMetadataGroup ;
-.
-
-regen:VCSProjectPageOptionalPropertyShape sh:path regen:vcsProjectPage ;
-  sh:datatype schema:URL ;
   sh:maxCount 1 ;
   sh:group regen:ProjectPageMetadataGroup ;
 .
@@ -142,32 +130,15 @@ regen:VCSMethodologyPropertyShape sh:path regen:vcsMethodology ;
   sh:group regen:ProjectPageMetadataGroup ;
 .
 
-regen:VCSMethodologyOptionalPropertyShape sh:path regen:vcsMethodology ;
-  sh:node regen:NameUrlShape ;
-  sh:maxCount 1 ;
-  sh:group regen:ProjectPageMetadataGroup ;
-.
-
 regen:CFCProjectIdPropertyShape sh:path regen:cfcProjectId ;
   sh:datatype xsd:string ;
   sh:minCount 1 ;
   sh:maxCount 1 ;
 .
 
-regen:CFCProjectIdOptionalPropertyShape sh:path regen:cfcProjectId ;
-  sh:datatype xsd:string ;
-  sh:maxCount 1 ;
-.
-
 regen:CFCProjectPagePropertyShape sh:path regen:cfcProjectPage ;
   sh:datatype schema:URL ;
   sh:minCount 1 ;
-  sh:maxCount 1 ;
-  sh:group regen:ProjectPageMetadataGroup ;
-.
-
-regen:CFCProjectPageOptionalPropertyShape sh:path regen:cfcProjectPage ;
-  sh:datatype schema:URL ;
   sh:maxCount 1 ;
   sh:group regen:ProjectPageMetadataGroup ;
 .
