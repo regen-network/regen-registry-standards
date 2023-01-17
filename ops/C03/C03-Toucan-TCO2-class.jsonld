@@ -37,7 +37,7 @@
     },
     {
       "@type": "xsd:string",
-      "@value": "Livestokck and Manure Management"
+      "@value": "Livestock and Manure Management"
     }
   ],
   "regen:offsetGenerationMethod": [
@@ -836,10 +836,6 @@
     {
       "@type": "@xsd:string",
       "@value": "Wetlands Restoration and Conservation (WRC)"
-    },
-    {
-      "@type": "xsd:string",
-      "@value": "Livestokck and Manure Management"
     }
   ],
   "regen:tokenizationSource": "Toucan"
