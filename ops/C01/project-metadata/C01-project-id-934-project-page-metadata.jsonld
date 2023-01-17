@@ -2,12 +2,6 @@
   "@context": {
     "schema": "http://schema.org/",
     "regen": "http://regen.network/",
-    "regen:vcsProjectPage": {
-      "@type": "schema:URL"
-    },
-    "schema:url": {
-      "@type": "schema:URL"
-    },
     "regen:previewPhoto": {
       "@type": "schema:URL"
     },
@@ -22,12 +16,7 @@
   "@type": "regen:Project-Page",
   "regen:creditClassId": "C01",
   "regen:vcsProjectId": 934,
-  "regen:vcsProjectPage": "https://registry.verra.org/app/projectDetail/VCS/934",
   "schema:description": "The Mai Ndombe REDD+ Project protects over 300,000 hectares of critical bonobo and forest elephant habitat within the world’s second-largest intact rainforest and some of the most important wetlands on the planet, the Congo Basin. This project reduces the principal drivers of forest and biodiversity loss and is charting a new pathway for community prosperity through comprehensive investments into the surrounding local communities.",
-  "regen:vcsMethodology": {
-    "schema:name": "Methodology for Avoided Ecosystem Conversion",
-    "schema:url": "https://verra.org/methodology/vm0009-methodology-for-avoided-ecosystem-conversion-v3-0/"
-  },
   "regen:previewPhoto": "https://regen-registry.s3.amazonaws.com/projects/mai-ndombe/preview-photo.jpg",
   "regen:galleryPhotos": [
     "https://regen-registry.s3.amazonaws.com/projects/mai-ndombe/image-1.png",

@@ -19,6 +19,9 @@
     },
     "regen:projectEndDate": {
       "@type": "xsd:date"
+    },
+    "regen:vcsProjectPage": {
+      "@type": "schema:URL"
     }
   },
   "@type": "regen:C01-Project",
@@ -61,5 +64,11 @@
         -3.910022
       ]
     }
+  },
+  "regen:vcsProjectId": 612,
+  "regen:vcsProjectPage": "https://registry.verra.org/app/projectDetail/VCS/612",
+  "regen:vcsMethodology": {
+    "schema:name": "Methodology for Avoided Ecosystem Conversion",
+    "schema:url": "https://verra.org/methodology/vm0009-methodology-for-avoided-ecosystem-conversion-v3-0/"
   }
 }

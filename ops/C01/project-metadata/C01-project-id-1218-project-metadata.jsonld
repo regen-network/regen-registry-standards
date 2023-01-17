@@ -19,6 +19,9 @@
     },
     "regen:projectEndDate": {
       "@type": "xsd:date"
+    },
+    "regen:vcsProjectPage": {
+      "@type": "schema:URL"
     }
   },
   "@type": "regen:C01-Project",
@@ -61,5 +64,11 @@
         -12.82265
       ]
     }
+  },
+  "regen:vcsProjectId": 1218,
+  "regen:vcsProjectPage": "https://registry.verra.org/app/projectDetail/VCS/1218",
+  "regen:vcsMethodology": {
+    "schema:name": "VM0007 REDD+ Methodology Framework",
+    "schema:url": "https://verra.org/methodology/vm0007-redd-methodology-framework-redd-mf-v1-6/"
   }
 }

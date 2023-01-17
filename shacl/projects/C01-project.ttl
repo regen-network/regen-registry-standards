@@ -31,6 +31,9 @@ regen:C01-ProjectShape a sh:NodeShape ;
     sh:datatype xsd:string ;
     sh:group regen:ProjectPageMetadataGroup ;
   ] ;
+  sh:property regen:VCSProjectIdPropertyShape ;
+  sh:property regen:VCSProjectPagePropertyShape ;
+  sh:property regen:VCSMethodologyPropertyShape
 .
 
 regen:NameUrlShape a sh:NodeShape ;
