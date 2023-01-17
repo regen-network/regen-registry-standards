@@ -26,6 +26,7 @@
   "regen:projectDeveloper": {
     "@type": "regen:OrganizationDisplay",
     "schema:name": "",
+    "schema:url": "",
     "schema:description": "",
     "regen:address": "",
     "regen:showOnProjectPage": true

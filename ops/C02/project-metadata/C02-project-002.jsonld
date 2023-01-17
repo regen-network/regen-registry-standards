@@ -32,9 +32,11 @@
   "regen:cfcProjectId": "18",
   "regen:cfcProjectPage": "https://www.cityforestcredits.org/carbon-credits/carbon-registry/mansfield-forest-carbon-offsets/",
   "regen:projectDesignDocument": "https://www.cityforestcredits.org/wp-content/uploads/2021/07/Sandy-Cross-Project-Design-Document-1.pdf",
-  "regen:projectOperator": {
+  "regen:projectDeveloper": {
+    "@type": "regen:OrganizationDisplay",
     "schema:name": "Western Reserve Land Conservancy",
-    "schema:url": "https://www.wrlandconservancy.org/"
+    "schema:url": "https://www.wrlandconservancy.org/",
+    "regen:showOnProjectPage": true
   },
   "regen:projectType": "Agriculture Forestry and Other Land Use",
   "regen:projectActivity": {

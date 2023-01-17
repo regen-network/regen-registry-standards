@@ -32,9 +32,11 @@
   "regen:cfcProjectId": "1.2018",
   "regen:cfcProjectPage": "https://www.cityforestcredits.org/carbon-credits/carbon-registry/king-county-forest-carbon-offsets/",
   "regen:projectDesignDocument": "https://www.cityforestcredits.org/wp-content/uploads/2018/04/King-County-Project-Design-Document.pdf",
-  "regen:projectOperator": {
+  "regen:projectDeveloper": {
+    "@type": "regen:OrganizationDisplay",
     "schema:name": "King County Department of Natural Resources & Parks",
-    "schema:url": "https://www.kingcounty.gov/depts/dnrp.aspx"
+    "schema:url": "https://www.kingcounty.gov/depts/dnrp.aspx",
+    "regen:showOnProjectPage": true
   },
   "regen:projectType": "Agriculture Forestry and Other Land Use",
   "regen:projectActivity": {

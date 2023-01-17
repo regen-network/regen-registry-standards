@@ -32,9 +32,11 @@
   "regen:cfcProjectId": "9",
   "regen:cfcProjectPage": "https://www.cityforestcredits.org/carbon-credits/carbon-registry/pittsburgh-forest-carbon-offsets/",
   "regen:projectDesignDocument": "https://www.cityforestcredits.org/wp-content/uploads/2020/02/Buena-Vista-Heights-Project-Design-Document-1.pdf",
-  "regen:projectOperator": {
+  "regen:projectDeveloper": {
+    "@type": "regen:OrganizationDisplay",
     "schema:name": "Allegheny Land Trust",
-    "schema:url": "https://alleghenylandtrust.org/"
+    "schema:url": "https://alleghenylandtrust.org/",
+    "regen:showOnProjectPage": true
   },
   "regen:projectType": "Agriculture Forestry and Other Land Use",
   "regen:projectActivity": {

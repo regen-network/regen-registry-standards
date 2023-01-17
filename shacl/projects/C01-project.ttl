@@ -22,13 +22,7 @@ regen:C01-ProjectShape a sh:NodeShape ;
   sh:property regen:ProjectStartDatePropertyShape ;
   sh:property regen:ProjectEndDatePropertyShape ;
   sh:property regen:ProjectTypePropertyShape ;
-  sh:property [
-    sh:path regen:projectDeveloper ;
-    sh:node regen:ProjectRoleShape ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:group regen:ProjectPageRolesGroup ;
-  ] ;
+  sh:property regen:ProjectDeveloperPropertyShape ; 
   sh:property [
     sh:path regen:offsetGenerationMethod ;
     sh:minCount 1 ;
@@ -92,39 +86,5 @@ regen:ProjectSizeShape a sh:NodeShape ;
     sh:maxCount 1 ;
     sh:maxCount 1 ;
     sh:group regen:ProjectPageBasicInfoGroup ;
-  ] ;
-.
-
-regen:ProjectRoleShape
-  a sh:NodeShape ;
-  sh:targetClass
-    regen:Individual ,
-    regen:IndividualDisplay ,
-    regen:Organization ,
-    regen:OrganizationDisplay ;
-  sh:property [
-    sh:path regen:showOnProjectPage ;
-    sh:datatype xsd:boolean ;
-    sh:hasValue true ;
-    sh:group regen:ProjectPageRolesGroup ;
-  ] ;
-  sh:property [
-    sh:path schema:name ;
-    sh:datatype xsd:string ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:minLength 1 ;
-    sh:group regen:ProjectPageRolesGroup ;
-  ] ;
-  sh:property [
-    sh:path schema:image ;
-    sh:datatype schema:URL ;
-    sh:group regen:ProjectPageRolesGroup ;
-  ] ;
-  sh:property regen:DescriptionPropertyShape ;
-  sh:property [
-    sh:path regen:address ;
-    sh:datatype xsd:string ;
-    sh:group regen:ProjectPageRolesGroup ;
   ] ;
 .
