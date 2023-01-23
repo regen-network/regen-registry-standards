@@ -41,7 +41,7 @@
   "regen:sectoralScope":
   [
     {
-      "@type": "@xsd:string",
+      "@type": "xsd:string",
       "@value": "Agriculture Forestry and Other Land Use (AFOLU)"
     },
     {
@@ -969,27 +969,27 @@
   "regen:projectActivities":
   [
     {
-      "@type": "@xsd:string",
+      "@type": "xsd:string",
       "@value": "Afforestation, Reforestation, & Revegetation (ARR)"
     },
     {
-      "@type": "@xsd:string",
+      "@type": "xsd:string",
       "@value": "Agricultural Land Management (ALM)"
     },
     {
-      "@type": "@xsd:string",
+      "@type": "xsd:string",
       "@value": "Improved Forest Management (IFM)"
     },
     {
-      "@type": "@xsd:string",
+      "@type": "xsd:string",
       "@value": "Reduced Emissions from Deforestation and Degradation (REDD)"
     },
     {
-      "@type": "@xsd:string",
+      "@type": "xsd:string",
       "@value": "Avoided Conversion of Grasslands and Shrublands (ACoGS)"
     },
     {
-      "@type": "@xsd:string",
+      "@type": "xsd:string",
       "@value": "Wetlands Restoration and Conservation (WRC)"
     }
   ],
