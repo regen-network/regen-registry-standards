@@ -1,36 +1,45 @@
+{
+  "@context":
   {
-  "@context": {
     "schema": "http://schema.org/",
     "regen": "http://regen.network/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "schema:itemListElement": {
+    "schema:itemListElement":
+    {
       "@container": "@list"
     },
-    "regen:sectoralScope": {
+    "regen:sectoralScope":
+    {
       "@container": "@list"
     },
-    "regen:offsetGenerationMethod": {
+    "regen:offsetGenerationMethod":
+    {
       "@container": "@list"
     },
-    "regen:projectActivities": {
+    "regen:projectActivities":
+    {
       "@container": "@list"
     }
   },
   "@type": "regen:CO3-CreditClass",
-  "schema:description": "This credit class provides a vehicle for Toucan Protocol Toucan Carbon Tokens (TCO2s) to enter the Cosmos ecosystem via issuance on Regen Ledger. Each TCO2 represents a unique carbon offset brought on-chain from the Verra registry using the Toucan Carbon Bridge, Moss.earth, and C3.app. These NCT eligible carbon credits can be bridged directly from Polygon using the Regen Network <> Toucan Bridge.",
+  "schema:description": "This credit class provides a vehicle for Toucan Protocol Toucan Carbon Tokens (TCO2s) to enter the Cosmos ecosystem via issuance on Regen Ledger. Each TCO2 represents a unique carbon offset brought on-chain from the Verra registry using the Toucan Carbon Bridge. Currently, only TCO2 credits that fall under the NCT criteria are eligible to be issued under this credit class. Eligible credits can be bridged directly from Polygon using the Regen Network <> Toucan Bridge.",
   "schema:name": "TCO2: Toucan Carbon Tokens Credit Class",
-  "schema:url": {
+  "schema:url":
+  {
     "@type": "schema:URL",
     "@value": "https://docs.toucan.earth/toucan/bridge/tco2-toucan-carbon-tokens"
   },
-  "regen:sourceRegistry": {
+  "regen:sourceRegistry":
+  {
     "schema:name": "Verra",
-    "schema:url": {
+    "schema:url":
+    {
       "@type": "schema:URL",
       "@value": "https://verra.org"
     }
   },
-  "regen:sectoralScope": [
+  "regen:sectoralScope":
+  [
     {
       "@type": "@xsd:string",
       "@value": "Agriculture Forestry and Other Land Use (AFOLU)"
@@ -40,7 +49,8 @@
       "@value": "Livestock and Manure Management"
     }
   ],
-  "regen:offsetGenerationMethod": [
+  "regen:offsetGenerationMethod":
+  [
     {
       "@type": "xsd:string",
       "@value": "Emission Reductions"
@@ -50,21 +60,26 @@
       "@value": "Carbon Removals"
     }
   ],
- "regen:approvedMethodologies": {
+  "regen:approvedMethodologies":
+  {
     "@type": "schema:BreadcrumbList",
-    "schema:itemListElement": [
+    "schema:itemListElement":
+    [
       {
         "@type": "regen:Methodology",
         "schema:name": "Afforestation and reforestation of degraded land",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "AR-ACM0001"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://cdm.unfccc.int/methodologies/DB/X4VOLW3Y7IJCH9WXSBXBC2Q0JKG9UZ"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "5.2.0"
         }
@@ -72,15 +87,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Afforestation or reforestation of degraded land without displacement of pre-project activities",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "AR-ACM0002"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://cdm.unfccc.int/methodologies/DB/OOH5AKLQDUYW6N3STD3LDH7EL9THD1"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "1.1.0"
         }
@@ -88,15 +106,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Reforestation of degraded land",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "AR-AM0001"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://cdm.unfccc.int/methodologies/DB/3Z9ZV3YE2H4ITY66HR7WDLV6D9QMD5"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "3.0"
         }
@@ -104,15 +125,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Restoration of degraded lands through afforestation/reforestation",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "AR-AM0002"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://cdm.unfccc.int/methodologies/DB/6ZZXJUKK49WKLID7ZH8FG3BS9WTCCH"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "3.0"
         }
@@ -120,15 +144,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Afforestation and reforestation of degraded land through tree planting assisted natural regeneration and control of animal grazing",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "AR-AM0003"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://cdm.unfccc.int/methodologies/DB/U3WW9YEC2X333WW8CPVQ6CGVY6IBPJ"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "4.0"
         }
@@ -136,15 +163,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Reforestation or afforestation of land currently under agricultural use",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "AR-AM0004"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://cdm.unfccc.int/methodologies/DB/S2OMSUTOWYOMLW75MPR0CG6SAKNG4Y"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "4.0"
         }
@@ -152,15 +182,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Afforestation and reforestation project activities implemented for industrial and/or commercial uses",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "AR-AM0005"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://cdm.unfccc.int/methodologies/DB/QAM97WQWX94URIJXOJMTJFIS8KSE28"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "4.0"
         }
@@ -168,15 +201,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Afforestation/Reforestation with Trees Supported by Shrubs on Degraded Land",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "AR-AM0006"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://cdm.unfccc.int/methodologies/DB/BHNYWRDFHU75CI2GSCETNYRBFWBMBS"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "3.1.1"
         }
@@ -184,15 +220,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Afforestation and Reforestation of Land Currently Under Agricultural or Pastoral Use",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "AR-AM0007"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://cdm.unfccc.int/methodologies/DB/M8JRU26ZZJAN7DKGE2EP6UBN9OYBDJ"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "5.0"
         }
@@ -200,15 +239,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Afforestation or reforestation on degraded land for sustainable wood production",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "AR-AM0008"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://cdm.unfccc.int/methodologies/DB/SVW9LIW0F9AQ50KW7J338I8UD4Z231"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "3.0"
         }
@@ -216,15 +258,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Afforestation or reforestation on degraded land allowing for silvopastoral activities",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "AR-AM0009"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://cdm.unfccc.int/methodologies/DB/HQ3U8IFDTG5N8987T3LR9D3Z76UB8O"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "4.0"
         }
@@ -232,15 +277,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Afforestation and reforestation project activities implemented on unmanaged grassland in reserve/protected areas",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "AR-AM0010"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://cdm.unfccc.int/methodologies/DB/H70FNNSTOOBRQV0GTWHDX0WECCWZZC"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "4.0"
         }
@@ -248,15 +296,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Afforestation and reforestation of land subject to polyculture farming",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "AR-AM0011"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://cdm.unfccc.int/methodologies/DB/21ACLYAP601F8L2WCBJV0PTM7GXYQ3"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "1.0.1"
         }
@@ -264,15 +315,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Afforestation or reforestation of degraded or abandoned agricultural lands",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "AR-AM0012"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://cdm.unfccc.int/methodologies/DB/57VGMUM1NWCQDQ4BQ2KP4VXFHF95ZI"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "1.0.1"
         }
@@ -280,15 +334,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Afforestation and reforestation of lands other than wetlands",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "AR-AM0013"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://cdm.unfccc.int/methodologies/DB/LAC5URLIAYJ8ETRT2W1A4IFHBPSNWN"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "1.0.0"
         }
@@ -296,15 +353,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Simplified baseline and monitoring methodologies for small-scale A/R CDM project activities implemented on grasslands or croplands with limited displacement of pre-project activities",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "AR-AMS0001"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://cdm.unfccc.int/methodologies/DB/91OLF4XK2MEDIRIWUQ22X3ZQAOPBWY"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "6.0"
         }
@@ -312,15 +372,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Simplified baseline and monitoring methodologies for small-scale afforestation and reforestation project activities under the CDM implemented on settlements",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "AR-AMS0002"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://cdm.unfccc.int/methodologies/DB/XNOATYWKHK5ZM5ZVZZQ4G5OXIDVZJK"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "2.0"
         }
@@ -328,15 +391,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Simplified baseline and monitoring methodology for small-scale agroforestry - afforestation and reforestation project activities under the clean development mechanism",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "AR-AMS0004"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://cdm.unfccc.int/methodologies/DB/7O930NO6FCXTRZI6WIVTF54TTWJM6I"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "2.0"
         }
@@ -344,15 +410,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Simplified baseline and monitoring methodology for small-scale afforestation and reforestation project activities under the clean development mechanism implemented on lands having low inherent potential to support living biomass",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "AR-AMS0005"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://cdm.unfccc.int/methodologies/DB/KO69QWJ8DYW631DD4PZN6C37XL3P1E"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "2.0"
         }
@@ -360,15 +429,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Simplified baseline and monitoring methodology for small-scale silvopastoral - afforestation and reforestation project activities under the clean development mechanism",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "AR-AMS0006"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://cdm.unfccc.int/methodologies/DB/MDKSSZCV62M6V0K49Y0L5H9YD7WLR5"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "1.0"
         }
@@ -376,15 +448,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Afforestation and reforestation of lands except wetlands",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "AR-ACM0003"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://cdm.unfccc.int/methodologies/DB/C9QS5G3CS8FW04MYYXDFOQDPXWM4OE"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "2.0"
         }
@@ -392,15 +467,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Afforestation and reforestation of degraded mangrove habitats",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "AR-AM0014"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://cdm.unfccc.int/methodologies/DB/KMH6O8T6RL3P5XKNBQE2N359QG7KOE"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "3.0"
         }
@@ -408,15 +486,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Afforestation and reforestation project activities implemented on wetlands",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "AR-AMS0003"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://cdm.unfccc.int/methodologies/DB/808WOYH6FWAXP3CQR4PXOLORGZBVRG"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "3.0"
         }
@@ -424,15 +505,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Afforestation and reforestation project activities implemented on lands other than wetlands",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "AR-AMS0007"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://cdm.unfccc.int/methodologies/DB/J6ZHLX1C3AEMSZ52PWIII6D2AOJZUB"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "3.1"
         }
@@ -440,15 +524,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Methodology for Improved Forest Management through Extension of Rotation Age",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "VM003"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://verra.org/methodology/vm0003-methodology-for-improved-forest-management-through-extension-of-rotation-age-v1-2/"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "1.2"
         }
@@ -456,15 +543,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Methodology for Conservation Projects that Avoid Planned Land Use Conversion in Peat Swamp Forests",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "VM004"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://verra.org/methodology/vm0004-methodology-for-conservation-projects-that-avoid-planned-land-use-conversion-in-peat-swamp-forests-v1-0/"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "1.0"
         }
@@ -472,15 +562,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Methodology for Conversion of Low-productive Forest to High-productive Forest",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "VM005"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://verra.org/methodology/vm0005-methodology-for-conversion-of-low-productive-forest-to-high-productive-forest-v1-2/"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "1.2"
         }
@@ -488,15 +581,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Methodology for Carbon Accounting for Mosaic and Landscape-scale REDD Projects",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "VM006"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://verra.org/methodology/vm0006-methodology-for-carbon-accounting-for-mosaic-and-landscape-scale-redd-projects-v2-2/"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "2.2"
         }
@@ -504,15 +600,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "REDD+ Methodology Framework (REDD+MF)",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "VM007"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://verra.org/methodology/vm0007-redd-methodology-framework-redd-mf-v1-6/"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "1.6"
         }
@@ -520,15 +619,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Methodology for Avoided Ecosystem Conversion",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "VM009"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://verra.org/methodology/vm0009-methodology-for-avoided-ecosystem-conversion-v3-0/"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "3.0"
         }
@@ -536,15 +638,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Methodology for Improved Forest Management: Conversion from Logged to Protected Forest",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "VM0010"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://verra.org/methodology/vm0010-methodology-for-improved-forest-management-conversion-from-logged-to-protected-forest-v1-3/"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "1.3"
         }
@@ -552,15 +657,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Methodology for Calculating GHG Benefits from Preventing Planned Degradation",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "VM0011"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://verra.org/methodology/vm0011-methodology-for-calculating-ghg-benefits-from-preventing-planned-degradation-v1-0/"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "1.0"
         }
@@ -568,15 +676,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Improved Forest Management in Temperate and Boreal Forests (LtPF)",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "VM0012"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://verra.org/methodology/vm0012-improved-forest-management-in-temperate-and-boreal-forests-ltpf-v1-2/"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "1.2"
         }
@@ -584,15 +695,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Methodology for Avoided Unplanned Deforestation",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "VM0015"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://verra.org/methodology/vm0015-methodology-for-avoided-unplanned-deforestation-v1-1/"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "1.1"
         }
@@ -600,15 +714,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Adoption of Sustainable Agricultural Land Management",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "VM0017"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://verra.org/methodology/vm0017-adoption-of-sustainable-agricultural-land-management-v1-0/"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "1.0"
         }
@@ -616,15 +733,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Soil Carbon Quantification Methodology",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "VM0021"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://verra.org/methodology/vm0021-soil-carbon-quantification-methodology-v1-0/"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "1.0"
         }
@@ -632,15 +752,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Methodology for Coastal Wetland Creation",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "VM0024"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://verra.org/methodology/vm0024-methodology-for-coastal-wetland-creation-v1-0/"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "1.0"
         }
@@ -648,15 +771,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Methodology for Sustainable Grassland Management (SGM)",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "VM0026"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://verra.org/methodology/vm0026-methodology-for-sustainable-grassland-management-sgm-v1-0/"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "1.1"
         }
@@ -664,15 +790,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Methodology for Rewetting Drained Tropical Peatlands",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "VM0027"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://verra.org/methodology/vm0027-methodology-for-rewetting-drained-tropical-peatlands-v1-0/"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "1.0"
         }
@@ -680,15 +809,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Methodology for Avoided Forest Degradation through Fire Management",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "VM0029"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://verra.org/methodology/vm0029-methodology-for-avoided-forest-degradation-through-fire-management-v1-0/"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "1.0"
         }
@@ -696,15 +828,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Methodology for the Adoption of Sustainable Grasslands through Adjustment of Fire and Grazing",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "VM0032"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://verra.org/methodology/vm0032-methodology-for-the-adoption-of-sustainable-grasslands-through-adjustment-of-fire-and-grazing-v1-0/"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "1.0"
         }
@@ -712,15 +847,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Methodology for Tidal Wetland and Seagrass Restoration",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "VM0033"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://verra.org/methodology/vm0033-methodology-for-tidal-wetland-and-seagrass-restoration-v2-0/"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "2.0"
         }
@@ -728,15 +866,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "British Columbia Forest Carbon Offset Methodology",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "VM0034"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://verra.org/methodology/vm0034-canadian-forest-carbon-offset-methodology-v2-0-2/"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "2.0"
         }
@@ -744,15 +885,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Methodology for Improved Forest Management through Reduced Impact Logging",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "VM0035"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://verra.org/methodology/vm0035-methodology-for-improved-forest-management-through-reduced-impact-logging-v1-0/"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "1.0"
         }
@@ -760,15 +904,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Methodology for Rewetting Drained Temperate Peatlands",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "VM0036"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://verra.org/methodology/vm0036-methodology-for-rewetting-drained-temperate-peatlands-v1-0/"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "1.0"
         }
@@ -776,15 +923,18 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Methodology for Implementation of REDD+ Activities in Landscapes Affected by Mosaic Deforestation and Degradation",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "VM0037"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://verra.org/methodology/vm0037-methodology-implementation-redd-activities-landscapes-affected-mosaic-deforestation-degradation-v1-0/"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "1.0"
         }
@@ -792,27 +942,32 @@
       {
         "@type": "regen:Methodology",
         "schema:name": "Methodology for Improved Agricultural Land Management",
-        "schema:identifier": {
+        "schema:identifier":
+        {
           "@type": "schema:Text",
           "@value": "VM0042"
         },
-        "schema:url": {
+        "schema:url":
+        {
           "@type": "schema:URL",
           "@value": "https://verra.org/methodology/vm0042-methodology-for-improved-agricultural-land-management-v1-0/"
         },
-        "schema:version": {
+        "schema:version":
+        {
           "@type": "schema:Text",
           "@value": "1.0"
         }
       }
     ],
-    "schema:url": {
+    "schema:url":
+    {
       "@type": "schema:URL",
       "@value": "https://library.regen.network/v/regen-registry-credit-classes/credits-from-other-registries/verified-carbon-standard-credit-class/approved-methodologies"
     }
   },
   "regen:verificationMethod": "Third-Party Verified",
-  "regen:projectActivities": [
+  "regen:projectActivities":
+  [
     {
       "@type": "@xsd:string",
       "@value": "Afforestation, Reforestation, & Revegetation (ARR)"
