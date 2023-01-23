@@ -17,7 +17,7 @@
     }
   },
   "@type": "regen:CO3-CreditClass",
-  "schema:description": "",
+  "schema:description": "This credit class provides a vehicle for Toucan Protocol Toucan Carbon Tokens (TCO2s) to enter the Cosmos ecosystem via issuance on Regen Ledger. Each TCO2 represents a unique carbon offset brought on-chain from the Verra registry using the Toucan Carbon Bridge, Moss.earth, and C3.app. These NCT eligible carbon credits can be bridged directly from Polygon using the Regen Network <> Toucan Bridge.",
   "schema:name": "TCO2: Toucan Carbon Tokens Credit Class",
   "schema:url": {
     "@type": "schema:URL",
