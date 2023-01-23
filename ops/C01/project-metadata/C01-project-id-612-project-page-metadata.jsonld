@@ -14,8 +14,8 @@
     }
   },
   "@type": "regen:Project-Page",
+  "@id": "https://app.regen.network/project/C01-002",
   "regen:creditClassId": "C01",
-  "regen:vcsProjectId": 612,
   "schema:description": "For years, the land between Tsavo East and Tsavo West National parks in Kenya served both as home to a slowly failing cattle ranch and as the main migration corridor for local wildlife moving between the two National Parks. When we first encountered Rukinga, the community and the wildlife were at odds. Rukinga was a bruised, balding land, barren of wildlife. Cattle had grazed the fields into dust, poachers slipped on and off the ranch with ease, and trees were being clear cut along the area’s critical rainwater basin.",
   "regen:previewPhoto": "https://regen-registry.s3.amazonaws.com/projects/kasigau/kasigau.png",
   "regen:galleryPhotos": [

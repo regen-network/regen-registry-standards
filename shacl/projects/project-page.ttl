@@ -67,16 +67,4 @@ regen:ProjectPageShape a sh:NodeShape ;
       )
     ] 
   );
-
-  # the following constraint specifies that one of the shapes listed must be satisfied.
-  # it means that either a VCS or CFC project id must be present.
-  # if neither of these shapes in the data graph, validation will fail.
-  sh:xone (
-    [
-      sh:property regen:VCSProjectIdPropertyShape ;
-    ]
-    [
-      sh:property regen:CFCProjectIdPropertyShape ;
-    ]
-  );
 .

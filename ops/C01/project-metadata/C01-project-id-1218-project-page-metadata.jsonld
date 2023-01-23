@@ -4,7 +4,7 @@
     "regen": "http://regen.network/"
   },
   "@type": "regen:Project-Page",
+  "@id": "https://app.regen.network/project/C01-003",
   "regen:creditClassId": "C01",
-  "regen:vcsProjectId": 1218,
   "schema:description": "Madre de Dios is the Amazon region with the highest levels of biodiversity in the country, that’s why it earned the title of Biodiversity Capital of Peru in 1994. Currently, Madre de Dios faces an abrupt change in land use and accelerated forest degradation.  The purpose of the project is to conserve community forests and their concession, against de rapidly increase of deforestation through the promotion of sustainable economic activities, forest governance and the establishment of conservation agreements."
 }

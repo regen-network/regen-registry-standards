@@ -14,9 +14,8 @@
     }
   },
   "@type": "regen:Project-Page",
+  "@id": "http://app.regen.network/project/<ID>",
   "regen:creditClassId": "",
-  "regen:vcsProjectId": 0,
-  "regen:cfcProjectId": "",
   "schema:description": "",
   "regen:previewPhoto": "",
   "regen:galleryPhotos": [

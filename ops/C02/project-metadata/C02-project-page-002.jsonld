@@ -11,8 +11,8 @@
     }
   },
   "@type": "regen:Project-Page",
+  "@id": "https://app.regen.network/project/C02-002",
   "regen:creditClassId": "C02",
-  "regen:cfcProjectId": "18",
   "schema:description": "The Sandy Cross Forest Preservation Project is a 132-acre Project Area on a 214-acre property in the Mansfield metro area. Western Reserve Land Conservancy is seeking to preserve the Project, creating substantial conservation and community benefits including carbon sequestration, wildlife habitat, and open space protection.\n\n Preservation of the Project is important as intact forests of this size are becoming increasingly rare in Richland County due to agricultural development and urban expansion. Indeed, surrounding forested land is being rapidly converted into agricultural land and is facing a continued threat of urban expansion from the adjacent Village of Lexington.\n\n The Project contains a diverse, 85-year forest including yellow poplar, sugar maple, oak, black cherry, and pine. Preservation of this forest will offer the residents of Northeast Ohio a wide variety of community and conservation benefits.",
   "regen:previewPhoto": "https://regen-registry.s3.amazonaws.com/projects/C02/sandy-cross.jpg",
   "regen:galleryPhotos": [
