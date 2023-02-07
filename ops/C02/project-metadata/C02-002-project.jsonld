@@ -25,6 +25,9 @@
     },
     "regen:projectEndDate": {
       "@type": "xsd:date"
+    },
+    "regen:offsetGenerationMethod": {
+      "@container": "@list"
     }
   },
   "@type": "regen:C02-Project",
@@ -42,7 +45,7 @@
   "regen:projectActivity": {
     "schema:name": "Tree Preservation"
   },
-  "regen:offsetGenerationMethod": "Avoided Emissions",
+  "regen:offsetGenerationMethod": ["Avoided Emissions"],
   "regen:projectSize": {
     "qudt:unit": "unit:HA",
     "qudt:numericValue": 53.4

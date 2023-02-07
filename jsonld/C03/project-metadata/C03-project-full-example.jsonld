@@ -14,6 +14,9 @@
     },
     "regen:projectEndDate": {
       "@type": "xsd:date"
+    },
+    "regen:offsetGenerationMethod": {
+      "@container": "@list"
     }
   },
   "@type": "regen:C03-Project",
@@ -33,7 +36,7 @@
     "schema:name": "Tree Preservation"
   },
   "regen:projectType": "Agriculture Forestry and Other Land Use",
-  "regen:offsetGenerationMethod": "Avoided Emissions",
+  "regen:offsetGenerationMethod": ["Avoided Emissions"],
   "regen:projectStartDate": "2022-10-26",
   "regen:projectEndDate": "2023-10-26"
 }

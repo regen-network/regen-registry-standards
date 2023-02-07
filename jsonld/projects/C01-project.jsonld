@@ -22,6 +22,9 @@
     },
     "regen:vcsProjectPage": {
       "@type": "schema:URL"
+    },
+    "regen:offsetGenerationMethod": {
+      "@container": "@list"
     }
   },
   "@type": "regen:C01-Project",
@@ -39,7 +42,7 @@
     "schema:name": "",
     "schema:url": "" 
   },
-  "regen:offsetGenerationMethod": "",
+  "regen:offsetGenerationMethod": [""],
   "regen:projectSize": {
     "qudt:unit": "unit:HA",
     "qudt:numericValue": 0

@@ -29,14 +29,9 @@ regen:C03-ProjectShape a sh:NodeShape ;
     sh:maxCount 1 ;
   ] ;
 
+  sh:property regen:OffsetGenerationMethodOptionalPropertyShape ; 
   sh:property regen:ProjectActivityOptionalPropertyShape ;
   sh:property regen:ProjectTypeOptionalPropertyShape ;
-  sh:property [
-    sh:path regen:offsetGenerationMethod ;
-    sh:maxCount 1 ;
-    sh:minLength 1 ;
-    sh:datatype xsd:string ;
-  ] ;
   sh:property regen:ProjectOptionalStartDatePropertyShape ;
   sh:property regen:ProjectOptionalEndDatePropertyShape ;
 .

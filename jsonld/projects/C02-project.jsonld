@@ -25,6 +25,9 @@
     },
     "regen:projectEndDate": {
       "@type": "xsd:date"
+    },
+    "regen:offsetGenerationMethod": {
+      "@container": "@list"
     }
   },
   "@type": "regen:C02-Project",
@@ -40,7 +43,7 @@
   "regen:projectActivity": {
     "schema:name": ""
   },
-  "regen:offsetGenerationMethod": "",
+  "regen:offsetGenerationMethod": [""],
   "regen:projectSize": {
     "qudt:unit": "",
     "qudt:numericValue": 0

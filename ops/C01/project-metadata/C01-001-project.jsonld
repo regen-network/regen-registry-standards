@@ -22,6 +22,9 @@
     },
     "regen:vcsProjectPage": {
       "@type": "schema:URL"
+    },
+    "regen:offsetGenerationMethod": {
+      "@container": "@list"
     }
   },
   "@type": "regen:C01-Project",
@@ -37,7 +40,7 @@
     "schema:description": "Wildlife Works is the world's leading REDD+ program development and management company.y",
     "regen:showOnProjectPage": true
   },
-  "regen:offsetGenerationMethod": "Emission Reduction",
+  "regen:offsetGenerationMethod": ["Emission Reduction"],
   "regen:projectSize": {
     "qudt:unit": "unit:HA",
     "qudt:numericValue": 299640

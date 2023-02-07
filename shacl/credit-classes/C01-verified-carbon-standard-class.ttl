@@ -40,17 +40,7 @@ regen:C01-CreditClassShape a sh:NodeShape ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
   ] ;
-  sh:property [
-    sh:path regen:offsetGenerationMethod ;
-    sh:node dash:ListShape ;
-    sh:property [
-      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
-      sh:datatype xsd:string ;
-      sh:minLength 1 ;
-    ] ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-  ] ;
+  sh:property regen:OffsetGenerationMethodPropertyShape ; 
   sh:property [
     sh:path regen:approvedMethodologies ;
     sh:class schema:BreadcrumbList ;
