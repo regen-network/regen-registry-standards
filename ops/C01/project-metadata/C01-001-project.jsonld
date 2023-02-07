@@ -28,6 +28,7 @@
     }
   },
   "@type": "regen:C01-Project",
+  "@id": "https://app.regen.network/project/C01-001",
   "schema:name": "The Mai Ndombe REDD+ Project",
   "regen:projectType": "Agriculture Forestry and Other Land Use",
   "regen:projectActivity": {

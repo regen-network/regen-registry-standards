@@ -31,6 +31,7 @@
     }
   },
   "@type": "regen:C02-Project",
+  "@id": "https://app.regen.network/project/C02-003",
   "schema:name": "Buena Vista Heights Conservation Area",
   "regen:cfcProjectId": "9",
   "regen:cfcProjectPage": "https://www.cityforestcredits.org/carbon-credits/carbon-registry/pittsburgh-forest-carbon-offsets/",

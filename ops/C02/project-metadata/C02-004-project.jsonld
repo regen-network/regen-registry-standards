@@ -31,6 +31,7 @@
     }
   },
   "@type": "regen:C02-Project",
+  "@id": "https://app.regen.network/project/C02-004",
   "schema:name": "Harvey Manning Park Expansion",
   "regen:cfcProjectId": "15",
   "regen:cfcProjectPage": "https://www.cityforestcredits.org/carbon-credits/carbon-registry/issaquah-forest-carbon-offsets/",

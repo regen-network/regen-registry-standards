@@ -28,6 +28,7 @@
     }
   },
   "@type": "regen:C01-Project",
+  "@id": "https://app.regen.network/project/C01-002",
   "schema:name": "The Kasigau Corridor REDD Project - Phase II The Community Ranches",
   "regen:projectType": "Agriculture Forestry and Other Land Use",
   "regen:projectActivity": {

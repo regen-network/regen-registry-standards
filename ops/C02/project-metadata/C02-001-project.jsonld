@@ -31,6 +31,7 @@
     }
   },
   "@type": "regen:C02-Project",
+  "@id": "https://app.regen.network/project/C02-001",
   "schema:name": "King County Urban Forest Carbon Project",
   "regen:cfcProjectId": "1.2018",
   "regen:cfcProjectPage": "https://www.cityforestcredits.org/carbon-credits/carbon-registry/king-county-forest-carbon-offsets/",

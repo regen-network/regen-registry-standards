@@ -28,6 +28,7 @@
     }
   },
   "@type": "regen:C01-Project",
+  "@id": "http://app.regen.network/project/<ID>",
   "schema:name": "",
   "regen:projectDeveloper": {
     "@type": "regen:Organization",
