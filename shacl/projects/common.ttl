@@ -145,7 +145,6 @@ regen:CFCProjectPagePropertyShape sh:path regen:cfcProjectPage ;
 
 regen:ProjectDeveloperPropertyShape sh:path regen:projectDeveloper ;
   sh:node regen:ProjectRoleShape ;
-  sh:minCount 1 ;
   sh:maxCount 1 ;
   sh:group regen:ProjectPageRolesGroup ;
 .
