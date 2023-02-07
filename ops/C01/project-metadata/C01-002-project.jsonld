@@ -32,7 +32,7 @@
     "schema:url": "https://redd.unfccc.int/"
   },
   "regen:projectDeveloper": {
-    "@type": "regen:OrganizationDisplay",
+    "@type": "regen:Organization",
     "schema:name": "Wildlife Works Carbon LLC",
     "schema:description": "Wildlife Works is the world''s leading REDD+ program development and management company.",
     "regen:showOnProjectPage": true

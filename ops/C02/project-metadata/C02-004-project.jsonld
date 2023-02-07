@@ -33,7 +33,7 @@
   "regen:cfcProjectPage": "https://www.cityforestcredits.org/carbon-credits/carbon-registry/issaquah-forest-carbon-offsets/",
   "regen:projectDesignDocument": "https://www.cityforestcredits.org/wp-content/uploads/2021/10/Harvey_Manning_Park_Project_Design_Document_20211213_Final.pdf",
   "regen:projectDeveloper": {
-    "@type": "regen:OrganizationDisplay",
+    "@type": "regen:Organization",
     "schema:name": "City of Issaquah",
     "schema:url": "https://www.issaquahwa.gov/",
     "regen:showOnProjectPage": true

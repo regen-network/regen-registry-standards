@@ -32,7 +32,7 @@
     "schema:url": "https://redd.unfccc.int/"
   },
   "regen:projectDeveloper": {
-    "@type": "regen:OrganizationDisplay",
+    "@type": "regen:Organization",
     "schema:name": "Ese´Eja Infierno Native Community",
     "schema:description": "Forest owners committed to work to protect and manage the forest under a REDD+ project.",
     "regen:showOnProjectPage": true

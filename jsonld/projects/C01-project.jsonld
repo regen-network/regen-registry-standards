@@ -27,7 +27,7 @@
   "@type": "regen:C01-Project",
   "schema:name": "",
   "regen:projectDeveloper": {
-    "@type": "regen:OrganizationDisplay",
+    "@type": "regen:Organization",
     "schema:name": "",
     "schema:url": "",
     "schema:description": "",
