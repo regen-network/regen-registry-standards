@@ -31,26 +31,28 @@
     }
   },
   "@type": "regen:C02-Project",
-  "@id": "http://app.regen.network/project/<ID>",
-  "schema:name": "",
-  "regen:cfcProjectId": "",
-  "regen:cfcProjectPage": "",
-  "regen:projectDesignDocument": "",
+  "@id": "https://app.regen.network/project/C02-004",
+  "schema:name": "Harvey Manning Park Expansion",
+  "regen:cfcProjectId": "15",
+  "regen:cfcProjectPage": "https://www.cityforestcredits.org/carbon-credits/carbon-registry/issaquah-forest-carbon-offsets/",
+  "regen:projectDesignDocument": "https://www.cityforestcredits.org/wp-content/uploads/2021/10/Harvey_Manning_Park_Project_Design_Document_20211213_Final.pdf",
   "regen:projectDeveloper": {
-    "schema:name": "",
-    "schema:url": ""
+    "@type": "regen:Organization",
+    "schema:name": "City of Issaquah",
+    "schema:url": "https://www.issaquahwa.gov/",
+    "regen:showOnProjectPage": true
   },
-  "regen:projectType": "",
+  "regen:projectType": "Agriculture Forestry and Other Land Use",
   "regen:projectActivity": {
-    "schema:name": ""
+    "schema:name": "Tree Preservation"
   },
-  "regen:offsetGenerationMethod": [""],
+  "regen:offsetGenerationMethod": ["Avoided Emissions"],
   "regen:projectSize": {
-    "qudt:unit": "",
-    "qudt:numericValue": 0
+    "qudt:unit": "unit:HA",
+    "qudt:numericValue": 6.13
   },
-  "regen:projectStartDate": "",
-  "regen:projectEndDate": "",
+  "regen:projectStartDate": "2021-12-06",
+  "regen:projectEndDate": "2061-12-06",
   "schema:location": {
     "@context": {
       "type": "@type",
@@ -63,18 +65,18 @@
       }
     },
     "type": "Feature",
-    "place_name": "",
+    "place_name": "Issaquah, Washington",
     "geometry": {
       "type": "Point",
       "coordinates": [
-        0,
-        0
+        -122.09555,
+        47.5401
       ]
     }
   },
   "regen:offsetProtocol": {
-    "schema:name": "",
-    "schema:url": "",
-    "schema:version": ""
+    "schema:name": "Preservation Protocol - 40 years",
+    "schema:url": "https://www.cityforestcredits.org/wp-content/uploads/2022/07/City-Forest-Preservation-Protocol-40-Years-V11.40.pdf",
+    "schema:version": "v10.40"
   }
 }

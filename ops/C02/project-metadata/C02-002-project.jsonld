@@ -14,13 +14,6 @@
     "schema:url": {
       "@type": "schema:URL"
     },
-    "regen:previewPhoto": {
-      "@type": "schema:URL"
-    },
-    "regen:galleryPhotos": {
-      "@container": "@list",
-      "@type": "schema:URL"
-    },
     "qudt:unit": {
       "@type": "qudt:Unit"
     },
@@ -32,23 +25,28 @@
     },
     "regen:projectEndDate": {
       "@type": "xsd:date"
+    },
+    "regen:offsetGenerationMethod": {
+      "@container": "@list"
     }
   },
   "@type": "regen:C02-Project",
+  "@id": "https://app.regen.network/project/C02-002",
   "schema:name": "Sandy Cross Forest Preservation Project",
   "regen:cfcProjectId": "18",
   "regen:cfcProjectPage": "https://www.cityforestcredits.org/carbon-credits/carbon-registry/mansfield-forest-carbon-offsets/",
   "regen:projectDesignDocument": "https://www.cityforestcredits.org/wp-content/uploads/2021/07/Sandy-Cross-Project-Design-Document-1.pdf",
-  "schema:description": "The Sandy Cross Forest Preservation Project is a 132-acre Project Area on a 214-acre property in the Mansfield metro area. Western Reserve Land Conservancy is seeking to preserve the Project, creating substantial conservation and community benefits including carbon sequestration, wildlife habitat, and open space protection.\n\n Preservation of the Project is important as intact forests of this size are becoming increasingly rare in Richland County due to agricultural development and urban expansion. Indeed, surrounding forested land is being rapidly converted into agricultural land and is facing a continued threat of urban expansion from the adjacent Village of Lexington.\n\n The Project contains a diverse, 85-year forest including yellow poplar, sugar maple, oak, black cherry, and pine. Preservation of this forest will offer the residents of Northeast Ohio a wide variety of community and conservation benefits.",
-  "regen:projectOperator": {
+  "regen:projectDeveloper": {
+    "@type": "regen:Organization",
     "schema:name": "Western Reserve Land Conservancy",
-    "schema:url": "https://www.wrlandconservancy.org/"
+    "schema:url": "https://www.wrlandconservancy.org/",
+    "regen:showOnProjectPage": true
   },
   "regen:projectType": "Agriculture Forestry and Other Land Use",
   "regen:projectActivity": {
     "schema:name": "Tree Preservation"
   },
-  "regen:offsetGenerationMethod": "Avoided Emissions",
+  "regen:offsetGenerationMethod": ["Avoided Emissions"],
   "regen:projectSize": {
     "qudt:unit": "unit:HA",
     "qudt:numericValue": 53.4
@@ -76,10 +74,6 @@
       ]
     }
   },
-  "regen:previewPhoto": "https://regen-registry.s3.amazonaws.com/projects/C02/sandy-cross.jpg",
-  "regen:galleryPhotos": [
-    "https://regen-registry.s3.amazonaws.com/projects/C02/sandy-cross.jpg"
-  ],
   "regen:offsetProtocol": {
     "schema:name": "Preservation Protocol - 40 years",
     "schema:url": "https://www.cityforestcredits.org/wp-content/uploads/2022/07/City-Forest-Preservation-Protocol-40-Years-V11.40.pdf",

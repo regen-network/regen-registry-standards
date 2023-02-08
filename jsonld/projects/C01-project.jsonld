@@ -5,12 +5,6 @@
     "qudt": "http://qudt.org/schema/qudt/",
     "unit": "http://qudt.org/vocab/unit/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "regen:cfcProjectPage": {
-      "@type": "schema:URL"
-    },
-    "regen:projectDesignDocument": {
-      "@type": "schema:URL"
-    },
     "schema:url": {
       "@type": "schema:URL"
     },
@@ -26,27 +20,32 @@
     "regen:projectEndDate": {
       "@type": "xsd:date"
     },
+    "regen:vcsProjectPage": {
+      "@type": "schema:URL"
+    },
     "regen:offsetGenerationMethod": {
       "@container": "@list"
     }
   },
-  "@type": "regen:C02-Project",
+  "@type": "regen:C01-Project",
   "@id": "http://app.regen.network/project/<ID>",
   "schema:name": "",
-  "regen:cfcProjectId": "",
-  "regen:cfcProjectPage": "",
-  "regen:projectDesignDocument": "",
   "regen:projectDeveloper": {
+    "@type": "regen:Organization",
     "schema:name": "",
-    "schema:url": ""
+    "schema:url": "",
+    "schema:description": "",
+    "regen:address": "",
+    "regen:showOnProjectPage": true
   },
   "regen:projectType": "",
   "regen:projectActivity": {
-    "schema:name": ""
+    "schema:name": "",
+    "schema:url": "" 
   },
   "regen:offsetGenerationMethod": [""],
   "regen:projectSize": {
-    "qudt:unit": "",
+    "qudt:unit": "unit:HA",
     "qudt:numericValue": 0
   },
   "regen:projectStartDate": "",
@@ -62,19 +61,12 @@
         "@container": "@list"
       }
     },
-    "type": "Feature",
-    "place_name": "",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
+    "type": "Feature"
   },
-  "regen:offsetProtocol": {
+  "regen:vcsProjectId": 0,
+  "regen:vcsProjectPage": "",
+  "regen:vcsMethodology": {
     "schema:name": "",
-    "schema:url": "",
-    "schema:version": ""
+    "schema:url": ""
   }
 }

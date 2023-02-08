@@ -1,0 +1,78 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "http://regen.network/",
+    "qudt": "http://qudt.org/schema/qudt/",
+    "unit": "http://qudt.org/vocab/unit/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema:url": {
+      "@type": "schema:URL"
+    },
+    "qudt:unit": {
+      "@type": "qudt:Unit"
+    },
+    "qudt:numericValue": {
+      "@type": "xsd:double"
+    },
+    "regen:projectStartDate": {
+      "@type": "xsd:date"
+    },
+    "regen:projectEndDate": {
+      "@type": "xsd:date"
+    },
+    "regen:vcsProjectPage": {
+      "@type": "schema:URL"
+    },
+    "regen:offsetGenerationMethod": {
+      "@container": "@list"
+    }
+  },
+  "@type": "regen:C01-Project",
+  "@id": "https://app.regen.network/project/C01-001",
+  "schema:name": "The Mai Ndombe REDD+ Project",
+  "regen:projectType": "Agriculture Forestry and Other Land Use",
+  "regen:projectActivity": {
+    "schema:name": "REDD",
+    "schema:url": "https://redd.unfccc.int/"
+  },
+  "regen:projectDeveloper": {
+    "@type": "regen:Organization",
+    "schema:name": "Wildlife Works Carbon LLC",
+    "schema:description": "Wildlife Works is the world's leading REDD+ program development and management company.y",
+    "regen:showOnProjectPage": true
+  },
+  "regen:offsetGenerationMethod": ["Emission Reduction"],
+  "regen:projectSize": {
+    "qudt:unit": "unit:HA",
+    "qudt:numericValue": 299640
+  },
+  "regen:projectStartDate": "2011-03-04",
+  "regen:projectEndDate": "2041-03-13",
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "type": "Feature",
+    "place_name": "Mai Ndombe, Democratic Republic of the Congo, Africa",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        18.044855,
+        -1.958494
+      ]
+    }
+  },
+  "regen:vcsProjectId": 934,
+  "regen:vcsProjectPage": "https://registry.verra.org/app/projectDetail/VCS/934",
+  "regen:vcsMethodology": {
+    "schema:name": "Methodology for Avoided Ecosystem Conversion",
+    "schema:url": "https://verra.org/methodology/vm0009-methodology-for-avoided-ecosystem-conversion-v3-0/"
+  }
+}

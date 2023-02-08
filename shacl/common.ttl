@@ -1,9 +1,32 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix regen: <http://regen.network/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
 regen:ToucanURIPropertyShape sh:path regen:toucanURI ;
   sh:datatype xsd:string ;
   sh:maxCount 1 ;
   sh:minLength 1 ;
+.
+
+regen:OffsetGenerationMethodPropertyShape sh:path regen:offsetGenerationMethod ;
+  sh:node dash:ListShape ;
+  sh:property [
+    sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+    sh:datatype xsd:string ;
+    sh:minLength 1 ;
+  ] ;
+  sh:minCount 1 ;
+  sh:maxCount 1 ;
+.
+
+regen:OffsetGenerationMethodOptionalPropertyShape sh:path regen:offsetGenerationMethod ;
+  sh:node dash:ListShape ;
+  sh:property [
+    sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+    sh:datatype xsd:string ;
+    sh:minLength 1 ;
+  ] ;
+  sh:maxCount 1 ;
 .

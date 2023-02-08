@@ -1,0 +1,78 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "http://regen.network/",
+    "qudt": "http://qudt.org/schema/qudt/",
+    "unit": "http://qudt.org/vocab/unit/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema:url": {
+      "@type": "schema:URL"
+    },
+    "qudt:unit": {
+      "@type": "qudt:Unit"
+    },
+    "qudt:numericValue": {
+      "@type": "xsd:double"
+    },
+    "regen:projectStartDate": {
+      "@type": "xsd:date"
+    },
+    "regen:projectEndDate": {
+      "@type": "xsd:date"
+    },
+    "regen:vcsProjectPage": {
+      "@type": "schema:URL"
+    },
+    "regen:offsetGenerationMethod": {
+      "@container": "@list"
+    }
+  },
+  "@type": "regen:C01-Project",
+  "@id": "https://app.regen.network/project/C01-003",
+  "schema:name": "Evio Kuiñaji Ese´eja Cuana",
+  "regen:projectType": "Agriculture Forestry and Other Land Use",
+  "regen:projectActivity": {
+    "schema:name": "REDD",
+    "schema:url": "https://redd.unfccc.int/"
+  },
+  "regen:projectDeveloper": {
+    "@type": "regen:Organization",
+    "schema:name": "Ese´Eja Infierno Native Community",
+    "schema:description": "Forest owners committed to work to protect and manage the forest under a REDD+ project.",
+    "regen:showOnProjectPage": true
+  },
+  "regen:offsetGenerationMethod": ["Emission Reduction"],
+  "regen:projectSize": {
+    "qudt:unit": "unit:HA",
+    "qudt:numericValue": 7653
+  },
+  "regen:projectStartDate": "2011-07-01",
+  "regen:projectEndDate": "2030-06-30",
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "type": "Feature",
+    "place_name": "Puerto Maldonado, Madre de Dios, Peru",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -69.314155,
+        -12.82265
+      ]
+    }
+  },
+  "regen:vcsProjectId": 1218,
+  "regen:vcsProjectPage": "https://registry.verra.org/app/projectDetail/VCS/1218",
+  "regen:vcsMethodology": {
+    "schema:name": "VM0007 REDD+ Methodology Framework",
+    "schema:url": "https://verra.org/methodology/vm0007-redd-methodology-framework-redd-mf-v1-6/"
+  }
+}

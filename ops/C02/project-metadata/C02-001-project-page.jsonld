@@ -1,0 +1,21 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "http://regen.network/",
+    "regen:previewPhoto": {
+      "@type": "schema:URL"
+    },
+    "regen:galleryPhotos": {
+      "@container": "@list",
+      "@type": "schema:URL"
+    }
+  },
+  "@type": "regen:Project-Page",
+  "@id": "https://app.regen.network/project/C02-001",
+  "regen:creditClassId": "C02",
+  "schema:description": "Launched in May 2019, King County’s Forest Carbon Project confronts climate change by offering local companies the opportunity to offset their carbon emissions by keeping forests intact here in the region, making it possible for their employees and their families to explore and enjoy the protected outdoor spaces.\n\nThe Puget Sound region, including the Seattle metro area, is growing rapidly. The Forest Carbon Project is a component of the Land Conservation Initiative, a 30-year vision to protect 65,000 acres of the most important remaining natural lands and urban green spaces for residents of the region.\n\nKing County has identified 1,500 acres of high-value urban forest to be preserved and will be acquiring lands with its city partners throughout the coming years. The first acquisition in 2019 was a 15-acre addition to Soaring Eagle Regional Park near Sammamish, WA.",
+  "regen:previewPhoto": "https://regen-registry.s3.amazonaws.com/projects/C02/kings-county.jpg",
+  "regen:galleryPhotos": [
+    "https://regen-registry.s3.amazonaws.com/projects/C02/kings-county.jpg"
+  ]
+}
