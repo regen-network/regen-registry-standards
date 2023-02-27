@@ -3,7 +3,7 @@
     "schema": "http://schema.org/",
     "regen": "http://regen.network/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "regen:approvedMethodologies": {
+    "schema:itemListElement": {
       "@container": "@list"
     },
     "schema:url": {
@@ -48,23 +48,23 @@
       "@value": ""
     }
   ],
-  "regen:approvedMethodologies": [
-    {
-      "schema:name": "",
-      "schema:url": "",
-      "schema:identifier": "",
-      "schema:version": ""
-    },
-    {
-      "schema:name": "",
-      "schema:url": "",
-      "schema:identifier": "",
-      "schema:version": ""
-    }
-  ],
-  "regen:approvedMethodologiesURL": {
-    "@type": "schema:URL",
-    "@value": ""
+  "regen:approvedMethodologies": {
+    "@type": "schema:ItemList",
+    "schema:itemListElement": [
+      {
+        "schema:name": "",
+        "schema:url": "",
+        "schema:identifier": "",
+        "schema:version": ""
+      },
+      {
+        "schema:name": "",
+        "schema:url": "",
+        "schema:identifier": "",
+        "schema:version": ""
+      }
+    ],
+    "schema:url": ""
   },
   "regen:ecosystemType": [
     ""

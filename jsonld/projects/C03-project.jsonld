@@ -3,7 +3,7 @@
     "schema": "http://schema.org/",
     "regen": "http://regen.network/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "regen:approvedMethodologies": {
+    "schema:itemListElement": {
       "@container": "@list"
     },
     "schema:url": {
@@ -24,19 +24,24 @@
   "schema:name": "",
   "regen:vcsProjectId": 0,
   "regen:toucanURI": "",
-  "regen:approvedMethodologies": [
-    {
-      "schema:name": "",
-      "schema:identifier": "",
-      "schema:url": "",
-      "schema:version": ""
-    }
-  ],
+  "regen:approvedMethodologies": {
+    "@type": "schema:ItemList",
+    "schema:itemListElement": [
+      {
+        "schema:name": "",
+        "schema:identifier": "",
+        "schema:url": "",
+        "schema:version": ""
+      }
+    ]
+  },
   "regen:projectActivity": {
     "schema:name": ""
   },
   "regen:projectType": "",
-  "regen:offsetGenerationMethod": [""],
+  "regen:offsetGenerationMethod": [
+    ""
+  ],
   "regen:projectStartDate": "",
   "regen:projectEndDate": ""
 }

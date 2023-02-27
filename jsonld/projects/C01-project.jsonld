@@ -41,9 +41,11 @@
   "regen:projectType": "",
   "regen:projectActivity": {
     "schema:name": "",
-    "schema:url": "" 
+    "schema:url": ""
   },
-  "regen:offsetGenerationMethod": [""],
+  "regen:offsetGenerationMethod": [
+    ""
+  ],
   "regen:projectSize": {
     "qudt:unit": "unit:HA",
     "qudt:numericValue": 0

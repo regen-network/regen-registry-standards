@@ -3,7 +3,7 @@
     "schema": "http://schema.org/",
     "regen": "http://regen.network/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "regen:approvedMethodologies": {
+    "schema:itemListElement": {
       "@container": "@list"
     },
     "schema:url": {
@@ -48,23 +48,23 @@
       "@value": "Avoided Emissions"
     }
   ],
-  "regen:approvedMethodologies": [
-    {
-      "schema:name": "Preservation Protocol — 40 years",
-      "schema:identifier": "",
-      "schema:url": "https://www.cityforestcredits.org/wp-content/uploads/2022/07/City-Forest-Preservation-Protocol-40-Years-V11.40.pdf",
-      "schema:version": "11.40"
-    },
-    {
-      "schema:name": "Preservation Protocol — 100 years",
-      "schema:identifier": "",
-      "schema:url": "https://www.cityforestcredits.org/wp-content/uploads/2022/07/City-Forest-Preservation-Protocol-100-Years-V11.100.pdf",
-      "schema:version": "11.100"
-    }
-  ],
-  "regen:approvedMethodologiesURL": {
-    "@type": "schema:URL",
-    "@value": "https://www.cityforestcredits.org/carbon-credits/carbon-protocols/"
+  "regen:approvedMethodologies": {
+    "@type": "schema:ItemList",
+    "schema:itemListElement": [
+      {
+        "schema:name": "Preservation Protocol — 40 years",
+        "schema:identifier": "",
+        "schema:url": "https://www.cityforestcredits.org/wp-content/uploads/2022/07/City-Forest-Preservation-Protocol-40-Years-V11.40.pdf",
+        "schema:version": "11.40"
+      },
+      {
+        "schema:name": "Preservation Protocol — 100 years",
+        "schema:identifier": "",
+        "schema:url": "https://www.cityforestcredits.org/wp-content/uploads/2022/07/City-Forest-Preservation-Protocol-100-Years-V11.100.pdf",
+        "schema:version": "11.100"
+      }
+    ],
+    "schema:url": "https://www.cityforestcredits.org/carbon-credits/carbon-protocols/"
   },
   "regen:ecosystemType": [
     "Urban Forest"

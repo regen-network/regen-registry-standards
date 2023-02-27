@@ -44,7 +44,9 @@
   "regen:projectActivity": {
     "schema:name": ""
   },
-  "regen:offsetGenerationMethod": [""],
+  "regen:offsetGenerationMethod": [
+    ""
+  ],
   "regen:projectSize": {
     "qudt:unit": "",
     "qudt:numericValue": 0

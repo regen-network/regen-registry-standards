@@ -41,7 +41,9 @@
     "schema:description": "Forest owners committed to work to protect and manage the forest under a REDD+ project.",
     "regen:showOnProjectPage": true
   },
-  "regen:offsetGenerationMethod": ["Emission Reduction"],
+  "regen:offsetGenerationMethod": [
+    "Emission Reduction"
+  ],
   "regen:projectSize": {
     "qudt:unit": "unit:HA",
     "qudt:numericValue": 7653
