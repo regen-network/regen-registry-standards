@@ -53,10 +53,6 @@ regen:C02-CreditClassShape a sh:NodeShape ;
   ] ;
   sh:property regen:ApprovedMethodologiesPropertyShape ;
   sh:property [
-    sh:path regen:approvedMethodologiesURL ;
-    sh:datatype schema:URL ;
-  ] ;
-  sh:property [
     sh:path regen:verificationMethod ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
