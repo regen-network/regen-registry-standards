@@ -1,0 +1,85 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "http://regen.network/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema:itemListElement": {
+      "@container": "@list"
+    },
+    "regen:sectoralScope": {
+      "@container": "@list"
+    },
+    "regen:offsetGenerationMethod": {
+      "@container": "@list"
+    },
+    "regen:projectActivities": {
+      "@container": "@list"
+    }
+  },
+  "@type": "regen:CreditClass",
+  "schema:description": "",
+  "schema:name": "",
+  "schema:url": {
+    "@type": "schema:URL",
+    "@value": ""
+  },
+  "regen:sourceRegistry": {
+    "schema:name": "",
+    "schema:url": {
+      "@type": "schema:URL",
+      "@value": ""
+    }
+  },
+  "regen:sectoralScope": [
+    ""
+  ],
+  "regen:offsetGenerationMethod": [
+    ""
+  ],
+  "regen:approvedMethodologies": {
+    "@type": "schema:BreadcrumbList",
+    "schema:itemListElement": [
+      {
+        "@type": "regen:Methodology",
+        "schema:name": "",
+        "schema:url": {
+          "@type": "schema:URL",
+          "@value": ""
+        },
+        "schema:identifier": {
+          "@type": "schema:Text",
+          "@value": ""
+        },
+        "schema:version": {
+          "@type": "schema:Text",
+          "@value": ""
+        }
+      },
+      {
+        "@type": "regen:Methodology",
+        "schema:name": "",
+        "schema:url": {
+          "@type": "schema:URL",
+          "@value": ""
+        },
+        "schema:identifier": {
+          "@type": "schema:Text",
+          "@value": ""
+        },
+        "schema:version": {
+          "@type": "schema:Text",
+          "@value": ""
+        }
+      }
+    ],
+    "schema:url": {
+      "@type": "schema:URL",
+      "@value": ""
+    }
+  },
+  "regen:verificationMethod": "",
+  "regen:projectActivities": [
+    ""
+  ],
+  "regen:tokenizationSource": ""
+}
