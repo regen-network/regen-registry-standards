@@ -14,21 +14,18 @@
     },
     "regen:projectActivities": {
       "@container": "@list"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
     }
   },
-  "@type": "regen:CreditClass",
+  "@type": "regen:C03-CreditClass",
   "schema:description": "",
   "schema:name": "",
-  "schema:url": {
-    "@type": "schema:URL",
-    "@value": ""
-  },
+  "schema:url": "",
   "regen:sourceRegistry": {
     "schema:name": "",
-    "schema:url": {
-      "@type": "schema:URL",
-      "@value": ""
-    }
+    "schema:url": ""
   },
   "regen:sectoralScope": [
     ""
@@ -37,45 +34,22 @@
     ""
   ],
   "regen:approvedMethodologies": {
-    "@type": "schema:BreadcrumbList",
+    "@type": "schema:ItemList",
     "schema:itemListElement": [
       {
-        "@type": "regen:Methodology",
         "schema:name": "",
-        "schema:url": {
-          "@type": "schema:URL",
-          "@value": ""
-        },
-        "schema:identifier": {
-          "@type": "schema:Text",
-          "@value": ""
-        },
-        "schema:version": {
-          "@type": "schema:Text",
-          "@value": ""
-        }
+        "schema:url": "",
+        "schema:identifier": "",
+        "schema:version": ""
       },
       {
-        "@type": "regen:Methodology",
         "schema:name": "",
-        "schema:url": {
-          "@type": "schema:URL",
-          "@value": ""
-        },
-        "schema:identifier": {
-          "@type": "schema:Text",
-          "@value": ""
-        },
-        "schema:version": {
-          "@type": "schema:Text",
-          "@value": ""
-        }
+        "schema:url": "",
+        "schema:identifier": "",
+        "schema:version": ""
       }
     ],
-    "schema:url": {
-      "@type": "schema:URL",
-      "@value": ""
-    }
+    "schema:url": ""
   },
   "regen:verificationMethod": "",
   "regen:projectActivities": [
