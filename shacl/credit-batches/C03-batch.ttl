@@ -1,5 +1,5 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix regen: <http://regen.network/> .
+@prefix regen: <https://schema.regen.network#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 regen:C03-CreditBatchShape a sh:NodeShape ;

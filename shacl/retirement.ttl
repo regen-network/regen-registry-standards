@@ -3,7 +3,7 @@
 @prefix schema: <http://schema.org/> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix regen: <http://regen.network/> .
+@prefix regen: <https://schema.regen.network#> .
 
 # regen:RetirementShape defines the metadata that goes
 # into the retirement.metadata column in the Postgres database.
