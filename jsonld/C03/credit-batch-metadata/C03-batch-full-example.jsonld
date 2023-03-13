@@ -1,6 +1,6 @@
 {
   "@context": {
-    "regen": "http://regen.network/"
+    "regen": "https://schema.regen.network#"
   },
   "@type": "regen:C03-CreditBatch",
   "regen:toucanVintageTokenId": 123,
