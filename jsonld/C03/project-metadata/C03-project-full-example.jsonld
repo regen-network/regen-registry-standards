@@ -3,7 +3,7 @@
     "schema": "http://schema.org/",
     "regen": "http://regen.network/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "regen:approvedMethodologies": {
+    "schema:itemListElement": {
       "@container": "@list"
     },
     "schema:url": {
@@ -24,19 +24,24 @@
   "schema:name": "VCS-123",
   "regen:vcsProjectId": 123,
   "regen:toucanURI": "http://toucan.earth/projects/123",
-  "regen:approvedMethodologies": [
-    {
-      "schema:name": "Preservation Protocol - 40 years",
-      "schema:identifier": "PP40",
-      "schema:url": "https://pp.org/PP40",
-      "schema:version": "0.0.0"
-    }
-  ],
+  "regen:approvedMethodologies": {
+    "@type": "schema:ItemList",
+    "schema:itemListElement": [
+      {
+        "schema:name": "Preservation Protocol - 40 years",
+        "schema:identifier": "PP40",
+        "schema:url": "https://pp.org/PP40",
+        "schema:version": "0.0.0"
+      }
+    ]
+  },
   "regen:projectActivity": {
     "schema:name": "Tree Preservation"
   },
   "regen:projectType": "Agriculture Forestry and Other Land Use",
-  "regen:offsetGenerationMethod": ["Avoided Emissions"],
+  "regen:offsetGenerationMethod": [
+    "Avoided Emissions"
+  ],
   "regen:projectStartDate": "2022-10-26",
   "regen:projectEndDate": "2023-10-26"
 }

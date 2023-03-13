@@ -41,26 +41,7 @@ regen:C01-CreditClassShape a sh:NodeShape ;
     sh:maxCount 1 ;
   ] ;
   sh:property regen:OffsetGenerationMethodPropertyShape ; 
-  sh:property [
-    sh:path regen:approvedMethodologies ;
-    sh:class schema:BreadcrumbList ;
-    sh:property [
-      sh:path schema:itemListElement ;
-      sh:minCount 1 ;
-      sh:property [
-        sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
-        sh:node regen:MethodologyVersionShape ;
-        sh:class regen:Methodology ;
-        sh:minCount 1 ;
-      ] ;
-    ] ;
-    sh:property [
-      sh:path schema:url ;
-      sh:datatype schema:URL ;
-    ] ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-  ] ;
+  sh:property regen:ApprovedMethodologiesPropertyShape ;
   sh:property [
     sh:path regen:verificationMethod ;
     sh:minCount 1 ;

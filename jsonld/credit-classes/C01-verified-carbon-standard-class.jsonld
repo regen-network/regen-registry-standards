@@ -6,6 +6,9 @@
     "schema:itemListElement": {
       "@container": "@list"
     },
+    "schema:url": {
+      "@type": "schema:URL"
+    },
     "regen:sectoralScope": {
       "@container": "@list"
     },
@@ -34,45 +37,22 @@
     ""
   ],
   "regen:approvedMethodologies": {
-    "@type": "schema:BreadcrumbList",
+    "@type": "schema:ItemList",
     "schema:itemListElement": [
       {
-        "@type": "regen:Methodology",
         "schema:name": "",
-        "schema:url": {
-          "@type": "schema:URL",
-          "@value": ""
-        },
-        "schema:identifier": {
-          "@type": "schema:Text",
-          "@value": ""
-        },
-        "schema:version": {
-          "@type": "schema:Text",
-          "@value": ""
-        }
+        "schema:url": "",
+        "schema:identifier": "",
+        "schema:version": ""
       },
       {
-        "@type": "regen:Methodology",
         "schema:name": "",
-        "schema:url": {
-          "@type": "schema:URL",
-          "@value": ""
-        },
-        "schema:identifier": {
-          "@type": "schema:Text",
-          "@value": ""
-        },
-        "schema:version": {
-          "@type": "schema:Text",
-          "@value": ""
-        }
+        "schema:url": "",
+        "schema:identifier": "",
+        "schema:version": ""
       }
     ],
-    "schema:url": {
-      "@type": "schema:URL",
-      "@value": ""
-    }
+    "schema:url": ""
   },
   "regen:verificationMethod": ""
 }

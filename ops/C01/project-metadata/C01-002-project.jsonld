@@ -41,7 +41,9 @@
     "schema:description": "Wildlife Works is the world''s leading REDD+ program development and management company.",
     "regen:showOnProjectPage": true
   },
-  "regen:offsetGenerationMethod": ["Emission Reduction"],
+  "regen:offsetGenerationMethod": [
+    "Emission Reduction"
+  ],
   "regen:projectSize": {
     "qudt:unit": "unit:HA",
     "qudt:numericValue": 169741

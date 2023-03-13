@@ -6,6 +6,9 @@
     "schema:itemListElement": {
       "@container": "@list"
     },
+    "schema:url": {
+      "@type": "schema:URL"
+    },
     "regen:sectoralScope": {
       "@container": "@list"
     },
@@ -46,45 +49,22 @@
     }
   ],
   "regen:approvedMethodologies": {
-    "@type": "schema:BreadcrumbList",
+    "@type": "schema:ItemList",
     "schema:itemListElement": [
       {
-        "@type": "regen:Methodology",
         "schema:name": "Preservation Protocol — 40 years",
-        "schema:identifier": {
-          "@type": "schema:Text",
-          "@value": ""
-        },
-        "schema:url": {
-          "@type": "schema:URL",
-          "@value": "https://www.cityforestcredits.org/wp-content/uploads/2022/07/City-Forest-Preservation-Protocol-40-Years-V11.40.pdf"
-        },
-        "schema:version": {
-          "@type": "schema:Text",
-          "@value": "11.40"
-        }
+        "schema:identifier": "",
+        "schema:url": "https://www.cityforestcredits.org/wp-content/uploads/2022/07/City-Forest-Preservation-Protocol-40-Years-V11.40.pdf",
+        "schema:version": "11.40"
       },
       {
-        "@type": "regen:Methodology",
         "schema:name": "Preservation Protocol — 100 years",
-        "schema:identifier": {
-          "@type": "schema:Text",
-          "@value": ""
-        },
-        "schema:url": {
-          "@type": "schema:URL",
-          "@value": "https://www.cityforestcredits.org/wp-content/uploads/2022/07/City-Forest-Preservation-Protocol-100-Years-V11.100.pdf"
-        },
-        "schema:version": {
-          "@type": "schema:Text",
-          "@value": "11.100"
-        }
+        "schema:identifier": "",
+        "schema:url": "https://www.cityforestcredits.org/wp-content/uploads/2022/07/City-Forest-Preservation-Protocol-100-Years-V11.100.pdf",
+        "schema:version": "11.100"
       }
     ],
-    "schema:url": {
-      "@type": "schema:URL",
-      "@value": "https://www.cityforestcredits.org/carbon-credits/carbon-protocols/"
-    }
+    "schema:url": "https://www.cityforestcredits.org/carbon-credits/carbon-protocols/"
   },
   "regen:ecosystemType": [
     "Urban Forest"

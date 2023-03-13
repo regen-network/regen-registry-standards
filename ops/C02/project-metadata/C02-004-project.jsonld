@@ -46,7 +46,9 @@
   "regen:projectActivity": {
     "schema:name": "Tree Preservation"
   },
-  "regen:offsetGenerationMethod": ["Avoided Emissions"],
+  "regen:offsetGenerationMethod": [
+    "Avoided Emissions"
+  ],
   "regen:projectSize": {
     "qudt:unit": "unit:HA",
     "qudt:numericValue": 6.13

@@ -1,17 +1,11 @@
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix regen: <http://regen.network/> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-# regen:MethodologyVersionShape defines the metadata that goes
-# into the methodology_version.metadata column in the Postgres database.
-
-regen:MethodologyVersionShape
-  a rdfs:Class, sh:NodeShape ;
-  sh:targetClass regen:Methodology ;
-  rdfs:subClassOf rdfs:Resource ;
+regen:MethodologyVersionShape a sh:NodeShape ;
   sh:property [
     sh:path schema:url ;
     sh:datatype schema:URL ;
@@ -26,12 +20,34 @@ regen:MethodologyVersionShape
   ] ;
   sh:property [ 
     sh:path schema:identifier ;
-    sh:datatype schema:Text ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
     sh:maxCount 1 ;
   ] ;
   sh:property [ 
     sh:path schema:version ;
-    sh:datatype schema:Text ;
+    sh:datatype xsd:string ;
     sh:maxCount 1 ;
+  ] ;
+.
+
+regen:ApprovedMethodologiesPropertyShape sh:path regen:approvedMethodologies ;
+  sh:class schema:ItemList ;
+  sh:minCount 1 ;
+  sh:maxCount 1 ;
+  sh:property [
+    sh:path schema:itemListElement ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:node regen:MethodologyVersionShape ;
+      sh:minCount 1 ;
+    ] ;
+  ] ;
+  sh:property [
+    sh:path schema:url ;
+    sh:maxCount 1 ;
+    sh:datatype schema:URL ;
   ] ;
 .

@@ -1,8 +1,6 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix regen: <http://regen.network/> .
-@prefix dash: <http://datashapes.org/dash#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
 regen:C03-ProjectShape a sh:NodeShape ;
   sh:targetClass regen:C03-Project ;
@@ -18,16 +16,7 @@ regen:C03-ProjectShape a sh:NodeShape ;
   sh:property regen:VCSProjectIdPropertyShape ;
   sh:property regen:ToucanURIPropertyShape ;
 
-  sh:property [
-    sh:path regen:approvedMethodologies ;
-    sh:node dash:ListShape ;
-    sh:property [
-      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
-      sh:node regen:C03-MethodologyVersionShape ;
-    ] ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-  ] ;
+  sh:property regen:ApprovedMethodologiesPropertyShape ;
 
   sh:property regen:OffsetGenerationMethodOptionalPropertyShape ; 
   sh:property regen:ProjectActivityOptionalPropertyShape ;
