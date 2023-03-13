@@ -30,3 +30,14 @@ regen:OffsetGenerationMethodOptionalPropertyShape sh:path regen:offsetGeneration
   ] ;
   sh:maxCount 1 ;
 .
+
+regen:ProjectActivitiesPropertyShape sh:path regen:projectActivities ;
+  sh:node dash:ListShape ;
+  sh:property [
+    sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+    sh:datatype xsd:string ;
+    sh:minLength 1 ;
+  ] ;
+  sh:minCount 1 ;
+  sh:maxCount 1 ;
+.
