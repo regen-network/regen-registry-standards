@@ -66,14 +66,5 @@ regen:C03-CreditClassShape a sh:NodeShape ;
     sh:minLength 1 ;
     sh:datatype xsd:string ;
   ] ;
-  sh:property [
-    sh:path regen:projectActivities ;
-    sh:node dash:ListShape ;
-    sh:property [
-      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
-      sh:node regen:NameOptionalUrlShape ;
-    ] ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-  ] ;
+  sh:property regen:ProjectActivitiesPropertyShape;
 .

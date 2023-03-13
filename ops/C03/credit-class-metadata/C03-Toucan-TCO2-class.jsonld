@@ -325,24 +325,12 @@
   },
   "regen:verificationMethod": "Third-Party Verified",
   "regen:projectActivities": [
-    {
-      "schema:name": "Afforestation, Reforestation, & Revegetation (ARR)"
-    },
-    {
-      "schema:name": "Agricultural Land Management (ALM)"
-    },
-    {
-      "schema:name": "Improved Forest Management (IFM)"
-    },
-    {
-      "schema:name": "Reduced Emissions from Deforestation and Degradation (REDD)"
-    },
-    {
-      "schema:name": "Avoided Conversion of Grasslands and Shrublands (ACoGS)"
-    },
-    {
-      "schema:name": "Wetlands Restoration and Conservation (WRC)"
-    }
+    "Afforestation, Reforestation, & Revegetation (ARR)",
+    "Agricultural Land Management (ALM)",
+    "Improved Forest Management (IFM)",
+    "Reduced Emissions from Deforestation and Degradation (REDD)",
+    "Avoided Conversion of Grasslands and Shrublands (ACoGS)",
+    "Wetlands Restoration and Conservation (WRC)"
   ],
   "regen:tokenizationSource": "Toucan"
 }
