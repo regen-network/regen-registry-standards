@@ -18,20 +18,16 @@
   },
   "@type": "regen:C02-CreditBatch",
   "regen:cfcCreditSerialNumbers": [
-    "6477 - 6576",
-    "6677 - 6841"
+    "78240 - 84648"
   ],
-  "regen:cfcVintageYear": 2019,
+  "regen:cfcVintageYear": 2022,
   "regen:verificationReports": [
     {
-      "schema:url": "https://www.cityforestcredits.org/wp-content/uploads/2018/04/King-County-Verification-Report.pdf"
+      "schema:url": "https://www.cityforestcredits.org/wp-content/uploads/2021/10/Harvey-Manning-Verification-Report-Final.pdf"
     }
   ],
   "regen:projectVerifier": {
     "schema:name": "Ecofor LLC",
-    "schema:url": {
-      "@type": "schema:URL",
-      "@value": "https://www.ecofor.ca/"
-    }
+    "schema:url": "https://www.ecofor.ca/"
   }
 }

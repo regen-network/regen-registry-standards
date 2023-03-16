@@ -18,21 +18,17 @@
   },
   "@type": "regen:C02-CreditBatch",
   "regen:cfcCreditSerialNumbers": [
-    "1 - 5635",
-    "7545 - 9444",
-    "12256 - 12429"
+    "6477 - 6576",
+    "6677 - 6841"
   ],
-  "regen:cfcVintageYear": 2022,
+  "regen:cfcVintageYear": 2019,
   "regen:verificationReports": [
     {
-      "schema:url": "https://www.cityforestcredits.org/wp-content/uploads/2020/02/Buena-Vista-Heights-Project-Verification-Report.pdf"
+      "schema:url": "https://www.cityforestcredits.org/wp-content/uploads/2018/04/King-County-Verification-Report.pdf"
     }
   ],
   "regen:projectVerifier": {
     "schema:name": "Ecofor LLC",
-    "schema:url": {
-      "@type": "schema:URL",
-      "@value": "https://www.ecofor.ca/"
-    }
+    "schema:url": "https://www.ecofor.ca/"
   }
 }

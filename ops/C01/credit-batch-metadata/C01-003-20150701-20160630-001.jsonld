@@ -1,0 +1,28 @@
+{
+  "@type": "regen:C01-CreditBatch",
+  "@context": {
+    "regen": "https://schema.regen.network#",
+    "schema": "http://schema.org/",
+    "regen:additionalCertifications": {
+      "@container": "@list"
+    }
+  },
+  "regen:vcsProjectId": 1218,
+  "regen:additionalCertifications": [
+    {
+      "schema:url": {
+        "@type": "schema:URL",
+        "@value": "https://verra.org/project/ccb-program/"
+      },
+      "schema:name": "CCB-Biodiversity Gold"
+    },
+    {
+      "schema:url": {
+        "@type": "schema:URL",
+        "@value": "https://verra.org/project/ccb-program/"
+      },
+      "schema:name": "CCB-Climate Gold"
+    }
+  ],
+  "regen:vcsRetirementSerialNumber": "11339-320607281-320607330-VCS-VCU-576-VER-PE-14-1218-01072015-30062016-1"
+}

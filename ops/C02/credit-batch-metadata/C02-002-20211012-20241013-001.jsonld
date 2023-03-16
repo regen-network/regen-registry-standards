@@ -28,9 +28,6 @@
   ],
   "regen:projectVerifier": {
     "schema:name": "Ecofor LLC",
-    "schema:url": {
-      "@type": "schema:URL",
-      "@value": "https://www.ecofor.ca/"
-    }
+    "schema:url": "https://www.ecofor.ca/"
   }
 }
