@@ -2,11 +2,11 @@
   "@context": {
     "schema": "http://schema.org/",
     "regen": "https://schema.regen.network#",
-    "regen:previewPhoto": {
-      "@type": "schema:URL"
-    },
     "regen:galleryPhotos": {
       "@container": "@list",
+      "@type": "schema:URL"
+    },
+    "schema:url": {
       "@type": "schema:URL"
     },
     "regen:videoURL": {
@@ -17,6 +17,8 @@
   "@id": "http://app.regen.network/project/C03-002",
   "regen:creditClassId": "C03",
   "schema:description": "REDD+ Project Resguardo Indígena Unificado–Selva de Mataven (REDD+ RIU-SM) represents the fourth largest indigenous reservation in Columbia and protects 1.15M hectares of natural forests from deforestation. This project safeguards biodiversity and provides education, healthcare, sanitation, food security, and other co-benefits for 15K indigenous people. The protection of this area also serves as a gatekeeper for deforestation threats moving from the Orinoco Savannahs to the Amazon.",
-  "regen:previewPhoto": "https://regen-registry.s3.amazonaws.com/projects/faebcc4e-d214-11ed-8159-0a6e1e09fcad/01.jpeg",
+  "regen:previewPhoto": {
+    "schema:url": "https://regen-registry.s3.amazonaws.com/projects/faebcc4e-d214-11ed-8159-0a6e1e09fcad/01.jpeg"
+  },
   "regen:videoURL": "https://www.youtube.com/watch?v=ggetXgiA3Zk"
 }

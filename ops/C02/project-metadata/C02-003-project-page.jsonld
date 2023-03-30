@@ -2,11 +2,14 @@
   "@context": {
     "schema": "http://schema.org/",
     "regen": "https://schema.regen.network#",
-    "regen:previewPhoto": {
-      "@type": "schema:URL"
-    },
     "regen:galleryPhotos": {
       "@container": "@list",
+      "@type": "schema:URL"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
+    },
+    "regen:videoURL": {
       "@type": "schema:URL"
     }
   },
@@ -14,7 +17,9 @@
   "@id": "https://app.regen.network/project/C02-003",
   "regen:creditClassId": "C02",
   "schema:description": "Outside Pittsburgh, Allegheny Land Trust protected 124 acres of woodlands from rapid encroaching residential development in southeastern Allegheny County. The 40 year old maple, cherry and oak-hickory forest provides habitat for deer, turkey, and many species of birds. Hikers, birders, and mountain bikers will be able to explore the area, and possibly catch a glimpse of a majestic 200 year old oak tree.\n\nProtection of this forest also contributes to maintaining clean drinking water for Pittsburgh region’s residents. Located within the lower Youghiogheny River Watershed, the property is five miles upstream from the confluence with the Monongahela River.\n\nRevenue generated from the sale of carbon credits will be put towards acquisition costs, land stewardship, and future expansion of this and other conservation lands.",
-  "regen:previewPhoto": "https://regen-registry.s3.amazonaws.com/projects/C02/buena-vista-01.jpg",
+  "regen:previewPhoto": {
+    "schema:url": "https://regen-registry.s3.amazonaws.com/projects/C02/buena-vista-01.jpg"
+  },
   "regen:galleryPhotos": [
     "https://regen-registry.s3.amazonaws.com/projects/C02/buena-vista-01.jpg",
     "https://regen-registry.s3.amazonaws.com/projects/C02/buena-vista-02.jpg"

@@ -90,8 +90,19 @@ regen:ProjectTypeOptionalPropertyShape sh:path regen:projectType ;
 .
 
 regen:PreviewPhotoPropertyShape sh:path regen:previewPhoto ;
-  sh:datatype schema:URL ;
   sh:group regen:ProjectPageMediaGroup ;
+  sh:property [
+    sh:path schema:url ;
+    sh:datatype schema:URL ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+  ] ;
+  sh:property [
+    sh:path schema:creditText ;
+    sh:datatype xsd:string ;
+    sh:minLength 1 ;
+    sh:maxCount 1 ;
+  ] ;
 .
 
 regen:GalleryPhotosPropertyShape sh:path regen:galleryPhotos ;
