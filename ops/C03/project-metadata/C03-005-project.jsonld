@@ -1,0 +1,60 @@
+{
+  "@type": "regen:C03-Project",
+  "@context": {
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "regen": "https://schema.regen.network#",
+    "schema": "http://schema.org/",
+    "schema:itemListElement": {
+      "@container": "@list"
+    }
+  },
+  "schema:name": "The Mai Ndombe REDD+ Project",
+  "regen:vcsProjectId": 875,
+  "regen:toucanProjectTokenId": 72,
+  "regen:approvedMethodologies": {
+    "@type": "schema:ItemList",
+    "schema:itemListElement": [
+      {
+        "schema:name": "VM0007",
+        "schema:identifier": "VM0007"
+      }
+    ]
+  },
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "type": "Feature",
+    "id": "region.173088",
+    "place_type": ["region"],
+    "properties": {
+      "short_code": "BR-MT",
+      "wikidata": "Q42824",
+      "mapbox_id": "dXJuOm1ieHBsYzpBcVFn"
+    },
+    "text": "Mato Grosso",
+    "place_name": "Mato Grosso, Brazil",
+    "bbox": [-61.633312, -18.041561, -50.20914, -7.348088],
+    "center": [-55.9809851947356, -13.6862877932155],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-55.9809851947356, -13.6862877932155]
+    },
+    "context": [
+      {
+        "id": "country.8736",
+        "short_code": "br",
+        "wikidata": "Q155",
+        "mapbox_id": "dXJuOm1ieHBsYzpJaUE",
+        "text": "Brazil"
+      }
+    ]
+  }
+}

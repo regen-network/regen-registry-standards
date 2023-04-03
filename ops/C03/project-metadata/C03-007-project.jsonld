@@ -1,0 +1,60 @@
+{
+  "@type": "regen:C03-Project",
+  "@context": {
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "regen": "https://schema.regen.network#",
+    "schema": "http://schema.org/",
+    "schema:itemListElement": {
+      "@container": "@list"
+    }
+  },
+  "schema:name": "Pacajai REDD+ Project",
+  "regen:vcsProjectId": 981,
+  "regen:toucanProjectTokenId": 7,
+  "regen:approvedMethodologies": {
+    "@type": "schema:ItemList",
+    "schema:itemListElement": [
+      {
+        "schema:name": "VM0015",
+        "schema:identifier": "VM0015"
+      }
+    ]
+  },
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "type": "Feature",
+    "id": "region.50208",
+    "place_type": ["region"],
+    "properties": {
+      "short_code": "BR-PA",
+      "wikidata": "Q39517",
+      "mapbox_id": "dXJuOm1ieHBsYzp4Q0E"
+    },
+    "text": "Pará",
+    "place_name": "Pará, Brazil",
+    "bbox": [-58.895623, -9.844625, -46.0546875, 2.632346],
+    "center": [-53.1382861008915, -4.04612783594293],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-53.1382861008915, -4.04612783594293]
+    },
+    "context": [
+      {
+        "id": "country.8736",
+        "short_code": "br",
+        "wikidata": "Q155",
+        "mapbox_id": "dXJuOm1ieHBsYzpJaUE",
+        "text": "Brazil"
+      }
+    ]
+  }
+}

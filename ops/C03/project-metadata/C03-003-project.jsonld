@@ -1,0 +1,57 @@
+{
+  "@type": "regen:C03-Project",
+  "@context": {
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "regen": "https://schema.regen.network#",
+    "schema": "http://schema.org/",
+    "schema:itemListElement": {
+      "@container": "@list"
+    }
+  },
+  "schema:name": "The Kasigau Corridor REDD Project - Phase II The Community Ranches",
+  "regen:vcsProjectId": 1650,
+  "regen:toucanProjectTokenId": 20,
+  "regen:approvedMethodologies": {
+    "@type": "schema:ItemList",
+    "schema:itemListElement": [
+      {
+        "schema:name": "VM0015",
+        "schema:identifier": "VM0015"
+      }
+    ]
+  },
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "type": "Feature",
+    "id": "region.115831",
+    "place_type": ["region"],
+    "properties": {
+      "short_code": "KH-11",
+      "wikidata": "Q652830",
+      "mapbox_id": "dXJuOm1ieHBsYzpBY1Iz"
+    },
+    "text": "Mondulkiri",
+    "place_name": "Mondulkiri, Cambodia",
+    "bbox": [106.33854, 12.062167, 107.60628, 13.417403],
+    "center": [107.1865184, 12.4568561],
+    "geometry": {"type": "Point", "coordinates": [107.1865184, 12.4568561]},
+    "context": [
+      {
+        "id": "country.8823",
+        "short_code": "kh",
+        "wikidata": "Q424",
+        "mapbox_id": "dXJuOm1ieHBsYzpJbmM",
+        "text": "Cambodia"
+      }
+    ]
+  }
+}

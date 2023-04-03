@@ -1,0 +1,22 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "https://schema.regen.network#",
+    "regen:previewPhoto": {
+      "@type": "schema:URL"
+    },
+    "regen:galleryPhotos": {
+      "@container": "@list",
+      "@type": "schema:URL"
+    },
+    "regen:videoURL": {
+      "@type": "schema:URL"
+    }
+  },
+  "@type": "regen:Project-Page",
+  "@id": "http://app.regen.network/project/C03-001",
+  "regen:creditClassId": "C03",
+  "schema:description": "This project protects 47,237 hectares of uninhabited peat swamp forest on the southern coast of Borneo, Central Kalimantan. Despite only covering about 3% of our planet’s land, peatlands store twice as much carbon as all the world’s forests. Under threat of being logged, drained and burned by palm oil plantations, this project protects the land, which is home to an orangutan sanctuary and 50 other endangered species.",
+  "regen:previewPhoto": "https://regen-registry.s3.amazonaws.com/projects/fadb9eb4-d214-11ed-8158-0a6e1e09fcad/01.jpeg",
+  "regen:videoURL": "https://www.youtube.com/watch?v=vbT35a4wVCU"
+}
