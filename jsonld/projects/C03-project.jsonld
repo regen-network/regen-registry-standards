@@ -43,5 +43,9 @@
     ""
   ],
   "regen:projectStartDate": "",
-  "regen:projectEndDate": ""
+  "regen:projectEndDate": "",
+  "regen:beZeroCarbonRating": {
+    "schema:value": "",
+    "schema:url": ""
+  }
 }
