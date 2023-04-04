@@ -6,6 +6,9 @@
     "schema": "http://schema.org/",
     "schema:itemListElement": {
       "@container": "@list"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
     }
   },
   "schema:name": "Pacajai REDD+ Project",
@@ -56,5 +59,11 @@
         "text": "Brazil"
       }
     ]
+  },
+  "regen:rating": {
+    "@type": "regen:BeZeroCarbon",
+    "schema:name": "BeZero Carbon",
+    "schema:ratingValue": "C",
+    "schema:url": "https://bezerocarbon.com/listings/?filter=pacajai"
   }
 }

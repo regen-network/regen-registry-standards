@@ -6,6 +6,9 @@
     "schema": "http://schema.org/",
     "schema:itemListElement": {
       "@container": "@list"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
     }
   },
   "schema:name": "The Mai Ndombe REDD+ Project",

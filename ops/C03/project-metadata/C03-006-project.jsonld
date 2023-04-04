@@ -6,6 +6,9 @@
     "schema": "http://schema.org/",
     "schema:itemListElement": {
       "@container": "@list"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
     }
   },
   "schema:name": "The Mai Ndombe REDD+ Project",
@@ -53,5 +56,11 @@
         "text": "Democratic Republic of the Congo"
       }
     ]
+  },
+  "regen:rating": {
+    "@type": "regen:BeZeroCarbon",
+    "schema:name": "BeZero Carbon",
+    "schema:ratingValue": "AA-",
+    "schema:url": "https://bezerocarbon.com/listings/?filter=mai+ndombe"
   }
 }

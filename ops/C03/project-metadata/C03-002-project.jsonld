@@ -6,6 +6,9 @@
     "schema": "http://schema.org/",
     "schema:itemListElement": {
       "@container": "@list"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
     }
   },
   "schema:name": "REDD+ Project Resguardo Indigena Unificado Selva de Mataven (RIU SM)",
@@ -54,5 +57,11 @@
         "text": "Colombia"
       }
     ]
+  },
+  "regen:rating": {
+    "@type": "regen:BeZeroCarbon",
+    "schema:name": "BeZero Carbon",
+    "schema:ratingValue": "B",
+    "schema:url": "https://bezerocarbon.com/listings/?filter=RIU+sm"
   }
 }

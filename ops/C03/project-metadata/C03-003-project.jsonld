@@ -6,6 +6,9 @@
     "schema": "http://schema.org/",
     "schema:itemListElement": {
       "@container": "@list"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
     }
   },
   "schema:name": "The Kasigau Corridor REDD Project - Phase II The Community Ranches",
@@ -53,5 +56,11 @@
         "text": "Cambodia"
       }
     ]
+  },
+  "regen:rating": {
+    "@type": "regen:BeZeroCarbon",
+    "schema:name": "BeZero Carbon",
+    "schema:ratingValue": "AAA-",
+    "schema:url": "https://bezerocarbon.com/listings/?filter=keo+seima"
   }
 }

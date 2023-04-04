@@ -44,8 +44,10 @@
   ],
   "regen:projectStartDate": "",
   "regen:projectEndDate": "",
-  "regen:beZeroCarbonRating": {
-    "schema:value": "",
+  "regen:rating": {
+    "@type": "regen:BeZeroCarbon",
+    "schema:name": "BeZero Carbon",
+    "schema:ratingValue": "",
     "schema:url": ""
   }
 }

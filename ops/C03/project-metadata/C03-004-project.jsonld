@@ -6,6 +6,9 @@
     "schema": "http://schema.org/",
     "schema:itemListElement": {
       "@container": "@list"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
     }
   },
   "schema:name": "Florestal Santa Maria Project",
@@ -53,5 +56,11 @@
         "text": "Kenya"
       }
     ]
+  },
+  "regen:rating": {
+    "@type": "regen:BeZeroCarbon",
+    "schema:name": "BeZero Carbon",
+    "schema:ratingValue": "BBB",
+    "schema:url": "https://bezerocarbon.com/listings/?filter=kasigau"
   }
 }
