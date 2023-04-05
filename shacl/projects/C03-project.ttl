@@ -1,6 +1,7 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix regen: <https://schema.regen.network#> .
+@prefix schema: <http://schema.org/> .
 
 regen:C03-ProjectShape a sh:NodeShape ;
   sh:targetClass regen:C03-Project ;
