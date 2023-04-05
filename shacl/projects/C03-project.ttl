@@ -28,7 +28,7 @@ regen:C03-ProjectShape a sh:NodeShape ;
 
   sh:property [
     sh:path regen:rating ;
-    sh:datatype regen:BeZeroCarbon ;
+    sh:node regen:BeZeroCarbon ;
     sh:property [
       sh:path schema:name ;
       sh:datatype xsd:string ;
