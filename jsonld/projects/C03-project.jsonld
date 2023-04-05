@@ -44,6 +44,27 @@
   ],
   "regen:projectStartDate": "",
   "regen:projectEndDate": "",
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "type": "Feature",
+    "place_name": "",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        0,
+        0
+      ]
+    }
+  },
   "regen:rating": {
     "@type": "regen:BeZeroCarbon",
     "schema:name": "BeZero Carbon",
