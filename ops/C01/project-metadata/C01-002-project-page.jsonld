@@ -32,7 +32,7 @@
     }
   ],
   "regen:landStewardStory": "In 1998, the local community supported our plan to establish the Rukinga Wildlife Sanctuary that covers 80,000 acres of forest. We established a community works project so local residents had an alternative income stream in place of poaching and clear cutting​. We brought on locally hired rangers and trained them to be wilderness guardians. We convinced the owners of the cattle to remove the cattle from the land to reduce conflict over resources.",
-  "regen:landStewardStoryTitle": "The project area is home to a fantastic diversity of over 50 species of large mammals including elephants, zebras, lions, cheetahs and leopards.",
+  "regen:landStewardStoryTitle": "The project is home to over 50 species of large mammals including elephants, zebras, lions, cheetahs and leopards.",
   "regen:storyMedia": {
     "@type": "schema:VideoObject",
     "schema:url": "https://player.vimeo.com/video/238682641"
