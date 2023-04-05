@@ -16,7 +16,7 @@ regen:NamePropertyShape sh:path schema:name ;
 .
 
 regen:DescriptionPropertyShape sh:path schema:description ;
-  sh:maxLength 1400 ;
+  sh:maxLength 600 ;
   sh:datatype xsd:string ;
   sh:group regen:ProjectPageDescriptionGroup ;
 .
