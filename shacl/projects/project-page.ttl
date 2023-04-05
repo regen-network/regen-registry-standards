@@ -55,7 +55,7 @@ regen:ProjectPageShape a sh:NodeShape ;
           sh:minCount 1 ;
           sh:maxCount 1 ;
           sh:minLength 1 ;
-          sh:maxLength 500 ;
+          sh:maxLength 2000 ;
           sh:datatype xsd:string
         ]
         [
@@ -63,7 +63,7 @@ regen:ProjectPageShape a sh:NodeShape ;
           sh:minCount 1 ;
           sh:maxCount 1 ;
           sh:minLength 1 ;
-          sh:maxLength 160 ;
+          sh:maxLength 120 ;
           sh:datatype xsd:string
         ]
       )
