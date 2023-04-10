@@ -1,0 +1,67 @@
+{
+  "@type": "regen:C03-Project",
+  "@context": {
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "regen": "https://schema.regen.network#",
+    "schema": "http://schema.org/",
+    "schema:itemListElement": {
+      "@container": "@list"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
+    }
+  },
+  "schema:name": "REDD+ Project Resguardo Indigena Unificado Selva de Mataven (RIU SM)",
+  "regen:vcsProjectId": 1566,
+  "regen:toucanProjectTokenId": 9,
+  "regen:approvedMethodologies": {
+    "@type": "schema:ItemList",
+    "schema:itemListElement": [
+      {
+        "schema:name": "VM0007",
+        "schema:identifier": "VM0007"
+      }
+    ]
+  },
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "type": "Feature",
+    "id": "region.238642",
+    "place_type": ["region"],
+    "properties": {
+      "short_code": "CO-VID",
+      "wikidata": "Q268729",
+      "mapbox_id": "dXJuOm1ieHBsYzpBNlF5"
+    },
+    "text": "Vichada",
+    "place_name": "Vichada, Colombia",
+    "matching_place_name": "Vichada, Columbia",
+    "bbox": [-71.077931, 2.737109, -67.407419, 6.327272],
+    "center": [-67.4894667, 6.1879711],
+    "geometry": {"type": "Point", "coordinates": [-67.4894667, 6.1879711]},
+    "context": [
+      {
+        "id": "country.8754",
+        "short_code": "co",
+        "wikidata": "Q739",
+        "mapbox_id": "dXJuOm1ieHBsYzpJakk",
+        "text": "Colombia"
+      }
+    ]
+  },
+  "regen:rating": {
+    "@type": "regen:BeZeroCarbon",
+    "schema:name": "BeZero Carbon",
+    "schema:ratingValue": "B",
+    "schema:url": "https://bezerocarbon.com/listings/?filter=RIU+sm"
+  }
+}

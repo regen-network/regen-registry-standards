@@ -1,0 +1,66 @@
+{
+  "@type": "regen:C03-Project",
+  "@context": {
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "regen": "https://schema.regen.network#",
+    "schema": "http://schema.org/",
+    "schema:itemListElement": {
+      "@container": "@list"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
+    }
+  },
+  "schema:name": "The Mai Ndombe REDD+ Project",
+  "regen:vcsProjectId": 934,
+  "regen:toucanProjectTokenId": 6,
+  "regen:approvedMethodologies": {
+    "@type": "schema:ItemList",
+    "schema:itemListElement": [
+      {
+        "schema:name": "VM0009",
+        "schema:identifier": "VM0009"
+      }
+    ]
+  },
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "type": "Feature",
+    "id": "region.25641",
+    "place_type": ["region"],
+    "properties": {
+      "short_code": "CD-MN",
+      "wikidata": "Q1163429",
+      "mapbox_id": "dXJuOm1ieHBsYzpaQ2s"
+    },
+    "text": "Mai-Ndombe",
+    "place_name": "Mai-Ndombe, Democratic Republic of the Congo",
+    "bbox": [15.89597, -4.381682, 21.021617, -0.740736],
+    "center": [18.2863998, -1.9253353],
+    "geometry": {"type": "Point", "coordinates": [18.2863998, -1.9253353]},
+    "context": [
+      {
+        "id": "country.8745",
+        "short_code": "cd",
+        "wikidata": "Q974",
+        "mapbox_id": "dXJuOm1ieHBsYzpJaWs",
+        "text": "Democratic Republic of the Congo"
+      }
+    ]
+  },
+  "regen:rating": {
+    "@type": "regen:BeZeroCarbon",
+    "schema:name": "BeZero Carbon",
+    "schema:ratingValue": "AA-",
+    "schema:url": "https://bezerocarbon.com/listings/?filter=mai+ndombe"
+  }
+}

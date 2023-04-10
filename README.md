@@ -28,7 +28,7 @@ graphs in this repository. See the "Validation" section below.
 
 ## Validation
 
-Depedencies:
+Dependencies:
 
 1. The [Apache Jena SHACL CLI][1] (`brew install jena` or use your package
    manager or [official install][2])

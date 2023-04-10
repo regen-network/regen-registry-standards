@@ -1,0 +1,66 @@
+{
+  "@type": "regen:C03-Project",
+  "@context": {
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "regen": "https://schema.regen.network#",
+    "schema": "http://schema.org/",
+    "schema:itemListElement": {
+      "@container": "@list"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
+    }
+  },
+  "schema:name": "The Kasigau Corridor REDD Project - Phase II The Community Ranches",
+  "regen:vcsProjectId": 612,
+  "regen:toucanProjectTokenId": 32,
+  "regen:approvedMethodologies": {
+    "@type": "schema:ItemList",
+    "schema:itemListElement": [
+      {
+        "schema:name": "VM0009",
+        "schema:identifier": "VM0009"
+      }
+    ]
+  },
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "type": "Feature",
+    "id": "region.353397",
+    "place_type": ["region"],
+    "properties": {
+      "short_code": "KE-39",
+      "wikidata": "Q7193788",
+      "mapbox_id": "dXJuOm1ieHBsYzpCV1Ix"
+    },
+    "text": "Taita–Taveta",
+    "place_name": "Taita–Taveta, Kenya",
+    "bbox": [37.589548, -4.140209, 39.220308, -2.681714],
+    "center": [38.3795406, -3.5028625],
+    "geometry": {"type": "Point", "coordinates": [38.3795406, -3.5028625]},
+    "context": [
+      {
+        "id": "country.8821",
+        "short_code": "ke",
+        "wikidata": "Q114",
+        "mapbox_id": "dXJuOm1ieHBsYzpJblU",
+        "text": "Kenya"
+      }
+    ]
+  },
+  "regen:rating": {
+    "@type": "regen:BeZeroCarbon",
+    "schema:name": "BeZero Carbon",
+    "schema:ratingValue": "BBB",
+    "schema:url": "https://bezerocarbon.com/listings/?filter=kasigau"
+  }
+}

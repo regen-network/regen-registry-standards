@@ -43,5 +43,32 @@
     "Avoided Emissions"
   ],
   "regen:projectStartDate": "2022-10-26",
-  "regen:projectEndDate": "2023-10-26"
+  "regen:projectEndDate": "2023-10-26",
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "type": "Feature",
+    "place_name": "Some place name",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        0,
+        0
+      ]
+    }
+  },
+  "regen:rating": {
+    "@type": "regen:BeZeroCarbon",
+    "schema:name": "BeZero Carbon",
+    "schema:ratingValue": "AAA",
+    "schema:url": "https://bezerocarbon.com/123"
+  }
 }

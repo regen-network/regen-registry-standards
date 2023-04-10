@@ -18,5 +18,26 @@
         "schema:identifier": "AMS-I.C."
       }
     ]
+  },
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "type": "Feature",
+    "place_name": "Some place name",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        0,
+        0
+      ]
+    }
   }
 }

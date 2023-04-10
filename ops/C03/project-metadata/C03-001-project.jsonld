@@ -1,0 +1,71 @@
+{
+  "@type": "regen:C03-Project",
+  "@context": {
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "regen": "https://schema.regen.network#",
+    "schema": "http://schema.org/",
+    "schema:itemListElement": {
+      "@container": "@list"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
+    }
+  },
+  "schema:name": "Rimba Raya Biodiversity Reserve Project",
+  "regen:vcsProjectId": 674,
+  "regen:toucanProjectTokenId": 5,
+  "regen:approvedMethodologies": {
+    "@type": "schema:ItemList",
+    "schema:itemListElement": [
+      {
+        "schema:name": "VM0004",
+        "schema:identifier": "VM0004"
+      }
+    ]
+  },
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "type": "Feature",
+    "id": "region.148583",
+    "place_type": [
+      "region"
+    ],
+    "properties": {
+      "short_code": "ID-KT",
+      "wikidata": "Q3891",
+      "mapbox_id": "dXJuOm1ieHBsYzpBa1Ju"
+    },
+    "text": "Central Kalimantan",
+    "place_name": "Central Kalimantan, Indonesia",
+    "bbox": [110.7315467, -3.6301373, 115.849232, 0.792219],
+    "center": [113.9164372, -2.2072919],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [113.9164372,-2.2072919]
+    },
+    "context": [
+      {
+        "id": "country.8807",
+        "short_code": "id",
+        "wikidata": "Q252",
+        "mapbox_id": "dXJuOm1ieHBsYzpJbWM",
+        "text": "Indonesia"
+      }
+    ]
+  },
+  "regen:rating": {
+    "@type": "regen:BeZeroCarbon",
+    "schema:name": "BeZero Carbon",
+    "schema:ratingValue": "AAA",
+    "schema:url": "https://bezerocarbon.com/listings/?filter=rimba+raya"
+  }
+}
