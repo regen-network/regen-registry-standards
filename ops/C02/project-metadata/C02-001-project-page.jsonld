@@ -3,8 +3,7 @@
     "schema": "http://schema.org/",
     "regen": "https://schema.regen.network#",
     "regen:galleryPhotos": {
-      "@container": "@list",
-      "@type": "schema:URL"
+      "@container": "@list"
     },
     "schema:url": {
       "@type": "schema:URL"
@@ -21,6 +20,8 @@
     "schema:url": "https://regen-registry.s3.amazonaws.com/projects/C02/kings-county.jpg"
   },
   "regen:galleryPhotos": [
-    "https://regen-registry.s3.amazonaws.com/projects/C02/kings-county.jpg"
+    {
+      "schema:url": "https://regen-registry.s3.amazonaws.com/projects/C02/kings-county.jpg"
+    }
   ]
 }

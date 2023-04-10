@@ -3,8 +3,7 @@
     "schema": "http://schema.org/",
     "regen": "https://schema.regen.network#",
     "regen:galleryPhotos": {
-      "@container": "@list",
-      "@type": "schema:URL"
+      "@container": "@list"
     },
     "schema:url": {
       "@type": "schema:URL"
@@ -21,10 +20,18 @@
     "schema:url": "https://regen-registry.s3.amazonaws.com/projects/mai-ndombe/preview-photo.jpg"
   },
   "regen:galleryPhotos": [
-    "https://regen-registry.s3.amazonaws.com/projects/mai-ndombe/image-1.png",
-    "https://regen-registry.s3.amazonaws.com/projects/mai-ndombe/image-2.jpg",
-    "https://regen-registry.s3.amazonaws.com/projects/mai-ndombe/image-3.jpg",
-    "https://regen-registry.s3.amazonaws.com/projects/mai-ndombe/image-4.png"
+    {
+      "schema:url": "https://regen-registry.s3.amazonaws.com/projects/mai-ndombe/image-1.png"
+    },
+    {
+      "schema:url": "https://regen-registry.s3.amazonaws.com/projects/mai-ndombe/image-2.jpg"
+    },
+    {
+      "schema:url": "https://regen-registry.s3.amazonaws.com/projects/mai-ndombe/image-3.jpg"
+    },
+    {
+      "schema:url": "https://regen-registry.s3.amazonaws.com/projects/mai-ndombe/image-4.png"
+    }
   ],
   "regen:videoURL": "https://www.youtube.com/embed/_4wHY99fm-w",
   "schema:creditText": "Photography of Mai Ndombe by Filip Agoo"
