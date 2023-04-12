@@ -7,9 +7,6 @@
     },
     "schema:url": {
       "@type": "schema:URL"
-    },
-    "regen:videoURL": {
-      "@type": "schema:URL"
     }
   },
   "@type": "regen:Project-Page",
@@ -30,5 +27,8 @@
       "schema:url": "https://regen-registry.s3.amazonaws.com/projects/C02/harvey-manning-03.jpg"
     }
   ],
-  "regen:videoURL": "https://www.youtube.com/watch?v=sK_OmGiYZnE"
+  "regen:storyMedia": {
+    "@type": "schema:VideoObject",
+    "schema:url": "https://www.youtube.com/watch?v=sK_OmGiYZnE"
+  }
 }

@@ -3,13 +3,9 @@
     "schema": "http://schema.org/",
     "regen": "https://schema.regen.network#",
     "regen:galleryPhotos": {
-      "@container": "@list",
-      "@type": "schema:URL"
+      "@container": "@list"
     },
     "schema:url": {
-      "@type": "schema:URL"
-    },
-    "regen:videoURL": {
       "@type": "schema:URL"
     }
   },
@@ -21,4 +17,3 @@
     "schema:url": "https://regen-registry.s3.amazonaws.com/projects/fedc22ae-d214-11ed-815e-0a6e1e09fcad/01.jpeg"
   }
 }
-

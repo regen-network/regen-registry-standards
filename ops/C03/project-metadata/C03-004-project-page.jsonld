@@ -3,13 +3,9 @@
     "schema": "http://schema.org/",
     "regen": "https://schema.regen.network#",
     "regen:galleryPhotos": {
-      "@container": "@list",
-      "@type": "schema:URL"
+      "@container": "@list"
     },
     "schema:url": {
-      "@type": "schema:URL"
-    },
-    "regen:videoURL": {
       "@type": "schema:URL"
     }
   },
@@ -20,5 +16,8 @@
   "regen:previewPhoto": {
     "schema:url": "https://regen-registry.s3.amazonaws.com/projects/fb0c18fa-d214-11ed-815b-0a6e1e09fcad/01.jpg"
   },
-  "regen:videoURL": "https://www.youtube.com/watch?v=XkyhhdaV_KM"
+  "regen:storyMedia": {
+    "@type": "schema:VideoObject",
+    "schema:url": "https://www.youtube.com/watch?v=XkyhhdaV_KM"
+  }
 }

@@ -18,12 +18,14 @@ regen:ProjectPageShape a sh:NodeShape ;
   sh:property regen:DescriptionPropertyShape ;
   sh:property regen:PreviewPhotoPropertyShape ;
   sh:property regen:GalleryPhotosPropertyShape ;
-  sh:property regen:VideoURLPropertyShape ;
 
   sh:property [
-    sh:path schema:creditText ;
-    sh:datatype xsd:string ;
+    sh:path regen:storyMedia ;
     sh:maxCount 1 ;
+    sh:or (
+      [ sh:class schema:VideoObject ]
+      [ sh:class schema:PhotoObject ]
+    )
   ] ;
 
   # this constraint says that landStewardStory and landStewardStoryTitle are coupled.
@@ -67,4 +69,40 @@ regen:ProjectPageShape a sh:NodeShape ;
       )
     ] 
   );
+.
+
+regen:VideoObjectNodeShape sh:a sh:NodeShape ;
+  sh:targetClass
+    schema:VideoObject ;
+  sh:property [
+    sh:path schema:url ;
+    sh:datatype schema:URL ;
+    sh:minLength 1 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+  ] ;
+.
+
+regen:PhotoObjectNodeShape sh:a sh:NodeShape ;
+  sh:targetClass
+    schema:PhotoObject ;
+  sh:property [
+    sh:path schema:url ;
+    sh:datatype schema:URL ;
+    sh:minLength 1 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+  ] ;
+  sh:property [
+    sh:path schema:creditText ;
+    sh:datatype xsd:string ;
+    sh:minLength 1 ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path schema:caption ;
+    sh:datatype xsd:string ;
+    sh:minLength 1 ;
+    sh:maxCount 1 ;
+  ] ;
 .

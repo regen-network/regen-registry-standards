@@ -7,9 +7,6 @@
     },
     "schema:url": {
       "@type": "schema:URL"
-    },
-    "regen:videoURL": {
-      "@type": "schema:URL"
     }
   },
   "@type": "regen:Project-Page",
