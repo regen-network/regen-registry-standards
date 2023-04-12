@@ -187,7 +187,7 @@ regen:ProjectPageShape
     sh:group regen:ProjectPageStoryGroup ;
   ] ;
   sh:property [
-    sh:path regen:landStewardStory ;
+    sh:path regen:story ;
     sh:name "Story of the land stewards" ;
     sh:description "Describe the story of this property." ;
     sh:minCount 1 ;
@@ -198,7 +198,7 @@ regen:ProjectPageShape
     sh:group regen:ProjectPageStoryGroup ;
   ] ;
   sh:property [
-    sh:path regen:landStewardStoryTitle ;
+    sh:path regen:storyTitle ;
     sh:name "Land steward story title" ;
     sh:description "In one sentence, summarize the story above of the land stewards." ;
     sh:minCount 1 ;
