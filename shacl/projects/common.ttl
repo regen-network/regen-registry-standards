@@ -90,15 +90,45 @@ regen:ProjectTypeOptionalPropertyShape sh:path regen:projectType ;
 .
 
 regen:PreviewPhotoPropertyShape sh:path regen:previewPhoto ;
-  sh:datatype schema:URL ;
   sh:group regen:ProjectPageMediaGroup ;
+  sh:property [
+    sh:path schema:url ;
+    sh:datatype schema:URL ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+  ] ;
+  sh:property [
+    sh:path schema:creditText ;
+    sh:datatype xsd:string ;
+    sh:minLength 1 ;
+    sh:maxCount 1 ;
+  ] ;
 .
 
 regen:GalleryPhotosPropertyShape sh:path regen:galleryPhotos ;
   sh:node dash:ListShape ;
   sh:property [
     sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
-    sh:datatype schema:URL ;
+    sh:node [
+      sh:property [
+        sh:path schema:url ;
+        sh:datatype schema:URL ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ;
+      ] ;
+      sh:property [
+        sh:path schema:creditText ;
+        sh:datatype xsd:string ;
+        sh:minLength 1 ;
+        sh:maxCount 1 ;
+      ] ;
+      sh:property [
+        sh:path schema:caption ;
+        sh:datatype xsd:string ;
+        sh:minLength 1 ;
+        sh:maxCount 1 ;
+      ] ;
+    ] ;
     sh:group regen:ProjectPageMediaGroup ;
   ] ;
   sh:group regen:ProjectPageMediaGroup ;

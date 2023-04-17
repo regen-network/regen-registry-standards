@@ -2,14 +2,10 @@
   "@context": {
     "schema": "http://schema.org/",
     "regen": "https://schema.regen.network#",
-    "regen:previewPhoto": {
-      "@type": "schema:URL"
-    },
     "regen:galleryPhotos": {
-      "@container": "@list",
-      "@type": "schema:URL"
+      "@container": "@list"
     },
-    "regen:videoURL": {
+    "schema:url": {
       "@type": "schema:URL"
     }
   },
@@ -17,13 +13,26 @@
   "@id": "https://app.regen.network/project/C01-001",
   "regen:creditClassId": "C01",
   "schema:description": "The Mai Ndombe REDD+ Project protects over 300,000 hectares of critical bonobo and forest elephant habitat within the world’s second-largest intact rainforest and some of the most important wetlands on the planet, the Congo Basin. This project reduces the principal drivers of forest and biodiversity loss and is charting a new pathway for community prosperity through comprehensive investments into the surrounding local communities.",
-  "regen:previewPhoto": "https://regen-registry.s3.amazonaws.com/projects/mai-ndombe/preview-photo.jpg",
+  "regen:previewPhoto": {
+    "schema:url": "https://regen-registry.s3.amazonaws.com/projects/mai-ndombe/preview-photo.jpg",
+    "schema:creditText": "Photography of Mai Ndombe by Filip Agoo"
+  },
   "regen:galleryPhotos": [
-    "https://regen-registry.s3.amazonaws.com/projects/mai-ndombe/image-1.png",
-    "https://regen-registry.s3.amazonaws.com/projects/mai-ndombe/image-2.jpg",
-    "https://regen-registry.s3.amazonaws.com/projects/mai-ndombe/image-3.jpg",
-    "https://regen-registry.s3.amazonaws.com/projects/mai-ndombe/image-4.png"
+    {
+      "schema:url": "https://regen-registry.s3.amazonaws.com/projects/mai-ndombe/image-1.png"
+    },
+    {
+      "schema:url": "https://regen-registry.s3.amazonaws.com/projects/mai-ndombe/image-2.jpg"
+    },
+    {
+      "schema:url": "https://regen-registry.s3.amazonaws.com/projects/mai-ndombe/image-3.jpg"
+    },
+    {
+      "schema:url": "https://regen-registry.s3.amazonaws.com/projects/mai-ndombe/image-4.png"
+    }
   ],
-  "regen:videoURL": "https://www.youtube.com/embed/_4wHY99fm-w",
-  "schema:creditText": "Photography of Mai Ndombe by Filip Agoo"
+  "regen:storyMedia": {
+    "@type": "schema:VideoObject",
+    "schema:url": "https://www.youtube.com/embed/_4wHY99fm-w"
+  }
 }

@@ -2,14 +2,10 @@
   "@context": {
     "schema": "http://schema.org/",
     "regen": "https://schema.regen.network#",
-    "regen:previewPhoto": {
-      "@type": "schema:URL"
-    },
     "regen:galleryPhotos": {
-      "@container": "@list",
-      "@type": "schema:URL"
+      "@container": "@list"
     },
-    "regen:videoURL": {
+    "schema:url": {
       "@type": "schema:URL"
     }
   },
@@ -17,6 +13,11 @@
   "@id": "http://app.regen.network/project/C03-006",
   "regen:creditClassId": "C03",
   "schema:description": "The Mai Ndombe REDD+ Project protects over 300,000 hectares of critical bonobo and forest elephant habitat within the world’s second-largest intact rainforest, as well as some of the most important wetlands on the planet, the Congo Basin. This project reduces the principal drivers of forest and biodiversity loss and is charting a new pathway for community prosperity through comprehensive investments into the surrounding local communities.",
-  "regen:previewPhoto": "https://regen-registry.s3.amazonaws.com/projects/fb2c63c6-d214-11ed-815d-0a6e1e09fcad/01.jpeg",
-  "regen:videoURL": "https://www.youtube.com/watch?v=_4wHY99fm-w"
+  "regen:previewPhoto": {
+    "schema:url": "https://regen-registry.s3.amazonaws.com/projects/fb2c63c6-d214-11ed-815d-0a6e1e09fcad/01.jpeg"
+  },
+  "regen:storyMedia": {
+    "@type": "schema:VideoObject",
+    "schema:url": "https://www.youtube.com/watch?v=_4wHY99fm-w"
+  }
 }

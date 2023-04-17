@@ -2,14 +2,10 @@
   "@context": {
     "schema": "http://schema.org/",
     "regen": "https://schema.regen.network#",
-    "regen:previewPhoto": {
-      "@type": "schema:URL"
-    },
     "regen:galleryPhotos": {
-      "@container": "@list",
-      "@type": "schema:URL"
+      "@container": "@list"
     },
-    "regen:videoURL": {
+    "schema:url": {
       "@type": "schema:URL"
     }
   },
@@ -17,6 +13,11 @@
   "@id": "http://app.regen.network/project/C03-004",
   "regen:creditClassId": "C03",
   "schema:description": "For years, the land between Tsavo East and Tsavo West National parks in Kenya served two purposes: home to a slowly failing cattle ranch and the main migration corridor for local wildlife. These dueling purposes caused strife in the area until the local community established the Rukinga Wildlife Sanctuary in 1998: protecting 80,000 acres of forest and more than 50 species of large mammals, providing income opportunities alternative to poaching and clear cutting, and relocating cattle herds to reduce conflict over resources.",
-  "regen:previewPhoto": "https://regen-registry.s3.amazonaws.com/projects/fb0c18fa-d214-11ed-815b-0a6e1e09fcad/01.jpg",
-  "regen:videoURL": "https://www.youtube.com/watch?v=XkyhhdaV_KM"
+  "regen:previewPhoto": {
+    "schema:url": "https://regen-registry.s3.amazonaws.com/projects/fb0c18fa-d214-11ed-815b-0a6e1e09fcad/01.jpg"
+  },
+  "regen:storyMedia": {
+    "@type": "schema:VideoObject",
+    "schema:url": "https://www.youtube.com/watch?v=XkyhhdaV_KM"
+  }
 }

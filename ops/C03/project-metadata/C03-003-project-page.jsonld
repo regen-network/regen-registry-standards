@@ -2,14 +2,10 @@
   "@context": {
     "schema": "http://schema.org/",
     "regen": "https://schema.regen.network#",
-    "regen:previewPhoto": {
-      "@type": "schema:URL"
-    },
     "regen:galleryPhotos": {
-      "@container": "@list",
-      "@type": "schema:URL"
+      "@container": "@list"
     },
-    "regen:videoURL": {
+    "schema:url": {
       "@type": "schema:URL"
     }
   },
@@ -17,6 +13,11 @@
   "@id": "http://app.regen.network/project/C03-003",
   "regen:creditClassId": "C03",
   "schema:description": "Keo Seima Wildlife Sanctuary (KSWS) comprises 167K hectares of protected dense forest and a 297K hectare buffer zone. This land is the ancestral and contemporary home of the indigenous Bunong: 13K people living across 20 villages. It is also habitat to the critically endangered primates, Black-Shanked Douc and Yellow-Cheeked Crested Gibbon, and one of the largest remaining populations of Asian Elephants in the Lower Mekong. This project has played a critical role in demonstrating REDD+ success in conserving high biodiversity value landscapes.",
-  "regen:previewPhoto": "https://regen-registry.s3.amazonaws.com/projects/fafbd9b8-d214-11ed-815a-0a6e1e09fcad/Ape-530759.jpeg",
-  "regen:videoURL": "https://www.youtube.com/watch?v=79WFZn-hACY"
+  "regen:previewPhoto": {
+    "schema:url": "https://regen-registry.s3.amazonaws.com/projects/fafbd9b8-d214-11ed-815a-0a6e1e09fcad/Ape-530759.jpeg"
+  },
+  "regen:storyMedia": {
+    "@type": "schema:VideoObject",
+    "schema:url": "https://www.youtube.com/watch?v=79WFZn-hACY"
+  }
 }

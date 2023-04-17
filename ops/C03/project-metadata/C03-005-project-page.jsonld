@@ -2,14 +2,10 @@
   "@context": {
     "schema": "http://schema.org/",
     "regen": "https://schema.regen.network#",
-    "regen:previewPhoto": {
-      "@type": "schema:URL"
-    },
     "regen:galleryPhotos": {
-      "@container": "@list",
-      "@type": "schema:URL"
+      "@container": "@list"
     },
-    "regen:videoURL": {
+    "schema:url": {
       "@type": "schema:URL"
     }
   },
@@ -17,6 +13,11 @@
   "@id": "http://app.regen.network/project/C03-005",
   "regen:creditClassId": "C03",
   "schema:description": "The Florestal Santa Maria REDD+ Project is the world’s largest remaining rainforest situated in the Amazon, Brazil. Home to 10% of the world’s species, this project protects their habitats from deforestation through regular satellite monitoring and on-site surveillance, as well as incentivizes the restoration of degraded areas. The long term goals of this project are to hand operations over the local community, a goal being achieved through the establishment of a technical school and community forest management courses.",
-  "regen:previewPhoto": "https://regen-registry.s3.amazonaws.com/projects/fb1c2c5e-d214-11ed-815c-0a6e1e09fcad/nathalia-segato-8fLSrccoox0-unsplash.jpg",
-  "regen:videoURL": "https://www.youtube.com/watch?v=AaQL-aMhhoo"
+  "regen:previewPhoto": {
+    "schema:url": "https://regen-registry.s3.amazonaws.com/projects/fb1c2c5e-d214-11ed-815c-0a6e1e09fcad/nathalia-segato-8fLSrccoox0-unsplash.jpg"
+  },
+  "regen:storyMedia": {
+    "@type": "schema:VideoObject",
+    "schema:url": "https://www.youtube.com/watch?v=AaQL-aMhhoo"
+  }
 }
