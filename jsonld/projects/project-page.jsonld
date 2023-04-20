@@ -28,6 +28,6 @@
     "@type": "schema:VideoObject",
     "schema:url": ""
   },
-  "regen:landStewardStory": "",
-  "regen:landStewardStoryTitle": ""
+  "regen:story": "",
+  "regen:storyTitle": ""
 }

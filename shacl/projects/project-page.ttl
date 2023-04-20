@@ -28,42 +28,42 @@ regen:ProjectPageShape a sh:NodeShape ;
     )
   ] ;
 
-  # this constraint says that landStewardStory and landStewardStoryTitle are coupled.
+  # this constraint says that story and storyTitle are coupled.
   # you cannot have one without the other but it is OK for a project page to not have them.
-  # in other words, if a project page has a landStewardStory it must have a landStewardStoryTitle (and vice-versa).
+  # in other words, if a project page has a story it must have a storyTitle (and vice-versa).
   sh:or (
     # if the value node does not conform to this first condition, the "or" short circuits.
     # so if neither of these fields are found, this schema is not subject to added constraints.
     # if one of these fields is present, we proceed to the next condition.
     [ sh:not [
         sh:or (
-          [ sh:path regen:landStewardStory ;
+          [ sh:path regen:story ;
             sh:minCount 1 ;
             sh:maxCount 1 ; 
           ]
-          [ sh:path regen:landStewardStoryTitle ;
+          [ sh:path regen:storyTitle ;
             sh:minCount 1 ;
             sh:maxCount 1 ;
           ]
         )
       ]
     ]
-    # otherwise make sure that both regen:landStewardStory and regen:landStewardStoryTitle are set properly
+    # otherwise make sure that both regen:story and regen:storyTitle are set properly
     [
       sh:and (
-        [ sh:path regen:landStewardStory ;
+        [ sh:path regen:story ;
           sh:minCount 1 ;
           sh:maxCount 1 ;
           sh:minLength 1 ;
-          sh:maxLength 500 ;
+          sh:maxLength 2000 ;
           sh:datatype xsd:string
         ]
         [
-          sh:path regen:landStewardStoryTitle ;
+          sh:path regen:storyTitle ;
           sh:minCount 1 ;
           sh:maxCount 1 ;
           sh:minLength 1 ;
-          sh:maxLength 160 ;
+          sh:maxLength 120 ;
           sh:datatype xsd:string
         ]
       )
