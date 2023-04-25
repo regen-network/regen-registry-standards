@@ -41,6 +41,15 @@ Running validations:
 $ ./shacl_validate.py
 ```
 
+## Update project pages
+
+```
+$ python3 -m venv venv
+$ . venv/bin/activate
+(venv) $ pip install sqlalchemy psycopg2
+(venv) $ DB_URL='postgresql+psycopg2://postgres:postgres@localhost:5432/regen_registry' ./update_project_pages.py
+```
+
 [1]: https://jena.apache.org/documentation/shacl/index.html
 [2]: https://jena.apache.org/download/index.cgi
 [3]: https://www.python.org/downloads/
