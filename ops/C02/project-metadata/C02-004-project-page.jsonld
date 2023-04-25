@@ -18,13 +18,19 @@
   },
   "regen:galleryPhotos": [
     {
-      "schema:url": "https://regen-registry.s3.amazonaws.com/projects/C02/harvey-manning-01.jpg"
+      "schema:url": "https://regen-registry.s3.amazonaws.com/projects/C02/C02-005-gallery-01.jpg"
     },
     {
-      "schema:url": "https://regen-registry.s3.amazonaws.com/projects/C02/harvey-manning-02.jpg"
+      "schema:url": "https://regen-registry.s3.amazonaws.com/projects/C02/C02-005-gallery-02.jpg"
     },
     {
-      "schema:url": "https://regen-registry.s3.amazonaws.com/projects/C02/harvey-manning-03.jpg"
+      "schema:url": "https://regen-registry.s3.amazonaws.com/projects/C02/C02-005-gallery-03.jpg"
+    },
+    {
+      "schema:url": "https://regen-registry.s3.amazonaws.com/projects/C02/C02-005-gallery-04.jpg"
+    },
+    {
+      "schema:url": "https://regen-registry.s3.amazonaws.com/projects/C02/C02-005-gallery-05.jpg"
     }
   ],
   "regen:storyMedia": {
