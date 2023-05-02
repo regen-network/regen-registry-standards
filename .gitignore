@@ -1,3 +1,5 @@
+venv
+
 regen-registry-schema.ttl
 regenWebContext.jsonld
 apache-jena*

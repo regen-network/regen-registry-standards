@@ -1,6 +1,7 @@
 # Regen Registry Standards
 
 This repository contains:
+
 - Source schema for Regen Network ontology (TODO)
 - [SHACL][6] schemas for:
   - Registry projects and dMRV form validation
@@ -24,7 +25,7 @@ folder.
 
 The `ops` folder contains the metadata for all projects, credit classes and
 credit batches live on Regen Ledger. These can be validated with the SHACL
-graphs in this repository. See the "Validation" section below. 
+graphs in this repository. See the "Validation" section below.
 
 ## Validation
 
@@ -41,9 +42,18 @@ Running validations:
 $ ./shacl_validate.py
 ```
 
+## Update project pages
+
+```
+$ python3 -m venv venv
+$ . venv/bin/activate
+(venv) $ pip install sqlalchemy psycopg2-binary
+(venv) $ DB_URL='postgresql+psycopg2://postgres:postgres@localhost:5432/regen_registry' ./update_project_pages.py
+```
+
 [1]: https://jena.apache.org/documentation/shacl/index.html
 [2]: https://jena.apache.org/download/index.cgi
 [3]: https://www.python.org/downloads/
 [4]: https://www.w3.org/TR/turtle/
 [5]: https://json-ld.org/
-[6]: https://www.w3.org/TR/shacl/ 
+[6]: https://www.w3.org/TR/shacl/
