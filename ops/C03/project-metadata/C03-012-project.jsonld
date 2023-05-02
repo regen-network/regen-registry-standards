@@ -1,0 +1,23 @@
+{
+  "@type": "regen:C03-Project",
+  "@context": {
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "regen": "https://schema.regen.network#",
+    "schema": "http://schema.org/",
+    "schema:itemListElement": {
+      "@container": "@list"
+    }
+  },
+  "schema:name": "VCS-1052",
+  "regen:vcsProjectId": 1052,
+  "regen:toucanProjectTokenId": 54,
+  "regen:approvedMethodologies": {
+    "@type": "schema:ItemList",
+    "schema:itemListElement": [
+      {
+        "schema:name": "VM0011",
+        "schema:identifier": "VM0011"
+      }
+    ]
+  }
+}
