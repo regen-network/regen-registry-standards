@@ -1,0 +1,74 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "https://schema.regen.network#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema:itemListElement": {
+      "@container": "@list"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
+    },
+    "regen:projectStartDate": {
+      "@type": "xsd:date"
+    },
+    "regen:projectEndDate": {
+      "@type": "xsd:date"
+    },
+    "regen:offsetGenerationMethod": {
+      "@container": "@list"
+    }
+  },
+  "@type": "regen:C03-Project",
+  "regen:toucanProjectTokenId": 0,
+  "schema:name": "",
+  "regen:vcsProjectId": 0,
+  "regen:toucanURI": "",
+  "regen:approvedMethodologies": {
+    "@type": "schema:ItemList",
+    "schema:itemListElement": [
+      {
+        "schema:name": "",
+        "schema:identifier": "",
+        "schema:url": "",
+        "schema:version": ""
+      }
+    ]
+  },
+  "regen:projectActivity": {
+    "schema:name": ""
+  },
+  "regen:projectType": "",
+  "regen:offsetGenerationMethod": [
+    ""
+  ],
+  "regen:projectStartDate": "",
+  "regen:projectEndDate": "",
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "type": "Feature",
+    "place_name": "",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        0,
+        0
+      ]
+    }
+  },
+  "regen:rating": {
+    "@type": "regen:BeZeroCarbon",
+    "schema:name": "BeZero Carbon",
+    "schema:ratingValue": "",
+    "schema:url": ""
+  }
+}
