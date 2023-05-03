@@ -6,9 +6,12 @@
     "schema": "http://schema.org/",
     "schema:itemListElement": {
       "@container": "@list"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
     }
   },
-  "schema:name": "VCS-1162",
+  "schema:name": "Jiangxi Province Le'an County Forest Farm Carbon Sink Project",
   "regen:vcsProjectId": 1162,
   "regen:toucanProjectTokenId": 22,
   "regen:approvedMethodologies": {
@@ -17,6 +20,63 @@
       {
         "schema:name": "VM0010",
         "schema:identifier": "VM0010"
+      }
+    ]
+  },
+  "regen:rating": {
+    "@type": "regen:BeZeroCarbon",
+    "schema:name": "BeZero Carbon",
+    "schema:ratingValue": "BBB",
+    "schema:url": "https://bezerocarbon.com/listings/?filter=1162"
+  },
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "id": "region.238641",
+    "type": "Feature",
+    "place_type": [
+      "region"
+    ],
+    "relevance": 1,
+    "properties": {
+      "short_code": "CN-JX",
+      "wikidata": "Q57052",
+      "mapbox_id": "dXJuOm1ieHBsYzpBNlF4"
+    },
+    "text": "Jiangxi",
+    "place_name": "Jiangxi, China",
+    "bbox": [
+      113.57497,
+      24.488552,
+      118.481191,
+      30.07944
+    ],
+    "center": [
+      115.572350255125,
+      27.5011983595466
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        115.572350255125,
+        27.5011983595466
+      ]
+    },
+    "context": [
+      {
+        "id": "country.8753",
+        "short_code": "cn",
+        "wikidata": "Q148",
+        "mapbox_id": "dXJuOm1ieHBsYzpJakU",
+        "text": "China"
       }
     ]
   }

@@ -1,1 +1,19 @@
-{}
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "https://schema.regen.network#",
+    "regen:galleryPhotos": {
+      "@container": "@list"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
+    }
+  },
+  "@type": "regen:Project-Page",
+  "@id": "http://app.regen.network/project/C03-010",
+  "regen:creditClassId": "C03",
+  "schema:description": "Yunnan Kunming Liangqu Improved Forest Management Project comprises 6,879hectares of commercial forest, belonging to Lianhe Township and Zhuanlong Town. The project area was designed and planted as a commercial forest. The main objective of the project is to improve the forest coverage rate, protect the local ecological environment, reduce carbon emissions and boost carbon sequestration by enhancing forestry management level. The implementation of the project will result in significant carbon sequestration and improve the sustainable development of the ecological system.",
+  "regen:previewPhoto": {
+    "schema:url": "https://regen-registry.s3.amazonaws.com/projects/C03/C03-010-preview-photo.webp"
+  }
+}

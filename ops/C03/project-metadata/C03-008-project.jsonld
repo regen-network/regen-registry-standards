@@ -6,9 +6,12 @@
     "schema": "http://schema.org/",
     "schema:itemListElement": {
       "@container": "@list"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
     }
   },
-  "schema:name": "VCS-1529",
+  "schema:name": "Inner Mongolia Chao’er Improved Forest Management Project",
   "regen:vcsProjectId": 1529,
   "regen:toucanProjectTokenId": 84,
   "regen:approvedMethodologies": {
@@ -17,6 +20,63 @@
       {
         "schema:name": "VM0010",
         "schema:identifier": "VM0010"
+      }
+    ]
+  },
+  "regen:rating": {
+    "@type": "regen:BeZeroCarbon",
+    "schema:name": "BeZero Carbon",
+    "schema:ratingValue": "BB",
+    "schema:url": "https://bezerocarbon.com/listings/?filter=INNER+MONGOLIA+CHAO%E2%80%99ER+IMPROVED+FOREST+MANAGEMENT+PROJECT"
+  },
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "id": "region.115761",
+    "type": "Feature",
+    "place_type": [
+      "region"
+    ],
+    "relevance": 1,
+    "properties": {
+      "short_code": "CN-NM",
+      "wikidata": "Q41079",
+      "mapbox_id": "dXJuOm1ieHBsYzpBY1F4"
+    },
+    "text": "Inner Mongolia",
+    "place_name": "Inner Mongolia, China",
+    "bbox": [
+      97.16984,
+      37.405941,
+      126.06919,
+      53.333188
+    ],
+    "center": [
+      117.037291928367,
+      43.9300126765674
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        117.037291928367,
+        43.9300126765674
+      ]
+    },
+    "context": [
+      {
+        "id": "country.8753",
+        "short_code": "cn",
+        "wikidata": "Q148",
+        "mapbox_id": "dXJuOm1ieHBsYzpJakU",
+        "text": "China"
       }
     ]
   }

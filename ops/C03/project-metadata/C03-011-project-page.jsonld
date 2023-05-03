@@ -1,1 +1,19 @@
-{}
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "https://schema.regen.network#",
+    "regen:galleryPhotos": {
+      "@container": "@list"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
+    }
+  },
+  "@type": "regen:Project-Page",
+  "@id": "http://app.regen.network/project/C03-011",
+  "regen:creditClassId": "C03",
+  "schema:description": "Jiangxi Province Le'an County Forest Farm Carbon Sink Project aims to convert logged forest into a conservation forest and to enhance carbon stocks. The forestry management conversion includes 7,746.7 hectares of logged to protected forest. From the project’s start date of January 1, 2006, all the protected, non-commercial forestry will reduce GHG emissions (as anthropogenic GHG removals by sinks) by approximately 2,877,745 tCO2e in 30 years.",
+  "regen:previewPhoto": {
+    "schema:url": "https://regen-registry.s3.amazonaws.com/projects/C03/C03-011-preview-photo.jpeg"
+  }
+}

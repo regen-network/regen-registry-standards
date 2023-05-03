@@ -1,1 +1,19 @@
-{}
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "https://schema.regen.network#",
+    "regen:galleryPhotos": {
+      "@container": "@list"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
+    }
+  },
+  "@type": "regen:Project-Page",
+  "@id": "http://app.regen.network/project/C03-008",
+  "regen:creditClassId": "C03",
+  "schema:description": "The Inner Mongolia Chao’er Forest Industry IFM Project is located in the Inner Mongolia Autonomous Region of China at the site of a longstanding commercial forest. The project took a 60 year lease to protect the forest ecosystem, improve the ecological environment, increase carbon sinks, reduce GHG emission reductions and slow down climate change. The project currently employs over 2K locals as forestry workers and 200 new jobs are added each year. It is also home diverse habitat of plants and animals, including 70 protected animal species.",
+  "regen:previewPhoto": {
+    "schema:url": "https://regen-registry.s3.amazonaws.com/projects/C03/C03-008-preview-photo.jpeg"
+  }
+}

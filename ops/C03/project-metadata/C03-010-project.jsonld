@@ -6,9 +6,12 @@
     "schema": "http://schema.org/",
     "schema:itemListElement": {
       "@container": "@list"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
     }
   },
-  "schema:name": "VCS-1542",
+  "schema:name": "Yunnan Kunming Liangqu Improved Forest Management Project",
   "regen:vcsProjectId": 1542,
   "regen:toucanProjectTokenId": 18,
   "regen:approvedMethodologies": {
@@ -17,6 +20,63 @@
       {
         "schema:name": "VM0010",
         "schema:identifier": "VM0010"
+      }
+    ]
+  },
+  "regen:rating": {
+    "@type": "regen:BeZeroCarbon",
+    "schema:name": "BeZero Carbon",
+    "schema:ratingValue": "B",
+    "schema:url": "https://bezerocarbon.com/listings/?filter=1542"
+  },
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "id": "region.148529",
+    "type": "Feature",
+    "place_type": [
+      "region"
+    ],
+    "relevance": 1,
+    "properties": {
+      "short_code": "CN-YN",
+      "wikidata": "Q43194",
+      "mapbox_id": "dXJuOm1ieHBsYzpBa1F4"
+    },
+    "text": "Yunnan",
+    "place_name": "Yunnan, China",
+    "bbox": [
+      97.527927,
+      21.142391,
+      106.19602,
+      29.251044
+    ],
+    "center": [
+      101.270076099305,
+      24.2915322252249
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        101.270076099305,
+        24.2915322252249
+      ]
+    },
+    "context": [
+      {
+        "id": "country.8753",
+        "short_code": "cn",
+        "wikidata": "Q148",
+        "mapbox_id": "dXJuOm1ieHBsYzpJakU",
+        "text": "China"
       }
     ]
   }
