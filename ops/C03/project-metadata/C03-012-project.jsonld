@@ -1,0 +1,74 @@
+{
+  "@type": "regen:C03-Project",
+  "@context": {
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "regen": "https://schema.regen.network#",
+    "schema": "http://schema.org/",
+    "schema:itemListElement": {
+      "@container": "@list"
+    }
+  },
+  "schema:name": "North Pikounda REDD+",
+  "regen:vcsProjectId": 1052,
+  "regen:toucanProjectTokenId": 54,
+  "regen:approvedMethodologies": {
+    "@type": "schema:ItemList",
+    "schema:itemListElement": [
+      {
+        "schema:name": "VM0011",
+        "schema:identifier": "VM0011"
+      }
+    ]
+  },
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "id": "region.42027",
+    "type": "Feature",
+    "place_type": [
+      "region"
+    ],
+    "relevance": 1,
+    "properties": {
+      "short_code": "CG-13",
+      "wikidata": "Q775410",
+      "mapbox_id": "dXJuOm1ieHBsYzpwQ3M"
+    },
+    "text": "Sangha",
+    "place_name": "Sangha, Republic of the Congo",
+    "bbox": [
+      13.125225,
+      0.032586,
+      16.964951,
+      2.729108
+    ],
+    "center": [
+      16.0513456,
+      1.6105452
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.0513456,
+        1.6105452
+      ]
+    },
+    "context": [
+      {
+        "id": "country.8747",
+        "short_code": "cg",
+        "wikidata": "Q971",
+        "mapbox_id": "dXJuOm1ieHBsYzpJaXM",
+        "text": "Republic of the Congo"
+      }
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "@type": "regen:C03-Project",
+  "@context": {
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "regen": "https://schema.regen.network#",
+    "schema": "http://schema.org/",
+    "schema:itemListElement": {
+      "@container": "@list"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
+    }
+  },
+  "schema:name": "Fujian Yong’an Improved Forest Management Project",
+  "regen:vcsProjectId": 1577,
+  "regen:toucanProjectTokenId": 17,
+  "regen:approvedMethodologies": {
+    "@type": "schema:ItemList",
+    "schema:itemListElement": [
+      {
+        "schema:name": "VM0010",
+        "schema:identifier": "VM0010"
+      }
+    ]
+  },
+  "regen:rating": {
+    "@type": "regen:BeZeroCarbon",
+    "schema:name": "BeZero Carbon",
+    "schema:ratingValue": "BB",
+    "schema:url": "https://bezerocarbon.com/listings/?filter=1577"
+  },
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "id": "region.123953",
+    "type": "Feature",
+    "place_type": [
+      "region"
+    ],
+    "relevance": 1,
+    "properties": {
+      "short_code": "CN-FJ",
+      "wikidata": "Q41705",
+      "mapbox_id": "dXJuOm1ieHBsYzpBZVF4"
+    },
+    "text": "Fujian",
+    "place_name": "Fujian, China",
+    "bbox": [
+      115.848311,
+      23.4692003,
+      120.8188524,
+      28.316788
+    ],
+    "center": [
+      118.002348291308,
+      26.100720341211
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        118.002348291308,
+        26.100720341211
+      ]
+    },
+    "context": [
+      {
+        "id": "country.8753",
+        "short_code": "cn",
+        "wikidata": "Q148",
+        "mapbox_id": "dXJuOm1ieHBsYzpJakU",
+        "text": "China"
+      }
+    ]
+  }
+}

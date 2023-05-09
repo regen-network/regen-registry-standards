@@ -1,0 +1,19 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "https://schema.regen.network#",
+    "regen:galleryPhotos": {
+      "@container": "@list"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
+    }
+  },
+  "@type": "regen:Project-Page",
+  "@id": "http://app.regen.network/project/C03-012",
+  "regen:creditClassId": "C03",
+  "schema:description": "The North Pikounda REDD+ Project is reducing emission from deforestation and degradation as well as advancing conservation and sustainable forestry practices in 92,530 hectares of unlogged native Congolese forest, legally designated as a selective logging concession. The project halts planned degradation and deforestation activities and instead protects the forest area, while also maintaining and protecting local biodiversity.",
+  "regen:previewPhoto": {
+    "schema:url": "https://regen-registry.s3.amazonaws.com/projects/C03/C03-012-preview-photo.jpg"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "https://schema.regen.network#",
+    "regen:galleryPhotos": {
+      "@container": "@list"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
+    }
+  },
+  "@type": "regen:Project-Page",
+  "@id": "http://app.regen.network/project/C03-009",
+  "regen:creditClassId": "C03",
+  "schema:description": "This project is implemented in the commercial forest of Yong’an city, where the primary business is forest industry. The existing commercial forest comprises Chinese Fir, Masson Pine and Broad-leaf tree, all the tree species are native to the area. The project aims to improve the forest coverage rate, protect the local ecological environment, reduce carbon emissions and boost carbon sequestration by enhancing forest management. From 2011, the project has strictly canceled the once annual commercial timber harvest and only allowed tending and managing.",
+  "regen:previewPhoto": {
+    "schema:url": "https://regen-registry.s3.amazonaws.com/projects/C03/C03-009-preview-photo.jpg"
+  }
+}
