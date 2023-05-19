@@ -22,8 +22,9 @@ regen:C01-ProjectShape a sh:NodeShape ;
   sh:property regen:ProjectStartDatePropertyShape ;
   sh:property regen:ProjectEndDatePropertyShape ;
   sh:property regen:ProjectTypePropertyShape ;
-  sh:property regen:ProjectDeveloperPropertyShape ; 
-  sh:property regen:OffsetGenerationMethodPropertyShape ; 
+  sh:property regen:ProjectDeveloperPropertyShape ;
+  sh:property regen:ProjectVerifierPropertyShape ;
+  sh:property regen:OffsetGenerationMethodPropertyShape ;
   sh:property regen:VCSProjectIdPropertyShape ;
   sh:property regen:VCSProjectPagePropertyShape ;
   sh:property regen:VCSMethodologyPropertyShape

@@ -179,6 +179,12 @@ regen:ProjectDeveloperPropertyShape sh:path regen:projectDeveloper ;
   sh:group regen:ProjectPageRolesGroup ;
 .
 
+regen:ProjectVerifierPropertyShape sh:path regen:projectVerifier ;
+  sh:node regen:ProjectRoleShape ;
+  sh:maxCount 1 ;
+  sh:group regen:ProjectPageRolesGroup ;
+.
+
 regen:ProjectRoleShape
   a sh:NodeShape ;
   sh:targetClass
