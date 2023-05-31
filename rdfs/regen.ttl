@@ -1,0 +1,84 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix regen: <http://schema.regen.network#> .
+@prefix schema: <http://schema.org/> .
+
+regen:CreditClass a rdfs:Class ;
+  rdfs:comment "A class of credits that can be issued for a project. Each credit class has specific methodologies and rules for issuing credits." ;
+  rdfs:label "Credit Class" ;
+.
+
+regen:offsetGenerationMethod a rdf:Property ;
+  rdfs:label "Offset Generation Method" ;
+  rdfs:domain regen:CreditClass ;
+  rdfs:range xsd:string ;
+  rdfs:comment "In the case where a credit represents an offset, offset generation method represents the mechanicsm by which the credit is to be counted as an offset (e.g. Avoided Emissions, Carbon Sequestration)" ;
+.
+
+regen:coBenefits a rdf:Property ;
+  rdfs:label "Co-Benefits" ;
+  rdfs:domain regen:CreditClass ;
+  rdfs:range schema:ItemList;
+  rdfs:comment "A list of co-benefits expected to be available for projects under a given Credit Class."
+.
+
+regen:approvedMethodologies a rdf:Property ;
+  rdfs:label "Approved Methodologies" ;
+  rdfs:domain regen:CreditClass ;
+  rdfs:range schema:ItemList;
+  rdfs:comment "A list of versioned methodologies that are approved for a given Credit Class, or a specific project. List Items are all of the type 'Methodology Version'";
+.
+
+regen:Project a rdfs:Class ;
+  rdfs:comment "" ;
+  rdfs:label "Project" ;
+.
+
+regen:additionalCertification a rdf:Property ;
+  rdfs:label "Additional Certification" ;
+  rdfs:domain regen:Project ;
+  rdfs:range regen:CertificationProtocol;
+  rdfs:comment "An optional additional certification for a given project.";
+.
+
+schema:name a rdf:Property ;
+  rdfs:label "Name" ;
+  rdfs:domain regen:Project ;
+  rdfs:range xsd:string;
+  rdfs:comment "The name of a resource";
+.
+
+regen:landManagementPractices a rdf:Property ;
+  rdfs:label "Land Management Practices" ;
+  rdfs:domain regen:Project ;
+  rdfs:range schema:ItemList;
+  rdfs:comment "Land management practices used by the project (ex. no-till, cover cropping, etc...)";
+.
+
+regen:CertificationProtocol a rdfs:Class ;
+  rdfs:comment "A certification protocol used for tracking project co-benefits" ;
+  rdfs:label "Certification Protocol" ;
+.
+
+regen:Methodology rdfs:subClassOf regen:CertificationProtocol;
+.
+
+regen:documentId a rdf:Property ;
+  rdfs:label "Document ID" ;
+  rdfs:domain regen:CertificationProtocol ;
+  rdfs:range xsd:string ;
+  rdfs:comment "The identifier of the document." .
+
+schema:url a rdf:Property ;
+  rdfs:label "URL" ;
+  rdfs:domain regen:CertificationProtocol;
+  rdfs:range schema:URL ;
+  rdfs:comment "The URL of the resource." .
+
+schema:version a rdf:Property ;
+  rdfs:label "Version" ;
+  rdfs:domain regen:CertificationProtocol ;
+  rdfs:range xsd:string ;
+  rdfs:comment "The version of the resource."
+.

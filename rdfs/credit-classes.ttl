@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix regen: <https://schema.regen.network#> .
+
+regen:CreditClass a rdfs:Class ;
+  rdfs:comment "A class of credits that can be issued for a project. Each credit class has specific methodologies and rules for issuing credits." ;
+  rdfs:label "Credit Class" ;
+.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix regen: <https://schema.regen.network#> .
+
+regen:C01-CreditClass a regen:CreditClass ;
+  rdfs:comment "An instance of a credit class, following specific methodologies and rules for issuing credits." ;
+  rdfs:label "C01 Credit Class" ;
+.
+
+regen:C02-CreditClass a regen:CreditClass ;
+  rdfs:comment "An instance of a credit class, following specific methodologies and rules for issuing credits." ;
+  rdfs:label "C02 Credit Class" ;
+.
+
+regen:C03-CreditClass a regen:CreditClass ;
+  rdfs:comment "An instance of a credit class, following specific methodologies and rules for issuing credits." ;
+  rdfs:label "C03 Credit Class" ;
+.
+
+regen:offsetGenerationMethod a rdf:Property ;
+  rdfs:label "Offset Generation Method" ;
+  rdfs:domain regen:CreditClass ;
+  rdfs:range xsd:string ;
+  rdfs:comment "In the case where a credit represents an offset, offset generation method represents the mechanicsm by which the credit is to be counted as an offset (e.g. Avoided Emissions, Carbon Sequestration)" ;
+.
+
+regen:coBenefits a rdf:Property ;
+  rdfs:label "Co-Benefits" ;
+  rdfs:domain regen:CreditClass ;
+  rdfs:range schema:ItemList;
+  rdfs:comment "A list of co-benefits expected to be available for projects under a given Credit Class."
+.
+
+regen:approvedMethodologies a rdf:Property ;
+  rdfs:label "Approved Methodologies" ;
+  rdfs:domain regen:CreditClass ;
+  rdfs:range schema:ItemList;
+  rdfs:comment "A list of versioned methodologies that are approved for a given Credit Class, or a specific project. List Items are all of the type 'Methodology Version'";
+.
+
+

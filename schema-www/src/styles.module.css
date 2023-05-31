@@ -1,0 +1,60 @@
+/* styles.module.css */
+.container {
+  @apply p-6 bg-gray-100;
+}
+
+.title {
+  @apply text-3xl font-bold mb-4 text-green-700;
+}
+
+.text {
+  @apply text-gray-700 text-base;
+}
+
+.subtitle {
+  @apply text-gray-500 italic text-sm mt-1 mb-1;
+}
+
+.ulHeader {
+  @apply text-gray-700 font-bold mb-2 text-base;
+}
+
+.table {
+  @apply table-auto w-full text-left text-gray-700 border border-gray-300;
+}
+
+.table th {
+  @apply px-4 py-2 border border-gray-300;
+}
+
+.table td {
+  @apply px-4 py-2 border border-gray-300;
+}
+
+.container a {
+  @apply text-green-700;
+}
+
+.container a:hover {
+  @apply border-b-2 border-dotted border-green-700;
+}
+
+.list {
+  @apply list-disc ml-5;
+}
+
+.section {
+  @apply bg-white p-4 my-4 border border-gray-200 rounded shadow;
+}
+
+.section h1 {
+  @apply text-3xl font-bold mb-4 text-gray-700;
+}
+
+.infoBox {
+  @apply p-4 mb-2 border border-gray-300 rounded text-sm bg-gray-200;
+}
+
+.expandButton {
+  @apply mt-2 mb-2 text-xs font-bold cursor-pointer;
+}
