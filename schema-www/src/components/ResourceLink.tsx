@@ -8,26 +8,32 @@ const prefixes = {
   schema: "http://schema.org/",
 };
 
-export const renderLink = (resource: string) => {
+const parseAttributes = (resource: string): { name: string; url: string } => {
   if (resource.startsWith(BASE_URL)) {
     const name = resource.replace(BASE_URL, "");
     const url = resource.replace(BASE_URL, "/");
-    return <Link href={url}>{name}</Link>;
+    return { name, url };
   }
   for (const [prefix, url] of Object.entries(prefixes)) {
     if (resource.startsWith(url)) {
       const name = resource.replace(url, prefix + ":");
-      return <Link href={resource}>{name}</Link>;
+      return { name, url: resource };
     }
   }
-  return <Link href={resource}>{resource}</Link>;
+  return { name: resource, url: resource };
 };
 
-export const parseName = (resource: string) => {
-  if (resource.startsWith(BASE_URL)) {
-    const name = resource.replace(BASE_URL, "");
-    return name;
-  } else {
-    return resource;
-  }
+const ResourceLink = ({ resource }: { resource: string }) => {
+  const { name, url } = parseAttributes(resource);
+
+  return (
+    <Link
+      className="text-green-700 border-b-2 border-dotted hover:border-green-700"
+      href={url}
+    >
+      {name}
+    </Link>
+  );
 };
+
+export default ResourceLink;

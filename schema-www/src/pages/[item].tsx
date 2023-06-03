@@ -1,21 +1,15 @@
 import { GetStaticPaths, GetStaticProps } from "next";
-import styles from "../styles.module.css";
 
 import { ParsedUrlQuery } from "querystring";
 import { promises as fs } from "fs";
 import path from "path";
 import * as rdf from "rdflib";
 
+import { BASE_URI, REGEN, RDF, RDFS } from "../utils/namespaces";
+
 import ClassView from "../components/ClassView";
 import PropertyView from "../components/PropertyView";
 import { Property, Class } from "../types";
-
-// Define namespaces
-const BASE_URI = "http://schema.regen.network";
-const RDF = rdf.Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#");
-const RDFS = rdf.Namespace("http://www.w3.org/2000/01/rdf-schema#");
-const REGEN = rdf.Namespace(BASE_URI + "#");
-const XSD = rdf.Namespace("http://www.w3.org/2001/XMLSchema#");
 
 interface Params extends ParsedUrlQuery {
   item: string | undefined;
@@ -123,21 +117,11 @@ type ItemProps = {
   item: Property | Class;
 };
 
-const SchemaPage: React.FC<ItemProps> = ({ item }) => {
+const SchemaPage = ({ item }: ItemProps) => {
   if (item.type === "class") {
     return <ClassView {...item} />;
   } else if (item.type === "property") {
     return <PropertyView {...item} />;
-  } else {
-    return (
-      <div className={styles.error}>
-        <h1 className={styles.title}>Error: Invalid schema type</h1>
-        <p className={styles.text}>
-          The provided schema type is not recognized. Please ensure it is either
-          &quot;class&quot; or &quot;property&quot;.
-        </p>
-      </div>
-    );
   }
 };
 

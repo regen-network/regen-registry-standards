@@ -2,15 +2,10 @@ import { GetStaticProps } from "next";
 import { promises as fs } from "fs";
 import path from "path";
 import * as rdf from "rdflib";
-import Link from "next/link";
-import styles from "../styles.module.css"; // Import your styles
 
-// Define namespaces
-const BASE_URI = "http://schema.regen.network";
-const RDF = rdf.Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#");
-const RDFS = rdf.Namespace("http://www.w3.org/2000/01/rdf-schema#");
-const REGEN = rdf.Namespace(BASE_URI + "#");
-const XSD = rdf.Namespace("http://www.w3.org/2001/XMLSchema#");
+import ResourceLink from "../components/ResourceLink";
+
+import { BASE_URI, RDF, RDFS } from "../utils/namespaces";
 
 export const getStaticProps: GetStaticProps = async () => {
   const filePath = path.join(process.cwd(), "../rdfs", `regen.ttl`);
@@ -28,15 +23,11 @@ export const getStaticProps: GetStaticProps = async () => {
     .statementsMatching(undefined, RDF("type"), RDF("Property"))
     .filter((statement) => statement.subject.value.startsWith(BASE_URI));
 
-  const classes = classStatements.map((statement) => ({
-    id: statement.subject.value.split("#").pop(),
-    type: "class",
-  }));
+  const classes = classStatements.map((statement) => statement.subject.value);
 
-  const properties = propertyStatements.map((statement) => ({
-    id: statement.subject.value.split("#").pop(),
-    type: "property",
-  }));
+  const properties = propertyStatements.map(
+    (statement) => statement.subject.value
+  );
 
   return {
     props: {
@@ -47,12 +38,33 @@ export const getStaticProps: GetStaticProps = async () => {
 };
 
 type IndexProps = {
-  classes: { id: string; type: string }[];
-  properties: { id: string; type: string }[];
+  classes: string[];
+  properties: string[];
 };
 
-const IndexPage: React.FC<IndexProps> = ({ classes, properties }) => (
-  <div className={styles.container}>
+const Resources = ({
+  title,
+  resources,
+}: {
+  title: string;
+  resources: string[];
+}) => {
+  return (
+    <div className="bg-white p-4 my-4 border border-gray-200 rounded shadow">
+      <h2 className="text-2xl pb-2 font-semibold text-gray-700"> {title}</h2>
+      <ul className="list-disc ml-5">
+        {resources.map((resource) => (
+          <li key={resource}>
+            <ResourceLink resource={resource} />
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+const IndexPage = ({ classes, properties }: IndexProps) => (
+  <div className="p-6 bg-gray-100">
     <p className="mb-6 text-gray-500 text-sm">
       Welcome to the Regen Network schema reference. This goal of this project
       is to standardize a vocabulary for ecological data on Regen Network and
@@ -60,27 +72,8 @@ const IndexPage: React.FC<IndexProps> = ({ classes, properties }) => (
       information. Explore our Classes and Properties below.
     </p>
 
-    <div className={styles.section}>
-      <h1 className={styles.title}>Classes</h1>
-      <ul className={styles.list}>
-        {classes.map(({ id }) => (
-          <li key={id}>
-            <Link href={`/${id}`}>{id}</Link>
-          </li>
-        ))}
-      </ul>
-    </div>
-
-    <div className={styles.section}>
-      <h1 className={styles.title}>Properties</h1>
-      <ul className={styles.list}>
-        {properties.map(({ id }) => (
-          <li key={id}>
-            <Link href={`/${id}`}>{id}</Link>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <Resources title="Classes" resources={classes} />
+    <Resources title="Properties" resources={properties} />
   </div>
 );
 

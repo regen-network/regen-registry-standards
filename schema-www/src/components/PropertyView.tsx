@@ -1,41 +1,45 @@
 import { Property } from "../types";
-import InfoBox from "./InfoBox";
-import { renderLink, parseName } from "../utils/helpers";
-import styles from "../styles.module.css";
+import ResourceLink from "./ResourceLink";
+import View from "./View";
 
-const PropertyView: React.FC<Property> = ({
+const PropertyView = ({
   iri,
   label,
   description,
   ranges,
   domains,
-}) => {
-  return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>{parseName(iri)}</h1>
-      <h2 className={styles.subtitle}>An rdf:Property</h2>
-      <InfoBox label={parseName(iri)} iri={iri} />
-      <p className={styles.text}>{description}</p>
-      <div className="mt-4">
-        <h2 className={styles.ulHeader}>
-          Values expected to be one of these types:
-        </h2>
-        <ul className={styles.list}>
-          {ranges.map((range, i) => {
-            return <li key={i}>{renderLink(range)}</li>;
-          })}
-        </ul>
-      </div>
-      <div className="mt-4">
-        <h2 className={styles.ulHeader}>Used on these types:</h2>
-        <ul className={styles.list}>
-          {domains.map((domain, i) => {
-            return <li key={i}>{renderLink(domain)}</li>;
-          })}
-        </ul>
-      </div>
+}: Property) => (
+  <View
+    resource={iri}
+    subtitle="an rdf:Property"
+    label={label}
+    description={description}
+  >
+    <div className="mt-4">
+      <h2 className="text-gray-700 font-bold mb-2 text-base">
+        Values expected to be one of these types:
+      </h2>
+      <ul className="list-disc ml-5">
+        {ranges.map((range, i) => (
+          <li key={i}>
+            <ResourceLink resource={range} />
+          </li>
+        ))}
+      </ul>
     </div>
-  );
-};
+    <div className="mt-4">
+      <h2 className="text-gray-700 font-bold mb-2 text-base">
+        Used on these types:
+      </h2>
+      <ul className="list-disc ml-5">
+        {domains.map((domain, i) => (
+          <li key={i}>
+            <ResourceLink resource={domain} />
+          </li>
+        ))}
+      </ul>
+    </div>
+  </View>
+);
 
 export default PropertyView;
