@@ -10,7 +10,9 @@ const ClassView = ({ iri, label, description, properties }: Class) => {
       label={label}
       description={description}
     >
-      <PropertiesTable properties={properties} />
+      <div className="mt-4">
+        <PropertiesTable properties={properties} />
+      </div>
     </View>
   );
 };

@@ -5,27 +5,41 @@ type PropertiesTableProps = {
   properties: Property[];
 };
 
+const HeaderCell = ({ text }: { text: string }) => (
+  <th className="px-4 py-2 border border-gray-300">{text}</th>
+);
+
+const TableCell = ({
+  className,
+  children,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) => (
+  <td className={`px-4 py-2 border border-gray-300 ${className}`}>
+    {children}
+  </td>
+);
+
 const PropertiesTable = ({ properties }: PropertiesTableProps) => (
   <table className="table-auto w-full text-left text-gray-700 border border-gray-300">
     <thead>
       <tr>
-        <th className="px-4 py-2 border border-gray-300">Property</th>
-        <th className="px-4 py-2 border border-gray-300">Expected Types</th>
-        <th className="px-4 py-2 border border-gray-300">Description</th>
+        <HeaderCell text="Property" />
+        <HeaderCell text="Expected Types" />
+        <HeaderCell text="Description" />
       </tr>
     </thead>
     <tbody>
-      {properties.map((prop: Property, i: number) => (
-        <tr key={i}>
-          <td className="px-4 py-2 border border-gray-300 font-mono">
+      {properties.map((prop: Property) => (
+        <tr key={prop.label}>
+          <TableCell className="font-mono">
             <ResourceLink resource={prop.label} />
-          </td>
-          <td className="px-4 py-2 border border-gray-300">
+          </TableCell>
+          <TableCell>
             <ResourceLink resource={prop.ranges[0]} />
-          </td>
-          <td className="px-4 py-2 border border-gray-300">
-            {prop.description}
-          </td>
+          </TableCell>
+          <TableCell>{prop.description}</TableCell>
         </tr>
       ))}
     </tbody>

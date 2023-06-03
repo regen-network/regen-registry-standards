@@ -11,8 +11,8 @@ const ResourcesList = ({ resources, children }: ResourcesListProps) => (
   <div className="mt-4">
     <h2 className="text-gray-700 font-bold mb-2 text-base">{children}</h2>
     <ul className="list-disc ml-5">
-      {resources.map((range, i) => (
-        <li key={i}>
+      {resources.map((range) => (
+        <li key={range}>
           <ResourceLink resource={range} />
         </li>
       ))}
