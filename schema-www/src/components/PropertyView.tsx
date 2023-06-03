@@ -2,6 +2,24 @@ import { Property } from "../types";
 import ResourceLink from "./ResourceLink";
 import View from "./View";
 
+type ResourcesListProps = {
+  resources: string[];
+  children: React.ReactNode;
+};
+
+const ResourcesList = ({ resources, children }: ResourcesListProps) => (
+  <div className="mt-4">
+    <h2 className="text-gray-700 font-bold mb-2 text-base">{children}</h2>
+    <ul className="list-disc ml-5">
+      {resources.map((range, i) => (
+        <li key={i}>
+          <ResourceLink resource={range} />
+        </li>
+      ))}
+    </ul>
+  </div>
+);
+
 const PropertyView = ({
   iri,
   label,
@@ -15,30 +33,10 @@ const PropertyView = ({
     label={label}
     description={description}
   >
-    <div className="mt-4">
-      <h2 className="text-gray-700 font-bold mb-2 text-base">
-        Values expected to be one of these types:
-      </h2>
-      <ul className="list-disc ml-5">
-        {ranges.map((range, i) => (
-          <li key={i}>
-            <ResourceLink resource={range} />
-          </li>
-        ))}
-      </ul>
-    </div>
-    <div className="mt-4">
-      <h2 className="text-gray-700 font-bold mb-2 text-base">
-        Used on these types:
-      </h2>
-      <ul className="list-disc ml-5">
-        {domains.map((domain, i) => (
-          <li key={i}>
-            <ResourceLink resource={domain} />
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ResourcesList resources={ranges}>
+      Values expected to be one of these types:
+    </ResourcesList>
+    <ResourcesList resources={domains}>Used on these types:</ResourcesList>
   </View>
 );
 
