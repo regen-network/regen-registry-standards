@@ -1,21 +1,14 @@
-import { GetStaticPaths, GetStaticProps } from "next";
-
-import { ParsedUrlQuery } from "querystring";
-import { promises as fs } from "fs";
+import fs from "fs/promises";
 import path from "path";
 import * as rdf from "rdflib";
 
-import { BASE_URI, REGEN, RDF, RDFS } from "../utils/namespaces";
+import ClassView from "../../components/ClassView";
+import PropertyView from "../../components/PropertyView";
+import { Property, Class } from "../../types";
 
-import ClassView from "../components/ClassView";
-import PropertyView from "../components/PropertyView";
-import { Property, Class } from "../types";
+import { BASE_URI, REGEN, RDF, RDFS } from "../../utils/namespaces";
 
-interface Params extends ParsedUrlQuery {
-  item: string | undefined;
-}
-
-export const getStaticPaths: GetStaticPaths<Params> = async () => {
+export const generateStaticParams = async () => {
   const filePath = path.join(process.cwd(), "../rdfs", `regen.ttl`);
   const fileContents = await fs.readFile(filePath, "utf8");
 
@@ -31,25 +24,23 @@ export const getStaticPaths: GetStaticPaths<Params> = async () => {
     .statementsMatching(undefined, RDF("type"), RDF("Property"))
     .filter((statement) => statement.subject.value.startsWith(BASE_URI));
 
-  const paths = classStatements.concat(propertyStatements).map((statement) => ({
-    params: { item: statement.subject.value.split("#").pop() },
-  }));
+  const params = classStatements
+    .concat(propertyStatements)
+    .map((statement) => ({
+      item: statement.subject.value.split("#").pop(),
+    }));
 
-  return { paths, fallback: false };
+  return params;
 };
 
-export const getStaticProps: GetStaticProps<{}, Params> = async ({
-  params,
-}) => {
-  if (!params) throw new Error("Missing params");
-
+const getItem = async (itemSlug: string) => {
   const filePath = path.join(process.cwd(), "../rdfs", `regen.ttl`);
   const fileContents = await fs.readFile(filePath, "utf8");
 
   // Parse the RDF data
   const store = rdf.graph();
   rdf.parse(fileContents, store, BASE_URI, "text/turtle");
-  const item = REGEN(`${params.item}`);
+  const item = REGEN(`${itemSlug}`);
 
   const itemType = store.any(item, RDF("type"));
   if (!itemType) throw new Error(`No type found for ${item}`);
@@ -66,16 +57,12 @@ export const getStaticProps: GetStaticProps<{}, Params> = async ({
       .map((statement) => statement.object.value);
 
     return {
-      props: {
-        item: {
-          type: "property",
-          iri: item.value,
-          label,
-          description: comment,
-          ranges,
-          domains,
-        },
-      },
+      type: "property",
+      iri: item.value,
+      label,
+      description: comment,
+      ranges,
+      domains,
     };
   } else if (itemType.value == RDFS("Class").value) {
     // Fetch class data
@@ -98,31 +85,27 @@ export const getStaticProps: GetStaticProps<{}, Params> = async ({
       });
 
     return {
-      props: {
-        item: {
-          type: "class",
-          iri: item.value,
-          label,
-          description: comment,
-          properties,
-        },
-      },
+      type: "class",
+      iri: item.value,
+      label,
+      description: comment,
+      properties,
     };
   } else {
     throw new Error(`Unhandled type for ${item}`);
   }
 };
 
-type ItemProps = {
-  item: Property | Class;
-};
+const ItemPage = async ({ params }: { params: { item: string } }) => {
+  const itemSlug = params.item;
 
-const SchemaPage = ({ item }: ItemProps) => {
+  const item = await getItem(itemSlug);
+
   if (item.type === "class") {
-    return <ClassView {...item} />;
+    return <ClassView {...(item as Class)} />;
   } else if (item.type === "property") {
-    return <PropertyView {...item} />;
+    return <PropertyView {...(item as Property)} />;
   }
 };
 
-export default SchemaPage;
+export default ItemPage;
