@@ -100,10 +100,12 @@ const ItemPage = async ({ params }: { params: { item: string } }) => {
   const itemSlug = params.item;
 
   const item = await getItem(itemSlug);
+  const componentType = item.type;
 
-  if (item.type === "class") {
+  if (componentType === "class") {
     return <ClassView {...(item as Class)} />;
-  } else if (item.type === "property") {
+  }
+  if (item.type === "property") {
     return <PropertyView {...(item as Property)} />;
   }
 };
