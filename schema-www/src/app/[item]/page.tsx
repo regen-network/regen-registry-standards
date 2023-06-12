@@ -100,14 +100,14 @@ const ItemPage = async ({ params }: { params: { item: string } }) => {
   const itemSlug = params.item;
 
   const item = await getItem(itemSlug);
-  const componentType = item.type;
+const componentType = item.type;
+const isClass =  componentType === "class";
+const isProperty = componentType === "property";
 
-  if (componentType === "class") {
-    return <ClassView {...(item as Class)} />;
-  }
-  if (item.type === "property") {
-    return <PropertyView {...(item as Property)} />;
-  }
+return <>
+  {isClass && <ClassView {...(item as Class)} />}
+  {isProperty && <PropertyView {...(item as Property)} />}
+</>
 };
 
 export default ItemPage;
