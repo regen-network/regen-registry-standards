@@ -1,0 +1,156 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "https://schema.regen.network#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema:itemListElement": {
+      "@container": "@list"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
+    },
+    "regen:sectoralScope": {
+      "@container": "@list"
+    },
+    "regen:offsetGenerationMethod": {
+      "@container": "@list"
+    },
+    "regen:projectActivities": {
+      "@container": "@list"
+    },
+    "regen:ecosystemType": {
+      "@container": "@list"
+    }
+  },
+  "@type": "regen:C04-CreditClass",
+  "schema:name": "",
+  "schema:description": "",
+  "schema:url": {
+    "@type": "schema:URL",
+    "@value": ""
+  },
+  "regen:sourceRegistry": {
+    "schema:name": "",
+    "schema:url": {
+      "@type": "schema:URL",
+      "@value": ""
+    }
+  },
+  "regen:sectoralScope": [
+    {
+      "@type": "xsd:string",
+      "@value": ""
+    }
+  ],
+  "regen:offsetGenerationMethod": [
+    {
+      "@type": "xsd:string",
+      "@value": ""
+    }
+  ],
+  "regen:measuredGHGs": [
+    {
+      "@type:": "xsd:string",
+      "@value": ""
+    }
+  ],
+  "regen:coBenefits": [
+    {
+      "@type:": "xsd:string",
+      "@value": ""
+    }
+  ],
+  "regen:geographicApplicability": [
+    {
+      "@type:": "xsd:string",
+      "@value": ""
+    }
+  ],
+  "regen:eligibleActivities": [
+    {
+      "@type:": "xsd:string",
+      "@value": ""
+    }
+  ],
+  "regen:landOwnershipType": [
+    {
+      "@type:": "xsd:string",
+      "@value": ""
+    }
+  ],
+  "regen:ecosystemType": [
+    {
+      "@type:": "xsd:string",
+      "@value": ""
+    }
+  ],
+  "regen:creditingTerm": {
+    "@type": "schema:activityDuration",
+    "@value": ""
+  },
+  "regen:lookbackPeriod": {
+    "@type": "schema:activityDuration",
+    "@value": ""
+  },
+  "regen:aggregatedProjects": null,
+  "regen:monitoringFrequency": "",
+  "regen:verificationMethod": [
+    {
+      "@type:": "xsd:string",
+      "@value": ""
+    }
+  ],
+  "regen:verificationFrequency": "",
+  "regen:approvedMethodologies": {
+    "@type": "schema:ItemList",
+    "schema:itemListElement": [
+      {
+        "schema:name": "",
+        "schema:url": "",
+        "schema:identifier": "",
+        "schema:version": ""
+      }
+    ],
+    "schema:url": ""
+  },
+  "regen:creditClassDocument": {
+    "schema:name": "",
+    "schema:url": {
+      "@type": "schema:URL",
+      "@value": ""
+    }
+  },
+  "regen:bufferPoolTypes": [
+    {
+      "@type:": "xsd:string",
+      "@value": ""
+    }
+  ],
+  "regen:bufferPoolAccounts": {
+    "@type": "schema:ItemList",
+    "schema:itemListElement": [
+      {
+        "schema:name": "",
+        "regen:walletAddress": "",
+        "regen:poolAllocation": "",
+        "schema:url": ""
+      }
+    ]  
+  },
+  "regen:additionalityApproach": [
+    {
+      "@type:": "xsd:string",
+      "@value": ""
+    }
+  ],
+  "regen:leakageApproach": [
+    {
+      "@type:": "xsd:string",
+      "@value": ""
+    }
+  ],
+  "regen:permanencePeriod": {
+    "@type": "schema:activityDuration",
+    "@value": ""
+  }
+}
