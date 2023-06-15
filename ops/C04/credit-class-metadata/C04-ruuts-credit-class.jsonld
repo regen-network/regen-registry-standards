@@ -1,0 +1,199 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "https://schema.regen.network#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema:itemListElement": {
+      "@container": "@list"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
+    },
+    "regen:sectoralScope": {
+      "@container": "@list"
+    },
+    "regen:offsetGenerationMethod": {
+      "@container": "@list"
+    },
+    "regen:projectActivities": {
+      "@container": "@list"
+    },
+    "regen:ecosystemType": {
+      "@container": "@list"
+    }
+  },
+  "@type": "regen:C04-CreditClass",
+  "schema:name": "Ruuts Credit Class for Soil Carbon Sequestration through Regenerative Grazing",
+  "schema:description": "The Credit Class and its accompanying methodology provide farmers with a measuring and monitoring process for soil organic carbon sequestration in regenerative grazing systems, enabling them to generate carbon credits that also include robust ecological co-benefits such as water infiltration and biodiversity.",
+  "schema:url": {
+    "@type": "schema:URL",
+    "@value": ""
+  },
+  "regen:sourceRegistry": {
+    "schema:name": "Regen Registry",
+    "schema:url": {
+      "@type": "schema:URL",
+      "@value": "app.regen.network"
+    }
+  },
+  "regen:sectoralScope": [
+    {
+      "@type": "xsd:string",
+      "@value": "Livestock & Manure Management"
+    }
+  ],
+  "regen:offsetGenerationMethod": [
+    {
+      "@type": "xsd:string",
+      "@value": "Carbon Removal"
+    }
+  ],
+  "regen:measuredGHGs": [
+    {
+      "@type:": "xsd:string",
+      "@value": "Carbon Dioxide (CO2)"
+    },
+    {
+        "@type:": "xsd:string",
+        "@value": "Nitrous Oxide (NO2)"
+    },
+    {
+        "@type:": "xsd:string",
+        "@value": "Methane (CH4)"
+    }
+  ],
+  "regen:coBenefits": [
+    {
+      "@type:": "xsd:string",
+      "@value": "Water Infultration"
+    },
+    {
+        "@type:": "xsd:string",
+        "@value": "Biodiversity"
+    }
+  ],
+  "regen:geographicApplicability": [
+    {
+      "@type:": "xsd:string",
+      "@value": "Global"
+    }
+  ],
+  "regen:eligibleActivities": [
+    {
+      "@type:": "xsd:string",
+      "@value": "Improved Grazing"
+    },
+    {
+        "@type:": "xsd:string",
+        "@value": "Rotational Grazing"
+    }
+  ],
+  "regen:landOwnershipType": [
+    {
+      "@type:": "xsd:string",
+      "@value": "Public"
+    },
+    {
+        "@type:": "xsd:string",
+        "@value": "Private"
+    }
+  ],
+  "regen:ecosystemType": [
+    {
+      "@type:": "xsd:string",
+      "@value": "Pasture"
+    },
+    {
+        "@type:": "xsd:string",
+        "@value": "Native Grasslands"
+    },
+    {
+        "@type:": "xsd:string",
+        "@value": "Savannas"
+    },
+    {
+        "@type:": "xsd:string",
+        "@value": "Integrated Crop-Livestock (ICL)"
+    }
+  ],
+  "regen:creditingTerm": {
+    "@type": "schema:activityDuration",
+    "@value": "P10Y"
+  },
+  "regen:lookbackPeriod": {
+    "@type": "schema:activityDuration",
+    "@value": "P-14Y"
+  },
+  "regen:aggregatedProjects": null,
+  "regen:monitoringFrequency": "",
+  "regen:verificationMethod": [
+    {
+      "@type:": "xsd:string",
+      "@value": "Ruuts Internal Quality Assurance"
+    },
+    {
+        "@type:": "xsd:string",
+        "@value": "Third-Party ISO 14064-3 Verification"
+    }
+  ],
+  "regen:verificationFrequency": {
+    "@type": "schema:activityDuration",
+    "@value": "P5Y"
+  },
+  "regen:approvedMethodologies": {
+    "@type": "schema:ItemList",
+    "schema:itemListElement": [
+      {
+        "schema:name": "Ruuts Protocol Soil Carbon Sequestration Methodology v1",
+        "schema:url": "",
+        "schema:identifier": "",
+        "schema:version": "V1.0"
+      }
+    ],
+    "schema:url": ""
+  },
+  "regen:creditClassDocument": {
+    "schema:name": "Ruuts Credit Class for Soil Carbon Sequestration through Rotational Grazing",
+    "schema:url": {
+      "@type": "schema:URL",
+      "@value": ""
+    }
+  },
+  "regen:bufferPoolAccounts": {
+    "@type": "schema:ItemList",
+    "schema:itemListElement": [
+      {
+        "schema:name": "Credit Class (Pooled) Buffer Pool",
+        "regen:walletAddress": "",
+        "regen:poolAllocation": "5%",
+        "schema:url": ""
+      },
+      {
+        "schema:name": "Monte Dinero Project-Specific Buffer",
+        "regen:walletAddress": "",
+        "regen:poolAllocation": "15%",
+        "schema:url": ""
+      }
+    ]
+  },
+  "regen:additionalityApproach": [
+    {
+      "@type:": "xsd:string",
+      "@value": "Common Practice Analysis"
+    },
+    {
+        "@type:": "xsd:string",
+        "@value": "Regulatory Additionality"
+    }
+  ],
+  "regen:leakageApproach": [
+    {
+      "@type:": "xsd:string",
+      "@value": "Activity Shifting Leakage"
+    }
+  ],
+  "regen:permanencePeriod": {
+    "@type": "schema:activityDuration",
+    "@value": "P20Y"
+  }
+}
