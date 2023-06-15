@@ -4,6 +4,9 @@
 @prefix regen: <https://schema.regen.network#> .
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+regen:C01-CreditClass rdfs:subClassOf regen:CreditClass .
 
 regen:C01-CreditClassShape a sh:NodeShape ;
   sh:targetClass regen:C01-CreditClass ;
