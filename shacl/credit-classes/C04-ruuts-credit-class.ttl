@@ -8,14 +8,14 @@
 regen:C04-CreditClassShape a sh:NodeShape ;
   sh:targetClass regen:C04-CreditClass ;
   sh:property [
-    sh:path schema:description ;
+    sh:path schema:name ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:minLength 1 ;
     sh:datatype xsd:string ;
   ] ;
   sh:property [
-    sh:path schema:name ;
+    sh:path schema:description ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:minLength 1 ;
@@ -75,14 +75,7 @@ regen:C04-CreditClassShape a sh:NodeShape ;
   ] ;
   sh:property [
     sh:path regen:geographicApplicability ;
-    sh:node dash:ListShape ;
-    sh:property [
-      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
-      sh:datatype xsd:string ;
-      sh:minLength 1 ;
-    ] ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
+    sh:datatype xsd:string ;
   ] ;
   sh:property [
     sh:path regen:eligibleActivities ;
@@ -118,29 +111,29 @@ regen:C04-CreditClassShape a sh:NodeShape ;
     sh:maxCount 1 ;
   ] ;
   sh:property [
-    sh:path schema:creditingTerm ;
+    sh:path regen:creditingTerm ;
     sh:node schema:activityDuration ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:minLength 1 ;
   ] ;
   sh:property [
-    sh:path schema:lookbackPeriod ;
+    sh:path regen:lookbackPeriod ;
     sh:node schema:activityDuration ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:minLength 1 ;
   ] ;
   sh:property [
-    sh:path schema:aggregatedProjects ;
+    sh:path regen:aggregatedProjects ;
     sh:node schema:Boolean ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:minLength 1 ;
   ] ;
   sh:property [
-    sh:path schema:monitoringFrequency ;
-    sh:datatype xsd:string ;
+    sh:path regen:monitoringFrequency ;
+    sh:datatype schema:frequency ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:minLength 1 ;
@@ -157,15 +150,15 @@ regen:C04-CreditClassShape a sh:NodeShape ;
     sh:maxCount 1 ;
   ] ;
   sh:property [
-    sh:path schema:verificationFrequency ;
-    sh:node schema:activityDuration ;
+    sh:path regen:verificationFrequency ;
+    sh:node schema:frequency ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:minLength 1 ;
   ] ;
   sh:property regen:ApprovedMethodologiesPropertyShape ;
-  sh:property regen:bufferPoolAccountsShape ;
-    sh:property [
+  sh:property regen:BufferPoolAccountsShape ;
+  sh:property [
     sh:path regen:verificationMethod ;
     sh:node dash:ListShape ;
     sh:property [
@@ -199,7 +192,7 @@ regen:C04-CreditClassShape a sh:NodeShape ;
     sh:maxCount 1 ;
   ] ;
   sh:property [
-    sh:path schema:permanencePeriod ;
+    sh:path regen:permanencePeriod ;
     sh:node schema:activityDuration ;
     sh:minCount 1 ;
     sh:maxCount 1 ;

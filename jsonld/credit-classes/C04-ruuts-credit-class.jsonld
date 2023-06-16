@@ -15,10 +15,28 @@
     "regen:offsetGenerationMethod": {
       "@container": "@list"
     },
-    "regen:projectActivities": {
+    "regen:measuredGHGs": {
+      "@container": "@list"
+    },
+    "regen:coBenefits": {
+      "@container": "@list"
+    },
+    "regen:eligibleActivities": {
+      "@container": "@list"
+    },
+    "regen:landOwnershipType": {
       "@container": "@list"
     },
     "regen:ecosystemType": {
+      "@container": "@list"
+    },
+    "regen:verificationMethod": {
+      "@container": "@list"
+    },
+    "regen:additionalityApproach": {
+      "@container": "@list"
+    },
+    "regen:leakageApproach": {
       "@container": "@list"
     }
   },
@@ -60,12 +78,7 @@
       "@value": ""
     }
   ],
-  "regen:geographicApplicability": [
-    {
-      "@type:": "xsd:string",
-      "@value": ""
-    }
-  ],
+  "regen:geographicApplicability": "",
   "regen:eligibleActivities": [
     {
       "@type:": "xsd:string",
@@ -93,14 +106,20 @@
     "@value": ""
   },
   "regen:aggregatedProjects": null,
-  "regen:monitoringFrequency": "",
+  "regen:monitoringFrequency": {
+    "@type": "schema:frequency",
+    "@value": ""
+  },  
   "regen:verificationMethod": [
     {
       "@type:": "xsd:string",
       "@value": ""
     }
   ],
-  "regen:verificationFrequency": "",
+  "regen:verificationFrequency": {
+    "@type": "schema:frequency",
+    "@value": ""
+  },
   "regen:approvedMethodologies": {
     "@type": "schema:ItemList",
     "schema:itemListElement": [
@@ -113,27 +132,13 @@
     ],
     "schema:url": ""
   },
-  "regen:creditClassDocument": {
-    "schema:name": "",
-    "schema:url": {
-      "@type": "schema:URL",
-      "@value": ""
-    }
-  },
-  "regen:bufferPoolTypes": [
-    {
-      "@type:": "xsd:string",
-      "@value": ""
-    }
-  ],
   "regen:bufferPoolAccounts": {
     "@type": "schema:ItemList",
     "schema:itemListElement": [
       {
         "schema:name": "",
         "regen:walletAddress": "",
-        "regen:poolAllocation": "",
-        "schema:url": ""
+        "regen:poolAllocation": ""
       }
     ]  
   },

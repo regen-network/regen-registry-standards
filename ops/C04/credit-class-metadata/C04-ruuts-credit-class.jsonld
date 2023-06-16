@@ -15,10 +15,28 @@
     "regen:offsetGenerationMethod": {
       "@container": "@list"
     },
-    "regen:projectActivities": {
+    "regen:measuredGHGs": {
+      "@container": "@list"
+    },
+    "regen:coBenefits": {
+      "@container": "@list"
+    },
+    "regen:eligibleActivities": {
+      "@container": "@list"
+    },
+    "regen:landOwnershipType": {
       "@container": "@list"
     },
     "regen:ecosystemType": {
+      "@container": "@list"
+    },
+    "regen:verificationMethod": {
+      "@container": "@list"
+    },
+    "regen:additionalityApproach": {
+      "@container": "@list"
+    },
+    "regen:leakageApproach": {
       "@container": "@list"
     }
   },
@@ -27,94 +45,43 @@
   "schema:description": "The Credit Class and its accompanying methodology provide farmers with a measuring and monitoring process for soil organic carbon sequestration in regenerative grazing systems, enabling them to generate carbon credits that also include robust ecological co-benefits such as water infiltration and biodiversity.",
   "schema:url": {
     "@type": "schema:URL",
-    "@value": ""
+    "@value": "https://library.regen.network/v/regen-registry-credit-classes/regen-registry-credit-classes-1/ruuts-credit-class-for-soil-carbon-sequestration-through-regenerative-grazing"
   },
   "regen:sourceRegistry": {
     "schema:name": "Regen Registry",
     "schema:url": {
       "@type": "schema:URL",
-      "@value": "app.regen.network"
+      "@value": "https://library.regen.network/v/regen-registry-guide/"
     }
   },
   "regen:sectoralScope": [
-    {
-      "@type": "xsd:string",
-      "@value": "Livestock & Manure Management"
-    }
+    "Livestock & Manure Management"
   ],
   "regen:offsetGenerationMethod": [
-    {
-      "@type": "xsd:string",
-      "@value": "Carbon Removal"
-    }
+    "Carbon Removal"
   ],
   "regen:measuredGHGs": [
-    {
-      "@type:": "xsd:string",
-      "@value": "Carbon Dioxide (CO2)"
-    },
-    {
-        "@type:": "xsd:string",
-        "@value": "Nitrous Oxide (NO2)"
-    },
-    {
-        "@type:": "xsd:string",
-        "@value": "Methane (CH4)"
-    }
+    "Carbon Dioxide (CO2)",
+    "Nitrous Oxide (NO2)",
+    "Methane (CH4)"
   ],
   "regen:coBenefits": [
-    {
-      "@type:": "xsd:string",
-      "@value": "Water Infultration"
-    },
-    {
-        "@type:": "xsd:string",
-        "@value": "Biodiversity"
-    }
+    "Water Infultration",
+    "Biodiversity"
   ],
-  "regen:geographicApplicability": [
-    {
-      "@type:": "xsd:string",
-      "@value": "Global"
-    }
-  ],
+  "regen:geographicApplicability": "Global",
   "regen:eligibleActivities": [
-    {
-      "@type:": "xsd:string",
-      "@value": "Improved Grazing"
-    },
-    {
-        "@type:": "xsd:string",
-        "@value": "Rotational Grazing"
-    }
+    "Improved Grazing",
+    "Rotational Grazing"
   ],
   "regen:landOwnershipType": [
-    {
-      "@type:": "xsd:string",
-      "@value": "Public"
-    },
-    {
-        "@type:": "xsd:string",
-        "@value": "Private"
-    }
+    "Public",
+    "Private"
   ],
   "regen:ecosystemType": [
-    {
-      "@type:": "xsd:string",
-      "@value": "Pasture"
-    },
-    {
-        "@type:": "xsd:string",
-        "@value": "Native Grasslands"
-    },
-    {
-        "@type:": "xsd:string",
-        "@value": "Savannas"
-    },
-    {
-        "@type:": "xsd:string",
-        "@value": "Integrated Crop-Livestock (ICL)"
-    }
+    "Pasture",
+    "Native Grasslands",
+    "Integrated Cro-Livestock (ICL)"
   ],
   "regen:creditingTerm": {
     "@type": "schema:activityDuration",
@@ -124,73 +91,47 @@
     "@type": "schema:activityDuration",
     "@value": "P-14Y"
   },
-  "regen:aggregatedProjects": null,
-  "regen:monitoringFrequency": "",
+  "regen:aggregatedProjects": true,
+  "regen:monitoringFrequency": {
+    "@type": "schema:frequency",
+    "@value": "Annual"
+  },
   "regen:verificationMethod": [
-    {
-      "@type:": "xsd:string",
-      "@value": "Ruuts Internal Quality Assurance"
-    },
-    {
-        "@type:": "xsd:string",
-        "@value": "Third-Party ISO 14064-3 Verification"
-    }
+    "Ruuts Internal Quality Assurance",
+    "Third-Party ISO 14064-3 Verification"
   ],
   "regen:verificationFrequency": {
-    "@type": "schema:activityDuration",
-    "@value": "P5Y"
+    "@type": "schema:frequency",
+    "@value": "Five year"
   },
   "regen:approvedMethodologies": {
     "@type": "schema:ItemList",
     "schema:itemListElement": [
       {
         "schema:name": "Ruuts Protocol Soil Carbon Sequestration Methodology v1",
-        "schema:url": "",
+        "schema:url": "https://library.regen.network/v/methodology-library/published-methodologies/ruuts-methodology-for-soil-carbon-sequestration",
         "schema:identifier": "",
         "schema:version": "V1.0"
       }
     ],
-    "schema:url": ""
-  },
-  "regen:creditClassDocument": {
-    "schema:name": "Ruuts Credit Class for Soil Carbon Sequestration through Rotational Grazing",
-    "schema:url": {
-      "@type": "schema:URL",
-      "@value": ""
-    }
+    "schema:url": "https://www.google.com"
   },
   "regen:bufferPoolAccounts": {
     "@type": "schema:ItemList",
     "schema:itemListElement": [
       {
         "schema:name": "Credit Class (Pooled) Buffer Pool",
-        "regen:walletAddress": "",
-        "regen:poolAllocation": "5%",
-        "schema:url": ""
-      },
-      {
-        "schema:name": "Monte Dinero Project-Specific Buffer",
-        "regen:walletAddress": "",
-        "regen:poolAllocation": "15%",
-        "schema:url": ""
+        "regen:walletAddress": "regen17pmq7hp4upvmmveqexzuhzu64v36re3w3447n7dt46uwp594wtpsuuh7f6",
+        "regen:poolAllocation": "5%"
       }
     ]
   },
   "regen:additionalityApproach": [
-    {
-      "@type:": "xsd:string",
-      "@value": "Common Practice Analysis"
-    },
-    {
-        "@type:": "xsd:string",
-        "@value": "Regulatory Additionality"
-    }
+    "Common Practice Analysis",
+    "Regulatory Additionality"
   ],
   "regen:leakageApproach": [
-    {
-      "@type:": "xsd:string",
-      "@value": "Activity Shifting Leakage"
-    }
+    "Activity Shifting Leakage"
   ],
   "regen:permanencePeriod": {
     "@type": "schema:activityDuration",
