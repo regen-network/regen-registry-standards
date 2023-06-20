@@ -38,21 +38,30 @@
     },
     "regen:leakageApproach": {
       "@container": "@list"
+    },
+    "regen:creditingTerm": {
+      "@type": "schema:activityDuration"
+    },
+    "regen:lookbackPeriod": {
+      "@type": "schema:activityDuration"
+    },
+    "regen:permanencePeriod": {
+      "@type": "schema:activityDuration"
+    },
+    "regen:monitoringFrequency": {
+      "@type": "schema:frequency"
+    }, 
+    "regen:verificationFrequency": {
+      "@type": "schema:frequency"
     }
   },
   "@type": "regen:C04-CreditClass",
   "schema:name": "Ruuts Credit Class for Soil Carbon Sequestration through Regenerative Grazing",
   "schema:description": "The Credit Class and its accompanying methodology provide farmers with a measuring and monitoring process for soil organic carbon sequestration in regenerative grazing systems, enabling them to generate carbon credits that also include robust ecological co-benefits such as water infiltration and biodiversity.",
-  "schema:url": {
-    "@type": "schema:URL",
-    "@value": "https://library.regen.network/v/regen-registry-credit-classes/regen-registry-credit-classes-1/ruuts-credit-class-for-soil-carbon-sequestration-through-regenerative-grazing"
-  },
+  "schema:url": "https://library.regen.network/v/regen-registry-credit-classes/regen-registry-credit-classes-1/ruuts-credit-class-for-soil-carbon-sequestration-through-regenerative-grazing",
   "regen:sourceRegistry": {
     "schema:name": "Regen Registry",
-    "schema:url": {
-      "@type": "schema:URL",
-      "@value": "https://library.regen.network/v/regen-registry-guide/"
-    }
+    "schema:url": "https://library.regen.network/v/regen-registry-guide/"
   },
   "regen:sectoralScope": [
     "Livestock & Manure Management"
@@ -83,27 +92,16 @@
     "Native Grasslands",
     "Integrated Cro-Livestock (ICL)"
   ],
-  "regen:creditingTerm": {
-    "@type": "schema:activityDuration",
-    "@value": "P10Y"
-  },
-  "regen:lookbackPeriod": {
-    "@type": "schema:activityDuration",
-    "@value": "P-14Y"
-  },
+  "regen:creditingTerm": "P10Y",
+  "regen:lookbackPeriod": "P-14Y",
+  "regen:permanencePeriod": "P20Y",
   "regen:aggregatedProjects": true,
-  "regen:monitoringFrequency": {
-    "@type": "schema:frequency",
-    "@value": "Annual"
-  },
+  "regen:monitoringFrequency": "Annual",
+  "regen:verificationFrequency": "Five year",
   "regen:verificationMethod": [
     "Ruuts Internal Quality Assurance",
     "Third-Party ISO 14064-3 Verification"
   ],
-  "regen:verificationFrequency": {
-    "@type": "schema:frequency",
-    "@value": "Five year"
-  },
   "regen:approvedMethodologies": {
     "@type": "schema:ItemList",
     "schema:itemListElement": [
@@ -114,7 +112,7 @@
         "schema:version": "V1.0"
       }
     ],
-    "schema:url": "https://www.google.com"
+    "schema:url": ""
   },
   "regen:bufferPoolAccounts": {
     "@type": "schema:ItemList",
@@ -132,9 +130,5 @@
   ],
   "regen:leakageApproach": [
     "Activity Shifting Leakage"
-  ],
-  "regen:permanencePeriod": {
-    "@type": "schema:activityDuration",
-    "@value": "P20Y"
-  }
+  ]
 }

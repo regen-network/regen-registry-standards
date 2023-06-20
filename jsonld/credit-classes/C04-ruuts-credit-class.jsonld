@@ -38,88 +38,46 @@
     },
     "regen:leakageApproach": {
       "@container": "@list"
+    },
+    "regen:creditingTerm": {
+      "@type": "schema:activityDuration"
+    },
+    "regen:lookbackPeriod": {
+      "@type": "schema:activityDuration"
+    },
+    "regen:permanencePeriod": {
+      "@type": "schema:activityDuration"
+    },
+    "regen:monitoringFrequency": {
+      "@type": "schema:frequency"
+    }, 
+    "regen:verificationFrequency": {
+      "@type": "schema:frequency"
     }
   },
   "@type": "regen:C04-CreditClass",
   "schema:name": "",
   "schema:description": "",
-  "schema:url": {
-    "@type": "schema:URL",
-    "@value": ""
-  },
+  "schema:url": "",
   "regen:sourceRegistry": {
     "schema:name": "",
-    "schema:url": {
-      "@type": "schema:URL",
-      "@value": ""
-    }
+    "schema:url": ""
   },
-  "regen:sectoralScope": [
-    {
-      "@type": "xsd:string",
-      "@value": ""
-    }
-  ],
-  "regen:offsetGenerationMethod": [
-    {
-      "@type": "xsd:string",
-      "@value": ""
-    }
-  ],
-  "regen:measuredGHGs": [
-    {
-      "@type:": "xsd:string",
-      "@value": ""
-    }
-  ],
-  "regen:coBenefits": [
-    {
-      "@type:": "xsd:string",
-      "@value": ""
-    }
-  ],
+  "regen:sectoralScope": [""],
+  "regen:offsetGenerationMethod": [""],
+  "regen:measuredGHGs": [""],
+  "regen:coBenefits": [""],
   "regen:geographicApplicability": "",
-  "regen:eligibleActivities": [
-    {
-      "@type:": "xsd:string",
-      "@value": ""
-    }
-  ],
-  "regen:landOwnershipType": [
-    {
-      "@type:": "xsd:string",
-      "@value": ""
-    }
-  ],
-  "regen:ecosystemType": [
-    {
-      "@type:": "xsd:string",
-      "@value": ""
-    }
-  ],
-  "regen:creditingTerm": {
-    "@type": "schema:activityDuration",
-    "@value": ""
-  },
-  "regen:lookbackPeriod": {
-    "@type": "schema:activityDuration",
-    "@value": ""
-  },
+  "regen:eligibleActivities": [""],
+  "regen:landOwnershipType": [""],
+  "regen:ecosystemType": [""],
+  "regen:creditingTerm": "",
+  "regen:lookbackPeriod": "",
+  "regen:permanencePeriod": "",
   "regen:aggregatedProjects": null,
-  "regen:monitoringFrequency": {
-    "@type": "schema:frequency",
-    "@value": ""
-  },  
-  "regen:verificationMethod": [
-    {
-      "@type:": "xsd:string",
-      "@value": ""
-    }
-  ],
-  "regen:verificationFrequency": {
-    "@type": "schema:frequency",
-    "@value": ""
-  },
+  "regen:monitoringFrequency": "", 
+  "regen:verificationFrequency": "",
+  "regen:verificationMethod": [""  ],
   "regen:approvedMethodologies": {
     "@type": "schema:ItemList",
     "schema:itemListElement": [
@@ -142,20 +100,6 @@
       }
     ]  
   },
-  "regen:additionalityApproach": [
-    {
-      "@type:": "xsd:string",
-      "@value": ""
-    }
-  ],
-  "regen:leakageApproach": [
-    {
-      "@type:": "xsd:string",
-      "@value": ""
-    }
-  ],
-  "regen:permanencePeriod": {
-    "@type": "schema:activityDuration",
-    "@value": ""
-  }
+  "regen:additionalityApproach": [""],
+  "regen:leakageApproach": [""]
 }
