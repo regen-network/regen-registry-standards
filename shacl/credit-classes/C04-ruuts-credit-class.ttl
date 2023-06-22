@@ -159,17 +159,6 @@ regen:C04-CreditClassShape a sh:NodeShape ;
   sh:property regen:ApprovedMethodologiesPropertyShape ;
   sh:property regen:BufferPoolAccountsShape ;
   sh:property [
-    sh:path regen:verificationMethod ;
-    sh:node dash:ListShape ;
-    sh:property [
-      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
-      sh:datatype xsd:string ;
-      sh:minLength 1 ;
-    ] ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-  ] ;
-  sh:property [
     sh:path regen:additionalityApproach ;
     sh:node dash:ListShape ;
     sh:property [
