@@ -139,7 +139,7 @@ regen:C04-CreditClassShape a sh:NodeShape ;
     sh:minLength 1 ;
   ] ;
   sh:property [
-    sh:path regen:verificationMethod ;
+    sh:path regen:verificationMethods ;
     sh:node dash:ListShape ;
     sh:property [
       sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;

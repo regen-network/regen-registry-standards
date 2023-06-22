@@ -30,7 +30,7 @@
     "regen:ecosystemType": {
       "@container": "@list"
     },
-    "regen:verificationMethod": {
+    "regen:verificationMethods": {
       "@container": "@list"
     },
     "regen:additionalityApproach": {
@@ -98,7 +98,7 @@
   "regen:aggregatedProjects": true,
   "regen:monitoringFrequency": "Annual",
   "regen:verificationFrequency": "Five year",
-  "regen:verificationMethod": [
+  "regen:verificationMethods": [
     "Ruuts Internal Quality Assurance",
     "Third-Party ISO 14064-3 Verification"
   ],

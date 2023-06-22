@@ -30,7 +30,7 @@
     "regen:ecosystemType": {
       "@container": "@list"
     },
-    "regen:verificationMethod": {
+    "regen:verificationMethods": {
       "@container": "@list"
     },
     "regen:additionalityApproach": {
@@ -64,7 +64,7 @@
     "schema:url": ""
   },
   "regen:sectoralScope": [""],
-  "regen:offsetGenerationMethod": [""],
+  "regen:offsetGenerationMethods": [""],
   "regen:measuredGHGs": [""],
   "regen:coBenefits": [""],
   "regen:geographicApplicability": "",
