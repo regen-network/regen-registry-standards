@@ -22,7 +22,7 @@
       "@type": "schema:URL"
     }
   },
-  "@type": ["regen:CXX-CreditClass", "regen:CreditClass"],
+  "@type": "regen:CreditClass",
   "schema:description": "",
   "schema:name": "",
   "schema:url": "",
