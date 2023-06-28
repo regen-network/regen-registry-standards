@@ -25,29 +25,13 @@
   "@type": "regen:C02-CreditClass",
   "schema:name": "",
   "schema:description": "",
-  "schema:url": {
-    "@type": "schema:URL",
-    "@value": ""
-  },
+  "schema:url": "",
   "regen:sourceRegistry": {
     "schema:name": "",
-    "schema:url": {
-      "@type": "schema:URL",
-      "@value": ""
-    }
+    "schema:url": ""
   },
-  "regen:sectoralScope": [
-    {
-      "@type": "xsd:string",
-      "@value": ""
-    }
-  ],
-  "regen:offsetGenerationMethod": [
-    {
-      "@type": "xsd:string",
-      "@value": ""
-    }
-  ],
+  "regen:sectoralScope": [""],
+  "regen:offsetGenerationMethod": [""],
   "regen:approvedMethodologies": {
     "@type": "schema:ItemList",
     "schema:itemListElement": [
@@ -74,9 +58,6 @@
     ""
   ],
   "regen:carbonOffsetStandard": {
-    "schema:url": {
-      "@type": "schema:URL",
-      "@value": ""
-    }
+    "schema:url": ""
   }
 }

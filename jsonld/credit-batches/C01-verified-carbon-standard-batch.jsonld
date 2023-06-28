@@ -4,6 +4,9 @@
     "regen": "https://schema.regen.network#",
     "regen:additionalCertifications": {
       "@container": "@list"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
     }
   },
   "@type": "regen:C01-CreditBatch",
@@ -12,17 +15,11 @@
   "regen:additionalCertifications": [
     {
       "schema:name": "",
-      "schema:url": {
-        "@type": "schema:URL",
-        "@value": ""
-      }
+      "schema:url": ""
     },
     {
       "schema:name": "",
-      "schema:url": {
-        "@type": "schema:URL",
-        "@value": ""
-      }
+      "schema:url": ""
     }
   ]
 }
