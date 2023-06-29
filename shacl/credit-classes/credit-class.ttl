@@ -9,7 +9,49 @@
 regen:CreditClassShape a sh:NodeShape ;
   sh:targetClass regen:CreditClass ;
   sh:property [
+    sh:path schema:name ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:datatype xsd:string ;
+  ] ;
+  sh:property [
+    sh:path schema:description ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:datatype xsd:string ;
+  ] ;
+  sh:property [
+    sh:path schema:url ;
+    sh:datatype schema:URL ;
+  ] ;
+  sh:property [
     sh:path schema:image ;
     sh:datatype schema:URL ;
   ] ;
+  sh:property [
+    sh:path regen:sourceRegistry ;
+    sh:node regen:NameUrlShape ;
+  ] ;
+  sh:property [
+    sh:path regen:sectoralScope ;
+    sh:node dash:ListShape ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:datatype xsd:string ;
+      sh:minLength 1 ;
+    ] ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property regen:OffsetGenerationMethodPropertyShape ;
+  sh:property [
+    sh:path regen:verificationMethod ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:datatype xsd:string ;
+  ] ;
+  sh:property regen:ApprovedMethodologiesPropertyShape ;
 .

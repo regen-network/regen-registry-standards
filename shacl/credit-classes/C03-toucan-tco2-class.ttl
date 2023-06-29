@@ -11,58 +11,6 @@ regen:C03-CreditClass rdfs:subClassOf regen:CreditClass .
 regen:C03-CreditClassShape a sh:NodeShape ;
   sh:targetClass regen:C03-CreditClass ;
   sh:property [
-    sh:path schema:description ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:minLength 1 ;
-    sh:datatype xsd:string ;
-  ] ;
-  sh:property [
-    sh:path schema:name ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:minLength 1 ;
-    sh:datatype xsd:string ;
-  ] ;
-  sh:property [
-    sh:path schema:url ;
-    sh:datatype schema:URL ;
-  ] ;
-  sh:property [
-    sh:path regen:sourceRegistry ;
-    sh:node regen:NameUrlShape ;
-  ] ;
-  sh:property [
-    sh:path regen:sectoralScope ;
-    sh:node dash:ListShape ;
-    sh:property [
-      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
-      sh:datatype xsd:string ;
-      sh:minLength 1 ;
-    ] ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-  ] ;
-  sh:property [
-    sh:path regen:offsetGenerationMethod ;
-    sh:node dash:ListShape ;
-    sh:property [
-      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
-      sh:datatype xsd:string ;
-      sh:minLength 1 ;
-    ] ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-  ] ;
-  sh:property regen:ApprovedMethodologiesPropertyShape ;
-  sh:property [
-    sh:path regen:verificationMethod ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:minLength 1 ;
-    sh:datatype xsd:string ;
-  ] ;
-  sh:property [
     sh:path regen:tokenizationSource ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
