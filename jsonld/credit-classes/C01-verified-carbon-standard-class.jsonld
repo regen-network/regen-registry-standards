@@ -48,5 +48,11 @@
     ],
     "schema:url": ""
   },
-  "regen:verificationMethod": ""
+  "regen:verificationMethod": "",
+  "regen:certifications": [
+    {
+      "schema:name": "",
+      "schema:url": ""
+    }
+  ]
 }

@@ -320,5 +320,11 @@
     ],
     "schema:url": "https://library.regen.network/v/regen-registry-credit-classes/credits-from-other-registries/verified-carbon-standard-credit-class/approved-methodologies"
   },
-  "regen:verificationMethod": "Third-party verified"
+  "regen:verificationMethod": "Third-party verified",
+  "regen:certifications": [
+    {
+      "schema:name": "ICROA",
+      "schema:url": "TODO"
+    }
+  ]
 }

@@ -60,5 +60,11 @@
   "regen:carbonOffsetStandard": {
     "schema:name": "City Forest Credits Standard",
     "schema:url": "https://www.cityforestcredits.org/wp-content/uploads/2022/03/City-Forest-Credits-Standard-V2.pdf"
-  }
+  },
+  "regen:certifications": [
+    {
+      "schema:name": "ICROA",
+      "schema:url": "TODO"
+    }
+  ]
 }

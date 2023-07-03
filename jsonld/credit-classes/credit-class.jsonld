@@ -22,7 +22,7 @@
       "@type": "schema:URL"
     }
   },
-  "@type": "regen:CreditClass",
+  "@type": "regen:XXX-CreditClass",
   "schema:description": "",
   "schema:name": "",
   "schema:url": "",

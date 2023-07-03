@@ -59,5 +59,11 @@
   ],
   "regen:carbonOffsetStandard": {
     "schema:url": ""
-  }
+  },
+  "regen:certifications": [
+    {
+      "schema:name": "",
+      "schema:url": ""
+    }
+  ]
 }

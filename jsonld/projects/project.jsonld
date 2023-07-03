@@ -27,7 +27,7 @@
       "@container": "@list"
     }
   },
-  "@type": "regen:CXX-Project",
+  "@type": "regen:XXX-Project",
   "@id": "http://app.regen.network/project/<ID>",
   "schema:name": "",
   "schema:location": {
