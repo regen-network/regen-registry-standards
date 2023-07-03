@@ -58,5 +58,11 @@
   "regen:verificationMethod": "",
   "regen:projectActivities": [
     ""
+  ],
+  "regen:certifications": [
+    {
+      "schema:name": "",
+      "schema:url": ""
+    }
   ]
 }

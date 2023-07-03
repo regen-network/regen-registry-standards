@@ -3,11 +3,11 @@
 @prefix regen: <https://schema.regen.network#> .
 @prefix schema: <http://schema.org/> .
 
+regen:C03-Project rdfs:subClassOf regen:Project .
+
 regen:C03-ProjectShape a sh:NodeShape ;
   sh:targetClass regen:C03-Project ;
 
-  sh:property regen:NamePropertyShape ;
-  sh:property regen:LocationPropertyShape ;
   sh:property [
     sh:path regen:toucanProjectTokenId ;
     sh:datatype xsd:integer ;
@@ -19,36 +19,4 @@ regen:C03-ProjectShape a sh:NodeShape ;
   sh:property regen:ToucanURIPropertyShape ;
 
   sh:property regen:ApprovedMethodologiesPropertyShape ;
-
-  sh:property regen:OffsetGenerationMethodOptionalPropertyShape ; 
-  sh:property regen:ProjectActivityOptionalPropertyShape ;
-  sh:property regen:ProjectTypeOptionalPropertyShape ;
-  sh:property regen:ProjectOptionalStartDatePropertyShape ;
-  sh:property regen:ProjectOptionalEndDatePropertyShape ;
-
-  sh:property [
-    sh:path regen:rating ;
-    sh:node regen:BeZeroCarbon ;
-    sh:property [
-      sh:path schema:name ;
-      sh:datatype xsd:string ;
-      sh:minCount 1 ;
-      sh:maxCount 1 ;
-      sh:minLength 1 ;
-    ] ;
-    sh:property [
-      sh:path schema:ratingValue ;
-      sh:datatype xsd:string ;
-      sh:minCount 1 ;
-      sh:maxCount 1 ;
-      sh:minLength 1 ;
-    ] ;
-    sh:property [
-      sh:path schema:url ;
-      sh:datatype schema:URL ;
-      sh:minCount 1 ;
-      sh:maxCount 1 ;
-      sh:minLength 1 ;
-    ] ;
-  ]
 .
