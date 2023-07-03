@@ -23,12 +23,13 @@
       }
     ]
   },
-  "regen:rating": {
-    "@type": "regen:BeZeroCarbon",
-    "schema:name": "BeZero Carbon",
-    "schema:ratingValue": "BB",
-    "schema:url": "https://bezerocarbon.com/listings/?filter=1577"
-  },
+  "regen:ratings": [
+    {
+      "schema:name": "BeZero Carbon",
+      "schema:ratingValue": "BB",
+      "schema:url": "https://bezerocarbon.com/listings/?filter=1577"
+    }
+  ],
   "schema:location": {
     "@context": {
       "type": "@type",
