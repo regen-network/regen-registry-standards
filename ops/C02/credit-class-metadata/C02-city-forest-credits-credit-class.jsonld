@@ -20,6 +20,9 @@
     },
     "regen:ecosystemType": {
       "@container": "@list"
+    },
+    "regen:certifications": {
+      "@container": "@list"
     }
   },
   "@type": "regen:C02-CreditClass",

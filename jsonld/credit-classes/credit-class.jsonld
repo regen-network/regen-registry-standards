@@ -20,6 +20,9 @@
     },
     "schema:image": {
       "@type": "schema:URL"
+    },
+    "regen:certifications": {
+      "@container": "@list"
     }
   },
   "@type": "regen:XXX-CreditClass",
