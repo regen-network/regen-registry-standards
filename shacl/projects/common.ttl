@@ -6,6 +6,8 @@
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
 
 regen:NamePropertyShape sh:path schema:name ;
   sh:minCount 1 ;
