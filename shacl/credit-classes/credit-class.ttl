@@ -1,77 +1,57 @@
-@prefix dash: <http://datashapes.org/dash#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix regen: <https://schema.regen.network#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-# regen:CreditClassVersionShape defines the metadata that goes
-# into the credit_class_version.metadata column in the Postgres database.
-
-regen:CreditClassVersionShape
-  a rdfs:Class, sh:NodeShape ;
+regen:CreditClassShape a sh:NodeShape ;
   sh:targetClass regen:CreditClass ;
-  rdfs:subClassOf rdfs:Resource ;
+  sh:property [
+    sh:path schema:name ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:datatype xsd:string ;
+  ] ;
+  sh:property [
+    sh:path schema:description ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:datatype xsd:string ;
+  ] ;
   sh:property [
     sh:path schema:url ;
     sh:datatype schema:URL ;
   ] ;
   sh:property [
-    sh:path regen:offsetGenerationMethod ;
-    sh:datatype xsd:string ;
+    sh:path schema:image ;
+    sh:datatype schema:URL ;
   ] ;
   sh:property [
-    sh:path regen:creditDenom ;
-    sh:datatype xsd:string ;
-    sh:maxCount 1 ;
+    sh:path regen:sourceRegistry ;
+    sh:node regen:NameUrlShape ;
+  ] ;
+  sh:property [
+    sh:path regen:sectoralScope ;
+    sh:node dash:ListShape ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:datatype xsd:string ;
+      sh:minLength 1 ;
+    ] ;
     sh:minCount 1 ;
+    sh:maxCount 1 ;
   ] ;
+  sh:property regen:OffsetGenerationMethodPropertyShape ;
   sh:property [
-    sh:path regen:SDGs ;
-    sh:node dash:ListShape ;
-    sh:property [
-      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
-      sh:nodeKind sh:IRI ;
-      sh:class regen:SDG ;
-    ] ;
-  ] ;
-
-  # The following properties are based on https://app.mural.co/t/exploros/m/exploros/1626198876689/ecd285bfe106442917d13fb94421b33de7f5d981?sender=marie6396
-  # which is still WIP so subject to change.
-  sh:property [
-    sh:path regen:ecosystemType ;
+    sh:path regen:verificationMethod ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
     sh:datatype xsd:string ;
   ] ;
-  sh:property [
-    sh:path regen:projectType ;
-    sh:datatype xsd:string ;
-  ] ;
-  sh:property [
-    sh:path regen:indicator ;
-    sh:nodeKind sh:IRI ;
-    sh:class regen:Indicator ;
-  ] ;
-  sh:property [
-    sh:path regen:unit ;
-    sh:datatype xsd:string ;
-  ] ;
-  sh:property [
-    sh:path regen:methods ;
-    sh:node dash:ListShape ;
-    sh:property [
-      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
-      sh:class regen:Methodology ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  ] ;
-  sh:property [
-    sh:path regen:coBenefits ;
-    sh:node dash:ListShape ;
-    sh:property [
-      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
-      sh:class regen:Indicator ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  ] ;
+  sh:property regen:ApprovedMethodologiesPropertyShape ;
 .

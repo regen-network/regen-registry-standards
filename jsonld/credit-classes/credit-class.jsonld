@@ -6,9 +6,6 @@
     "schema:itemListElement": {
       "@container": "@list"
     },
-    "schema:url": {
-      "@type": "schema:URL"
-    },
     "regen:sectoralScope": {
       "@container": "@list"
     },
@@ -18,20 +15,28 @@
     "regen:projectActivities": {
       "@container": "@list"
     },
-    "regen:ecosystemType": {
-      "@container": "@list"
+    "schema:url": {
+      "@type": "schema:URL"
+    },
+    "schema:image": {
+      "@type": "schema:URL"
     }
   },
-  "@type": "regen:C02-CreditClass",
-  "schema:name": "",
+  "@type": "regen:CreditClass",
   "schema:description": "",
+  "schema:name": "",
   "schema:url": "",
+  "schema:image": "",
   "regen:sourceRegistry": {
     "schema:name": "",
     "schema:url": ""
   },
-  "regen:sectoralScope": [""],
-  "regen:offsetGenerationMethod": [""],
+  "regen:sectoralScope": [
+    ""
+  ],
+  "regen:offsetGenerationMethod": [
+    ""
+  ],
   "regen:approvedMethodologies": {
     "@type": "schema:ItemList",
     "schema:itemListElement": [
@@ -50,14 +55,8 @@
     ],
     "schema:url": ""
   },
-  "regen:ecosystemType": [
-    ""
-  ],
   "regen:verificationMethod": "",
   "regen:projectActivities": [
     ""
-  ],
-  "regen:carbonOffsetStandard": {
-    "schema:url": ""
-  }
+  ]
 }
