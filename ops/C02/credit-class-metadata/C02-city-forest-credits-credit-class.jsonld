@@ -66,8 +66,8 @@
   },
   "regen:certifications": [
     {
-      "schema:name": "ICROA",
-      "schema:url": "TODO"
+      "schema:name": "ICROA approved",
+      "schema:url": "https://icroa.org/"
     }
   ]
 }
