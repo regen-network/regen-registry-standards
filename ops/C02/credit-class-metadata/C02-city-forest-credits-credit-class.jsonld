@@ -20,6 +20,9 @@
     },
     "regen:ecosystemType": {
       "@container": "@list"
+    },
+    "regen:certifications": {
+      "@container": "@list"
     }
   },
   "@type": "regen:C02-CreditClass",
@@ -60,5 +63,11 @@
   "regen:carbonOffsetStandard": {
     "schema:name": "City Forest Credits Standard",
     "schema:url": "https://www.cityforestcredits.org/wp-content/uploads/2022/03/City-Forest-Credits-Standard-V2.pdf"
-  }
+  },
+  "regen:certifications": [
+    {
+      "schema:name": "ICROA approved",
+      "schema:url": "https://icroa.org/"
+    }
+  ]
 }

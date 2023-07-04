@@ -63,3 +63,22 @@ regen:ApprovedMethodologiesPropertyShape sh:path regen:approvedMethodologies ;
     sh:datatype schema:URL ;
   ] ;
 .
+
+regen:NameUrlShape a sh:NodeShape ;
+  sh:property regen:RequiredNamePropertyShape ;
+  sh:property regen:RequiredUrlPropertyShape ;
+.
+
+regen:RequiredNamePropertyShape sh:path schema:name ;
+  sh:minCount 1 ;
+  sh:maxCount 1 ;
+  sh:minLength 1 ;
+  sh:datatype xsd:string ;
+.
+
+regen:RequiredUrlPropertyShape sh:path schema:url ;
+  sh:minCount 1 ;
+  sh:maxCount 1 ;
+  sh:minLength 1 ;
+  sh:datatype schema:URL ;
+.

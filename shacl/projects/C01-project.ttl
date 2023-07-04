@@ -1,12 +1,5 @@
-@prefix schema: <http://schema.org/> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix regen: <https://schema.regen.network#> .
-@prefix qudt: <http://qudt.org/schema/qudt/> .
-@prefix unit: <http://qudt.org/vocab/unit/> .
-@prefix geojson: <https://purl.org/geojson/vocab#> .
-@prefix dash: <http://datashapes.org/dash#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 regen:C01-Project rdfs:subClassOf regen:Project .
@@ -15,73 +8,14 @@ regen:C01-Project rdfs:subClassOf regen:Project .
 
 regen:C01-ProjectShape a sh:NodeShape ;
   sh:targetClass regen:C01-Project ;
-  sh:property regen:NamePropertyShape ;
-  sh:property regen:LocationPropertyShape ;
   sh:property regen:ProjectSizePropertyShape ;
   sh:property regen:ProjectActivityPropertyShape ;
   sh:property regen:ProjectStartDatePropertyShape ;
   sh:property regen:ProjectEndDatePropertyShape ;
   sh:property regen:ProjectTypePropertyShape ;
-  sh:property regen:ProjectDeveloperPropertyShape ;
-  sh:property regen:ProjectVerifierPropertyShape ;
   sh:property regen:OffsetGenerationMethodPropertyShape ;
   sh:property regen:VCSProjectIdPropertyShape ;
   sh:property regen:VCSProjectPagePropertyShape ;
   sh:property regen:VCSMethodologyPropertyShape
 .
 
-regen:NameUrlShape a sh:NodeShape ;
-  sh:targetClass regen:NameUrl;
-  sh:property regen:RequiredNamePropertyShape ;
-  sh:property regen:RequiredUrlPropertyShape ;
-.
-
-regen:NameUrlVersionShape a sh:NodeShape ;
-  sh:targetClass regen:NameUrlVersionUrl;
-  sh:property regen:RequiredNamePropertyShape ;
-  sh:property regen:RequiredUrlPropertyShape ;
-  sh:property regen:RequiredVersionPropertyShape ;
-.
-
-regen:RequiredNamePropertyShape sh:path schema:name ;
-  sh:minCount 1 ;
-  sh:maxCount 1 ;
-  sh:minLength 1 ;
-  sh:datatype xsd:string ;
-  sh:group regen:ProjectPageMetadataGroup ;
-.
-
-regen:RequiredUrlPropertyShape sh:path schema:url ;
-  sh:minCount 1 ;
-  sh:maxCount 1 ;
-  sh:minLength 1 ;
-  sh:datatype schema:URL ;
-  sh:group regen:ProjectPageMetadataGroup ;
-.
-
-regen:RequiredVersionPropertyShape sh:path schema:version ;
-  sh:minCount 1 ;
-  sh:maxCount 1 ;
-  sh:minLength 1 ;
-  sh:group regen:ProjectPageMetadataGroup ;
-  sh:datatype xsd:string ;
-.
-
-regen:ProjectSizeShape a sh:NodeShape ;
-  sh:property [
-    sh:path qudt:unit ;
-    sh:datatype qudt:Unit ;
-    sh:in ( "unit:HA"^^qudt:Unit "unit:AC"^^qudt:Unit ) ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:group regen:ProjectPageBasicInfoGroup ;
-  ] ;
-  sh:property [
-    sh:path qudt:numericValue ;
-    sh:minExclusive 0 ;
-    sh:datatype xsd:double ;
-    sh:maxCount 1 ;
-    sh:maxCount 1 ;
-    sh:group regen:ProjectPageBasicInfoGroup ;
-  ] ;
-.

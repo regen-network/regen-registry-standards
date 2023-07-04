@@ -20,9 +20,12 @@
     },
     "schema:image": {
       "@type": "schema:URL"
+    },
+    "regen:certifications": {
+      "@container": "@list"
     }
   },
-  "@type": "regen:CreditClass",
+  "@type": "regen:XXX-CreditClass",
   "schema:description": "",
   "schema:name": "",
   "schema:url": "",
@@ -58,5 +61,11 @@
   "regen:verificationMethod": "",
   "regen:projectActivities": [
     ""
+  ],
+  "regen:certifications": [
+    {
+      "schema:name": "",
+      "schema:url": ""
+    }
   ]
 }
