@@ -17,6 +17,9 @@
     },
     "schema:url": {
       "@type": "schema:URL"
+    },
+    "regen:certifications": {
+      "@container": "@list"
     }
   },
   "@type": "regen:C03-CreditClass",
