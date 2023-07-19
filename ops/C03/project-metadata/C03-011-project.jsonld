@@ -9,6 +9,9 @@
     },
     "schema:url": {
       "@type": "schema:URL"
+    },
+    "regen:ratings": {
+      "@container": "@list"
     }
   },
   "schema:name": "Jiangxi Province Le'an County Forest Farm Carbon Sink Project",

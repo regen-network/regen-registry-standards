@@ -9,6 +9,9 @@
     },
     "schema:url": {
       "@type": "schema:URL"
+    },
+    "regen:ratings": {
+      "@container": "@list"
     }
   },
   "schema:name": "Reduced Emissions from Deforestation and Degradation in Keo Seima Wildlife Sanctuary",

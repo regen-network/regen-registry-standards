@@ -9,6 +9,9 @@
     },
     "schema:url": {
       "@type": "schema:URL"
+    },
+    "regen:ratings": {
+      "@container": "@list"
     }
   },
   "schema:name": "REDD+ Project Resguardo Indigena Unificado Selva de Mataven (RIU SM)",

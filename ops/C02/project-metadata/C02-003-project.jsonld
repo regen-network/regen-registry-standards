@@ -28,6 +28,9 @@
     },
     "regen:offsetGenerationMethod": {
       "@container": "@list"
+    },
+    "regen:ratings": {
+      "@container": "@list"
     }
   },
   "@type": "regen:C02-Project",
@@ -80,5 +83,12 @@
     "schema:name": "Preservation Protocol - 40 years",
     "schema:url": "https://www.cityforestcredits.org/wp-content/uploads/2022/07/City-Forest-Preservation-Protocol-40-Years-V11.40.pdf",
     "schema:version": "v8.40"
-  }
+  },
+  "regen:ratings": [
+    {
+      "schema:name": "BeZero Carbon",
+      "schema:ratingValue": "A",
+      "schema:url": "https://bezerocarbon.com/listings/?filter=buena+vista+heights"
+    }
+  ]
 }

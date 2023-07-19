@@ -7,7 +7,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 regen:CreditClassShape a sh:NodeShape ;
-  sh:targetClass regen:CreditClass ;
+  sh:targetClass regen:CreditClass, regen:C01-CreditClass, regen:C02-CreditClass, regen:C03-CreditClass;
   sh:property [
     sh:path schema:name ;
     sh:minCount 1 ;
