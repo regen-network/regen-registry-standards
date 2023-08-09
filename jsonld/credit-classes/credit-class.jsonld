@@ -26,6 +26,9 @@
     },
     "regen:coBenefits": {
       "@container": "@list"
+    },
+    "regen:SDGs": {
+      "@container": "@list"
     }
   },
   "@type": "regen:XXX-CreditClass",
@@ -73,18 +76,33 @@
   ],
   "regen:primaryImpact": {
     "@id": "",
-    "schema:name": ""
+    "schema:name": "",
+    "regen:SDGs": [
+      {
+        "@id": ""
+      }
+    ]
   },
   "regen:coBenefits": [
     {
       "@id": "",
       "@type": "regen:MeasuredCoBenefit",
-      "schema:name": ""
+      "schema:name": "",
+      "regen:SDGs": [
+        {
+          "@id": ""
+        }
+      ]
     },
     {
       "@id": "",
       "@type": "regen:ProjectCoBenefit",
-      "schema:name": ""
+      "schema:name": "",
+      "regen:SDGs": [
+        {
+          "@id": ""
+        }
+      ]
     }
   ]
 }

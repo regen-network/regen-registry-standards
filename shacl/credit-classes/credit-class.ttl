@@ -82,7 +82,7 @@ regen:CreditClassShape a sh:NodeShape ;
   sh:property [
     sh:path regen:primaryImpact ;
     sh:nodeKind sh:IRI ;
-    sh:node regen:OptionalNameShape ;
+    sh:node regen:OptionalNameSGDsShape ;
     sh:maxCount 1 ;
   ] ;
   sh:property [
@@ -91,7 +91,7 @@ regen:CreditClassShape a sh:NodeShape ;
     sh:property [
       sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
       sh:nodeKind sh:IRI ;
-      sh:node regen:OptionalNameShape ;
+      sh:node regen:OptionalNameSGDsShape ;
       sh:or (
         [ sh:class regen:MeasuredCoBenefit ]
         [ sh:class regen:ProjectCoBenefit ]
@@ -101,12 +101,21 @@ regen:CreditClassShape a sh:NodeShape ;
   ]
 .
 
-regen:OptionalNameShape a sh:NodeShape ;
+regen:OptionalNameSGDsShape a sh:NodeShape ;
   sh:property [
     sh:path schema:name ;
     sh:maxCount 1 ;
     sh:datatype xsd:string ;
   ] ;
+  sh:property [
+    sh:path regen:SDGs ;
+    sh:node dash:ListShape ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+    sh:maxCount 1 ;
+  ]
 .
 
 regen:MethodologyVersionShape a sh:NodeShape ;
