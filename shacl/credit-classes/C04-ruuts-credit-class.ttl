@@ -8,50 +8,6 @@
 regen:C04-CreditClassShape a sh:NodeShape ;
   sh:targetClass regen:C04-CreditClass ;
   sh:property [
-    sh:path schema:name ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:minLength 1 ;
-    sh:datatype xsd:string ;
-  ] ;
-  sh:property [
-    sh:path schema:description ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:minLength 1 ;
-    sh:datatype xsd:string ;
-  ] ;
-  sh:property [
-    sh:path schema:url ;
-    sh:datatype schema:URL ;
-  ] ;
-  sh:property [
-    sh:path regen:sourceRegistry ;
-    sh:node regen:NameUrlShape ;
-  ] ;
-  sh:property [
-    sh:path regen:sectoralScope ;
-    sh:node dash:ListShape ;
-    sh:property [
-      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
-      sh:datatype xsd:string ;
-      sh:minLength 1 ;
-    ] ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-  ] ;
-  sh:property [
-    sh:path regen:offsetGenerationMethod ;
-    sh:node dash:ListShape ;
-    sh:property [
-      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
-      sh:datatype xsd:string ;
-      sh:minLength 1 ;
-    ] ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-  ] ;
-  sh:property [
     sh:path regen:measuredGHGs ;
     sh:node dash:ListShape ;
     sh:property [
@@ -156,7 +112,6 @@ regen:C04-CreditClassShape a sh:NodeShape ;
     sh:maxCount 1 ;
     sh:minLength 1 ;
   ] ;
-  sh:property regen:ApprovedMethodologiesPropertyShape ;
   sh:property regen:BufferPoolAccountsShape ;
   sh:property [
     sh:path regen:additionalityApproach ;
@@ -187,4 +142,40 @@ regen:C04-CreditClassShape a sh:NodeShape ;
     sh:maxCount 1 ;
     sh:minLength 1 ;
   ] ;
+.
+
+regen:BufferPoolAccountShape a sh:NodeShape ;
+  sh:property [
+    sh:path schema:name ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:walletAddress ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:poolAllocation ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+  ] ;
+.
+
+regen:BufferPoolAccountsShape sh:path regen:bufferPoolAccounts ;
+  sh:node dash:ItemList ;
+  sh:minCount 1 ;
+  sh:maxCount 1 ;
+  sh:property [
+    sh:path schema:itemListElement ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:node regen:BufferPoolAccountShape ;
+      sh:minCount 1 ;
+    ] ;
+  ] 
 .
