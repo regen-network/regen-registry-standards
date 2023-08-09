@@ -85,11 +85,6 @@
       "@id": "",
       "@type": "regen:ProjectCoBenefit",
       "schema:name": ""
-    },
-    {
-      "@id": "",
-      "@type": "regen:ProjectCoBenefit",
-      "schema:name": ""
     }
   ]
 }
