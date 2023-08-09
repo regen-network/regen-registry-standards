@@ -46,13 +46,29 @@ regen:CreditClassShape a sh:NodeShape ;
     sh:maxCount 1 ;
   ] ;
   sh:property regen:OffsetGenerationMethodPropertyShape ;
-  sh:property [
-    sh:path regen:verificationMethod ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:minLength 1 ;
-    sh:datatype xsd:string ;
-  ] ;
+  sh:or (
+    [
+      sh:property [
+        sh:path regen:verificationMethod ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:minLength 1 ;
+        sh:datatype xsd:string ;
+      ] ;
+    ] [
+      sh:property [
+        sh:path regen:verificationMethods ;
+        sh:node dash:ListShape ;
+        sh:property [
+          sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+          sh:datatype xsd:string ;
+          sh:minLength 1 ;
+        ] ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+      ] ;
+    ]
+  ) ;
   sh:property regen:ApprovedMethodologiesPropertyShape ;
   sh:property [
     sh:path regen:certifications;
