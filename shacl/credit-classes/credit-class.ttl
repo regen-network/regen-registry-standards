@@ -94,7 +94,7 @@ regen:CreditClassShape a sh:NodeShape ;
       sh:node regen:OptionalNameSGDsShape ;
       sh:or (
         [ sh:class regen:MeasuredCoBenefit ]
-        [ sh:class regen:ProjectCoBenefit ]
+        [ sh:class regen:ProjectBenefit ]
       )
     ] ;
     sh:maxCount 1 ;

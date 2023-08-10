@@ -96,7 +96,7 @@
     },
     {
       "@id": "",
-      "@type": "regen:ProjectCoBenefit",
+      "@type": "regen:ProjectBenefit",
       "schema:name": "",
       "regen:SDGs": [
         {
