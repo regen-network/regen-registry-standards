@@ -39,6 +39,8 @@
   "regen:projectDeveloper": {
     "@type": "regen:Organization",
     "schema:name": "Enrichmond Foundation",
+    "schema:url": "",
+    "regen:showOnProjectPage": true
   },
   "regen:projectType": "Agriculture Forestry and Other Land Use",
   "regen:projectActivity": {
