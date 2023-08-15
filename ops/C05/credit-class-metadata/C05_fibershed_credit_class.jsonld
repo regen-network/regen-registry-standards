@@ -1,0 +1,94 @@
+{
+  "@context": {
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "regen": "https://schema.regen.network#",
+    "schema": "http://schema.org/",
+    "schema:url": {
+      "@type": "schema:URL"
+    },
+    "regen:coBenefits": {
+      "@container": "@list"
+    },
+    "regen:creditingTerm": {
+      "@type": "schema:activityDuration"
+    },
+    "regen:ecosystemType": {
+      "@container": "@list"
+    },
+    "regen:sectoralScope": {
+      "@container": "@list"
+    },
+    "regen:lookbackPeriod": {
+      "@type": "schema:activityDuration"
+    },
+    "schema:itemListElement": {
+      "@container": "@list"
+    },
+    "regen:landOwnershipType": {
+      "@container": "@list"
+    },
+    "regen:eligibleActivities": {
+      "@container": "@list"
+    },
+    "regen:monitoringFrequency": {
+      "@type": "schema:frequency"
+    },
+    "regen:verificationMethods": {
+      "@container": "@list"
+    },
+    "regen:verificationFrequency": {
+      "@type": "schema:frequency"
+    },
+    "regen:offsetGenerationMethod": {
+      "@container": "@list"
+    }
+  },
+  "@type": "regen:C05-CreditClass",
+  "schema:name": "Credit Class for Grazing in Vineyard Systems",
+  "schema:description": "This Credit Class and its accompanying methodology are designed to support the use of high-density, short-duration rotational targeted sheep grazing in vineyard systems to improve ecosystem functioning through active management of the soil and herbaceous cover in the vineyard understory. As with other Environmental Stewardship methodologies, the environmental benefits are implicit in the practice. Projects being developed under the Methodology for Grazing in Vineyard Systems are expected, based on prior research, to result in positive ecological outcomes. This methodology is new and likely imperfect and will be improved as new projects are created and lessons are learned.",
+  "schema:url": "https://registry.regen.network/v/regen-registry-credit-classes/regen-registry-credit-classes-1/credit-class-for-grazing-in-vineyard-systems",
+  "regen:coBenefits": [
+    "Improved rates of nutrient cycling",
+    "Improved nutrient retention",
+    "Reductions in external inputs",
+    "Increased soil microbial biomass",
+    "Improved soil structure and hydrological properties",
+    "Increased soil carbon storage"
+  ],
+  "regen:creditingTerm": "P1Y",
+  "regen:ecosystemType": [
+    "Vineyard"
+  ],
+  "regen:sectoralScope": [
+    "Regenerative Grazing"
+  ],
+  "regen:lookbackPeriod": "P-3Y",
+  "regen:landOwnershipType": [
+    "Private"
+  ],
+  "regen:aggregatedProjects": false,
+  "regen:eligibleActivities": [
+    "High-density, short-duration rotational targeted sheep grazing"
+  ],
+  "regen:monitoringFrequency": "P1D",
+  "regen:verificationFrequency": "P1Y",
+  "regen:verificationMethods": [
+    "Regen Network Development Science Team Quality Assurance"
+  ],
+  "regen:approvedMethodologies": {
+    "@type": "schema:ItemList",
+    "schema:url": "",
+    "schema:itemListElement": [
+      {
+        "schema:url": "",
+        "schema:name": "Methodology for Grazing in Vineyard Systems",
+        "schema:version": "***1.0",
+        "schema:identifier": ""
+      }
+    ]
+  },
+  "regen:creditGenerationMethod": [
+    "Environmental Stewardship"
+  ],
+  "regen:geographicApplicability": "California"
+}
