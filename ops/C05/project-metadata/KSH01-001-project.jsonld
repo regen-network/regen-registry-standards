@@ -1,0 +1,75 @@
+{
+    "@context": {
+      "schema": "http://schema.org/",
+      "regen": "https://schema.regen.network#",
+      "qudt": "http://qudt.org/schema/qudt/",
+      "unit": "http://qudt.org/vocab/unit/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "schema:url": {
+        "@type": "schema:URL"
+      },
+      "qudt:unit": {
+        "@type": "qudt:Unit"
+      },
+      "qudt:numericValue": {
+        "@type": "xsd:double"
+      },
+      "regen:projectStartDate": {
+        "@type": "xsd:date"
+      },
+      "regen:projectEndDate": {
+        "@type": "xsd:date"
+      }
+    },
+    "@type": "regen:KSH01-Project",
+    "@id": "http://app.regen.network/project/<ID>",
+    "schema:name": "Grgich Hills Estate Regenerative Sheep Grazing",
+    "regen:projectDesignDocument": "",
+    "regen:projectDeveloper": {
+      "@type": "regen:Organization",
+      "schema:name": "Regen Network Development, PBC",
+      "schema:url": "https://www.regen.network/",
+      "schema:description": "",
+      "regen:address": ""
+    },
+    "regen:projectVerifier": {
+      "@type": "regen:Organization",
+      "schema:name": "Regen Network Development, PBC",
+      "schema:url": "https://www.regen.network/",
+      "schema:description": "",
+      "regen:address": ""
+    },
+    "schema:location": {
+      "@context": {
+        "type": "@type",
+        "@vocab": "https://purl.org/geojson/vocab#",
+        "coordinates": {
+          "@container": "@list"
+        },
+        "bbox": {
+          "@container": "@list"
+        }
+      },
+      "type": "Feature",
+      "place_name": "Rutherford, California",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+            [38.4082,-122.3754], 
+            [38.2063,-122.2429]
+        ]
+      }
+    },
+    "regen:projectSize": {
+      "qudt:unit": "unit:HA",
+      "qudt:numericValue": 126.6
+    },
+    "regen:projectActivity": {
+      "schema:name": "Methodology for Grazing in Vineyard Systems",
+      "schema:url": ""
+    },
+    "regen:projectType": "",
+    "regen:projectStartDate": "2019-01-01",
+    "regen:projectEndDate": "2023-05-31"
+  }
+  
