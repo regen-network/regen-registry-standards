@@ -9,13 +9,10 @@
     "regen:coBenefits": {
       "@container": "@list"
     },
-    "regen:creditingTerm": {
+    "regen:creditingPeriod": {
       "@type": "schema:activityDuration"
     },
     "regen:ecosystemType": {
-      "@container": "@list"
-    },
-    "regen:sectoralScope": {
       "@container": "@list"
     },
     "regen:lookbackPeriod": {
@@ -39,7 +36,7 @@
     "regen:verificationFrequency": {
       "@type": "schema:frequency"
     },
-    "regen:offsetGenerationMethod": {
+    "regen:creditGenerationMethod": {
       "@container": "@list"
     }
   },
@@ -55,12 +52,9 @@
     "Improved soil structure and hydrological properties",
     "Increased soil carbon storage"
   ],
-  "regen:creditingTerm": "P1Y",
+  "regen:creditingPeriod": "P1Y",
   "regen:ecosystemType": [
     "Vineyard"
-  ],
-  "regen:sectoralScope": [
-    "Regenerative Grazing"
   ],
   "regen:lookbackPeriod": "P-3Y",
   "regen:landOwnershipType": [
