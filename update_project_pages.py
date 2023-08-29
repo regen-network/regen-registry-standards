@@ -11,7 +11,7 @@ print(f"DB_URL={url}")
 if not url.startswith("postgresql+psycopg2://"):
     raise Exception("invalid db url")
 
-files = sorted(glob.glob("ops/C05/project-metadata/*-project-page.jsonld"))
+files = sorted(glob.glob("ops/*/project-metadata/*-project-page.jsonld"))
 
 updates = []
 for file in files:
