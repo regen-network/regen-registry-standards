@@ -28,13 +28,13 @@
       "@container": "@list"
     },
     "regen:monitoringFrequency": {
-      "@type": "schema:frequency"
+      "@type": "schema:Duration"
     },
     "regen:verificationMethods": {
       "@container": "@list"
     },
     "regen:verificationFrequency": {
-      "@type": "schema:frequency"
+      "@type": "schema:Duration"
     },
     "regen:creditGenerationMethod": {
       "@container": "@list"
@@ -56,7 +56,7 @@
   "regen:ecosystemType": [
     "Vineyard"
   ],
-  "regen:lookbackPeriod": "P-3Y",
+  "regen:lookbackPeriod": "-P3Y",
   "regen:landOwnershipType": [
     "Private"
   ],
