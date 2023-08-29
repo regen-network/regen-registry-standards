@@ -22,8 +22,31 @@
       }
     },
     "@type": "regen:KSH01-Project",
-    "@id": "http://app.regen.network/project/<ID>",
     "schema:name": "Grgich Hills Estate Regenerative Sheep Grazing",
+    "regen:projectActivity": {
+        "schema:name": ""
+    },
+    "regen:projectSize": {
+        "qudt:unit": "unit:HA",
+        "qudt:numericValue": 126.6
+    },
+    "regen:projectType": "",
+    "regen:projectStartDate": "2019-01-01",
+    "regen:projectEndDate": "2023-05-31",
+    "regen:projectDesignDocument": {
+        "schema:name": "",
+        "schema:url": ""
+    },
+    "regen:projectDeveloper": {
+      "@type": "regen:Organization",
+      "schema:name": "Regen Network Development, PBC",
+      "schema:url": "regen187d6u5ypmhdc2ypwfwt2ye6d424a0cjvxw72gu"
+    },
+    "regen:projectVerifier": {
+      "@type": "regen:Organization",
+      "schema:name": "Regen Network Development Science Team",
+      "schema:url": "regen187d6u5ypmhdc2ypwfwt2ye6d424a0cjvxw72gu"
+    },
     "schema:location": {
       "@context": {
         "type": "@type",
@@ -44,31 +67,6 @@
             [38.2063,-122.2429]
         ]
       }
-    },
-    "regen:projectSize": {
-      "qudt:unit": "unit:HA",
-      "qudt:numericValue": 126.6
-    },
-    "regen:projectActivity": {
-      "schema:name": "Methodology for Grazing in Vineyard Systems",
-      "schema:url": ""
-    },
-    "regen:projectDeveloper": {
-      "@type": "regen:Organization",
-      "schema:name": "Regen Network Development, PBC",
-      "schema:url": "https://www.regen.network/",
-      "schema:description": "",
-      "regen:address": ""
-    },
-    "regen:projectVerifier": {
-      "@type": "regen:Organization",
-      "schema:name": "Regen Network Development, PBC",
-      "schema:url": "https://www.regen.network/",
-      "schema:description": "",
-      "regen:address": ""
-    },
-    "regen:projectType": "",
-    "regen:projectStartDate": "2019-01-01",
-    "regen:projectEndDate": "2023-05-31"
+    }
   }
   
