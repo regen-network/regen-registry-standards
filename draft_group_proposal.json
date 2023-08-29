@@ -1,0 +1,12 @@
+{
+ "group_policy_address": "regen1rkml5878l2daw3a7xvg48wqecnh9u9dn2dtl8g57rsctq5pnc00sxdy00c",
+ "messages": [
+  {
+   "@type": "/regen.ecocredit.v1.MsgUpdateClassMetadata",
+   "admin": "regen1rkml5878l2daw3a7xvg48wqecnh9u9dn2dtl8g57rsctq5pnc00sxdy00c",
+   "class_id": "5",
+   "new_metadata": "{\"name\": \"sheep grazing in vineyard systems\"}"
+  }
+ ],
+ "metadata": "ipfs://CID"
+}
