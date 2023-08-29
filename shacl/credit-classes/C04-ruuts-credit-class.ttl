@@ -19,17 +19,6 @@ regen:C04-CreditClassShape a sh:NodeShape ;
     sh:maxCount 1 ;
   ] ;
   sh:property [
-    sh:path regen:coBenefits ;
-    sh:node dash:ListShape ;
-    sh:property [
-      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
-      sh:datatype xsd:string ;
-      sh:minLength 1 ;
-    ] ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-  ] ;
-  sh:property [
     sh:path regen:geographicApplicability ;
     sh:datatype xsd:string ;
   ] ;
@@ -68,14 +57,14 @@ regen:C04-CreditClassShape a sh:NodeShape ;
   ] ;
   sh:property [
     sh:path regen:creditingTerm ;
-    sh:node schema:activityDuration ;
+    sh:node schema:Duration ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:minLength 1 ;
   ] ;
   sh:property [
     sh:path regen:lookbackPeriod ;
-    sh:node schema:activityDuration ;
+    sh:node schema:Duration ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:minLength 1 ;
@@ -89,14 +78,12 @@ regen:C04-CreditClassShape a sh:NodeShape ;
   ] ;
   sh:property [
     sh:path regen:monitoringFrequency ;
-    sh:datatype schema:frequency ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:minLength 1 ;
   ] ;
   sh:property [
     sh:path regen:verificationFrequency ;
-    sh:node schema:frequency ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:minLength 1 ;
@@ -142,7 +129,7 @@ regen:BufferPoolAccountShape a sh:NodeShape ;
     sh:minLength 1 ;
   ] ;
   sh:property [
-    sh:path regen:walletAddress ;
+    sh:path regen:address ;
     sh:datatype xsd:string ;
     sh:minCount 1 ;
   ] ;
@@ -154,17 +141,12 @@ regen:BufferPoolAccountShape a sh:NodeShape ;
 .
 
 regen:BufferPoolAccountsShape sh:path regen:bufferPoolAccounts ;
-  sh:node dash:ItemList ;
+  sh:node dash:ListShape ;
   sh:minCount 1 ;
   sh:maxCount 1 ;
   sh:property [
-    sh:path schema:itemListElement ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:property [
       sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
       sh:node regen:BufferPoolAccountShape ;
       sh:minCount 1 ;
-    ] ;
-  ] 
+  ] ;
 .
