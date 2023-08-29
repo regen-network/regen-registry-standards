@@ -60,34 +60,29 @@ regen:C05-CreditClassShape a sh:NodeShape ;
     sh:node schema:Duration ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
-    sh:minLength 1 ;
   ] ;
   sh:property [
     sh:path regen:lookbackPeriod ;
     sh:node schema:Duration ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
-    sh:minLength 1 ;
   ] ;
   sh:property [
     sh:path regen:allowsAggregatedProjects ;
     sh:node schema:Boolean ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
-    sh:minLength 1 ;
   ] ;
   sh:property [
     sh:path regen:monitoringFrequency ;
     sh:datatype schema:Duration ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
-    sh:minLength 1 ;
   ] ;
   sh:property [
     sh:path regen:verificationFrequency ;
     sh:node schema:Duration ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
-    sh:minLength 1 ;
   ] ;
 .
