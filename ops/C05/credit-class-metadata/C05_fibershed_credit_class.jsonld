@@ -60,7 +60,7 @@
   "regen:landOwnershipType": [
     "Private"
   ],
-  "regen:aggregatedProjects": false,
+  "regen:allowsAggregatedProjects": false,
   "regen:eligibleActivities": [
     "High-density, short-duration rotational targeted sheep grazing"
   ],
