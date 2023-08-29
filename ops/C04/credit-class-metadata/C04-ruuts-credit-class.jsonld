@@ -50,6 +50,12 @@
     },
     "regen:permanencePeriod": {
       "@type": "schema:Duration"
+    },
+    "regen:monitoringFrequency": {
+      "@type": "schema:Duration"
+    }, 
+    "regen:verificationFrequency": {
+      "@type": "schema:Duration"
     }
   },
   "@type": "regen:C04-CreditClass",
@@ -101,8 +107,8 @@
   "regen:lookbackPeriod": "P-14Y",
   "regen:permanencePeriod": "P20Y",
   "regen:aggregatedProjects": true,
-  "regen:monitoringFrequency": "Annual",
-  "regen:verificationFrequency": "Five year",
+  "regen:monitoringFrequency": "P1Y",
+  "regen:verificationFrequency": "P5Y",
   "regen:verificationMethods": [
     "Ruuts Internal Quality Assurance",
     "Third-Party ISO 14064-3 Verification"
