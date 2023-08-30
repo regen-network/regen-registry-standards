@@ -22,6 +22,9 @@
     },
     "regen:monitoringFrequency": {
       "@type": "schema:Duration"
+    },
+    "regen:coBenefits": {
+      "@container": "@list"
     }
   },
   "@type": "regen:KSH01-Project",
@@ -51,6 +54,7 @@
     "qudt:unit": "unit:HA",
     "qudt:numericValue": 0
   },
+  "regen:ProjectBenefits": [""],
   "regen:projectActivity": "",
   "regen:projectType": "",
   "regen:projectStartDate": "",

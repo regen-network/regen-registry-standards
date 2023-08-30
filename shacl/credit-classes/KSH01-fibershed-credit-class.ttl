@@ -8,7 +8,7 @@
 regen:KSH01-CreditClassShape a sh:NodeShape ;
   sh:targetClass regen:KSH01-CreditClass ;
   sh:property [
-    sh:path regen:projectBenefits ;
+    sh:path regen:coBenefits ;
     sh:node dash:ListShape ;
     sh:property [
       sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;

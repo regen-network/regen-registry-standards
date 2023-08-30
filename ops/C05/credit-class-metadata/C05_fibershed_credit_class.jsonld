@@ -6,7 +6,7 @@
     "schema:url": {
       "@type": "schema:URL"
     }, 
-    "regen:projectBenefits": {
+    "regen:coBenefits": {
       "@container": "@list"
     },
     "regen:creditingPeriod": {
@@ -44,13 +44,42 @@
   "schema:name": "Credit Class for Sheep Grazing in Vineyard Systems",
   "schema:description": "This Credit Class and its accompanying methodology are designed to support the use of high-density, short-duration rotational targeted sheep grazing in vineyard systems to improve ecosystem functioning through active management of the soil and herbaceous cover in the vineyard understory. As with other Environmental Stewardship methodologies, the environmental benefits are implicit in the practice. Projects being developed under the Methodology for Grazing in Vineyard Systems are expected, based on prior research, to result in positive ecological outcomes. This methodology is new and innovative, and will be improved as new projects are created and lessons are learned.",
   "schema:url": "https://registry.regen.network/v/regen-registry-credit-classes/regen-registry-credit-classes-1/credit-class-for-grazing-in-vineyard-systems-v1.0",
-  "regen:projectBenefits": [
-    "Improved rates of nutrient cycling",
-    "Improved nutrient retention",
-    "Reductions in external inputs",
-    "Increased soil microbial biomass",
-    "Improved soil structure and hydrological properties",
-    "Increased soil carbon storage"
+  "regen:coBenefits": [
+    {
+      "@id": "regen:ImprovedRatesOfNutrientCycling",
+      "@type": "regen:ProjectBenefit",
+      "schema:name": "Improved rates of nutrient cycling"
+    },
+    {
+      "@id": "regen:ImprovedNutrientRetention",
+      "@type": "regen:ProjectBenefit",
+      "schema:name": "Improved nutrient retention"
+    },
+    {
+      "@id": "regen:ReductionsInExternalInputs",
+      "@type": "regen:ProjectBenefit",
+      "schema:name": "Reductions in external inputs"
+    },
+    {
+      "@id": "regen:ReductionsInExternalInputs",
+      "@type": "regen:ProjectBenefit",
+      "schema:name": "Reductions in external inputs"
+    },
+    {
+      "@id": "regen:IncreasedSoilMicrobialBiomass",
+      "@type": "regen:ProjectBenefit",
+      "schema:name": "Increased soil microbial biomass"
+    },
+    {
+      "@id": "regen:ImprovedSoilStructureAndHydrologicalProperties",
+      "@type": "regen:ProjectBenefit",
+      "schema:name": "Improved soil structure and hydrological properties"
+    },
+    {
+      "@id": "regen:IncreasedSoilCarbonStorage",
+      "@type": "regen:ProjectBenefit",
+      "schema:name": "Increased soil carbon storage"
+    }
   ],
   "regen:creditingPeriod": "P1Y",
   "regen:ecosystemType": [
