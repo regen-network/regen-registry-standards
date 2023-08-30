@@ -61,11 +61,6 @@
       "schema:name": "Reductions in external inputs"
     },
     {
-      "@id": "regen:ReductionsInExternalInputs",
-      "@type": "regen:ProjectBenefit",
-      "schema:name": "Reductions in external inputs"
-    },
-    {
       "@id": "regen:IncreasedSoilMicrobialBiomass",
       "@type": "regen:ProjectBenefit",
       "schema:name": "Increased soil microbial biomass"
