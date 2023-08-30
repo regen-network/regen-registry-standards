@@ -22,9 +22,6 @@
     },
     "regen:monitoringFrequency": {
       "@type": "schema:Duration"
-    },
-    "regen:coBenefits": {
-      "@container": "@list"
     }
   },
   "@type": "regen:KSH01-Project",
@@ -54,43 +51,6 @@
     "qudt:unit": "unit:HA",
     "qudt:numericValue": 126.6
   },
-  "regen:coBenefits": [
-    {
-      "@id": "regen:ImprovedRatesOfNutrientCycling",
-      "@type": "regen:ProjectBenefit",
-      "schema:name": "Improved rates of nutrient cycling"
-    },
-    {
-      "@id": "regen:ImprovedNutrientRetention",
-      "@type": "regen:ProjectBenefit",
-      "schema:name": "Improved nutrient retention"
-    },
-    {
-      "@id": "regen:ReductionsInExternalInputs",
-      "@type": "regen:ProjectBenefit",
-      "schema:name": "Reductions in external inputs"
-    },
-    {
-      "@id": "regen:ReductionsInExternalInputs",
-      "@type": "regen:ProjectBenefit",
-      "schema:name": "Reductions in external inputs"
-    },
-    {
-      "@id": "regen:IncreasedSoilMicrobialBiomass",
-      "@type": "regen:ProjectBenefit",
-      "schema:name": "Increased soil microbial biomass"
-    },
-    {
-      "@id": "regen:ImprovedSoilStructureAndHydrologicalProperties",
-      "@type": "regen:ProjectBenefit",
-      "schema:name": "Improved soil structure and hydrological properties"
-    },
-    {
-      "@id": "regen:IncreasedSoilCarbonStorage",
-      "@type": "regen:ProjectBenefit",
-      "schema:name": "Increased soil carbon storage"
-    }
-  ],
   "regen:projectActivity": "High Density, Short Duration Sheep Grazing",
   "regen:projectType": "Environmental Stewardship",
   "regen:projectStartDate": "2019-01-01",
