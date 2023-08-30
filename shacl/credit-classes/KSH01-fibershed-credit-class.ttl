@@ -5,8 +5,8 @@
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-regen:C05-CreditClassShape a sh:NodeShape ;
-  sh:targetClass regen:C05-CreditClass ;
+regen:KSH01-CreditClassShape a sh:NodeShape ;
+  sh:targetClass regen:KSH01-CreditClass ;
   sh:property [
     sh:path regen:projectBenefits ;
     sh:node dash:ListShape ;
@@ -56,7 +56,7 @@ regen:C05-CreditClassShape a sh:NodeShape ;
     sh:maxCount 1 ;
   ] ;
   sh:property [
-    sh:path regen:creditingTerm ;
+    sh:path regen:creditingPeriod ;
     sh:node schema:Duration ;
     sh:minCount 1 ;
     sh:maxCount 1 ;

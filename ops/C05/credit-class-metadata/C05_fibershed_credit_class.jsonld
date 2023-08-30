@@ -6,7 +6,7 @@
     "schema:url": {
       "@type": "schema:URL"
     }, 
-    "regen:coBenefits": {
+    "regen:projectBenefits": {
       "@container": "@list"
     },
     "regen:creditingPeriod": {

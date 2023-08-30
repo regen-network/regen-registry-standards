@@ -1,72 +1,59 @@
 {
-    "@context": {
-      "schema": "http://schema.org/",
-      "regen": "https://schema.regen.network#",
-      "qudt": "http://qudt.org/schema/qudt/",
-      "unit": "http://qudt.org/vocab/unit/",
-      "xsd": "http://www.w3.org/2001/XMLSchema#",
-      "schema:url": {
-        "@type": "schema:URL"
-      },
-      "qudt:unit": {
-        "@type": "qudt:Unit"
-      },
-      "qudt:numericValue": {
-        "@type": "xsd:double"
-      },
-      "regen:projectStartDate": {
-        "@type": "xsd:date"
-      },
-      "regen:projectEndDate": {
-        "@type": "xsd:date"
-      }
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "https://schema.regen.network#",
+    "qudt": "http://qudt.org/schema/qudt/",
+    "unit": "http://qudt.org/vocab/unit/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema:url": {
+      "@type": "schema:URL"
     },
-    "@type": "regen:KSH01-Project",
-    "schema:name": "Grgich Hills Estate Regenerative Sheep Grazing",
-    "regen:projectActivity": {
-        "schema:name": ""
+    "qudt:unit": {
+      "@type": "qudt:Unit"
     },
-    "regen:projectSize": {
-        "qudt:unit": "unit:HA",
-        "qudt:numericValue": 126.6
+    "qudt:numericValue": {
+      "@type": "xsd:double"
     },
-    "regen:projectType": "",
-    "regen:projectStartDate": "2019-01-01",
-    "regen:projectEndDate": "2023-05-31",
-    "regen:projectDesignDocument": {
-        "schema:name": "",
-        "schema:url": ""
+    "regen:projectStartDate": {
+      "@type": "xsd:date"
     },
-    "regen:projectDeveloper": {
-      "@type": "regen:Organization",
-      "schema:name": "Regen Network Development, PBC",
-      "schema:url": "regen187d6u5ypmhdc2ypwfwt2ye6d424a0cjvxw72gu"
+    "regen:projectEndDate": {
+      "@type": "xsd:date"
     },
-    "regen:projectVerifier": {
-      "@type": "regen:Organization",
-      "schema:name": "Regen Network Development Science Team",
-      "schema:url": "regen187d6u5ypmhdc2ypwfwt2ye6d424a0cjvxw72gu"
-    },
-    "schema:location": {
-      "@context": {
-        "type": "@type",
-        "@vocab": "https://purl.org/geojson/vocab#",
-        "coordinates": {
-          "@container": "@list"
-        },
-        "bbox": {
-          "@container": "@list"
-        }
-      },
-      "type": "Feature",
-      "place_name": "Rutherford, California",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-            [38.4082,-122.3754], 
-            [38.2063,-122.2429]
-        ]
-      }
+    "regen:monitoringFrequency": {
+      "@type": "schema:Duration"
     }
-  }
+  },
+  "@type": "regen:KSH01-Project",
+  "schema:name": "",
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "type": "Feature",
+    "place_name": "",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [ 
+        0,
+        0
+      ]
+    }
+  },
+  "regen:projectSize": {
+    "qudt:unit": "unit:HA",
+    "qudt:numericValue": 0
+  },
+  "regen:projectActivity": "",
+  "regen:projectType": "",
+  "regen:projectStartDate": "",
+  "regen:projectEndDate": ""
+}
   
