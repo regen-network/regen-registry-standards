@@ -104,9 +104,9 @@
     "Integrated Cro-Livestock (ICL)"
   ],
   "regen:creditingTerm": "P10Y",
-  "regen:lookbackPeriod": "P-14Y",
+  "regen:lookbackPeriod": "-P14Y",
   "regen:permanencePeriod": "P20Y",
-  "regen:aggregatedProjects": true,
+  "regen:allowsAggregatedProjects": true,
   "regen:monitoringFrequency": "P1Y",
   "regen:verificationFrequency": "P5Y",
   "regen:verificationMethods": [

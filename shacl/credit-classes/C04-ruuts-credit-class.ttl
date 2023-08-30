@@ -70,7 +70,7 @@ regen:C04-CreditClassShape a sh:NodeShape ;
     sh:minLength 1 ;
   ] ;
   sh:property [
-    sh:path regen:aggregatedProjects ;
+    sh:path regen:allowsAggregatedProjects ;
     sh:node schema:Boolean ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
