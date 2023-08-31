@@ -78,12 +78,14 @@ regen:C04-CreditClassShape a sh:NodeShape ;
   ] ;
   sh:property [
     sh:path regen:monitoringFrequency ;
+    sh:node schema:Duration ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:minLength 1 ;
   ] ;
   sh:property [
     sh:path regen:verificationFrequency ;
+    sh:node schema:Duration ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:minLength 1 ;
