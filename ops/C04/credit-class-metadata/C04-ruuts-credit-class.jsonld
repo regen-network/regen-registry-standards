@@ -79,7 +79,7 @@
   ],
   "regen:coBenefits": [
     {
-      "@id": "regen:WaterInfultration",
+      "@id": "regen:WaterInfiltration",
       "@type": "regen:MeasuredCoBenefit",
       "schema:name": "Water Infiltration"
     },
