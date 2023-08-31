@@ -23,6 +23,12 @@
     },
     "regen:certifications": {
       "@container": "@list"
+    },
+    "regen:coBenefits": {
+      "@container": "@list"
+    },
+    "regen:SDGs": {
+      "@container": "@list"
     }
   },
   "@type": "regen:XXX-CreditClass",
@@ -66,6 +72,37 @@
     {
       "schema:name": "",
       "schema:url": ""
+    }
+  ],
+  "regen:primaryImpact": {
+    "@id": "",
+    "schema:name": "",
+    "regen:SDGs": [
+      {
+        "@id": ""
+      }
+    ]
+  },
+  "regen:coBenefits": [
+    {
+      "@id": "",
+      "@type": "regen:MeasuredCoBenefit",
+      "schema:name": "",
+      "regen:SDGs": [
+        {
+          "@id": ""
+        }
+      ]
+    },
+    {
+      "@id": "",
+      "@type": "regen:ProjectBenefit",
+      "schema:name": "",
+      "regen:SDGs": [
+        {
+          "@id": ""
+        }
+      ]
     }
   ]
 }

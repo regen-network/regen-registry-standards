@@ -25,6 +25,9 @@
     },
     "regen:ratings": {
       "@container": "@list"
+    },
+    "regen:coBenefits": {
+      "@container": "@list"
     }
   },
   "@type": "regen:XXX-Project",
@@ -76,6 +79,16 @@
       "schema:name": "",
       "schema:ratingValue": "",
       "schema:url": ""
+    }
+  ],
+  "regen:primaryImpact": {
+    "@id": "",
+    "schema:description": ""
+  },
+  "regen:coBenefits": [
+    {
+      "@id": "",
+      "schema:description": ""
     }
   ]
 }

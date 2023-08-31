@@ -7,7 +7,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 regen:CreditClassShape a sh:NodeShape ;
-  sh:targetClass regen:CreditClass, regen:C01-CreditClass, regen:C02-CreditClass, regen:C03-CreditClass, regen:C04-CreditClass;
+  sh:targetClass
+    regen:CreditClass,
+    regen:C01-CreditClass, regen:C02-CreditClass, regen:C03-CreditClass, regen:C04-CreditClass,
+    regen:KSH01-CreditClass;
   sh:property [
     sh:path schema:name ;
     sh:minCount 1 ;
@@ -42,10 +45,15 @@ regen:CreditClassShape a sh:NodeShape ;
       sh:datatype xsd:string ;
       sh:minLength 1 ;
     ] ;
-    sh:minCount 1 ;
     sh:maxCount 1 ;
   ] ;
-  sh:property regen:OffsetGenerationMethodPropertyShape ;
+  sh:or (
+    [
+      sh:property regen:OffsetGenerationMethodPropertyShape ;
+    ] [
+      sh:property regen:creditGenerationMethodPropertyShape ;
+    ]
+  ) ;
   sh:or (
     [
       sh:property [
@@ -71,11 +79,48 @@ regen:CreditClassShape a sh:NodeShape ;
   ) ;
   sh:property regen:ApprovedMethodologiesPropertyShape ;
   sh:property [
-    sh:path regen:certifications;
+    sh:path regen:certifications ;
     sh:node dash:ListShape ;
     sh:property [
       sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
       sh:node regen:NameUrlShape;
+    ] ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:primaryImpact ;
+    sh:nodeKind sh:IRI ;
+    sh:node regen:OptionalNameSGDsShape ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:coBenefits ;
+    sh:node dash:ListShape ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:nodeKind sh:IRI ;
+      sh:node regen:OptionalNameSGDsShape ;
+      sh:or (
+        [ sh:class regen:MeasuredCoBenefit ]
+        [ sh:class regen:ProjectBenefit ]
+      )
+    ] ;
+    sh:maxCount 1 ;
+  ]
+.
+
+regen:OptionalNameSGDsShape a sh:NodeShape ;
+  sh:property [
+    sh:path schema:name ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:string ;
+  ] ;
+  sh:property [
+    sh:path regen:SDGs ;
+    sh:node dash:ListShape ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:nodeKind sh:IRI ;
     ] ;
     sh:maxCount 1 ;
   ]
