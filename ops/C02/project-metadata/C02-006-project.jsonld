@@ -39,7 +39,7 @@
   "regen:projectDeveloper": {
     "@type": "regen:Organization",
     "schema:name": "Lookout Mountain Conservancy",
-    "schema:url": "https://lookoutmountainconservancy.org",
+    "schema:url": "https://lookoutmountainconservancy.org"
   },
   "regen:projectType": "Agriculture Forestry and Other Land Use",
   "regen:projectActivity": {
