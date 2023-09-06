@@ -51,7 +51,7 @@ regen:CreditClassShape a sh:NodeShape ;
     [
       sh:property regen:OffsetGenerationMethodPropertyShape ;
     ] [
-      sh:property regen:creditGenerationMethodPropertyShape ;
+      sh:property regen:CreditGenerationMethodPropertyShape ;
     ]
   ) ;
   sh:or (
