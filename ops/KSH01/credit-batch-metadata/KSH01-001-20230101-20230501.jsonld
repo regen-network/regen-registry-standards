@@ -1,0 +1,31 @@
+{
+    "@context": {
+      "schema": "http://schema.org/",
+      "regen": "https://schema.regen.network#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "regen:verificationReports": {
+        "@container": "@list"
+      },
+      "regen:monitoringReports": {
+        "@container": "@list"
+      },
+      "schema:url": {
+        "@type": "schema:URL"
+      }
+    },
+    "regen:verificationReports": [
+      {
+        "schema:url": "https://regen-registry.s3.amazonaws.com/registry/C05-Sheep-Grazing-in-Vineyard-Systems-Credit-Class/Projects/KSH01-001/project-documentation/2023+Grazing+Season+Verification+Report+-+Grgich+Hills+Estate.pdf"
+      }
+    ],
+    "regen:monitoringReports": [
+        {
+          "schema:url": "https://regen-registry.s3.amazonaws.com/registry/C05-Sheep-Grazing-in-Vineyard-Systems-Credit-Class/Projects/KSH01-001/project-documentation/2023+Grazing+Season+Monitoring+Report+-+Grgich+Hills+Estate.pdf"
+        }
+    ],
+    "regen:projectVerifier": {
+      "schema:name": "RND Science Team",
+      "schema:url": "https://app.regen.network/ecocredits/accounts/regen1aa3lclex9w9fxrna5xu68ajruwgvsxklrl2c47"
+    }
+  }
+  
