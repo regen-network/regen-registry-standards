@@ -9,7 +9,7 @@
 regen:CreditClassShape a sh:NodeShape ;
   sh:targetClass
     regen:CreditClass,
-    regen:C01-CreditClass, regen:C02-CreditClass, regen:C03-CreditClass, regen:C04-CreditClass,
+    regen:C01-CreditClass, regen:C02-CreditClass, regen:C03-CreditClass, regen:C04-CreditClass, regen:C05-CreditClass,
     regen:KSH01-CreditClass;
   sh:property [
     sh:path schema:name ;

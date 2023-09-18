@@ -1,0 +1,99 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "https://schema.regen.network#",
+    "qudt": "http://qudt.org/schema/qudt/",
+    "unit": "http://qudt.org/vocab/unit/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema:url": {
+      "@type": "schema:URL"
+    },
+    "qudt:unit": {
+      "@type": "qudt:Unit"
+    },
+    "regen:biocharApplicationLocation": {
+      "@container": "@list"
+    },
+    "regen:biocharApplicationMethod": {
+      "@container": "@list"
+    },
+    "regen:biocharFeedstockMaterial": {
+      "@container": "@list"
+    },
+    "regen:biocharProductionMethod": {
+      "@container": "@list"
+    },
+    "qudt:numericValue": {
+      "@type": "xsd:double"
+    },
+    "regen:projectStartDate": {
+      "@type": "xsd:date"
+    },
+    "regen:projectEndDate": {
+      "@type": "xsd:date"
+    },
+    "regen:permanencePeriodStartDate": {
+      "@type": "xsd:date"
+    },
+    "regen:permanencePeriodEndDate": {
+      "@type": "xsd:date"
+    },
+    "regen:siteLocations": {
+      "@container": "@list"
+    }
+  },
+  "@type": "regen:C05-Project",
+  "schema:name": "Kulshan Carbon Trust Biochar Project",
+  "schema:description": "In 2022, Kulshan Carbon Trust (KCT) initiated three biochar pilot projects across Washington's Whatcom, Skagit, and Island Counties, involving 14 stakeholders. The projects aimed to explore diverse biochar production and application methods while also generating verifiable carbon credits. Three techniques were deployed: slash pile burns, Wilson Biochar Ring of Fire kilns, and conservation burns. The projects used locally sourced waste materials, diverting them from less sustainable disposal methods and followed Verra VM0044 methodology for carbon accounting. The biochar produced was reintegrated into local ecosystems or utilized in industrial compost, contributing to improved waste management and reduced carbon emissions.",
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "type": "Feature",
+    "place_name": "Bellingham, WA",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -123.060915,
+        48.551733
+      ]
+    }
+  },
+  "regen:projectSize": {
+    "qudt:unit": "unit:HA",
+    "qudt:numericValue": 1
+  },
+  "regen:projectActivity": {
+    "schema:name": "Biochar production and in-stand forest application"
+  },
+  "regen:projectType": "Waste Management",
+  "regen:projectStartDate": "2022-11-22",
+  "regen:projectEndDate": "2023-11-22",
+  "regen:permanencePeriodStartDate": "2022-11-22",
+  "regen:permanencePeriodEndDate": "2122-11-22",
+  "regen:aggregatedProject": true,
+  "regen:numberOfSites": 2,
+  "regen:siteLocations": [
+    "Whatcom County",
+    "Island County"
+  ],
+  "regen:biocharProductionMethod": [
+    "Low-tech conservation burns"
+  ],
+  "regen:biocharFeedstockMaterial": [
+    "Wood waste"
+  ],
+  "regen:biocharApplicationMethod": [
+    "In-stand subsurface application"
+  ],
+  "regen:biocharApplicationLocation": [
+    "Forest"
+  ]
+}

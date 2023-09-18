@@ -9,24 +9,41 @@
 regen:KSH01-CreditBatchShape a sh:NodeShape ;
   sh:targetClass regen:KSH01-CreditBatch ;
   sh:property [
-    sh:path regen:verificationReports ;
-    sh:node dash:ListShape ;
-    sh:property [
-      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
-      sh:node regen:UrlShape ;
-    ] ;
+    sh:path regen:verificationReport ;
+    sh:node regen:NameUrlShape ;
   ] ;
   sh:property [
-    sh:path regen:monitoringReports ;
-    sh:node dash:ListShape ;
-    sh:property [
-      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
-      sh:node regen:UrlShape ;
-    ] ;
+    sh:path regen:monitoringReport ;
+    sh:node regen:NameUrlShape ;
   ] ;
   sh:property [
     sh:path regen:projectVerifier ;
     sh:node regen:NameUrlShape ;
+  ] ;
+  sh:property [
+    sh:path regen:supplementalDatasets ;
+    sh:node dash:ListShape ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:node regen:NameOptionalUrlShape ;
+    ] ;
+    sh:maxCount 1 ;
+  ] ;
+.
+
+regen:NameOptionalUrlShape a sh:NodeShape ;
+  sh:property [
+    sh:path schema:name ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+    sh:datatype xsd:string ;
+  ] ;
+  
+  sh:property [
+    sh:path schema:url ;
+    sh:maxCount 1 ;
+    sh:datatype schema:URL ;
   ] ;
 .
 

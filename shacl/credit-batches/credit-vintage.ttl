@@ -36,6 +36,14 @@ regen:CreditVintageShape
     sh:path regen:initialIssuanceTotalGrossAmount ;
     sh:minExclusive 0;
   ] ;
+  sh:property [
+    sh:path regen:batchData ;
+    sh:node dash:ListShape ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:datatype xsd:string ;
+    ] ;
+  ] ;
 .
 
 # regen:CreditVintageInitialDistributionShape defines a credit vintage initial distribution that is stored

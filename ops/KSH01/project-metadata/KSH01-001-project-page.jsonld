@@ -17,22 +17,22 @@
   "regen:story": "Since its organic certification in 2006, Grgich Farms has been at the forefront of sustainable agriculture. In 2019, they integrated regenerative grazing practices, marking a significant shift towards holistic farming. This move not only enhanced soil and grape health but also reduced vineyard management costs.\n\nGrazing animals, especially sheep and cattle, play a pivotal role in this transformation. When managed effectively, grazing boosts underground carbon storage through mechanisms like root shedding and increased microbial activity. The waste from these grazers revitalizes the soil, enhancing nutrient cycling and reducing the reliance on synthetic fertilizers. Additionally, by lowering the density of fire-prone vegetation, grazing acts as a natural wildfire mitigation strategy. This practice also supports a diverse range of wildlife, fostering a balanced ecosystem. When thoughtfully integrated into cropping systems, grazing aids in drawing down carbon from the atmosphere, offering a solution to climate change, increasing resilience against drought, and naturally boosting agricultural productivity.\n\nA shining example of the potential of managed grazing is the Kaos Sheep Outfit in Lake County, CA. Part of the Fibershed producer network, this family-run company uses Australian Corriedale sheep in varied environments, from vineyards to golf courses. Kaos is enthusiastic about studies highlighting managed grazing's positive impact on soil health and carbon content, especially in mixed-crop settings. Such research can inspire more collaboration between ranchers, farmers, and shepherds, leading to innovative carbon farming solutions.\n\nHowever, challenges persist. Contract grazers like Kaos face financial pressures due to rising costs, threatening the sustainability of their invaluable work, even as its ecological benefits gain wider recognition.",
   "regen:storyTitle": "The Benefits of Contract Grazing For Vineyard Systems",
   "regen:previewPhoto": {
-    "schema:url": "https://regen-registry.s3.amazonaws.com/registry/C05-Sheep-Grazing-in-Vineyard-Systems-Credit-Class/Projects/KSH01-001/project-photos/grgich1.jpg",
+    "schema:url": "https://regen-registry.s3.amazonaws.com/registry/KSH01-Sheep-Grazing-in-Vineyard-Systems-Credit-Class/Projects/KSH01-001/project-photos/grgich1.jpg",
     "schema:creditText": "Paige Green Photography"
   },
   "schema:description": "This project, in Rutherford, CA will use high-density, short-duration rotational targeted sheep grazing in vineyard systems to improve ecosystem functioning through active management of the soil and herbaceous cover in the vineyard understory. This approach improves soil health, reduces costs, and enhances carbon storage. Grazing also mitigates wildfires, supports diverse wildlife, and offers climate change solutions. The Grgich Vineyard and Kaos Sheep Grazing Outfit exemplifies the benefits of managed grazing, especially in enhancing soil health and carbon content.",
   "regen:creditClassId": "KSH01",
   "regen:galleryPhotos": [
     {
-      "schema:url": "https://regen-registry.s3.amazonaws.com/registry/C05-Sheep-Grazing-in-Vineyard-Systems-Credit-Class/Projects/KSH01-001/project-photos/paigegreen_03.jpg",
+      "schema:url": "https://regen-registry.s3.amazonaws.com/registry/KSH01-Sheep-Grazing-in-Vineyard-Systems-Credit-Class/Projects/KSH01-001/project-photos/paigegreen_03.jpg",
       "schema:creditText": "Paige Green Photography"
     },
     {
-      "schema:url": "https://regen-registry.s3.amazonaws.com/registry/C05-Sheep-Grazing-in-Vineyard-Systems-Credit-Class/Projects/KSH01-001/project-photos/paigegreen_01.jpg",
+      "schema:url": "https://regen-registry.s3.amazonaws.com/registry/KSH01-Sheep-Grazing-in-Vineyard-Systems-Credit-Class/Projects/KSH01-001/project-photos/paigegreen_01.jpg",
       "schema:creditText": "Paige Green Photography"
     },
     {
-      "schema:url": "https://regen-registry.s3.amazonaws.com/registry/C05-Sheep-Grazing-in-Vineyard-Systems-Credit-Class/Projects/KSH01-001/project-photos/paigegreen_02.jpg",
+      "schema:url": "https://regen-registry.s3.amazonaws.com/registry/KSH01-Sheep-Grazing-in-Vineyard-Systems-Credit-Class/Projects/KSH01-001/project-photos/paigegreen_02.jpg",
       "schema:creditText": "Paige Green Photography"
     }
   ]

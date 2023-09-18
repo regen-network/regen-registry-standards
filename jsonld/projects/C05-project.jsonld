@@ -1,0 +1,88 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "https://schema.regen.network#",
+    "qudt": "http://qudt.org/schema/qudt/",
+    "unit": "http://qudt.org/vocab/unit/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema:url": {
+      "@type": "schema:URL"
+    },
+    "qudt:unit": {
+      "@type": "qudt:Unit"
+    },
+    "regen:biocharApplicationLocation": {
+      "@container": "@list"
+    },
+    "regen:biocharApplicationMethod": {
+      "@container": "@list"
+    },
+    "regen:biocharFeedstockMaterial": {
+      "@container": "@list"
+    },
+    "regen:biocharProductionMethod": {
+      "@container": "@list"
+    },
+    "qudt:numericValue": {
+      "@type": "xsd:double"
+    },
+    "regen:projectStartDate": {
+      "@type": "xsd:date"
+    },
+    "regen:projectEndDate": {
+      "@type": "xsd:date"
+    },
+    "regen:permanencePeriodStartDate": {
+      "@type": "xsd:date"
+    },
+    "regen:permanencePeriodEndDate": {
+      "@type": "xsd:date"
+    },
+    "regen:siteLocations": {
+      "@container": "@list"
+    }
+  },
+  "@type": "regen:C05-Project",
+  "schema:name": "",
+  "schema:description": "",
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "type": "Feature",
+    "place_name": "",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "regen:projectSize": {
+    "qudt:unit": "unit:HA",
+    "qudt:numericValue": 0
+  },
+  "regen:projectActivity": {
+    "schema:name": ""
+  },
+  "regen:projectType": "",
+  "regen:projectStartDate": "",
+  "regen:projectEndDate": "",
+  "regen:permanencePeriodStartDate": "",
+  "regen:permanencePeriodEndDate": "",
+  "regen:aggregatedProject": true,
+  "regen:numberOfSites": 0,
+  "regen:siteLocations": [],
+  "regen:biocharProductionMethod": [],
+  "regen:biocharFeedstockMaterial": [],
+  "regen:biocharApplicationMethod": [],
+  "regen:biocharApplicationLocation": []
+}

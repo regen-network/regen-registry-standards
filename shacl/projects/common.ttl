@@ -101,6 +101,32 @@ regen:ProjectOptionalEndDatePropertyShape sh:path regen:projectEndDate ;
   sh:group regen:ProjectPageMetadataGroup ;
 .
 
+regen:PermanencePeriodStartDatePropertyShape sh:path regen:permanencePeriodStartDate ;
+  sh:datatype xsd:date ;
+  sh:minCount 1 ;
+  sh:maxCount 1 ;
+  sh:group regen:ProjectPageMetadataGroup ;
+.
+
+regen:PermanencePeriodOptionalStartDatePropertyShape sh:path regen:permanencePeriodStartDate ;
+  sh:datatype xsd:date ;
+  sh:maxCount 1 ;
+  sh:group regen:ProjectPageMetadataGroup ;
+.
+
+regen:PermanencePeriodEndDatePropertyShape sh:path regen:permanencePeriodEndDate ;
+  sh:datatype xsd:date ;
+  sh:minCount 1 ;
+  sh:maxCount 1 ;
+  sh:group regen:ProjectPageMetadataGroup ;
+.
+
+regen:PermanencePeriodOptionalEndDatePropertyShape sh:path regen:permanencePeriodEndDate ;
+  sh:datatype xsd:date ;
+  sh:maxCount 1 ;
+  sh:group regen:ProjectPageMetadataGroup ;
+.
+
 regen:ProjectTypePropertyShape sh:path regen:projectType ;
   sh:minCount 1 ;
   sh:maxCount 1 ;
