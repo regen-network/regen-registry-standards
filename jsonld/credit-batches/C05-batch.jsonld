@@ -10,6 +10,7 @@
       "@type": "schema:URL"
     }
   },
+  "@type": "regen:C05-CreditBatch",
   "regen:verificationReport": {
       "schema:name": "",
       "schema:url": ""

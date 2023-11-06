@@ -10,6 +10,7 @@
         "@type": "schema:URL"
       }
     },
+    "@type": "regen:KSH01-CreditBatch",
     "regen:verificationReport": {
         "schema:name": "2023 Grazing Season Verification Report - Grgich Hills Estate",
         "schema:url": "https://regen-registry.s3.amazonaws.com/registry/KSH01-Sheep-Grazing-in-Vineyard-Systems-Credit-Class/Projects/KSH01-001/project-documentation/2023+Grazing+Season+Verification+Report+-+Grgich+Hills+Estate.pdf"

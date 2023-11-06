@@ -10,7 +10,7 @@
 # Anchored
 
 regen:ProjectShape a sh:NodeShape ;
-  sh:targetClass regen:Project, regen:C01-Project, regen:C02-Project, regen:C03-Project, regen:C05-Project ;
+  sh:targetClass regen:Project, regen:C01-Project, regen:C02-Project, regen:C03-Project, regen:C05-Project, regen:KSH01-Project ;
   sh:property regen:NamePropertyShape ;
   sh:property regen:LocationPropertyShape ;
   sh:property regen:ProjectSizeOptionalPropertyShape ;

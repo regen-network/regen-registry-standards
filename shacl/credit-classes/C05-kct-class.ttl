@@ -8,13 +8,13 @@
 regen:C05-CreditClassShape a sh:NodeShape ;
   sh:targetClass regen:C05-CreditClass ;
   sh:property [
-    sh:path regen:aggregatedProjects ;
+    sh:path regen:allowsAggregatedProjects ;
     sh:node schema:Boolean ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
   ] ;
   sh:property [
-    sh:path regen:additionalityApproach ;
+    sh:path regen:additionalityAssessment ;
     sh:node dash:ListShape ;
     sh:property [
       sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
@@ -57,7 +57,16 @@ regen:C05-CreditClassShape a sh:NodeShape ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
   ] ;
-  sh:property regen:BufferPoolAccountsShape ;
+  sh:property [
+    sh:path regen:bufferPoolAccounts ;
+    sh:node dash:ListShape ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:node regen:BufferPoolAccountShape ;
+    ] ;
+    sh:minCount 1 ;
+    sh:maxCount 1;
+  ] ;
   sh:property [
     sh:path regen:creditingTerm ;
     sh:node schema:Duration ;
@@ -102,7 +111,7 @@ regen:C05-CreditClassShape a sh:NodeShape ;
     sh:maxCount 1 ;
   ] ;
   sh:property [
-    sh:path regen:leakageApproach ;
+    sh:path regen:leakageAssessment ;
     sh:node dash:ListShape ;
     sh:property [
       sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
@@ -160,27 +169,11 @@ regen:BufferPoolAccountShape a sh:NodeShape ;
   sh:property [
     sh:path regen:walletAddress ;
     sh:datatype xsd:string ;
-    sh:minCount 1 ;
+    sh:maxCount 1 ;
   ] ;
   sh:property [
     sh:path regen:poolAllocation ;
     sh:datatype xsd:string ;
-    sh:minCount 1 ;
-  ] ;
-.
-
-regen:BufferPoolAccountsShape sh:path regen:bufferPoolAccounts ;
-  sh:node dash:ItemList ;
-  sh:minCount 1 ;
-  sh:maxCount 1 ;
-  sh:property [
-    sh:path schema:itemListElement ;
-    sh:minCount 1 ;
     sh:maxCount 1 ;
-    sh:property [
-      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
-      sh:node regen:BufferPoolAccountShape ;
-      sh:minCount 1 ;
-    ] ;
-  ] 
+  ] ;
 .

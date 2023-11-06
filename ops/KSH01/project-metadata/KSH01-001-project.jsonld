@@ -51,7 +51,10 @@
     "qudt:unit": "unit:HA",
     "qudt:numericValue": 126.6
   },
-  "regen:projectActivity": "High Density, Short Duration Sheep Grazing",
+  "regen:projectActivity": {
+    "schema:name": "High Density, Short Duration Sheep Grazing",
+    "schema:url": "https://www.sciencedirect.com/science/article/pii/S0016706123002756"
+  },
   "regen:projectType": "Environmental Stewardship",
   "regen:projectStartDate": "2023-01-01",
   "regen:projectEndDate": "2023-05-31"

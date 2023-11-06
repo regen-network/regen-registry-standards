@@ -9,7 +9,7 @@
     "schema:url": {
       "@type": "schema:URL"
     },
-    "regen:additionalityApproach": {
+    "regen:additionalityAssessment": {
       "@container": "@list"
     },
     "regen:baselineMethod": {
@@ -19,6 +19,9 @@
       "@container": "@list"
     },
     "regen:biocharFeedstockMaterial": {
+      "@container": "@list"
+    },
+    "regen:bufferPoolAccounts": {
       "@container": "@list"
     },
     "regen:creditingTerm": {
@@ -36,7 +39,7 @@
     "regen:landOwnershipType": {
       "@container": "@list"
     },
-    "regen:leakageApproach": {
+    "regen:leakageAssessment": {
       "@container": "@list"
     },
     "regen:lookbackPeriod": {
@@ -65,11 +68,11 @@
   "schema:name": "Credit Class for Carbon Removal through Biochar Production",
   "schema:description": "The Biochar Carbon credit focuses on carbon removal and avoiding emissions that would have resulted from the decomposition of waste biomass. Carbon removal is the approved benefit that is monitored, quantified, and determines the number of credits issued. The approved benefit of atmospheric regulation through carbon sequestration is driven by carbon removals and reductions through the production and application of biochar to soils.",
   "schema:url": "https://registry.regen.network/v/regen-registry-credit-classes/regen-registry-credit-classes-1/credit-class-for-carbon-removal-through-biochar-production",
-  "regen:additionalityApproach": [
+  "regen:additionalityAssessment": [
     "Regulatory Surplus",
     "Positive List"
   ],
-  "regen:aggregatedProjects": true,
+  "regen:allowsAggregatedProjects": true,
   "regen:approvedMethodologies": {
     "@type": "schema:ItemList",
     "schema:itemListElement": [
@@ -82,11 +85,9 @@
       {
         "schema:name": "Appendix: In-Stand Surface Application of Biochar in Forestlands Methodology",
         "schema:url": "https://registry.regen.network/v/methodology-library/published-methodologies/appendix-in-stand-surface-application-of-biochar-in-forestlands-methodology",
-        "schema:identifier": "",
         "schema:version": "V1.0"
       }
-    ],
-    "schema:url": ""
+    ]
   },
   "regen:baselineMethod": [
     "Project Method"
@@ -102,16 +103,13 @@
     "Industrial waste",
     "Aquaculture plants"
   ],
-  "regen:bufferPoolAccounts": {
-    "@type": "schema:ItemList",
-    "schema:itemListElement": [
-      {
-        "schema:name": "Carbon Removal through Biochar Production Credit Class Buffer Pool",
-        "regen:walletAddress": "regen1wgjpjh42cr7t5sp5hgty4yrzww496a6yaznc9u4wsv9ac3xccu8szz2upa",
-        "regen:poolAllocation": "10%"
-      }
-    ]
-  },
+  "regen:bufferPoolAccounts": [
+    {
+      "schema:name": "Carbon Removal through Biochar Production Credit Class Buffer Pool",
+      "regen:walletAddress": "regen1wgjpjh42cr7t5sp5hgty4yrzww496a6yaznc9u4wsv9ac3xccu8szz2upa",
+      "regen:poolAllocation": "10%"
+    }
+  ],
   "regen:creditingTerm": "P2Y",
   "regen:creditGenerationMethod": [
     "Carbon Removal",
@@ -131,10 +129,10 @@
     "Private",
     "Tribal"
   ],
-  "regen:leakageApproach": [
+  "regen:leakageAssessment": [
     "Transport Emissions"
   ],
-  "regen:lookbackPeriod": "P-1Y",
+  "regen:lookbackPeriod": "-P1Y",
   "regen:measuredGHGs": [
     "Carbon Dioxide (CO2)",
     "Methane (CH4)"
