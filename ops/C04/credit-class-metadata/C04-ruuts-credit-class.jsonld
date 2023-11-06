@@ -39,20 +39,23 @@
     "regen:leakageApproach": {
       "@container": "@list"
     },
+    "regen:bufferPoolAccounts": {
+      "@container": "@list"
+    },
     "regen:creditingTerm": {
-      "@type": "schema:activityDuration"
+      "@type": "schema:Duration"
     },
     "regen:lookbackPeriod": {
-      "@type": "schema:activityDuration"
+      "@type": "schema:Duration"
     },
     "regen:permanencePeriod": {
-      "@type": "schema:activityDuration"
+      "@type": "schema:Duration"
     },
     "regen:monitoringFrequency": {
-      "@type": "schema:frequency"
+      "@type": "schema:Duration"
     }, 
     "regen:verificationFrequency": {
-      "@type": "schema:frequency"
+      "@type": "schema:Duration"
     }
   },
   "@type": "regen:C04-CreditClass",
@@ -75,8 +78,16 @@
     "Methane (CH4)"
   ],
   "regen:coBenefits": [
-    "Water Infultration",
-    "Biodiversity"
+    {
+      "@id": "regen:WaterInfiltration",
+      "@type": "regen:MeasuredCoBenefit",
+      "schema:name": "Water Infiltration"
+    },
+    {
+      "@id": "regen:Biodiversity",
+      "@type": "regen:MeasuredCoBenefit",
+      "schema:name": "Biodiversity"
+    }
   ],
   "regen:geographicApplicability": "Global",
   "regen:eligibleActivities": [
@@ -93,11 +104,11 @@
     "Integrated Cro-Livestock (ICL)"
   ],
   "regen:creditingTerm": "P10Y",
-  "regen:lookbackPeriod": "P-14Y",
+  "regen:lookbackPeriod": "-P14Y",
   "regen:permanencePeriod": "P20Y",
-  "regen:aggregatedProjects": true,
-  "regen:monitoringFrequency": "Annual",
-  "regen:verificationFrequency": "Five year",
+  "regen:allowsAggregatedProjects": true,
+  "regen:monitoringFrequency": "P1Y",
+  "regen:verificationFrequency": "P5Y",
   "regen:verificationMethods": [
     "Ruuts Internal Quality Assurance",
     "Third-Party ISO 14064-3 Verification"
@@ -111,19 +122,15 @@
         "schema:identifier": "",
         "schema:version": "V1.0"
       }
-    ],
-    "schema:url": ""
-  },
-  "regen:bufferPoolAccounts": {
-    "@type": "schema:ItemList",
-    "schema:itemListElement": [
-      {
-        "schema:name": "Credit Class (Pooled) Buffer Pool",
-        "regen:walletAddress": "regen17pmq7hp4upvmmveqexzuhzu64v36re3w3447n7dt46uwp594wtpsuuh7f6",
-        "regen:poolAllocation": "5%"
-      }
     ]
   },
+  "regen:bufferPoolAccounts": [
+    {
+      "schema:name": "Credit Class (Pooled) Buffer Pool",
+      "regen:address": "regen17pmq7hp4upvmmveqexzuhzu64v36re3w3447n7dt46uwp594wtpsuuh7f6",
+      "regen:poolAllocation": "5%"
+    }
+  ],
   "regen:additionalityApproach": [
     "Common Practice Analysis",
     "Regulatory Additionality"
