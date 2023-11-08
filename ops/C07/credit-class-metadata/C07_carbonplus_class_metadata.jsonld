@@ -55,7 +55,7 @@
       "@container": "@list"
     }
   },
-  "@type": "regen:C05-CreditClass",
+  "@type": "regen:C07-CreditClass",
   "schema:name": "CarbonPlus Grasslands Credit Class",
   "schema:description": "This Credit Class provide incentive and a structure to significantly increase the amount of hectares/acres under managed grazing worldwide by providing land stewards with the necessary incentives to make this important work possible. The CarbonPlus credit focuses on soil carbon sequestration in grassland ecosystems. The Plus indicates that co-benefits (or secondary ecological benefits) allow for a credit that accounts for more than just carbon.",
   "schema:url": "https://registry.regen.network/v/regen-registry-credit-classes/regen-registry-credit-classes-1/carbonplus-grasslands-credit-class",
