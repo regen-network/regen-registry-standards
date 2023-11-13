@@ -1,0 +1,84 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "https://schema.regen.network#",
+    "qudt": "http://qudt.org/schema/qudt/",
+    "unit": "http://qudt.org/vocab/unit/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "regen:cfcProjectPage": {
+      "@type": "schema:URL"
+    },
+    "regen:projectDesignDocument": {
+      "@type": "schema:URL"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
+    },
+    "qudt:unit": {
+      "@type": "qudt:Unit"
+    },
+    "qudt:numericValue": {
+      "@type": "xsd:double"
+    },
+    "regen:projectStartDate": {
+      "@type": "xsd:date"
+    },
+    "regen:projectEndDate": {
+      "@type": "xsd:date"
+    },
+    "regen:offsetGenerationMethod": {
+      "@container": "@list"
+    }
+  },
+  "@type": "regen:C02-Project",
+  "@id": "https://app.regen.network/project/C02-010",
+  "schema:name": "Ballinger Open Space Restoration",
+  "regen:cfcProjectId": "003",
+  "regen:cfcProjectPage": "https://www.cityforestcredits.org/carbon-credits/carbon-registry/shoreline-washington-forest-carbon-offsets/",
+  "regen:projectDesignDocument": "https://www.cityforestcredits.org/wp-content/uploads/2018/08/Initial-Credit-Project-Design-Document.pdf",
+  "regen:projectDeveloper": {
+    "@type": "regen:Organization",
+    "schema:name": "Tree Folks",
+    "schema:url": "https://www.treefolks.org/",
+    "regen:showOnProjectPage": true
+  },
+  "regen:projectType": "Agriculture Forestry and Other Land Use",
+  "regen:projectActivity": {
+    "schema:name": "Tree Planting"
+  },
+  "regen:offsetGenerationMethod": [
+    "Carbon Removal"
+  ],
+  "regen:projectSize": {
+    "qudt:unit": "unit:HA",
+    "qudt:numericValue": 31.47
+  },
+  "regen:projectStartDate": "2018-12-01",
+  "regen:projectEndDate": "2044-12-01",
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "type": "Feature",
+    "place_name": "Shoreline, Washington",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -122.330178,
+        47.787424 
+      ]
+    }
+  },
+  "regen:offsetProtocol": {
+    "schema:name": "Afforestation and Reforestation Protocol",
+    "schema:url": "https://www.cityforestcredits.org/wp-content/uploads/2023/03/City-Forest-Credits-Afforestation-Protocol-V11.pdf",
+    "schema:version": "v11.0"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "https://schema.regen.network#",
+    "qudt": "http://qudt.org/schema/qudt/",
+    "unit": "http://qudt.org/vocab/unit/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "regen:cfcProjectPage": {
+      "@type": "schema:URL"
+    },
+    "regen:projectDesignDocument": {
+      "@type": "schema:URL"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
+    },
+    "qudt:unit": {
+      "@type": "qudt:Unit"
+    },
+    "qudt:numericValue": {
+      "@type": "xsd:double"
+    },
+    "regen:projectStartDate": {
+      "@type": "xsd:date"
+    },
+    "regen:projectEndDate": {
+      "@type": "xsd:date"
+    },
+    "regen:offsetGenerationMethod": {
+      "@container": "@list"
+    }
+  },
+  "@type": "regen:C02-Project",
+  "@id": "https://app.regen.network/project/C02-007",
+  "schema:name": "Reforesting Des Moins",
+  "regen:cfcProjectId": "016",
+  "regen:cfcProjectPage": "https://www.cityforestcredits.org/carbon-credits/carbon-registry/des-moines-forest-carbon-offsets-2/",
+  "regen:projectDesignDocument": "https://www.cityforestcredits.org/wp-content/uploads/2021/07/2021-Reforesting-Des-Moines-Initial-Credit-Project-Design-Document.pdf",
+  "regen:projectDeveloper": {
+    "@type": "regen:Organization",
+    "schema:name": "Trees Forever",
+    "schema:url": "https://treesforever.org/",
+    "regen:showOnProjectPage": true
+  },
+  "regen:projectType": "Agriculture Forestry and Other Land Use",
+  "regen:projectActivity": {
+    "schema:name": "Tree Planting"
+  },
+  "regen:offsetGenerationMethod": [
+    "Carbon Removal"
+  ],
+  "regen:projectSize": {
+    "qudt:unit": "unit:HA",
+    "qudt:numericValue": 0.0
+  },
+  "regen:projectStartDate": "2021-11-11",
+  "regen:projectEndDate": "2047-11-11",
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "type": "Feature",
+    "place_name": "Des Moins, Iowa",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -93.563968,
+        41.567534
+      ]
+    }
+  },
+  "regen:offsetProtocol": {
+    "schema:name": "Afforestation and Reforestation Protocol",
+    "schema:url": "https://www.cityforestcredits.org/wp-content/uploads/2023/03/City-Forest-Credits-Afforestation-Protocol-V11.pdf",
+    "schema:version": "v11.0"
+  }
+}
