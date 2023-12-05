@@ -28,21 +28,18 @@
     },
     "regen:offsetGenerationMethod": {
       "@container": "@list"
-    },
-    "regen:ratings": {
-      "@container": "@list"
     }
   },
   "@type": "regen:C02-Project",
-  "@id": "https://app.regen.network/project/C02-003",
-  "schema:name": "Buena Vista Heights Conservation Area",
-  "regen:cfcProjectId": "9",
-  "regen:cfcProjectPage": "https://www.cityforestcredits.org/carbon-credits/carbon-registry/pittsburgh-forest-carbon-offsets/",
-  "regen:projectDesignDocument": "https://www.cityforestcredits.org/wp-content/uploads/2020/02/Buena-Vista-Heights-Project-Design-Document-1.pdf",
+  "@id": "https://app.regen.network/project/C02-005",
+  "schema:name": "Evergreen & East Preservation Project",
+  "regen:cfcProjectId": "006",
+  "regen:cfcProjectPage": "https://www.cityforestcredits.org/carbon-credits/carbon-registry/richmond-forest-carbon-offsets/",
+  "regen:projectDesignDocument": "https://www.cityforestcredits.org/wp-content/uploads/2019/10/Evergreen-Project-Design-Document-1.pdf",
   "regen:projectDeveloper": {
     "@type": "regen:Organization",
-    "schema:name": "Allegheny Land Trust",
-    "schema:url": "https://alleghenylandtrust.org/",
+    "schema:name": "Enrichmond Foundation",
+    "schema:url": "",
     "regen:showOnProjectPage": true
   },
   "regen:projectType": "Agriculture Forestry and Other Land Use",
@@ -54,10 +51,10 @@
   ],
   "regen:projectSize": {
     "qudt:unit": "unit:HA",
-    "qudt:numericValue": 50.14
+    "qudt:numericValue": 30.481
   },
-  "regen:projectStartDate": "2020-06-30",
-  "regen:projectEndDate": "2060-06-30",
+  "regen:projectStartDate": "2019-11-06",
+  "regen:projectEndDate": "2059-11-06",
   "schema:location": {
     "@context": {
       "type": "@type",
@@ -70,25 +67,18 @@
       }
     },
     "type": "Feature",
-    "place_name": "Elizabeth Township, Pennsylvania, United States, North America",
+    "place_name": "Richmond, Virginia",
     "geometry": {
       "type": "Point",
       "coordinates": [
-        -79.899246,
-        40.263906
+        -77.388361,
+        37.532868
       ]
     }
   },
   "regen:offsetProtocol": {
     "schema:name": "Preservation Protocol - 40 years",
-    "schema:url": "https://www.cityforestcredits.org/wp-content/uploads/2022/07/City-Forest-Preservation-Protocol-40-Years-V11.40.pdf",
-    "schema:version": "v8.40"
-  },
-  "regen:ratings": [
-    {
-      "schema:name": "BeZero Carbon",
-      "schema:ratingValue": "A",
-      "schema:url": "https://bezerocarbon.com/listings/?filter=buena+vista+heights"
-    }
-  ]
+    "schema:url": "https://www.cityforestcredits.org/wp-content/uploads/2023/02/City-Forest-Preservation-Protocol-40-Years-V12.40.pdf",
+    "schema:version": "v7.40"
+  }
 }

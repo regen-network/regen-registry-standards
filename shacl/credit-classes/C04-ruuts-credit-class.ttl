@@ -1,0 +1,154 @@
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix regen: <https://schema.regen.network#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+regen:C04-CreditClassShape a sh:NodeShape ;
+  sh:targetClass regen:C04-CreditClass ;
+  sh:property [
+    sh:path regen:measuredGHGs ;
+    sh:node dash:ListShape ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:datatype xsd:string ;
+      sh:minLength 1 ;
+    ] ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:geographicApplicability ;
+    sh:datatype xsd:string ;
+  ] ;
+  sh:property [
+    sh:path regen:eligibleActivities ;
+    sh:node dash:ListShape ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:datatype xsd:string ;
+      sh:minLength 1 ;
+    ] ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:landOwnershipType ;
+    sh:node dash:ListShape ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:datatype xsd:string ;
+      sh:minLength 1 ;
+    ] ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:ecosystemType ;
+    sh:node dash:ListShape ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:datatype xsd:string ;
+      sh:minLength 1 ;
+    ] ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:creditingTerm ;
+    sh:node schema:Duration ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:lookbackPeriod ;
+    sh:node schema:Duration ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:allowsAggregatedProjects ;
+    sh:node schema:Boolean ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:monitoringFrequency ;
+    sh:node schema:Duration ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:verificationFrequency ;
+    sh:node schema:Duration ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+  ] ;
+  sh:property regen:BufferPoolAccountsShape ;
+  sh:property [
+    sh:path regen:additionalityApproach ;
+    sh:node dash:ListShape ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:datatype xsd:string ;
+      sh:minLength 1 ;
+    ] ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:leakageApproach ;
+    sh:node dash:ListShape ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:datatype xsd:string ;
+      sh:minLength 1 ;
+    ] ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:permanencePeriod ;
+    sh:node schema:activityDuration ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+  ] ;
+.
+
+regen:BufferPoolAccountShape a sh:NodeShape ;
+  sh:property [
+    sh:path schema:name ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:minLength 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:address ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:poolAllocation ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+  ] ;
+.
+
+regen:BufferPoolAccountsShape sh:path regen:bufferPoolAccounts ;
+  sh:node dash:ListShape ;
+  sh:minCount 1 ;
+  sh:maxCount 1 ;
+  sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:node regen:BufferPoolAccountShape ;
+      sh:minCount 1 ;
+  ] ;
+.

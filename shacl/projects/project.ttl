@@ -1,114 +1,80 @@
-@prefix dash: <http://datashapes.org/dash#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix regen: <https://schema.regen.network#> .
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-# regen:ProjectShape defines generic metadata that goes
-# into the project.metadata column in the Postgres database.
-# 
-# Note that project.metadata can also store other kind of data
-# than is defined as part of other SHACL shapes (e.g. regen:ProjectPageShape
-# used for validating self-service project page forms).
+# Anchored
 
-regen:ProjectShape
-  a rdfs:Class, sh:NodeShape ;
-  sh:targetClass regen:Project ;
-  rdfs:subClassOf rdfs:Resource ;
+regen:ProjectShape a sh:NodeShape ;
+  sh:targetClass regen:Project, regen:C01-Project, regen:C02-Project, regen:C03-Project ;
+  sh:property regen:NamePropertyShape ;
+  sh:property regen:LocationPropertyShape ;
+  sh:property regen:ProjectSizeOptionalPropertyShape ;
+  sh:property regen:ProjectActivityOptionalPropertyShape ;
+  sh:property regen:ProjectDeveloperPropertyShape ;
+  sh:property regen:ProjectVerifierPropertyShape ;
+  sh:property regen:OffsetGenerationMethodOptionalPropertyShape ; 
+  sh:property regen:ProjectTypeOptionalPropertyShape ;
+  sh:property regen:ProjectOptionalStartDatePropertyShape ;
+  sh:property regen:ProjectOptionalEndDatePropertyShape ;
   sh:property [
-    sh:path regen:projectActivity ; 
-    sh:node regen:NameURLShape ;
-  ] ;
-  sh:property [
-    sh:path regen:additionalCertification ;
-    sh:node regen:StandardShape ;
-  ] ;
-  sh:property [
-    sh:path regen:externalProjectUrl ;
-    sh:datatype schema:URL ;
-  ] ;
-  sh:property [
-    sh:path schema:creditText ;
-    sh:datatype xsd:string ;
-  ] ;
-  sh:property [
-    sh:path regen:glanceText ;
+    sh:path regen:ratings ;
     sh:node dash:ListShape ;
     sh:property [
       sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
-      sh:datatype xsd:string ;
+      sh:node [
+        sh:property [
+          sh:path schema:name ;
+          sh:datatype xsd:string ;
+          sh:minCount 1 ;
+          sh:maxCount 1 ;
+          sh:minLength 1 ;
+        ] ;
+        sh:property [
+          sh:path schema:ratingValue ;
+          sh:datatype xsd:string ;
+          sh:minCount 1 ;
+          sh:maxCount 1 ;
+          sh:minLength 1 ;
+        ] ;
+        sh:property [
+          sh:path schema:url ;
+          sh:datatype schema:URL ;
+          sh:minCount 1 ;
+          sh:maxCount 1 ;
+          sh:minLength 1 ;
+        ] ;
+      ]
     ] ;
+    sh:maxCount 1 ;
   ] ;
   sh:property [
-    sh:path regen:landManagementActions ;
+    sh:path regen:primaryImpact ;
+    sh:nodeKind sh:IRI ;
+    sh:node regen:OptionalDescriptionShape ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:coBenefits ;
     sh:node dash:ListShape ;
     sh:property [
       sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
-      sh:node regen:LandManagementActionShape ;
+      sh:nodeKind sh:IRI ;
+      sh:node regen:OptionalDescriptionShape ;
     ] ;
-  ] ;
+    sh:maxCount 1 ;
+  ]
 .
 
-regen:LandManagementActionShape
-  a rdfs:Class, sh:NodeShape ;
-  sh:property [
-    sh:path schema:image ;
-    sh:datatype schema:URL ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-  ] ;
-  sh:property [
-    sh:path schema:name ;
-    sh:datatype xsd:string ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:minLength 1 ;
-  ] ;
+regen:OptionalDescriptionShape a sh:NodeShape ;
   sh:property [
     sh:path schema:description ;
-    sh:datatype xsd:string ;
-    sh:minCount 1 ;
     sh:maxCount 1 ;
-    sh:minLength 1 ;
+    sh:datatype xsd:string ;
   ] ;
 .
 
-regen:StandardShape
-  a rdfs:Class, sh:NodeShape ;
-  sh:property [
-    sh:path schema:name ;
-    sh:datatype xsd:string ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-  ] ;
-  sh:property [
-    sh:path schema:version ;
-    sh:datatype xsd:string ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-  ] ;
-  sh:property [
-    sh:path regen:documentId ;
-    sh:datatype xsd:string ;
-  ] ;
-  sh:property [
-    sh:path schema:url ;
-    sh:datatype schema:URL ;
-  ] ;
-.
-
-regen:NameURLShape
-  a rdfs:Class, sh:NodeShape ;
-  sh:property [
-    sh:path schema:name ;
-    sh:datatype xsd:string ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-  ] ;
-  sh:property [
-    sh:path schema:url ;
-    sh:datatype schema:URL ;
-  ] ;
-.

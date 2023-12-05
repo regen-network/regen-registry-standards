@@ -1,18 +1,12 @@
 @prefix schema: <http://schema.org/> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix regen: <https://schema.regen.network#> .
-@prefix qudt: <http://qudt.org/schema/qudt/> .
-@prefix unit: <http://qudt.org/vocab/unit/> .
-@prefix geojson: <https://purl.org/geojson/vocab#> .
-@prefix dash: <http://datashapes.org/dash#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+regen:C02-Project rdfs:subClassOf regen:Project .
 
 regen:C02-ProjectShape a sh:NodeShape ;
   sh:targetClass regen:C02-Project ;
-  sh:property regen:NamePropertyShape ;
-  sh:property regen:LocationPropertyShape ;
   sh:property regen:ProjectSizePropertyShape ;
   sh:property regen:ProjectActivityPropertyShape ;
   sh:property regen:ProjectStartDatePropertyShape ;
@@ -22,8 +16,6 @@ regen:C02-ProjectShape a sh:NodeShape ;
   sh:property regen:OffsetGenerationMethodPropertyShape ;
   sh:property regen:CFCProjectIdPropertyShape ;
   sh:property regen:CFCProjectPagePropertyShape ;
-  sh:property regen:ProjectDeveloperPropertyShape ;
-  sh:property regen:ProjectVerifierPropertyShape ;
   sh:property regen:ProjectDesignDocumentPropertyShape ;
   sh:property regen:OffsetProtocolPropertyShape ;
 .

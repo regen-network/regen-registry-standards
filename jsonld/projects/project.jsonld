@@ -1,0 +1,94 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "https://schema.regen.network#",
+    "qudt": "http://qudt.org/schema/qudt/",
+    "unit": "http://qudt.org/vocab/unit/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema:url": {
+      "@type": "schema:URL"
+    },
+    "qudt:unit": {
+      "@type": "qudt:Unit"
+    },
+    "qudt:numericValue": {
+      "@type": "xsd:double"
+    },
+    "regen:projectStartDate": {
+      "@type": "xsd:date"
+    },
+    "regen:projectEndDate": {
+      "@type": "xsd:date"
+    },
+    "regen:offsetGenerationMethod": {
+      "@container": "@list"
+    },
+    "regen:ratings": {
+      "@container": "@list"
+    },
+    "regen:coBenefits": {
+      "@container": "@list"
+    }
+  },
+  "@type": "regen:XXX-Project",
+  "@id": "http://app.regen.network/project/<ID>",
+  "schema:name": "",
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "type": "Feature"
+  },
+  "regen:projectSize": {
+    "qudt:unit": "unit:HA",
+    "qudt:numericValue": 0
+  },
+  "regen:projectActivity": {
+    "schema:name": "",
+    "schema:url": ""
+  },
+  "regen:projectDeveloper": {
+    "@type": "regen:Organization",
+    "schema:name": "",
+    "schema:url": "",
+    "schema:description": "",
+    "regen:address": ""
+  },
+  "regen:projectVerifier": {
+    "@type": "regen:Organization",
+    "schema:name": "",
+    "schema:url": "",
+    "schema:description": "",
+    "regen:address": ""
+  },
+  "regen:offsetGenerationMethod": [
+    ""
+  ],
+  "regen:projectType": "",
+  "regen:projectStartDate": "",
+  "regen:projectEndDate": "",
+  "regen:ratings": [
+    {
+      "schema:name": "",
+      "schema:ratingValue": "",
+      "schema:url": ""
+    }
+  ],
+  "regen:primaryImpact": {
+    "@id": "",
+    "schema:description": ""
+  },
+  "regen:coBenefits": [
+    {
+      "@id": "",
+      "schema:description": ""
+    }
+  ]
+}

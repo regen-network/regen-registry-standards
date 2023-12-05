@@ -9,6 +9,9 @@
     },
     "schema:url": {
       "@type": "schema:URL"
+    },
+    "regen:ratings": {
+      "@container": "@list"
     }
   },
   "schema:name": "Inner Mongolia Chao’er Improved Forest Management Project",
@@ -23,12 +26,13 @@
       }
     ]
   },
-  "regen:rating": {
-    "@type": "regen:BeZeroCarbon",
-    "schema:name": "BeZero Carbon",
-    "schema:ratingValue": "BB",
-    "schema:url": "https://bezerocarbon.com/listings/?filter=INNER+MONGOLIA+CHAO%E2%80%99ER+IMPROVED+FOREST+MANAGEMENT+PROJECT"
-  },
+  "regen:ratings": [
+    {
+      "schema:name": "BeZero Carbon",
+      "schema:ratingValue": "BB",
+      "schema:url": "https://bezerocarbon.com/listings/?filter=INNER+MONGOLIA+CHAO%E2%80%99ER+IMPROVED+FOREST+MANAGEMENT+PROJECT"
+    }
+  ],
   "schema:location": {
     "@context": {
       "type": "@type",

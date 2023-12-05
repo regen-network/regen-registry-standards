@@ -17,12 +17,25 @@
     },
     "schema:url": {
       "@type": "schema:URL"
+    },
+    "schema:image": {
+      "@type": "schema:URL"
+    },
+    "regen:certifications": {
+      "@container": "@list"
+    },
+    "regen:coBenefits": {
+      "@container": "@list"
+    },
+    "regen:SDGs": {
+      "@container": "@list"
     }
   },
-  "@type": "regen:C03-CreditClass",
+  "@type": "regen:XXX-CreditClass",
   "schema:description": "",
   "schema:name": "",
   "schema:url": "",
+  "schema:image": "",
   "regen:sourceRegistry": {
     "schema:name": "",
     "schema:url": ""
@@ -55,5 +68,41 @@
   "regen:projectActivities": [
     ""
   ],
-  "regen:tokenizationSource": ""
+  "regen:certifications": [
+    {
+      "schema:name": "",
+      "schema:url": ""
+    }
+  ],
+  "regen:primaryImpact": {
+    "@id": "",
+    "schema:name": "",
+    "regen:SDGs": [
+      {
+        "@id": ""
+      }
+    ]
+  },
+  "regen:coBenefits": [
+    {
+      "@id": "",
+      "@type": "regen:MeasuredCoBenefit",
+      "schema:name": "",
+      "regen:SDGs": [
+        {
+          "@id": ""
+        }
+      ]
+    },
+    {
+      "@id": "",
+      "@type": "regen:ProjectBenefit",
+      "schema:name": "",
+      "regen:SDGs": [
+        {
+          "@id": ""
+        }
+      ]
+    }
+  ]
 }

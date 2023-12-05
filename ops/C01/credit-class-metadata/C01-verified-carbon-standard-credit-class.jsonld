@@ -14,41 +14,26 @@
     },
     "regen:offsetGenerationMethod": {
       "@container": "@list"
+    },
+    "regen:certifications": {
+      "@container": "@list"
     }
   },
   "@type": "regen:C01-CreditClass",
   "schema:name": "Verified Carbon Standard",
   "schema:description": "This credit class provides a vehicle for nature based Verified Carbon Units (VCUs) to enter the blockchain space via issuance on Regen Ledger. It can be used by project developers, credit brokers, and other stakeholders interested in digitizing carbon credits issued by the VCS program to make them available in the emerging world of decentralized finance.",
-  "schema:url": {
-    "@type": "schema:URL",
-    "@value": "https://library.regen.network/v/regen-registry-credit-classes/credits-from-other-registries/verified-carbon-standard-credit-class"
-  },
+  "schema:url": "https://library.regen.network/v/regen-registry-credit-classes/credits-from-other-registries/verified-carbon-standard-credit-class",
   "regen:sourceRegistry": {
     "schema:name": "Verra",
-    "schema:url": {
-      "@type": "schema:URL",
-      "@value": "https://verra.org/"
-    }
+    "schema:url": "https://verra.org/"
   },
   "regen:sectoralScope": [
-    {
-      "@type": "xsd:string",
-      "@value": "Agriculture Forestry and Other Land Use (AFOLU)"
-    },
-    {
-      "@type": "xsd:string",
-      "@value": "Livestock and Manure Management"
-    }
+    "Agriculture Forestry and Other Land Use (AFOLU)",
+    "Livestock and Manure Management"
   ],
   "regen:offsetGenerationMethod": [
-    {
-      "@type": "xsd:string",
-      "@value": "Emission Reductions"
-    },
-    {
-      "@type": "xsd:string",
-      "@value": "Carbon Removals"
-    }
+    "Emission Reductions",
+    "Carbon Removals"
   ],
   "regen:approvedMethodologies": {
     "@type": "schema:ItemList",
@@ -338,5 +323,11 @@
     ],
     "schema:url": "https://library.regen.network/v/regen-registry-credit-classes/credits-from-other-registries/verified-carbon-standard-credit-class/approved-methodologies"
   },
-  "regen:verificationMethod": "Third-party verified"
+  "regen:verificationMethod": "Third-party verified",
+  "regen:certifications": [
+    {
+      "schema:name": "ICROA approved",
+      "schema:url": "https://icroa.org/"
+    }
+  ]
 }

@@ -17,6 +17,9 @@
     },
     "schema:url": {
       "@type": "schema:URL"
+    },
+    "regen:certifications": {
+      "@container": "@list"
     }
   },
   "@type": "regen:C03-CreditClass",
@@ -332,5 +335,11 @@
     "Avoided Conversion of Grasslands and Shrublands (ACoGS)",
     "Wetlands Restoration and Conservation (WRC)"
   ],
-  "regen:tokenizationSource": "Toucan"
+  "regen:tokenizationSource": "Toucan",
+  "regen:certifications": [
+    {
+      "schema:name": "ICROA approved",
+      "schema:url": "https://icroa.org/"
+    }
+  ]
 }

@@ -9,6 +9,9 @@
     },
     "schema:url": {
       "@type": "schema:URL"
+    },
+    "regen:ratings": {
+      "@container": "@list"
     }
   },
   "schema:name": "Pacajai REDD+ Project",
@@ -60,10 +63,11 @@
       }
     ]
   },
-  "regen:rating": {
-    "@type": "regen:BeZeroCarbon",
-    "schema:name": "BeZero Carbon",
-    "schema:ratingValue": "C",
-    "schema:url": "https://bezerocarbon.com/listings/?filter=pacajai"
-  }
+  "regen:ratings": [
+    {
+      "schema:name": "BeZero Carbon",
+      "schema:ratingValue": "C",
+      "schema:url": "https://bezerocarbon.com/listings/?filter=pacajai"
+    }
+  ]
 }

@@ -9,6 +9,9 @@
     },
     "schema:url": {
       "@type": "schema:URL"
+    },
+    "regen:ratings": {
+      "@container": "@list"
     }
   },
   "schema:name": "Rimba Raya Biodiversity Reserve Project",
@@ -62,10 +65,11 @@
       }
     ]
   },
-  "regen:rating": {
-    "@type": "regen:BeZeroCarbon",
-    "schema:name": "BeZero Carbon",
-    "schema:ratingValue": "AAA",
-    "schema:url": "https://bezerocarbon.com/listings/?filter=rimba+raya"
-  }
+  "regen:ratings": [
+    {
+      "schema:name": "BeZero Carbon",
+      "schema:ratingValue": "AAA",
+      "schema:url": "https://bezerocarbon.com/listings/?filter=rimba+raya"
+    }
+  ]
 }

@@ -9,6 +9,9 @@
     },
     "schema:url": {
       "@type": "schema:URL"
+    },
+    "regen:ratings": {
+      "@container": "@list"
     }
   },
   "schema:name": "The Kasigau Corridor REDD Project - Phase II The Community Ranches",
@@ -57,10 +60,11 @@
       }
     ]
   },
-  "regen:rating": {
-    "@type": "regen:BeZeroCarbon",
-    "schema:name": "BeZero Carbon",
-    "schema:ratingValue": "BBB",
-    "schema:url": "https://bezerocarbon.com/listings/?filter=kasigau"
-  }
+  "regen:ratings": [
+    {
+      "schema:name": "BeZero Carbon",
+      "schema:ratingValue": "BBB",
+      "schema:url": "https://bezerocarbon.com/listings/?filter=kasigau"
+    }
+  ]
 }

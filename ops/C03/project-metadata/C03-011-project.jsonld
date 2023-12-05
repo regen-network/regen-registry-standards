@@ -9,6 +9,9 @@
     },
     "schema:url": {
       "@type": "schema:URL"
+    },
+    "regen:ratings": {
+      "@container": "@list"
     }
   },
   "schema:name": "Jiangxi Province Le'an County Forest Farm Carbon Sink Project",
@@ -23,12 +26,13 @@
       }
     ]
   },
-  "regen:rating": {
-    "@type": "regen:BeZeroCarbon",
-    "schema:name": "BeZero Carbon",
-    "schema:ratingValue": "BBB",
-    "schema:url": "https://bezerocarbon.com/listings/?filter=1162"
-  },
+  "regen:ratings": [
+    {
+      "schema:name": "BeZero Carbon",
+      "schema:ratingValue": "BBB",
+      "schema:url": "https://bezerocarbon.com/listings/?filter=1162"
+    }
+  ],
   "schema:location": {
     "@context": {
       "type": "@type",

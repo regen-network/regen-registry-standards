@@ -23,6 +23,7 @@ def shacl_validate(shapes, data):
     except CalledProcessError as exc:
         print(f"shapes={shapes} data={data} result=ERROR")
         print(exc.stdout)
+        EXIT_CODE = 1
         return False
     if result == "Conforms":
         print(f"shapes={shapes} data={data} result=CONFORMS")
