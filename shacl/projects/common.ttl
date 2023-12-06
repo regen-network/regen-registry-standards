@@ -3,7 +3,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix regen: <https://schema.regen.network#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
@@ -24,7 +24,7 @@ regen:DescriptionPropertyShape sh:path schema:description ;
 .
 
 regen:LocationPropertyShape sh:path schema:location ;
-  sh:class geojson:Feature ;
+  sh:datatype geo:wktLiteral ;
   sh:minCount 1 ;
   sh:maxCount 1 ;
   sh:group regen:ProjectPageLocationGroup ;
