@@ -84,9 +84,9 @@
       "schema:name": "Water Infiltration"
     },
     {
-      "@id": "regen:Biodiversity",
+      "@id": "regen:VegetationDiversity",
       "@type": "regen:MeasuredCoBenefit",
-      "schema:name": "Biodiversity"
+      "schema:name": "Vegetation Diversity"
     }
   ],
   "regen:geographicApplicability": "Global",
