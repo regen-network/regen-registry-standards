@@ -1,6 +1,6 @@
 import * as rdf from "rdflib";
 
-export const BASE_URI = "http://schema.regen.network#";
+export const BASE_URI = "https://schema.regen.network#";
 
 // Define namespaces
 export const RDF = rdf.Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#");
