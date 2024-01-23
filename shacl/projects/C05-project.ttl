@@ -1,0 +1,87 @@
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix regen: <https://schema.regen.network#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+regen:C05-Project rdfs:subClassOf regen:Project .
+
+regen:C05-ProjectShape a sh:NodeShape ;
+  sh:targetClass regen:C05-Project ;
+  sh:property [
+    sh:path regen:aggregatedProject ;
+    sh:node schema:Boolean ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:biocharApplicationMethod ;
+    sh:node dash:ListShape ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:datatype xsd:string ;
+      sh:minLength 1 ;
+    ] ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:biocharApplicationLocation ;
+    sh:node dash:ListShape ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:datatype xsd:string ;
+      sh:minLength 1 ;
+    ] ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:biocharFeedstockMaterial ;
+    sh:node dash:ListShape ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:datatype xsd:string ;
+      sh:minLength 1 ;
+    ] ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:biocharProductionMethod ;
+    sh:node dash:ListShape ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:datatype xsd:string ;
+      sh:minLength 1 ;
+    ] ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path regen:NumberOfSites ;
+    sh:node xsd:integer ;
+    sh:node regen:optionalNumberOfSites ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property regen:ProjectSizePropertyShape ;
+  sh:property regen:ProjectActivityPropertyShape ;
+  sh:property regen:ProjectStartDatePropertyShape ;
+  sh:property regen:ProjectEndDatePropertyShape ;
+  sh:property regen:PermanencePeriodStartDatePropertyShape ;
+  sh:property regen:PermanencePeriodEndDatePropertyShape ;
+  sh:property regen:ProjectTypePropertyShape ;
+  sh:property [
+    sh:path regen:siteLocations ;
+    sh:node dash:ListShape ;
+    sh:property [
+      sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+      sh:datatype xsd:string ;
+      sh:minLength 1 ;
+      sh:node regen:optionalSiteLocations ;
+    ] ;
+    sh:maxCount 1 ;
+  ] ;
+.

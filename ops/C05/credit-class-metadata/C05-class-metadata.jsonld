@@ -1,0 +1,153 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "https://schema.regen.network#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema:itemListElement": {
+      "@container": "@list"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
+    },
+    "regen:additionalityAssessment": {
+      "@container": "@list"
+    },
+    "regen:baselineMethod": {
+      "@container": "@list"
+    },
+    "regen:biocharApplicationType": {
+      "@container": "@list"
+    },
+    "regen:biocharFeedstockMaterial": {
+      "@container": "@list"
+    },
+    "regen:bufferPoolAccounts": {
+      "@container": "@list"
+    },
+    "regen:creditingTerm": {
+      "@type": "schema:Duration"
+    },
+    "regen:creditGenerationMethod": {
+      "@container": "@list"
+    },
+    "regen:ecosystemType": {
+      "@container": "@list"
+    },
+    "regen:eligibleActivities": {
+      "@container": "@list"
+    },
+    "regen:landOwnershipType": {
+      "@container": "@list"
+    },
+    "regen:leakageAssessment": {
+      "@container": "@list"
+    },
+    "regen:lookbackPeriod": {
+      "@type": "schema:Duration"
+    },
+    "regen:measuredGHGs": {
+      "@container": "@list"
+    },
+    "regen:monitoringFrequency": {
+      "@type": "schema:Duration"
+    },
+    "regen:permanencePeriod": {
+      "@type": "schema:Duration"
+    },
+    "regen:sectoralScope": {
+      "@container": "@list"
+    },
+    "regen:verificationFrequency": {
+      "@type": "schema:Duration"
+    },
+    "regen:verificationMethods": {
+      "@container": "@list"
+    }
+  },
+  "@type": "regen:C05-CreditClass",
+  "schema:name": "Credit Class for Carbon Removal through Biochar Production",
+  "schema:description": "The Biochar Carbon credit focuses on carbon removal and avoiding emissions that would have resulted from the decomposition of waste biomass. Carbon removal is the approved benefit that is monitored, quantified, and determines the number of credits issued. The approved benefit of atmospheric regulation through carbon sequestration is driven by carbon removals and reductions through the production and application of biochar to soils.",
+  "schema:url": "https://registry.regen.network/v/regen-registry-credit-classes/regen-registry-credit-classes-1/credit-class-for-carbon-removal-through-biochar-production",
+  "regen:additionalityAssessment": [
+    "Regulatory Surplus",
+    "Positive List"
+  ],
+  "regen:allowsAggregatedProjects": true,
+  "regen:approvedMethodologies": {
+    "@type": "schema:ItemList",
+    "schema:itemListElement": [
+      {
+        "schema:name": "Methodology for Biochar Utilization in Soil and Non-Soil Applications (VM0044)",
+        "schema:url": "https://verra.org/wp-content/uploads/2023/07/VM44_v1.1_EC.pdf",
+        "schema:identifier": "VM0044",
+        "schema:version": "V1.1"
+      },
+      {
+        "schema:name": "Appendix: In-Stand Surface Application of Biochar in Forestlands Methodology",
+        "schema:url": "https://registry.regen.network/v/methodology-library/published-methodologies/appendix-in-stand-surface-application-of-biochar-in-forestlands-methodology",
+        "schema:version": "V1.0"
+      }
+    ]
+  },
+  "regen:baselineMethod": [
+    "Project Method"
+  ],
+  "regen:biocharApplicationType": [
+    "Surface",
+    "Subsurface"
+  ],
+  "regen:biocharFeedstockMaterial": [
+    "Agricultural waste biomass",
+    "Food processing resedues",
+    "Woody biomass",
+    "Industrial waste",
+    "Aquaculture plants"
+  ],
+  "regen:bufferPoolAccounts": [
+    {
+      "schema:name": "Carbon Removal through Biochar Production Credit Class Buffer Pool",
+      "regen:walletAddress": "regen1wgjpjh42cr7t5sp5hgty4yrzww496a6yaznc9u4wsv9ac3xccu8szz2upa",
+      "regen:poolAllocation": "10%"
+    }
+  ],
+  "regen:creditingTerm": "P2Y",
+  "regen:creditGenerationMethod": [
+    "Carbon Removal",
+    "Emission Reductions"
+  ],
+  "regen:ecosystemType": [
+    "Forest",
+    "Cropland",
+    "Grassland"
+  ],
+  "regen:eligibleActivities": [
+    "Biochar Production and Application"
+  ],
+  "regen:geographicApplicability": "Global",
+  "regen:landOwnershipType": [
+    "Public",
+    "Private",
+    "Tribal"
+  ],
+  "regen:leakageAssessment": [
+    "Transport Emissions"
+  ],
+  "regen:lookbackPeriod": "-P1Y",
+  "regen:measuredGHGs": [
+    "Carbon Dioxide (CO2)",
+    "Methane (CH4)"
+  ],
+  "regen:monitoringFrequency": "P1Y",
+  "regen:permanencePeriod": "P100Y",
+  "regen:sectoralScope": [
+    "Waste Handling and Disposal"
+  ],
+  "regen:sourceRegistry": {
+    "schema:name": "Regen Registry",
+    "schema:url": "https://registry.regen.network/v/regen-registry-handbook/"
+  },
+  "regen:verificationFrequency": "P1Y",
+  "regen:verificationMethods": [
+    "Third-Party Verification"
+  ]
+}

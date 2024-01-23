@@ -1,0 +1,61 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "https://schema.regen.network#",
+    "qudt": "http://qudt.org/schema/qudt/",
+    "unit": "http://qudt.org/vocab/unit/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema:url": {
+      "@type": "schema:URL"
+    },
+    "qudt:unit": {
+      "@type": "qudt:Unit"
+    },
+    "qudt:numericValue": {
+      "@type": "xsd:double"
+    },
+    "regen:projectStartDate": {
+      "@type": "xsd:date"
+    },
+    "regen:projectEndDate": {
+      "@type": "xsd:date"
+    },
+    "regen:monitoringFrequency": {
+      "@type": "schema:Duration"
+    }
+  },
+  "@type": "regen:KSH01-Project",
+  "schema:name": "Grgich Hills Estate Regenerative Sheep Grazing",
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "type": "Feature",
+    "place_name": "Rutherford, California",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+          -122.3754,
+          38.4082
+      ]
+    }
+  },
+  "regen:projectSize": {
+    "qudt:unit": "unit:HA",
+    "qudt:numericValue": 126.6
+  },
+  "regen:projectActivity": {
+    "schema:name": "High Density, Short Duration Sheep Grazing",
+    "schema:url": "https://www.sciencedirect.com/science/article/pii/S0016706123002756"
+  },
+  "regen:projectType": "Environmental Stewardship",
+  "regen:projectStartDate": "2023-01-01",
+  "regen:projectEndDate": "2023-05-31"
+}

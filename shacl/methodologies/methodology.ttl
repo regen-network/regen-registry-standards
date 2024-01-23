@@ -21,7 +21,6 @@ regen:MethodologyVersionShape a sh:NodeShape ;
   sh:property [ 
     sh:path schema:identifier ;
     sh:datatype xsd:string ;
-    sh:minCount 1 ;
     sh:maxCount 1 ;
   ] ;
   sh:property [ 
