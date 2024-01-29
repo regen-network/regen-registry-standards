@@ -1,0 +1,144 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "https://schema.regen.network#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema:itemListElement": {
+      "@container": "@list"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
+    },
+    "regen:additionalityAssessment": {
+      "@container": "@list"
+    },
+    "regen:bufferPoolAccounts": {
+      "@container": "@list"
+    },
+    "regen:coBenefits": {
+      "@container": "@list"
+    },
+    "regen:SDGs": {
+      "@container": "@list"
+    },
+    "regen:creditingTerm": {
+      "@type": "schema:Duration"
+    },
+    "regen:creditGenerationMethod": {
+      "@container": "@list"
+    },
+    "regen:ecosystemType": {
+      "@container": "@list"
+    },
+    "regen:eligibleActivities": {
+      "@container": "@list"
+    },
+    "regen:landOwnershipType": {
+      "@container": "@list"
+    },
+    "regen:lookbackPeriod": {
+      "@type": "schema:Duration"
+    },
+    "regen:measuredGHGs": {
+      "@container": "@list"
+    },
+    "regen:permanencePeriod": {
+      "@type": "schema:Duration"
+    },
+    "regen:sectoralScope": {
+      "@container": "@list"
+    },
+    "regen:verificationMethods": {
+      "@container": "@list"
+    }
+  },
+  "@type": "regen:C06-CreditClass",
+  "schema:name": "GHG Benefits in Managed Crop and Grassland Systems Credit Class",
+  "schema:description": "This Credit Class and its supporting measuring and monitoring methodology, focuses on quantifying increases in soil organic carbon sequestration and storage in regenerative cropping and managed grassland agricultural systems.",
+  "schema:url": "https://registry.regen.network/v/regen-registry-credit-classes/regen-registry-credit-classes-1/ghg-benefits-in-managed-crop-and-grassland-systems-credit-class",
+  "regen:additionalityAssessment": [
+    "Regulatory Surplus"
+  ],
+  "regen:allowsAggregatedProjects": true,
+  "regen:approvedMethodologies": {
+    "@type": "schema:ItemList",
+    "schema:itemListElement": [
+      {
+        "schema:name": "Methodology Proposal for Soil Organic Carbon Estimation in Regenerative Cropping and Managed Grassland Ecosystems",
+        "schema:url": "https://registry.regen.network/v/methodology-library/published-methodologies/soil-organic-carbon-estimation-in-regenerative-cropping-and-managed-grassland-ecosystems",
+        "schema:identifier": "ecometric-0044",
+        "schema:version": "V1.1"
+      }
+    ]
+  },
+  "regen:bufferPoolAccounts": [
+    {
+      "schema:name": "Blaston Estate Project Specific Buffer Pool",
+      "regen:walletAddress": "",
+      "regen:poolAllocation": "20%"
+    }
+  ],
+  "regen:coBenefits": [
+    {
+      "@id": "regen:ImprovedSoilStructureAndHydrologicalProperties",
+      "@type": "regen:ProjectBenefit",
+      "schema:name": "",
+      "regen:SDGs": [
+        {
+          "@id": ""
+        }
+      ]
+    },
+    {
+      "@id": "regen:ReductionsInExternalInputs",
+      "@type": "regen:ProjectBenefit",
+      "schema:name": "Reduced Fertilizer Usage",
+      "regen:SDGs": [
+        {
+          "@id": ""
+        }
+      ]
+    }
+  ],
+  "regen:creditingTerm": "P10Y",
+  "regen:creditGenerationMethod": [
+    "Carbon Removal"
+  ],
+  "regen:ecosystemType": [
+    "Cropland",
+    "Grassland",
+    "Pastureland",
+    "Shrubland"
+  ],
+  "regen:eligibleActivities": [
+    "Regenerative crop management",
+    "Managed grazing"
+  ],
+  "regen:geographicApplicability": "Global",
+  "regen:landOwnershipType": [
+    "Public",
+    "Private",
+    "Tribal"
+  ],
+  "regen:lookbackPeriod": "-P10Y",
+  "regen:measuredGHGs": [
+    "Carbon Dioxide (CO2)"
+  ],
+  "regen:permanencePeriod": "P10Y",
+  "regen:primaryImpact": {
+    "@id": "regen:SoilOrganicCarbon",
+    "schema:name": "Soil Organic Carbon",
+    "regen:SDGs": [
+      {
+        "@id": ""
+      }
+    ]
+  },
+  "regen:sectoralScope": [
+    "Agriculture, Forestry, and Other Land Use (AFOLU)"
+  ],
+  "regen:verificationMethods": [
+    "Third-Party Verification",
+    "ISO 14066"
+  ]
+}

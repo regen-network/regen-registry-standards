@@ -1,0 +1,60 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "https://schema.regen.network#",
+    "qudt": "http://qudt.org/schema/qudt/",
+    "unit": "http://qudt.org/vocab/unit/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "regen:cfcProjectPage": {
+      "@type": "schema:URL"
+    },
+    "regen:projectDesignDocument": {
+      "@type": "schema:URL"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
+    },
+    "qudt:unit": {
+      "@type": "qudt:Unit"
+    },
+    "qudt:numericValue": {
+      "@type": "xsd:double"
+    },
+    "regen:projectStartDate": {
+      "@type": "xsd:date"
+    },
+    "regen:projectEndDate": {
+      "@type": "xsd:date"
+    },
+    "regen:GenerationMethod": {
+      "@container": "@list"
+    }
+  },
+  "@type": "regen:C02-Project",
+  "@id": "https://app.regen.network/project/C02-002",
+  "schema:name": "",
+  "regen:projectDeveloper": {
+    "@type": "regen:Organization",
+    "schema:name": "Western Reserve Land Conservancy",
+    "schema:url": "https://www.wrlandconservancy.org/",
+    "regen:showOnProjectPage": true
+  },
+  "regen:projectType": "Agriculture Forestry and Other Land Use",
+  "regen:projectActivity": {
+    "schema:name": "Tree Preservation"
+  },
+  "regen:offsetGenerationMethod": [
+    "Avoided Emissions"
+  ],
+  "regen:projectSize": {
+    "qudt:unit": "unit:HA",
+    "qudt:numericValue": 53.4
+  },
+  "regen:projectStartDate": "2021-10-14",
+  "regen:projectEndDate": "2061-10-14",
+  "regen:offsetProtocol": {
+    "schema:name": "Preservation Protocol - 40 years",
+    "schema:url": "https://www.cityforestcredits.org/wp-content/uploads/2022/07/City-Forest-Preservation-Protocol-40-Years-V11.40.pdf",
+    "schema:version": "v10.40"
+  }
+}
