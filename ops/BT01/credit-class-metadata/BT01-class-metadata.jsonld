@@ -1,0 +1,126 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "https://schema.regen.network#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema:itemListElement": {
+      "@container": "@list"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
+    },
+    "regen:sectoralScope": {
+      "@container": "@list"
+    },
+    "regen:offsetGenerationMethod": {
+      "@container": "@list"
+    },
+    "regen:measuredGHGs": {
+      "@container": "@list"
+    },
+    "regen:coBenefits": {
+      "@container": "@list"
+    },
+    "regen:eligibleActivities": {
+      "@container": "@list"
+    },
+    "regen:landOwnershipType": {
+      "@container": "@list"
+    },
+    "regen:ecosystemType": {
+      "@container": "@list"
+    },
+    "regen:verificationMethods": {
+      "@container": "@list"
+    },
+    "regen:additionalityApproach": {
+      "@container": "@list"
+    },
+    "regen:leakageApproach": {
+      "@container": "@list"
+    },
+    "regen:bufferPoolAccounts": {
+      "@container": "@list"
+    },
+    "regen:creditingTerm": {
+      "@type": "schema:Duration"
+    },
+    "regen:lookbackPeriod": {
+      "@type": "schema:Duration"
+    },
+    "regen:permanencePeriod": {
+      "@type": "schema:Duration"
+    },
+    "regen:monitoringFrequency": {
+      "@type": "schema:Duration"
+    }, 
+    "regen:verificationFrequency": {
+      "@type": "schema:Duration"
+    }
+  },
+  "@type": "regen:BT-CreditClass",
+  "schema:name": "BioTerra Biodiversity Credit",
+  "schema:description": "The Biodioversity Credits protocol outlines a strategic framework for the development of projects that guarantee quantifiable gains in biodiversity, all while providing robust financial and legal assurances to secure their sustainability and enduring impact. This pioneering approach to biodiversity conservation and resource management emphasizes the selection of projects distinguished by their significant ecological value within a performance-based model. \n This protocol streamlines the process of registration, quantification, and issuance of Biodiversity Credits (VBC) for conservation projects that meet the eligibility criteria. It is designed to resonate with both individuals and organizations committed to contributing to the preservation of threatened ecosystems and biodiversity, ultimately delivering long-term sustainability and socio-economic benefits.",
+  "schema:url": "https://en.terrasos.co/_files/ugd/cfa1dc_5af4fd0405c04e4a85c59dc9a3e3293b.pdf",
+  "regen:sourceRegistry": {
+    "schema:name": "Terrasos",
+    "schema:url": "https://en.terrasos.co/"
+  },
+  "regen:creditGenerationMethod": [
+    "Voluntary Biodiversity Credits"
+  ],
+  "regen:coBenefits": [
+    {
+      "@id": "regen:Climate",
+      "@type": "regen:ProjectBenefit",
+      "schema:name": "Climate"
+    },
+    {
+      "@id": "regen:WildlifeHabitat",
+      "@type": "regen:ProjectBenefit",
+      "schema:name": "Wildlife Habitat"
+    },
+    {
+      "@id": "regen:Social",
+      "@type": "regen:ProjectBenefit",
+      "schema:name": "Social"
+    }
+  ],
+  "regen:geographicApplicability": "Global",
+  "regen:eligibleActivities": [
+    "Ecosystem Preservation",
+    "Forest Enhancement",
+    "Ecological Restoration"
+  ],
+  "regen:ecosystemType": [
+    "Forest"
+  ],
+  "regen:creditingTerm": "P30Y",
+  "regen:permanencePeriod": "P20Y",
+  "regen:primaryImpact": {
+    "@id": "regen:Biodiversity",
+    "schema:name": "Biodiversity",
+    "regen:SDGs": [
+      {
+        "@id": ""
+      }
+    ]
+  },
+  "regen:monitoringFrequency": "P6Y",
+  "regen:verificationFrequency": "P6Y",
+  "regen:verificationMethods": [
+    "Ruuts Internal Quality Assurance",
+    "Third-Party ISO 14064-3 Verification"
+  ],
+  "regen:approvedMethodologies": {
+    "@type": "schema:ItemList",
+    "schema:itemListElement": [
+      {
+        "schema:name": "Terrasos Protocol for Issuing Voluntary Biodiversity Credits",
+        "schema:url": "https://en.terrasos.co/_files/ugd/cfa1dc_5af4fd0405c04e4a85c59dc9a3e3293b.pdf",
+        "schema:identifier": "",
+        "schema:version": "V3.0"
+      }
+    ]
+  }
+}
