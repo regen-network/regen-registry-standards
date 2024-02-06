@@ -15,6 +15,9 @@
     "regen:bufferPoolAccounts": {
       "@container": "@list"
     },
+    "regen:coBenefits": {
+      "@container": "@list"
+    },
     "regen:creditingTerm": {
       "@type": "schema:Duration"
     },
@@ -85,6 +88,23 @@
       "regen:poolAllocation": "5%"
     }
   ],
+  "regen:coBenefits": [
+    {
+      "@id": "regen:Ecosystem Health",
+      "@type": "regen:MeasuredCoBenefit",
+      "schema:name": "Ecosystem Health"
+    },
+    {
+      "@id": "regen:SoilFertility",
+      "@type": "regen:MeasuredCoBenefit",
+      "schema:name": "Soil Fertility"
+    },
+    {
+      "@id": "regen:AnimalWelfare",
+      "@type": "regen:MeasuredCoBenefit",
+      "schema:name": "Animal Welfare"
+    }
+  ],
   "regen:creditingTerm": "P10Y",
   "regen:creditGenerationMethod": [
     "Carbon Removal"
@@ -95,9 +115,7 @@
     "Shrubland"
   ],
   "regen:eligibleActivities": [
-    "Rotational Grazing",
-    "High Density Grazing",
-    "Residue Grazing"
+    "Rotational Grazing"
   ],
   "regen:geographicApplicability": "Global",
   "regen:landOwnershipType": [
@@ -115,6 +133,10 @@
   ],
   "regen:monitoringFrequency": "P5Y",
   "regen:permanencePeriod": "P10Y",
+  "regen:primaryImpact": {
+    "@id": "regen:SoilOrganicCarbon",
+    "schema:name": "Soil Organic Carbon"
+  },
   "regen:sectoralScope": [
     "Waste Handling and Disposal"
   ],
