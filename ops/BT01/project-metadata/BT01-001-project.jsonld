@@ -1,0 +1,80 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "https://schema.regen.network#",
+    "qudt": "http://qudt.org/schema/qudt/",
+    "unit": "http://qudt.org/vocab/unit/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema:url": {
+      "@type": "schema:URL"
+    },
+    "qudt:unit": {
+      "@type": "qudt:Unit"
+    },
+    "qudt:numericValue": {
+      "@type": "xsd:double"
+    },
+    "regen:coBenefits": {
+      "@container": "@list"
+    },
+    "regen:projectActivities": {
+      "@container": "@list"
+    },
+    "regen:projectStartDate": {
+      "@type": "xsd:date"
+    },
+    "regen:projectEndDate": {
+      "@type": "xsd:date"
+    }
+  },
+  "@type": "regen:BT01-Project",
+  "@id": "https://app.regen.network/project/C02-002",
+  "schema:name": "El Globo Habitat Bank",
+  "schema:description": "El Globo is the first project in Colombia to issue Voluntary Biodiversity Credits. It is located in the “Cuchilla Jardín-Támesis” Integrated Management District (DMI). Known as the “water star” of southwestern Antioquia, this area is a prioritized ecosystem for conservation. Here ecosystem preservation, forest enhancement and restoration activities are implemented to generate positive and permanent impacts on biodiversity. The project has a 30-year financial, technical and legal structure for operation, securing biodiversity gains in time. The area has one of the few remnants of Native High Andean Forest still preserved in the region and it is a registered Habitat Bank at the Ministry of Environment and Sustainable Development of Colombia.",
+  "regen:coBenefits": [
+    {
+      "@id": "regen:WildlifeHabitat",
+      "@type": "regen:ProjectBenefit",
+      "schema:name": "Biodiversity"
+    }
+  ],
+  "regen:ecosystemType": [
+    "Tropical Moist Montane Forest"
+  ],
+  "regen:primaryImpact": {
+    "@id": "Biodiversity-Terrasos",
+    "schema:description": ""
+  },
+  "regen:projectActivities": [
+    "Ecosystem Preservation",
+    "Forest Enhancement",
+    "Ecological Restoration"
+  ],
+  "regen:projectSize": {
+    "qudt:unit": "unit:HA",
+    "qudt:numericValue": 340.11
+  },
+  "schema:location": {
+    "@context": {
+      "type": "@type",
+      "@vocab": "https://purl.org/geojson/vocab#",
+      "coordinates": {
+        "@container": "@list"
+      },
+      "bbox": {
+        "@container": "@list"
+      }
+    },
+    "type": "Feature",
+    "place_name": "Cuchilla Jardín-Támesis Integrated Management District (DMI), Colombia",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -75.7625,
+        5.6568
+      ]
+    }
+  },
+  "regen:projectStartDate": "2021-03-29",
+  "regen:projectEndDate": "2051-03-29"
+}
