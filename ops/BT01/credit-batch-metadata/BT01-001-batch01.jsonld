@@ -1,0 +1,88 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "regen": "https://schema.regen.network#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "regen:supplementalDatasets": {
+      "@container": "@list"
+    },
+    "schema:url": {
+      "@type": "schema:URL"
+    }
+  },
+  "@type": "regen:BT01-CreditBatch",
+  "regen:verificationReport": {
+      "schema:name": "Verification Letter Milestone 2 - KPMG (English)",
+      "schema:url": "https://regen-registry.s3.amazonaws.com/registry/BT01-Credit-Class/BT01-001-El-Globo-Project/Verification%20Letter%20Milestone%202%20-%20KPMG%20%28English%29.pdf"
+  },
+  "regen:projectVerifier": {
+    "schema:name": "KPMG",
+    "schema:url": "https://kpmg.com/xx/en/home.html"
+  },
+  "regen:supplementalDatasets": [
+    {
+      "schema:name": "201120 DwC_Birds_El Globo (English)",
+      "schema:url": "https://regen-registry.s3.amazonaws.com/registry/BT01-Credit-Class/BT01-001-El-Globo-Project/201120%20DwC_Birds_El%20Globo%20%28English%29.xlsx"
+    },
+    {
+      "schema:name": "201120 DwC_Birds_El Globo (Spanish)",
+      "schema:url": "https://regen-registry.s3.amazonaws.com/registry/BT01-Credit-Class/BT01-001-El-Globo-Project/201120%20DwC_Birds_El%20Globo%20%28Spanish%29.xlsx"
+    },
+    {
+      "schema:name": "201123 DwC_Flora_El Globo (English)",
+      "schema:url": "https://regen-registry.s3.amazonaws.com/registry/BT01-Credit-Class/BT01-001-El-Globo-Project/201123%20DwC_Flora_El%20Globo%20%28English%29.xlsx"
+    },
+    {
+      "schema:name": "201123 DwC_Flora_El Globo (Spanish)",
+      "schema:url": "https://regen-registry.s3.amazonaws.com/registry/BT01-Credit-Class/BT01-001-El-Globo-Project/201123%20DwC_Flora_El%20Globo%20%28Spanish%29.xlsx"
+    },
+    {
+      "schema:name": "210906 DwC_Mammals_El Globo (English)",
+      "schema:url": "https://regen-registry.s3.amazonaws.com/registry/BT01-Credit-Class/BT01-001-El-Globo-Project/210906%20DwC_Mammals_El%20Globo%20%28English%29.xlsx"
+    },
+    {
+      "schema:name": "210906 DwC_Mammals_El Globo (Spanish)",
+      "schema:url": "https://regen-registry.s3.amazonaws.com/registry/BT01-Credit-Class/BT01-001-El-Globo-Project/210906%20DwC_Mammals_El%20Globo%20%28Spanish%29.xlsx"
+    },
+    {
+      "schema:name": "230602 Multitemporal Coverage Change Analysis El Globo Habitat Bank 2021 (English)",
+      "schema:url": "https://regen-registry.s3.amazonaws.com/registry/BT01-Credit-Class/BT01-001-El-Globo-Project/230602%20Multitemporal%20Coverage%20Change%20Analysis%20El%20Globo%20Habitat%20Bank%202021%20%28English%29.pdf"
+    },
+    {
+      "schema:name": "230602 Multitemporal Coverage Change Analysis El Globo Habitat Bank 2021 (Spanish)",
+      "schema:url": "https://regen-registry.s3.amazonaws.com/registry/BT01-Credit-Class/BT01-001-El-Globo-Project/230602%20Multitemporal%20Coverage%20Change%20Analysis%20El%20Globo%20Habitat%20Bank%202021%20%28Spanish%29.pdf"
+    },
+    {
+      "schema:name": "Birds Natural Reserve El Globo (English)",
+      "schema:url": "https://regen-registry.s3.amazonaws.com/registry/BT01-Credit-Class/BT01-001-El-Globo-Project/Birds%20Natural%20Reserve%20El%20Globo%20%28English%29.pdf"
+    },
+    {
+      "schema:name": "Birds Natural Reserve El Globo (Spanish)",
+      "schema:url": "https://regen-registry.s3.amazonaws.com/registry/BT01-Credit-Class/BT01-001-El-Globo-Project/Birds%20Natural%20Reserve%20El%20Globo%20%28Spanish%29.pdf"
+    },
+    {
+      "schema:name": "Plant Characterization El Globo Habitat Bank (English)",
+      "schema:url": "https://regen-registry.s3.amazonaws.com/registry/BT01-Credit-Class/BT01-001-El-Globo-Project/Plant%20Characterization%20El%20Globo%20Habitat%20Bank%20%28English%29.pdf"
+    },
+    {
+      "schema:name": "Plant Characterization El Globo Habitat Bank (Spanish)",
+      "schema:url": "https://regen-registry.s3.amazonaws.com/registry/BT01-Credit-Class/BT01-001-El-Globo-Project/Plant%20Characterization%20El%20Globo%20Habitat%20Bank%20%28Spanish%29.pdf"
+    },
+    {
+      "schema:name": "Verification Letter - KPMG (English)",
+      "schema:url": "https://regen-registry.s3.amazonaws.com/registry/BT01-Credit-Class/BT01-001-El-Globo-Project/Verification%20Letter%20-%20KPMG%20%28English%29.pdf"
+    },
+    {
+      "schema:name": "Verification Letter - KPMG (Spanish)",
+      "schema:url": "https://regen-registry.s3.amazonaws.com/registry/BT01-Credit-Class/BT01-001-El-Globo-Project/Verification%20Letter%20-%20KPMG%20%28Spanish%29.pdf"
+    },
+    {
+      "schema:name": "Verification Letter Milestone 2 - KPMG (English)",
+      "schema:url": "https://regen-registry.s3.amazonaws.com/registry/BT01-Credit-Class/BT01-001-El-Globo-Project/Verification%20Letter%20Milestone%202%20-%20KPMG%20%28English%29.pdf"
+    },
+    {
+      "schema:name": "Verification Letter Milestone 2 - KPMG (Spanish)",
+      "schema:url": "https://regen-registry.s3.amazonaws.com/registry/BT01-Credit-Class/BT01-001-El-Globo-Project/Verification%20Letter%20Milestone%202%20-%20KPMG%20%28Spanish%29.pdf"
+    }
+  ]
+}
