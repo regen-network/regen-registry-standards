@@ -9,13 +9,7 @@
     "schema:url": {
       "@type": "schema:URL"
     },
-    "regen:sectoralScope": {
-      "@container": "@list"
-    },
-    "regen:offsetGenerationMethod": {
-      "@container": "@list"
-    },
-    "regen:measuredGHGs": {
+    "regen:creditGenerationMethod": {
       "@container": "@list"
     },
     "regen:coBenefits": {
@@ -24,37 +18,13 @@
     "regen:eligibleActivities": {
       "@container": "@list"
     },
-    "regen:landOwnershipType": {
-      "@container": "@list"
-    },
     "regen:ecosystemType": {
-      "@container": "@list"
-    },
-    "regen:verificationMethods": {
-      "@container": "@list"
-    },
-    "regen:additionalityApproach": {
-      "@container": "@list"
-    },
-    "regen:leakageApproach": {
-      "@container": "@list"
-    },
-    "regen:bufferPoolAccounts": {
       "@container": "@list"
     },
     "regen:creditingTerm": {
       "@type": "schema:Duration"
     },
-    "regen:lookbackPeriod": {
-      "@type": "schema:Duration"
-    },
     "regen:permanencePeriod": {
-      "@type": "schema:Duration"
-    },
-    "regen:monitoringFrequency": {
-      "@type": "schema:Duration"
-    }, 
-    "regen:verificationFrequency": {
       "@type": "schema:Duration"
     }
   },
@@ -71,19 +41,19 @@
   ],
   "regen:coBenefits": [
     {
-      "@id": "regen:Climate",
+      "@id": "regen:Climate-Terrasos",
       "@type": "regen:ProjectBenefit",
-      "schema:name": "Climate"
+      "schema:name": "Climate",
+      "regen:SDGs": [
+        {
+          "@id": "regen:13ClimateAction"
+        }
+      ]
     },
     {
-      "@id": "regen:WildlifeHabitat",
+      "@id": "regen:WildlifeHabitat-Terrasos",
       "@type": "regen:ProjectBenefit",
       "schema:name": "Wildlife Habitat"
-    },
-    {
-      "@id": "regen:Social",
-      "@type": "regen:ProjectBenefit",
-      "schema:name": "Social"
     }
   ],
   "regen:geographicApplicability": "Global",
@@ -93,25 +63,19 @@
     "Ecological Restoration"
   ],
   "regen:ecosystemType": [
-    "Forest"
+    "Tropical Montane Moist Forest"
   ],
   "regen:creditingTerm": "P30Y",
   "regen:permanencePeriod": "P20Y",
   "regen:primaryImpact": {
-    "@id": "regen:Biodiversity",
+    "@id": "regen:Biodiversity-Terrasos",
     "schema:name": "Biodiversity",
     "regen:SDGs": [
       {
-        "@id": ""
+        "@id": "regen:15LifeOnLand"
       }
     ]
   },
-  "regen:monitoringFrequency": "P6Y",
-  "regen:verificationFrequency": "P6Y",
-  "regen:verificationMethods": [
-    "Ruuts Internal Quality Assurance",
-    "Third-Party ISO 14064-3 Verification"
-  ],
   "regen:approvedMethodologies": {
     "@type": "schema:ItemList",
     "schema:itemListElement": [
